@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body>
+  <header class="page-header page-header--catalog">
+    <a class="page-header__logo logo" href="index.html">
+      <img class="logo__img" src="https://via.placeholder.com/100x15" width="100" height="15"
+        alt="Логотип сервиса «Погнали?»" />
+    </a>
+    <button class="page-header__nav-toggle-btn" type="button"></button>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#">О Сервисе</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Попутчики</a>
+        </li>
+      </ul>
+      <a class="main-nav__contact contact contact--phone" href="tel:+78005558628">8 800 555-86-28</a>
+      <a class="main-nav__contact contact contact--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a href="login.html">Авторизация</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="catalog-page">
+    <h1 class="catalog-page__title">Попутчики</h1>
+    <section class="catalog-page__filters filters">
+      <h2 class="visually-hidden">Подбор попутчика по стране назназначения, привычкам и интересам</h2>
+      <div class="filters__filter-country filter-country">
+        <p class="filter-country__title">Фильтрация по странам</p>
+        <button class="filter-country__toggle-btn" type="button" aria-label="Показать"></button>
+        <div class="filter-country__dropdown">
+          <ul class="filter-country__country-list country-list">
+            <li class="country-list__item">
+              <a class="country-list__link country-list__link--active" href="#">Европа</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="#">Азия</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="#">Америка</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="#">Острова</a>
+            </li>
+          </ul>
+          <ul class="filter-country__country-letter-list country-letter-list">
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link country-letter-list__link--active" href="#">А</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Б</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">В</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Г</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Д</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Е</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">З</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">И</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">К</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Л</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">М</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Н</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">О</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">П</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Р</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">С</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Т</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">У</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Ф</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Х</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Ч</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Ш</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Э</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Ю</a>
+            </li>
+            <li class="country-letter-list__item">
+              <a class="country-letter-list__link" href="#">Я</a>
+            </li>
+          </ul>
+          <ul class="filter-country__country-select-list country-select-list">
+            <li class="country-select-list__item">
+              <a class="country-select-list__link" href="#">Афганистан</a>
+            </li>
+            <li class="country-select-list__item">
+              <a class="country-select-list__link" href="#">Албания</a>
+            </li>
+            <li class="country-select-list__item">
+              <a class="country-select-list__link" href="#">Алжир</a>
+            </li>
+            <li class="country-select-list__item">
+              <a class="country-select-list__link" href="#">Андорра</a>
+            </li>
+            <li class="country-select-list__item">
+              <a class="country-select-list__link" href="#">Аргентина</a>
+            </li>
+            <li class="country-select-list__item">
+              <a class="country-select-list__link" href="#">Армения</a>
+            </li>
+            <li class="country-select-list__item">
+              <a class="country-select-list__link" href="#">Австралия</a>
+            </li>
+            <li class="country-select-list__item">
+              <a class="country-select-list__link" href="#">Австрия</a>
+            </li>
+            <li class="country-select-list__item">
+              <a class="country-select-list__link" href="#">Азербайджан</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="filters__filter-travelmates filter-travelmates">
+        <form class="filter-travelmates__select-travelmates select-travelmates" action="https://echo.htmlacademy.ru" method="post">
+          <p class="select-travelmates__title">Подберите идеального попутчика</p>
+          <div class="select-travelmates__hobby hobby">
+            <button class="hobby__title" type="button" aria-label="Показать-скрыть">Хобби</button>
+            <ul class="hobby__list">
+              <li class="hobby__item">
+                <input class="hobby__input visually-hidden" type="checkbox" name="hobby" value="hobby-1" id="hobby-1">
+                <label class="hobby__label" for="hobby-1">
+                  <span class="hobby__text">Спортзал</span>
+                </label>
+              </li>
+              <li class="hobby__item">
+                <input class="hobby__input visually-hidden" type="checkbox" name="hobby" value="hobby-2" id="hobby-2">
+                <label class="hobby__label" for="hobby-2">
+                  <span class="hobby__text">Кальян</span>
+                </label>
+              </li>
+              <li class="hobby__item">
+                <input class="hobby__input visually-hidden" type="checkbox" name="hobby" value="hobby-3" id="hobby-3">
+                <label class="hobby__label" for="hobby-3">
+                  <span class="hobby__text">Диван</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="select-travelmates__music music">
+            <button class="music__title" type="button" aria-label="Показать-скрыть">Музыка</button>
+            <ul class="music__list">
+              <li class="music__item">
+                <input class="music__input visually-hidden" type="checkbox" name="music" value="music-1" id="music-1">
+                <label class="music__label" for="music-1">
+                  <span class="music__text">Тяжелый рок</span>
+                </label>
+              </li>
+              <li class="music__item">
+                <input class="music__input visually-hidden" type="checkbox" name="music" value="music-2" id="music-2">
+                <label class="music__label" for="music-2">
+                  <span class="music__text">Русский рэп</span>
+                </label>
+              </li>
+              <li class="music__item">
+                <input class="music__input visually-hidden" type="checkbox" name="music" value="music-3" id="music-3">
+                <label class="music__label" for="music-3">
+                  <span class="music__text">Евроденс</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="select-travelmates__food food">
+            <button class="food__title" type="button" aria-label="Показать-скрыть">Еда</button>
+            <ul class="food__list">
+              <li class="food__item">
+                <input class="food__input visually-hidden" type="checkbox" name="food" value="food-1" id="food-1">
+                <label class="food__label" for="food-1">
+                  <span class="food__text">Мясоед</span>
+                </label>
+              </li>
+              <li class="food__item">
+                <input class="food__input visually-hidden" type="checkbox" name="food" value="food-2" id="food-2">
+                  <label class="food__label" for="food-2">
+                    <span class="food__text">Сидит на ПП</span>
+                  </label>
+              </li>
+              <li class="food__item">
+                <input class="food__input visually-hidden" type="checkbox" name="food" value="food-3" id="food-3">
+                <label class="food__label" for="food-3">
+                  <span class="food__text">Веган-сыроед</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="select-travelmates__transport-select transport-select">
+            <button class="transport-select__title" type="button" aria-label="Показать-скрыть">Транспорт</button>
+            <ul class="transport-select__list">
+              <li class="transport-select__item">
+                <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="airplane" id="transport-select-1">
+                <label class="transport-select__label transport-select__label--plane" for="transport-select-1" aria-label="Авиаперелеты">
+                </label>
+              </li>
+              <li class="transport-select__item">
+                <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="bus" id="transport-select-2" >
+                <label class="transport-select__label transport-select__label--bus" for="transport-select-2"
+                aria-label="Автотранспорт">
+                </label>
+              </li>
+              <li class="transport-select__item">
+                <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="bicycle" id="transport-select-3">
+                <label class="transport-select__label"
+                for="transport-select-3" aria-label="Велосипед">
+                </label>
+              </li>
+              <li class="transport-select__item">
+                <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="walk" id="transport-select-4">
+                <label class="transport-select__label" for="transport-select-4" aria-label="Пешком">
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="select-travelmates__level-select level-select">
+            <button class="level-select__title" type="button" aria-label="Показать-скрыть">Левел</button>
+            <div class="level-select__list">
+              <input class="level-select__input level-select__input--min" type="text"
+                name="min-level" value="30">
+              <input class="level-select__input level-select__input--max" type="text"
+                name="max-level" value="100">
+              <div class="level-select__range">
+                <div class="level-select__scrollbar">
+                  <div class="level-select__btn level-select__btn--min" type="button"></div>
+                  <div class="level-select__btn level-select__btn--max" type="button"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="select-travelmates__btn" type="submit">Показать</button>
+        </form>
+      </div>
+    </section>
+    <section class="catalog-page__travelmates-catalog travelmates-catalog">
+      <h2 class="visually-hidden">Каталог попутчиков по Вашему запросу</h2>
+      <ul class="travelmates-catalog__travelmates-list travelmates-list">
+        <li class="travelmates-list__item travelmate">
+          <a class="travelmate__link" href="#">
+            <img class="travelmate__photo travelmate__photo--small" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова">
+          </a>
+          <div class="travelmate__content">
+            <h3 class="travelmate__name">Таня Фирсова</h3>
+            <div class="travelmate__favorite">
+              <button class="travelmate__favorite-btn travelmate__favorite-btn--active" aria-label="Добавить в избраное"></button>
+              <p class="travelmate__likes-count">1,5 M</p>
+            </div>
+            <p class="travelmate__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <div class="travelmate__wish-country wish-country">
+              <h4 class="wish-country__title">Хочет посетить:</h4>
+              <ul class="wish-country__list">
+                <li class="wish-country__item">
+                  <img class="wish-country__flag" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Шри-Ланка">
+                  <span class="wish-country__country">Шри-ланка</span>
+                </li>
+                <li class="wish-country__item">
+                  <img class="wish-country__flag" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Тайланд">
+                  <span class="wish-country__country">Тайланд</span>
+                </li>
+                <li class="wish-country__item">
+                  <img class="wish-country__flag" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Сейшелы">
+                  <span class="wish-country__country">Сейшелы</span>
+                </li>
+              </ul>
+            </div>
+            <div class="travelmate__inner-box">
+              <div class="travelmate__transport transport">
+                <h4 class="transport__title">Транспорт:</h4>
+                <ul class="transport__transport-list transport-list">
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--plane transport-list__item-img--active" width="14px" height="16px" alt="Авиаперелеты">
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--bus" width="14px" height="16px" alt="Автобусные туры">
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--bike" width="14px" height="16px" alt="Велотуры">
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--walk" width="14px" height="16px" alt="Пешие туры">
+                  </li>
+                </ul>
+              </div>
+              <div class="travelmate__lvl lvl">
+                <h4 class="lvl__title"><span class="lvl__title-span">Левел:</span></h4>
+                <svg class="lvl__progress-bar">
+                  <circle cx="57" cy="57" r="52"></circle>
+                  <circle cx="57" cy="57" r="52"></circle>
+                </svg>
+                <p class="lvl__text">level</p>
+                <div class="lvl__number">99</div>
+              </div>
+            </div>
+            <a class="travelmate__btn-invite btn" href="#">Позвать!</a>
+          </div>
+        </li>
+        <li class="travelmates-list__item travelmate">
+          <a class="travelmate__link" href="#">
+            <img class="travelmate__photo travelmate__photo--small" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Петя Демин">
+          </a>
+          <div class="travelmate__content">
+            <h3 class="travelmate__name">Петя Демин</h3>
+            <div class="travelmate__favorite">
+              <button class="travelmate__favorite-btn" aria-label="Добавить в избраное"></button>
+              <p class="travelmate__likes-count">150</p>
+            </div>
+            <p class="travelmate__hashtags">#бургер #бар #футбол #концерт #крафт</p>
+            <div class="travelmate__wish-country wish-country">
+              <h4 class="wish-country__title">Хочет посетить:</h4>
+              <ul class="wish-country__list">
+                <li class="wish-country__item">
+                  <img class="wish-country__flag" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Бельгия">
+                  <span class="wish-country__country">Бельгия</span>
+                </li>
+                <li class="wish-country__item">
+                  <img class="wish-country__flag" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Чехия">
+                  <span class="wish-country__country">Чехия</span>
+                </li>
+              </ul>
+            </div>
+            <div class="travelmate__inner-box">
+              <div class="travelmate__transport transport">
+                <h4 class="transport__title">Транспорт:</h4>
+                <ul class="transport__transport-list transport-list">
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--plane transport-list__item-img--active" width="14px" height="16px" alt="Авиаперелеты">
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--bus" width="14px" height="16px" alt="Автобусные туры">
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--bike transport-list__item-img--active" width="14px" height="16px" alt="Велотуры">
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--walk transport-list__item-img--active" width="14px" height="16px" alt="Пешие туры">
+                  </li>
+                </ul>
+              </div>
+              <div class="travelmate__lvl lvl">
+                <h4 class="lvl__title"><span class="lvl__title-span">Левел:</span></h4>
+                <svg class="lvl__progress-bar">
+                  <circle cx="57" cy="57" r="52"></circle>
+                  <circle cx="57" cy="57" r="52"></circle>
+                </svg>
+                <p class="lvl__text">level</p>
+                <div class="lvl__number">80</div>
+              </div>
+            </div>
+            <a class="travelmate__btn-invite btn" href="#">Позвать!</a>
+          </div>
+        </li>
+        <li class="travelmates-list__item travelmate">
+          <a class="travelmate__link" href="#">
+            <img class="travelmate__photo travelmate__photo--small" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Марк Смолов">
+          </a>
+          <div class="travelmate__content">
+            <h3 class="travelmate__name">Марк Смолов</h3>
+            <div class="travelmate__favorite">
+              <button class="travelmate__favorite-btn" aria-label="Добавить в избраное"></button>
+              <p class="travelmate__likes-count">1700</p>
+            </div>
+            <p class="travelmate__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+            <div class="travelmate__wish-country wish-country">
+              <h4 class="wish-country__title">Хочет посетить:</h4>
+              <ul class="wish-country__list">
+                <li class="wish-country__item">
+                  <img class="wish-country__flag" src="https://via.placeholder.com/26x18" width="26" height="18" alt="США">
+                  <span class="wish-country__country">США</span>
+                </li>
+                <li class="wish-country__item">
+                  <img class="wish-country__flag" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Австралия">
+                  <span class="wish-country__country">Австралия</span>
+                </li>
+                <li class="wish-country__item">
+                  <img class="wish-country__flag" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Доминика">
+                  <span class="wish-country__country">Доминика</span>
+                </li>
+              </ul>
+            </div>
+            <div class="travelmate__inner-box">
+              <div class="travelmate__transport transport">
+                <h4 class="transport__title">Транспорт:</h4>
+                <ul class="transport__transport-list transport-list">
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--plane transport-list__item-img--active" width="14px" height="16px" alt="Авиаперелеты">
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--bus" width="14px" height="16px" alt="Автобусные туры">
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--bike transport-list__item-img--active" width="14px" height="16px" alt="Велотуры">
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--walk" width="14px" height="16px" alt="Пешие туры">
+                  </li>
+                </ul>
+              </div>
+              <div class="travelmate__lvl lvl">
+                <h4 class="lvl__title"><span class="lvl__title-span">Левел:</span></h4>
+                <svg class="lvl__progress-bar">
+                  <circle cx="57" cy="57" r="52"></circle>
+                  <circle cx="57" cy="57" r="52"></circle>
+                </svg>
+                <p class="lvl__text">level</p>
+                <div class="lvl__number">25</div>
+              </div>
+            </div>
+            <a class="travelmate__btn-invite btn" href="#">Позвать!</a>
+          </div>
+        </li>
+        <li class="travelmates-list__item travelmate">
+          <a class="travelmate__link" href="#">
+            <img class="travelmate__photo travelmate__photo--small" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Лариса Роговая">
+          </a>
+          <div class="travelmate__content">
+            <h3 class="travelmate__name">Лариса Роговая</h3>
+            <div class="travelmate__favorite">
+              <button class="travelmate__favorite-btn" aria-label="Добавить в избраное"></button>
+              <p class="travelmate__likes-count">23</p>
+            </div>
+            <p class="travelmate__hashtags">#образование #карьера #учеба #линкедин</p>
+            <div class="travelmate__wish-country wish-country">
+              <h4 class="wish-country__title">Хочет посетить:</h4>
+              <ul class="wish-country__list">
+                <li class="wish-country__item">
+                  <img class="wish-country__flag" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Великобритания">
+                  <span class="wish-country__country">Великобритания</span>
+                </li>
+                <li class="wish-country__item">
+                  <img class="wish-country__flag" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Германия">
+                  <span class="wish-country__country">Германия</span>
+                </li>
+              </ul>
+            </div>
+            <div class="travelmate__inner-box">
+              <div class="travelmate__transport transport">
+                <h4 class="transport__title">Транспорт:</h4>
+                <ul class="transport__transport-list transport-list">
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--plane transport-list__item-img--active" width="14px" height="16px" alt="Авиаперелеты">
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--bus transport-list__item-img--active" width="14px" height="16px" alt="Автобусные туры">
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--bike" width="14px" height="16px" alt="Велотуры">
+                  </li>
+                  <li class="transport-list__item">
+                    <img class="transport-list__item-img transport-list__item-img--walk" width="14px" height="16px" alt="Пешие туры">
+                  </li>
+                </ul>
+              </div>
+              <div class="travelmate__lvl lvl">
+                <h4 class="lvl__title"><span class="lvl__title-span">Левел:</span></h4>
+                <svg class="lvl__progress-bar">
+                  <circle cx="57" cy="57" r="52"></circle>
+                  <circle cx="57" cy="57" r="52"></circle>
+                </svg>
+                <p class="lvl__text">level</p>
+                <div class="lvl__number">50</div>
+              </div>
+            </div>
+            <a class="travelmate__btn-invite btn" href="#">Позвать!</a>
+          </div>
+        </li>
+      </ul>
+      <a class="travelmates-catalog__btn-more" href="#">Показать еще</a>
+      <div class="travelmates-catalog__pagination">
+        <button class="travelmates-catalog__btn-pagination travelmates-catalog__btn-pagination--prev" type="button"
+          aria-label="Предыдущая страница">
+        </button>
+        <button class="travelmates-catalog__btn-pagination travelmates-catalog__btn-pagination--next" type="button"
+          aria-label="Следующая страница">
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__logo logo">
+      <img class="logo__img" src="https://via.placeholder.com/100x19" width="100" height="19" alt="Логотип Погнали">
+    </div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#" title="Мы в Фейсбуке" aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#" title="Мы Вконтакте" aria-label="Мы Вконтакте"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="#" title="Мы в Инстаграме" aria-label="Мы в Инстаграме"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+    </div>
+  </footer>
+</body>
+</html>
