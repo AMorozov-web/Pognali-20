@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header page-header--form">
+    <a class="page-header__logo logo" href="index.html">
+      <img class="logo__img" src="https://via.placeholder.com/100x15" width="100" height="15"
+        alt="Логотип сервиса «Погнали?»" />
+    </a>
+    <button class="page-header__nav-toggle-btn" type="button"></button>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#">О Сервисе</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Попутчики</a>
+        </li>
+      </ul>
+      <a class="main-nav__contact contact contact--phone" href="tel:+78005558628">8 800 555-86-28</a>
+      <a class="main-nav__contact contact contact--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a href="login.html">Авторизация</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="form-page">
+    <h1 class="form-page__title">Направления</h1>
+    <section class="form-page__profile profile">
+      <h2 class="visually-hidden">Профиль</h2>
+      <div class="profile__lvl lvl">
+        <svg class="lvl__progress-bar">
+          <circle cx="57" cy="57" r="52"></circle>
+          <circle cx="57" cy="57" r="52"></circle>
+        </svg>
+        <p class="lvl__text">level</p>
+        <div class="lvl__number">80</div>
+      </div>
+      <img class="profile__photo" src="https://via.placeholder.com/100x100" width="100"
+        height="100" alt="Петя Демин">
+      <button class="profile__photo-change" type="button">Сменить фото</button>
+      <div class="profile__hashtags hashtags">
+        <h3 class="hashtags__title">Тэги</h3>
+        <textarea class="hashtags__tags" name="tags" placeholder="Твои интересы и привычки в виде хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
+      </div>
+      <div class="profile__transport transport-form">
+        <h3 class="transport-form__title">Транспорт</h3>
+        <ul class="transport-form__list transport-list">
+          <li class="transport-list__item">
+            <img class="transport-list__item-img transport-list__item-img--plane" width="14" height="16" alt="Авиаперелеты">
+          </li>
+          <li class="transport-list__item">
+            <img class="transport-list__item-img transport-list__item-img--bus" width="14" height="16" alt="Автобусные туры">
+          </li>
+          <li class="transport-list__item">
+            <img class="transport-list__item-img transport-list__item-img--bike" width="14" height="16" alt="Велотуры">
+          </li>
+          <li class="transport-list__item">
+            <img class="transport-list__item-img transport-list__item-img--walk" width="14" height="16" alt="Пешие туры">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
