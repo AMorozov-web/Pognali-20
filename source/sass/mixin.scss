@@ -1,14 +1,3 @@
-@mixin list-style {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-@mixin size($width, $height) {
-  width: $width;
-  height: $height;
-}
-
 @mixin font-size ($size, $weight, $line-height) {
   font-size: $size;
   font-weight: $weight;

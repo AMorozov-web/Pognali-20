@@ -1,16 +1,40 @@
 .page-header {
   width: 100%;
   min-height: 15px;
+  padding-top: 28px;
   background-color: $basic_blue;
+}
+
+.page-header--no-js {
+  background-color: $basic_white;
 }
 
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% - 25px * 2);
+  width: calc(100% - 50px);
   height: 100%;
   margin: 0 auto;
 }
 
+.page-header__nav-toggle-btn {
+  width: 19px;
+  height: 18px;
+  border: none;
 
+&--no-js {
+    display: none;
+  }
+}
+
+.page-header__main-nav {
+  width: calc(100% - 50px);
+  min-height: 470px;
+  margin: 0 auto;
+  margin-top: 76px;
+}
+
+.main-nav__contact {
+
+}

@@ -7,32 +7,49 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header page-header--index">
+    <header class="page-header page-header--no-js">
       <div class="page-header__wrapper">
-        <a class="page-header__logo logo">
+        <a class="page-header__logo logo logo--opened-menu">
           <img class="logo__img" src="https://via.placeholder.com/100x15" width="100" height="15" alt="Логотип сервиса «Погнали?»">
         </a>
-        <button class="page-header__nav-toggle-btn" type="button" aria-label="Открыть/закрыть меню"></button>
+        <button class="page-header__nav-toggle-btn page-header__nav-toggle-btn--no-js" type="button" aria-label="Открыть/закрыть меню"></button>
       </div>
-      <nav class="main-nav visually-hidden">
+      <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list site-nav-list">
           <li class="site-nav-list__item">
-            <a href="#">О Сервисе</a>
+            <a class="site-nav-list__link" href="#">О Сервисе</a>
           </li>
           <li class="site-nav-list__item">
-            <a href="form.html">Направления</a>
+            <a class="site-nav-list__link" href="form.html">Направления</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Попутчики</a>
+            <a class="site-nav-list__link" href="catalog.html">Попутчики</a>
           </li>
         </ul>
-        <a class="main-nav__contact contact contact--phone" href="tel:+78005558628">8 800 555-86-28</a>
-        <a class="main-nav__contact contact contact--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         <ul class="main-nav__list user-nav-list">
           <li class="user-nav-list__item">
-            <a href="login.html">Авторизация</a>
+            <a class="user-nav-list__link" href="login.html">Авторизация</a>
           </li>
         </ul>
+        <div class="main-nav__contact-wrapper">
+          <a class="main-nav__contact-link contact-link contact-link--phone" href="tel:+78005558628">8 800 555-86-28</a>
+        </div>
+        <div class="main-nav__contact-wrapper">
+          <a class="main-nav__contact-link contact-link contact-link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="main-nav__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#" title="Мы в Фейсбуке" aria-label="Мы в Фейсбуке"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#" title="Мы Вконтакте" aria-label="Мы Вконтакте"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--inst" href="#" title="Мы в Инстаграме" aria-label="Мы в Инстаграме"></a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="index-page">
