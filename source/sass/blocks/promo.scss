@@ -1,0 +1,24 @@
+.promo {
+  background-color: $basic_blue;
+  color: $basic_white;
+}
+
+.promo__wrapper {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+}
+
+.promo__title {
+  text-align: center;
+
+  @include font-size (36px, bold, 40px);
+}
+
+.promo__contacts-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.promo__contact-link span {
+  display: none;
+}

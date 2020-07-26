@@ -1,7 +1,15 @@
 .contact-link {
+  display: block;
   color: $link-dark;
   text-decoration: none;
   text-transform: uppercase;
 
   @include font-size (16px, bold, 18px);
+
+  &--promo {
+    width: 40px;
+    height: 40px;
+  }
+
+  
 }
