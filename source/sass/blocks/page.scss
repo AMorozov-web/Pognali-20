@@ -2,7 +2,7 @@
   height: 100%;
   font-family: "BloggerSans", "Comic Sans MS", sans-serif;
 
-  @include font-size (16px, 300, 22px)
+  @include font-size (16px, 300, 22px);
 }
 
 .page__body {
