@@ -28,7 +28,7 @@
         </ul>
         <ul class="main-nav__list user-nav-list">
           <li class="user-nav-list__item">
-            <a class="user-nav-list__link" href="login.html">Авторизация</a>
+            <a class="user-nav-list__link login-link" href="login.html">Авторизация</a>
           </li>
         </ul>
         <div class="main-nav__contact-wrapper">
@@ -62,26 +62,34 @@
         <h2 class="visually-hidden">Путешествовать с попутчиками - легко!</h2>
         <div class="promo__wrapper">
           <p class="promo__title">В путешествие с&nbsp;крутыми попутчиками!</p>
-          <blockquote class="promo__quote">
-            <p class="promo__quote-text">«Лучшее приложение, что я видел в жизни!»</p>
-            <cite class="promo__quote-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
-          </blockquote>
-          <div class="promo__contacts-wrapper">
-            <a class="promo__contact-link contact-link contact-link--promo contact-link--phone" href="tel:+78005558628">
+          <div class="promo__contacts">
+            <a class="promo__contact-link contact-link contact-link--promo contact-link--promo-phone" href="tel:+78005558628" aria-label="Позвоните нам">
               <span>8 800 555-86-28</span>
             </a>
-            <a class="promo__contact-link contact-link contact-link--promo contact-link--email" href="mailto:mail@htmlacademy.ru">
+            <a class="promo__contact-link contact-link contact-link--promo contact-link--promo-email" href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам">
               <span>mail@htmlacademy.ru</span>
             </a>
-            <div class="user-nav-list__item user-nav-list__item--promo">
-              <a class="user-nav-list__link user-nav-list__link--promo" href="login.html">Авторизация</a>
+            <div class="promo__login-link-box">
+              <a class="promo__login-link login-link login-link--promo" href="login.html">Авторизация</a>
             </div>
           </div>
+          <blockquote class="promo__quote">
+            <p class="promo__quote-text">«Лучшее приложение, что я видел в жизни!»</p>
+            <cite class="promo__quote-author">Мурат Эльтазин главный редактор газеты&nbsp;«гаджетлайф»</cite>
+          </blockquote>
           <ul class="promo__steps promo-steps-list">
-            <li class="promo-steps-list__item">Выберите направление</li>
-            <li class="promo-steps-list__item">Изучите идеи путешественников</li>
-            <li class="promo-steps-list__item">Находите тех, кто похож на вас</li>
-            <li class="promo-steps-list__item">Путешествуйте вместе!</li>
+            <li class="promo-steps-list__item">
+              <span class="promo-steps-list__item-text">Выберите направление</span>
+            </li>
+            <li class="promo-steps-list__item">
+              <span class="promo-steps-list__item-text">Изучите идеи путешественников</span>
+            </li>
+            <li class="promo-steps-list__item">
+              <span class="promo-steps-list__item-text">Находите тех, кто&nbsp;похож на вас</span>
+            </li>
+            <li class="promo-steps-list__item">
+              <span class="promo-steps-list__item-text">Путешествуйте вместе!</span>
+            </li>
           </ul>
         </div>
       </section>

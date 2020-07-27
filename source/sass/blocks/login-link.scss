@@ -1,0 +1,18 @@
+.login-link {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: $basic-yellow;
+  color: $basic-blue;
+  border-radius: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @include font-size (17px, bold, 30px);
+
+  &--promo {
+    @include font-size (17px, bold, 20px);
+  }
+}

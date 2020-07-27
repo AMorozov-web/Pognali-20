@@ -29,8 +29,8 @@
 }
 
 .page-header__main-nav {
-  width: calc(100% - 50px);
+  @include wrapper();
+
   min-height: 470px;
-  margin: 0 auto;
   margin-top: 76px;
 }

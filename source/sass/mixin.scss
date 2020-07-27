@@ -3,3 +3,8 @@
   font-weight: $weight;
   line-height: $line-height;
 }
+
+@mixin wrapper() {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+}
