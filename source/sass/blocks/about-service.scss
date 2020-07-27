@@ -1,0 +1,19 @@
+.about-service {
+  color: $basic_white;
+  background-color: $bg_dark_blue;
+}
+
+.about-service__title {
+  margin: 0;
+  color: $special_orange;
+
+  @include font-size (24px, bold, 24px);
+}
+
+.about-service__text {
+  margin: 0;
+}
+
+.about-service__text--call {
+  @include font-size (16px, bold, 22px);
+}
