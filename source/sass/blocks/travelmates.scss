@@ -1,0 +1,41 @@
+.travelmates {
+  background-color: $link-dark;
+  color: $basic_white;
+}
+
+.travelmates__wrapper {
+  @include wrapper();
+}
+
+.travelmates__main-title {
+  margin: 0;
+  color: $special_orange;
+
+  @include font-size (24px, bold, 24px);
+}
+
+.travelmates__main-text {
+  margin: 0;
+}
+
+.travelmates__main-text--call {
+  @include font-size (16px, bold, 22px);
+}
+
+.travelmates__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.travelmates__btn {
+  display: block;
+  background-color: $basic_yellow;
+  color: $basic_blue_light;
+  text-decoration: none;
+  border-radius: 10px;
+
+  @include font-size (18px, bold, 18px);
+}
+
+

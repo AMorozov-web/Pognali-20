@@ -18,6 +18,7 @@
     top: 22px;
     right: 21px;
     color: $basic_white;
+
     @include font-size (18px, bold, 18px);
   }
 
@@ -69,5 +70,6 @@
   width: 150px;
   min-height: 36px;
   color: $basic_blue;
+
   @include font-size (18px, bold, 18px);
 }

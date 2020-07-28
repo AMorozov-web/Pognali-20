@@ -1,3 +1,7 @@
+.countries__wrapper {
+  @include wrapper();
+}
+
 .countries__main-title {
   margin: 0;
   color: $special_orange;

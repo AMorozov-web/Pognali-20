@@ -3,6 +3,10 @@
   background-color: $bg_dark_blue;
 }
 
+.about-service__wrapper {
+  @include wrapper();
+}
+
 .about-service__title {
   margin: 0;
   color: $special_orange;
