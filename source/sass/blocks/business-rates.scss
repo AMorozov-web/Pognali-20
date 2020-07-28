@@ -1,0 +1,20 @@
+.business-rates__title {
+  margin: 0;
+  color: $special_orange;
+
+  @include font-size(24px, bold, 24px);
+}
+
+.business-rates__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.business-rates__close {
+  color: $basic_blue_light;
+  text-transform: uppercase;
+  border: none;
+
+  @include font-size(16px, bold, 24px);
+}
