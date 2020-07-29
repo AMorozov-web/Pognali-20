@@ -8,7 +8,7 @@
 .country-list__link {
   @include font-size(bold, 16px, 18px);
 
-  color: rgba($link-dark, .3);
+  color: rgba($link-dark, 0.3);
   text-decoration: none;
   text-transform: uppercase;
 

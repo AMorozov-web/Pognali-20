@@ -13,7 +13,6 @@
   margin: 0;
 
   @include wrapper;
-
   @include font-size(bold, 36px, 36px);
 
   color: $basic_white;

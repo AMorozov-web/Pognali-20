@@ -6,14 +6,14 @@
 
 .country__text {
   margin: 0;
-  color: rgba($special_grey, .3);
+  color: rgba($special_grey, 0.3);
 
   @include font-size(500, 16px, 18px);
 }
 
 .country__user-count {
   margin: 0;
-  color: rgba($basic_blue, .3);
+  color: rgba($basic_blue, 0.3);
 
   @include font-size(500, 16px, 20px);
 }
