@@ -1,0 +1,32 @@
+.catalog-page__title-wrapper {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $bg_blue_header;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.catalog-page__title {
+  position: relative;
+  display: block;
+  margin: 0;
+
+  @include wrapper;
+
+  @include font-size(bold, 36px, 36px);
+
+  color: $basic_white;
+
+  &::after {
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 173px;
+    height: 5px;
+    background-color: $special_orange;
+    border-radius: 4px;
+  }
+}
