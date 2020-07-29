@@ -4,14 +4,14 @@
 }
 
 .travelmates__wrapper {
-  @include wrapper();
+  @include wrapper;
 }
 
 .travelmates__main-title {
   margin: 0;
   color: $special_orange;
 
-  @include font-size (24px, bold, 24px);
+  @include font-size(bold, 24px, 24px);
 }
 
 .travelmates__main-text {
@@ -19,13 +19,11 @@
 }
 
 .travelmates__main-text--call {
-  @include font-size (16px, bold, 22px);
+  @include font-size(bold, 16px, 22px);
 }
 
 .travelmates__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-style;
 }
 
 .travelmates__btn {
@@ -35,7 +33,7 @@
   text-decoration: none;
   border-radius: 10px;
 
-  @include font-size (18px, bold, 18px);
+  @include font-size(bold, 18px, 18px);
 }
 
 

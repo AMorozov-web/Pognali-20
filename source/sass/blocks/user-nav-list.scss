@@ -1,7 +1,9 @@
 .user-nav-list {
+  @include list-style;
+
   width: 100%;
+  margin-bottom: 50px;
   text-align: center;
-  list-style: none;
 }
 
 .user-nav-list__item {
@@ -20,5 +22,5 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  @include font-size (17px, bold, 30px);
+  @include font-size(bold, 17px, 30px);
 }

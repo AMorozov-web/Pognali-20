@@ -1,6 +1,8 @@
 .site-nav-list {
+  @include list-style;
+
+  margin-bottom: 50px;
   text-align: center;
-  list-style: none;
 }
 
 .site-nav-list__link {
@@ -8,5 +10,5 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  @include font-size(30px, 500, 35px);
+  @include font-size(500, 30px, 35px);
 }

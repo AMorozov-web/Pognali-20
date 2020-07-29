@@ -2,5 +2,5 @@
   margin: 0;
   color: $special_grey;
 
-  @include font-size(16px, normal, 16px);
+  @include font-size(normal, 16px, 16px);
 }

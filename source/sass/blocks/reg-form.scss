@@ -4,14 +4,14 @@
 }
 
 .reg-form__wrapper {
-  @include wrapper();
+  @include wrapper;
 }
 
 .reg-form__title {
   margin: 0;
   color: $special_orange;
 
-  @include font-size(24px, bold, 24px);
+  @include font-size(bold, 24px, 24px);
 }
 
 .reg-form__signin-link {

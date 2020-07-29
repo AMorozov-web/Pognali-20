@@ -4,14 +4,14 @@
 }
 
 .about-service__wrapper {
-  @include wrapper();
+  @include wrapper;
 }
 
 .about-service__title {
   margin: 0;
   color: $special_orange;
 
-  @include font-size (24px, bold, 24px);
+  @include font-size(bold, 24px, 24px);
 }
 
 .about-service__text {
@@ -19,5 +19,5 @@
 }
 
 .about-service__text--call {
-  @include font-size (16px, bold, 22px);
+  @include font-size(bold, 16px, 22px);
 }

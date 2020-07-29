@@ -1,21 +1,21 @@
 .country__title {
   margin: 0;
 
-  @include font-size (21px, bold, 21px);
+  @include font-size(bold, 21px, 21px);
 }
 
 .country__text {
   margin: 0;
   color: rgba($special_grey, .3);
 
-  @include font-size (16px, 500, 18px);
+  @include font-size(500, 16px, 18px);
 }
 
 .country__user-count {
   margin: 0;
   color: rgba($basic_blue, .3);
 
-  @include font-size (16px, 500, 20px);
+  @include font-size(500, 16px, 20px);
 }
 
 .countries__btn {
@@ -25,7 +25,7 @@
   text-decoration: none;
   border-radius: 10px;
 
-  @include font-size (18px, bold, 18px);
+  @include font-size(bold, 18px, 18px);
 }
 
 

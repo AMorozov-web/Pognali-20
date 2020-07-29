@@ -4,7 +4,7 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  @include font-size (16px, bold, 18px);
+  @include font-size(bold, 16px, 18px);
 
   &--promo {
     width: 40px;

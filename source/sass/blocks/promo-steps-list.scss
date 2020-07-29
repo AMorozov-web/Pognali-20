@@ -1,9 +1,8 @@
 .promo-steps-list {
   display: grid;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+
+  @include list-style;
 }
 
 .promo-steps-list__item {
@@ -20,7 +19,7 @@
     right: 21px;
     color: $basic_white;
 
-    @include font-size (18px, bold, 18px);
+    @include font-size(bold, 18px, 18px);
   }
 
   &:first-child {
@@ -72,5 +71,5 @@
   min-height: 36px;
   color: $basic_blue;
 
-  @include font-size (18px, bold, 18px);
+  @include font-size(bold, 18px, 18px);
 }

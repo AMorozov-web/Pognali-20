@@ -1,23 +1,21 @@
 .rates__wrapper {
-  @include wrapper();
+  @include wrapper;
 }
 
 .rates__title {
   margin: 0;
   color: $special_orange;
 
-  @include font-size(24px, bold, 24px);
+  @include font-size(bold, 24px, 24px);
 }
 
 .rates__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-style;
 }
 
 .rates__modal-open {
   color: $link_light;
   text-decoration: none;
 
-  @include font-size(16px, bold, 16px);
+  @include font-size(bold, 16px, 16px);
 }

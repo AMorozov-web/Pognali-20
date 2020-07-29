@@ -10,9 +10,9 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  @include font-size (17px, bold, 30px);
+  @include font-size(bold, 17px, 30px);
 
   &--promo {
-    @include font-size (17px, bold, 20px);
+    @include font-size(bold, 17px, 20px);
   }
 }
