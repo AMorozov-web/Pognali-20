@@ -1,0 +1,18 @@
+.country-list {
+  @include list-style;
+
+  margin-left: 25px;
+  padding-top: 35px;
+}
+
+.country-list__link {
+  @include font-size(bold, 16px, 18px);
+
+  color: rgba($link-dark, .3);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--active {
+    color: $link-dark;
+  }
+}
