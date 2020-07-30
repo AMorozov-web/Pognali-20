@@ -1,0 +1,38 @@
+.letter-sort {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: calc(100% - 25px);
+
+  @include list-style;
+
+  background-color: $basic_white;
+  border: 1px solid $letter-sort-border;
+}
+
+.letter-sort__cell {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  border: 1px solid $letter-sort-border;
+  text-align: center;
+}
+
+.letter-sort__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 12px;
+
+  @include font-size(500, 14px, 14px);
+
+  color: $basic_blue_light;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--active {
+    color: $basic_white;
+    background-color: $basic_blue_light;
+    transform: scale(1.1);
+  }
+}

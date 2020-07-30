@@ -44,3 +44,24 @@
   border: none;
   background-color: $special_orange;
 }
+
+.filter-country__dropdown {
+  padding-left: 25px;
+}
+
+.filter-country__country-select-list {
+  margin-top: 14px;
+}
+
+.filter-country__close-btn {
+  width: 100%;
+  margin-top: 28px;
+  margin-bottom: 28px;
+
+  @include font-size(bold, 16px, 20px);
+
+  background-color: $bg-country-button;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+}
