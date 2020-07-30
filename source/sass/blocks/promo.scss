@@ -1,0 +1,48 @@
+.promo {
+  background-color: $basic_blue;
+  color: $basic_white;
+}
+
+.promo__wrapper {
+  @include wrapper;
+}
+
+.promo__title {
+  margin: 0;
+  text-align: center;
+
+  @include font-size(bold, 36px, 40px);
+}
+
+.promo__contacts {
+  display: flex;
+  justify-content: center;
+  margin-top: 245px;
+}
+
+.promo__contact-link span {
+  display: none;
+}
+
+.promo__login-link-box {
+  flex-grow: 1;
+}
+
+.promo__quote {
+  width: 165px;
+  min-height: 128px;
+  margin: 0;
+  padding: 0;
+  margin-top: 28px;
+  margin-left: 25px;
+  margin-bottom: 28px;
+}
+
+.promo__quote-text {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.promo__quote-author {
+  @include font-size(bold, 16px, 22px);
+}

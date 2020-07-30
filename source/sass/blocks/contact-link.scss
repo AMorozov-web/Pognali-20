@@ -1,0 +1,22 @@
+.contact-link {
+  display: block;
+  color: $link-dark;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @include font-size(bold, 16px, 18px);
+
+  &--promo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &--promo-phone {
+    background-color: $special_orange;
+  }
+
+  &--promo-email {
+    background-color: $special_yellow_dark;
+  }
+}

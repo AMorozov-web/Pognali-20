@@ -1,0 +1,21 @@
+.location {
+  background-color: $basic_yellow;
+}
+
+.location__wrapper {
+  @include wrapper;
+}
+
+.location__address {
+  margin: 0;
+  text-transform: uppercase;
+
+  @include font-size(bold, 16px, 22px);
+}
+
+.location__btn {
+  text-decoration: none;
+  color: $basic_blue_light;
+
+  @include font-size(bold, 18px, 28px);
+}

@@ -1,0 +1,36 @@
+.page-header {
+  width: 100%;
+  min-height: 15px;
+  padding-top: 28px;
+  background-color: $basic_blue;
+}
+
+.page-header--no-js {
+  background-color: $basic_white;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  @include wrapper;
+}
+
+.page-header__nav-toggle-btn {
+  width: 19px;
+  height: 18px;
+  border: none;
+
+  &--no-js {
+    display: none;
+  }
+}
+
+.page-header__main-nav {
+  @include wrapper;
+
+  min-height: 470px;
+  margin-top: 76px;
+}

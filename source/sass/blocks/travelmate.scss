@@ -1,0 +1,29 @@
+.travelmate {
+  position: relative;
+  width: 270px;
+  min-height: 428px;
+  background-color: $basic_white;
+}
+
+.travelmate__lvl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.travelmate__flags-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @include list-style;
+}
+
+.travelmate__transport-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @include list-style;
+}

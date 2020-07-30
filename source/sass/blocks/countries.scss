@@ -1,0 +1,18 @@
+.countries__wrapper {
+  @include wrapper;
+}
+
+.countries__main-title {
+  margin: 0;
+  color: $special_orange;
+
+  @include font-size(bold, 24px, 24px);
+}
+
+.countries__main-text {
+  margin: 0;
+}
+
+.countries__list {
+  @include list-style;
+}

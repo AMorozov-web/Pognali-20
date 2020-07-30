@@ -1,0 +1,17 @@
+@mixin list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin font-size ($weight, $size, $line-height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin wrapper {
+  width: calc(100% - 50px);
+  margin-right: auto;
+  margin-left: auto;
+}

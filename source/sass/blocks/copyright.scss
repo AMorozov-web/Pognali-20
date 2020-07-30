@@ -1,0 +1,6 @@
+.copyright__text {
+  margin: 0;
+  color: $special_grey;
+
+  @include font-size(normal, 16px, 16px);
+}

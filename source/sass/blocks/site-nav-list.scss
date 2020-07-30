@@ -1,0 +1,14 @@
+.site-nav-list {
+  @include list-style;
+
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.site-nav-list__link {
+  color: $link-dark;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @include font-size(500, 30px, 35px);
+}

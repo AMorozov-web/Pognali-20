@@ -1,0 +1,19 @@
+.reg-form {
+  background-color: $link-dark;
+  color: $basic_white;
+}
+
+.reg-form__wrapper {
+  @include wrapper;
+}
+
+.reg-form__title {
+  margin: 0;
+  color: $special_orange;
+
+  @include font-size(bold, 24px, 24px);
+}
+
+.reg-form__signin-link {
+  color: $basic_yellow;
+}
