@@ -1,0 +1,15 @@
+.flags-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flags-list__item {
+  width: 35px;
+  height: 25px;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

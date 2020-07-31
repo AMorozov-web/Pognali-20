@@ -1,0 +1,11 @@
+.transport-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transport-list__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}

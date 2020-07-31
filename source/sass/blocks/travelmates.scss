@@ -22,10 +22,6 @@
   @include font-size(bold, 16px, 22px);
 }
 
-.travelmates__list {
-  @include list-style;
-}
-
 .travelmates__btn {
   display: block;
   background-color: $basic_yellow;

@@ -29,3 +29,7 @@
     border-radius: 4px;
   }
 }
+
+.catalog-page__travelmates-catalog-wrapper {
+  @include wrapper;
+}

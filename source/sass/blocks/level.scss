@@ -1,0 +1,40 @@
+.level {
+  width: 60px;
+  height: 60px;
+}
+
+.level__progress-bar {
+  width: 60px;
+  height: 60px;
+}
+
+.level__progress-bar-scale {
+  fill: rgba($basic_black, 0.6);
+}
+
+.level__progress-bar-indicator {
+  fill: none;
+  stroke-width: 4px;
+  stroke: $special_orange;
+}
+
+.level__inner-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 17px;
+}
+
+.level__number {
+  margin: 0;
+
+  @include font-size(bold, 24px, 24px);
+
+  border-bottom: 1px solid rgba($basic_white, 0.3);
+}
+
+.level__text {
+  margin: 0;
+  margin-top: 2px;
+
+  @include font-size(normal, 14px, 14px);
+}

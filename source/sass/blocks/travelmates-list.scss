@@ -1,0 +1,7 @@
+.travelmates-list {
+  @include list-style;
+}
+
+.travelmates-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}

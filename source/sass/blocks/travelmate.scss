@@ -3,27 +3,69 @@
   width: 270px;
   min-height: 428px;
   background-color: $basic_white;
+  border-radius: 12px;
 }
 
-.travelmate__lvl {
+.travelmate__photo {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.travelmate__level {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  top: 17px;
+  left: 17px;
 }
 
 .travelmate__flags-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
   @include list-style;
+
+  margin-top: -20px;
 }
 
 .travelmate__transport-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
   @include list-style;
+
+  margin-top: 15px;
+}
+
+.travelmate__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 13px;
+  margin-left: -10px;
+  text-align: center;
+
+  @include font-size(bold, 21px, 21px);
+
+  color: $basic_blue_light;
+
+  &::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    background-color: $bg-user-offline;
+    border-radius: 50%;
+  }
+
+  &--online::before {
+    background-color: $bg-user-online;
+  }
+}
+
+.travelmate__hashtags {
+  display: block;
+  max-width: 190px;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @include font-size(normal, 16px, 18px);
+
+  color: $special_grey;
 }
