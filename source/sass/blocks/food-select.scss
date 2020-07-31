@@ -1,9 +1,9 @@
-.transport-select {
+.food-select {
   border-top: 1px solid $border-select-travelmates;
   border-bottom: 1px solid $border-select-travelmates;
 }
 
-.transport-select__title-btn {
+.food-select__title-btn {
   width: 100%;
   padding: 0;
   padding-top: 14px;
@@ -19,23 +19,9 @@
   border: none;
 }
 
-.transport-select__list {
-  display: flex;
-
+.food-select__list {
   @include list-style;
 
   padding-top: 2px;
   padding-bottom: 21px;
-}
-
-.transport-select__item:not(:last-child) {
-  margin-right: 1px;
-}
-
-.transport-select__label {
-  display: block;
-  width: 32px;
-  height: 32px;
-  background-color: $basic_white;
-  border-radius: 50%;
 }
