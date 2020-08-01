@@ -33,3 +33,7 @@
 .catalog-page__travelmates-catalog-wrapper {
   @include wrapper;
 }
+
+.catalog-page__travelmates-list {
+  @include list-style;
+}

@@ -1,0 +1,46 @@
+.wish-country {
+  border-top: 1px solid $basic_blue_lighter;
+}
+
+.wish-country__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.wish-country__title {
+  display: block;
+  width: max-content;
+  margin: 0;
+  margin-top: -11px;
+  margin-bottom: 19px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include font-size(normal, 15px, 18px);
+
+  text-transform: lowercase;
+  background-color: $basic_white;
+}
+
+.wish-country__list {
+  @include list-style;
+}
+
+.wish-country__item {
+  display: flex;
+  height: max-content;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.wish-country__country {
+  margin-left: 15px;
+
+  @include font-size(500, 15px, 16px);
+
+  color: $basic_blue_light;
+  text-transform: uppercase;
+}

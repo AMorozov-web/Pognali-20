@@ -1,15 +1,54 @@
 .level {
   width: 60px;
   height: 60px;
+
+  .catalog-page & {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: min-content;
+    height: min-content;
+  }
+}
+
+.level__title {
+  display: block;
+  width: max-content;
+  margin: 0;
+  margin-top: -11px;
+  margin-bottom: 10px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include font-size(normal, 15px, 18px);
+
+  text-transform: lowercase;
+  background-color: $basic_white;
+}
+
+.level__wrapper {
+  .catalog-page & {
+    position: relative;
+  }
 }
 
 .level__progress-bar {
   width: 60px;
   height: 60px;
+
+  .catalog-page & {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 .level__progress-bar-scale {
   fill: rgba($basic_black, 0.6);
+
+  .catalog-page & {
+    fill: none;
+  }
 }
 
 .level__progress-bar-indicator {
@@ -21,7 +60,12 @@
 .level__inner-wrapper {
   position: absolute;
   top: 10px;
-  left: 17px;
+  left: 16px;
+
+  .catalog-page & {
+    top: 11px;
+    left: 9px;
+  }
 }
 
 .level__number {
@@ -30,6 +74,11 @@
   @include font-size(bold, 24px, 24px);
 
   border-bottom: 1px solid rgba($basic_white, 0.3);
+
+  .catalog-page & {
+    color: $basic_blue_light;
+    border: none;
+  }
 }
 
 .level__text {

@@ -8,4 +8,12 @@
   &:not(:last-child) {
     margin-right: 10px;
   }
+
+  .catalog-page & {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    background-color: $basic_blue_lighter;
+    border-radius: 50%;
+  }
 }

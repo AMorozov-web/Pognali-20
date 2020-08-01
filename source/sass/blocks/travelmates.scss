@@ -3,6 +3,10 @@
   color: $basic_white;
 }
 
+.travelmates__travelmates-list {
+  @include list-style;
+}
+
 .travelmates__wrapper {
   @include wrapper;
 }
