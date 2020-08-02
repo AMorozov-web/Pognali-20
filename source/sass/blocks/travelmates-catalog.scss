@@ -1,0 +1,75 @@
+.travelmates-catalog__wrapper {
+  @include wrapper;
+}
+
+.travelmates-catalog__travelmates-list {
+  @include list-style;
+}
+
+.travelmates-catalog__btn-more-wrapper {
+  width: fit-content;
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.travelmates-catalog__btn-more {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-left: 32px;
+  text-align: center;
+
+  @include font-size(bold, 17px, 30px);
+
+  color: $basic_blue_light;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    display: block;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: $basic_blue_light;
+    border-radius: 2px;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+}
+
+.travelmates-catalog__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.travelmates-catalog__btn-pagination {
+  width: 100%;
+  min-height: 51px;
+  padding: 0;
+  background-color: $basic_white;
+  border: none;
+
+  &:not(:last-child) {
+    border-right: 1px solid $basic_blue_lighter;
+  }
+
+  &--prev {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  &--next {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}

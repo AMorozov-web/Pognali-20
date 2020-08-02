@@ -828,10 +828,10 @@
         </div>
       </div>
     </section>
-    <section class="catalog-page__travelmates-catalog">
-      <div class="catalog-page__travelmates-catalog-wrapper">
+    <section class="catalog-page__travelmates-catalog travelmates-catalog">
+      <div class="travelmates-catalog__wrapper">
         <h2 class="visually-hidden">Каталог попутчиков по Вашему запросу</h2>
-        <ul class="catalog-page__travelmates-list travelmates-list">
+        <ul class="travelmates-catalog__travelmates-list travelmates-list">
           <li class="travelmates-list__item travelmate">
             <a class="travelmate__link" href="#">
               <img class="travelmate__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова">
@@ -1093,7 +1093,9 @@
             </div>
           </li>
         </ul>
-        <a class="travelmates-catalog__btn-more" href="#">Показать еще</a>
+        <div class="travelmates-catalog__btn-more-wrapper">
+          <a class="travelmates-catalog__btn-more" href="#">Показать еще</a>
+        </div>
         <div class="travelmates-catalog__pagination">
           <button class="travelmates-catalog__btn-pagination travelmates-catalog__btn-pagination--prev" type="button"
             aria-label="Предыдущая страница">
@@ -1106,25 +1108,27 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__logo logo">
-      <img class="logo__img" src="https://via.placeholder.com/100x19" width="100" height="19" alt="Логотип Погнали">
-    </div>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="#" title="Мы в Фейсбуке" aria-label="Мы в Фейсбуке"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#" title="Мы Вконтакте" aria-label="Мы Вконтакте"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--inst" href="#" title="Мы в Инстаграме" aria-label="Мы в Инстаграме"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo logo">
+        <img class="logo__img" src="https://via.placeholder.com/100x19" width="100" height="19" alt="Логотип Погнали">
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#" title="Мы в Фейсбуке" aria-label="Мы в Фейсбуке"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#" title="Мы Вконтакте" aria-label="Мы Вконтакте"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--inst" href="#" title="Мы в Инстаграме" aria-label="Мы в Инстаграме"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </div>
     </div>
   </footer>
 </body>

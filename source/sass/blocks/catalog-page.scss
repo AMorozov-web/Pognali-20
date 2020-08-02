@@ -1,3 +1,7 @@
+.catalog-page {
+  padding-bottom: 46px;
+}
+
 .catalog-page__title-wrapper {
   width: 100%;
   padding-top: 20px;
@@ -28,12 +32,4 @@
     background-color: $special_orange;
     border-radius: 4px;
   }
-}
-
-.catalog-page__travelmates-catalog-wrapper {
-  @include wrapper;
-}
-
-.catalog-page__travelmates-list {
-  @include list-style;
 }

@@ -1,3 +1,28 @@
+.page-footer {
+  min-height: 239px;
+  padding-top: 38px;
+  padding-bottom: 19px;
+  background-color: $basic_white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .page-footer__wrapper {
   @include wrapper;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__logo {
+  margin-bottom: 40px;
+}
+
+.page-footer__social {
+  margin-bottom: 40px;
+}
+
+.page-footer__copyright {
+  align-self: stretch;
 }

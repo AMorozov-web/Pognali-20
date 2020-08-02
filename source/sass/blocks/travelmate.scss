@@ -21,13 +21,15 @@
 }
 
 .travelmate__link {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-decoration: none;
+  .catalog-page & {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+  }
 }
 
 .travelmate__level {
