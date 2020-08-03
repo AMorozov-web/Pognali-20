@@ -1,0 +1,30 @@
+.plans {
+  padding-top: 28px;
+  padding-bottom: 30px;
+  background-color: $special_blue_light;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.plans__wrapper {
+  @include wrapper;
+}
+
+.plans__title {
+  margin: 0;
+  margin-bottom: 29px;
+
+  @include font-size(bold, 24px, 24px);
+
+  color: $basic_blue_light;
+}
+
+.plans__list {
+  @include list-style;
+}
+
+.plans__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
