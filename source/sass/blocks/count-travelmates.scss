@@ -1,0 +1,57 @@
+.count-travelmates {
+  width: 100%;
+}
+
+.count-travelmates__label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.count-travelmates__label {
+  @include font-size(500, 16px, 16px);
+
+  letter-spacing: 0.09em;
+  color: $basic_blue_light;
+  text-transform: uppercase;
+}
+
+.count-travelmates__unit {
+  @include font-size(500, 16px, 16px);
+
+  letter-spacing: 0.09em;
+  color: rgba($basic_blue_light, 0.3);
+  text-transform: uppercase;
+}
+
+.count-travelmates__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 99%;
+  margin: 0 auto 20px;
+  border: 1px solid $letter-sort-border;
+  border-radius: 4px;
+}
+
+.count-travelmates__input {
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  @include font-size(500, 15px, 14px);
+
+  color: $basic_blue_light;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+}
+
+.count-travelmates__btn {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  background-color: #000;
+}

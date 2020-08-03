@@ -1,0 +1,22 @@
+.duration__label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.duration__label {
+  @include font-size(500, 16px, 16px);
+
+  letter-spacing: 0.09em;
+  color: $basic_blue_light;
+  text-transform: uppercase;
+}
+
+.duration__unit {
+  @include font-size(500, 16px, 16px);
+
+  letter-spacing: 0.09em;
+  color: rgba($basic_blue_light, 0.3);
+  text-transform: uppercase;
+}

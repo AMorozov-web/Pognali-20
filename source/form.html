@@ -146,20 +146,25 @@
         <ul class="add-plan__steps-list steps-list">
           <li class="steps-list__item step">
             <div class="step__description-wrapper">
-              <h3 class="step__title"> Шаг 1. Даты пребывания</h3>
+              <h3 class="step__title">
+                <span class="step__title-number">Шаг 1.</span>
+                <span class="step__title-text">Даты пребывания</span>
+              </h3>
               <p class="step__description">Укажите предпочтительное количество попутчиков, которых
                 вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
             </div>
             <div class="step__input-wrapper">
               <div class="step__count-travelmates count-travelmates">
-                <label class="count-travelmates__label"
-                  for="count-travelmates">
-                  Ищу попутчиков:
-                </label>
-                <span
-                  class="count-travelmates__label">
-                  чел.
-                </span>
+                <div class="count-travelmates__label-wrapper">
+                  <label class="count-travelmates__label"
+                    for="count-travelmates">
+                    Ищу попутчиков:
+                  </label>
+                  <span
+                    class="count-travelmates__unit">
+                    чел.
+                  </span>
+                </div>
                 <div class="count-travelmates__input-wrapper">
                   <button class="count-travelmates__btn count-travelmates__btn--subtract" type="button"></button>
                   <input class="count-travelmates__input" type="number" name="count-travelmates"
@@ -168,8 +173,10 @@
                 </div>
               </div>
               <div class="step__duration duration">
-                <label class="duration__label" for="duration">Длительность:</label>
-                <span class="duration__label">дн.</span>
+                <div class="duration__label-wrapper">
+                  <label class="duration__label" for="duration">Длительность:</label>
+                  <span class="duration__unit">дн.</span>
+                </div>
                 <div class="duration__input-wrapper">
                   <button class="duration__btn duration__btn--subtract" type="button"></button>
                   <input class="duration__input" type="number" name="travel-duration" id="duration" min="0" value="2">
@@ -263,7 +270,10 @@
           </li>
           <li class="steps-list__item step">
             <div class="step__description-wrapper">
-              <h3 class="step__title">Шаг 2. Маршрут</h3>
+              <h3 class="step__title">
+                <span class="step__title-number">Шаг 2.</span>
+                <span class="step__title-text">Маршрут</span>
+              </h3>
               <p class="step__description">Укажите страны, которые вы хотели посетить. Это может быть одна
                 или сразу несколько.</p>
             </div>
@@ -434,7 +444,10 @@
           </li>
           <li class="steps-list__item step step--hide">
             <div class="step__description-wrapper">
-              <h3 class="step__title">Шаг 3. Развлечения</h3>
+              <h3 class="step__title">
+                <span class="step__title-number">Шаг 3.</span>
+                <span class="step__title-text">Развлечения</span>
+              </h3>
               <p class="step__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
             </div>
             <ul class="step__fun-list fun-list">

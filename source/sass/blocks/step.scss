@@ -1,0 +1,38 @@
+.step {
+  padding-top: 24px;
+  background-color: $basic_white;
+  border-radius: 10px;
+}
+
+.step__description-wrapper,
+.step__input-wrapper {
+  @include wrapper;
+
+  margin-bottom: 27px;
+}
+
+.step__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.step__title-number,
+.step__title-text {
+  @include font-size(bold, 20px, 20px);
+
+  color: $basic_blue_light;
+}
+
+.step__description {
+  margin: 0;
+
+  @include font-size(normal, 16px, 22px);
+
+  color: $special_grey;
+}
+
+.step__count-travelmates {
+  margin-bottom: 21px;
+}
