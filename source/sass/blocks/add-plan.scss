@@ -1,0 +1,51 @@
+.add-plan {
+  margin-top: -30px;
+  padding-top: 30px;
+  background-color: $special_blue_addplan;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.add-plan__wrapper {
+  @include wrapper;
+}
+
+.add-plan__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 29px;
+}
+
+.add-plan__title {
+  margin: 0;
+
+  @include font-size(bold, 24px, 24px);
+
+  color: $basic_blue_light;
+}
+
+.add-plan__dots {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 47px;
+  min-height: 5px;
+
+  @include list-style;
+}
+
+.add-plan__dot {
+  width: 5px;
+  height: 5px;
+  margin-right: 16px;
+  background-color: rgba($basic_blue_light, 0.3);
+  border-radius: 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--current {
+    background-color: $basic_blue_light;
+  }
+}
