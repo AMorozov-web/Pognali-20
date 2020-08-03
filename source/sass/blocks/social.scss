@@ -7,13 +7,13 @@
 }
 
 .social__item {
-    &:not(:last-child) {
-      margin-right: 25px;
+  &:not(:last-child) {
+    margin-right: 25px;
 
-      .page-footer & {
-        margin: 0;
-      }
+    .page-footer & {
+      margin: 0;
     }
+  }
 
   .page-footer & {
     width: 45px;
