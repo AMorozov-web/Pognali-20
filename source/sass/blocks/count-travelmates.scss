@@ -27,14 +27,18 @@
 
 .count-travelmates__input-wrapper {
   display: flex;
-  justify-content: space-between;
-  width: 99%;
+  justify-content: space-evenly;
+  width: 100%;
   margin: 0 auto 20px;
   border: 1px solid $letter-sort-border;
   border-radius: 4px;
 }
 
 .count-travelmates__input {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 0;
   padding: 0;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -48,10 +52,32 @@
 }
 
 .count-travelmates__btn {
+  position: relative;
   width: 43px;
   height: 43px;
   flex-shrink: 0;
   padding: 0;
+  background-color: transparent;
   border: none;
-  background-color: #000;
+
+  &::before {
+    position: absolute;
+    top: 21px;
+    left: 14px;
+    content: "";
+    width: 14px;
+    height: 2px;
+    background-color: $special_grey_light;
+  }
+
+  &--add::after {
+    position: absolute;
+    top: 21px;
+    left: 14px;
+    content: "";
+    width: 14px;
+    height: 2px;
+    background-color: $special_grey_light;
+    transform: rotate(90deg);
+  }
 }
