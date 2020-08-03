@@ -1,0 +1,22 @@
+.child {
+  position: relative;
+  padding-top: 2px;
+  padding-left: 39px;
+}
+
+.child__label {
+  @include font-size(normal, 15px, 15px);
+
+  color: $basic_blue_light;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: 1px solid $border-level-select;
+    border-radius: 4px;
+  }
+}
