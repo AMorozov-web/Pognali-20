@@ -11,4 +11,8 @@
   margin: 0;
   padding: 0;
   background-color: $basic_blue_lighter;
+
+  &--form {
+    background-color: $special_blue_addplan;
+  }
 }

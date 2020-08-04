@@ -44,6 +44,10 @@
       border: 1px solid $border-level-select;
     }
   }
+
+  .country-step__add-country & {
+    background-color: $basic_blue_lighter;
+  }
 }
 
 .country-step__input {
@@ -61,6 +65,7 @@
   letter-spacing: 0.09em;
   font-family: inherit;
   color: $basic_blue_light;
+  background: transparent;
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
