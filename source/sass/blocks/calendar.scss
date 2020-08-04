@@ -1,0 +1,75 @@
+.calendar__wrapper {
+  @include wrapper;
+}
+
+.calendar__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 42px;
+  margin-bottom: 22px;
+  border-top: 1px solid $calendar-border;
+  border-bottom: 1px solid $calendar-border;
+}
+
+.calendar__month {
+  margin: 0;
+
+  @include font-size(bold, 20px, 20px);
+
+  color: $basic_blue_light;
+}
+
+.calendar__btn {
+  width: 30px;
+  min-height: 42px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.calendar__table {
+  width: 100%;
+  min-height: 212px;
+  margin-bottom: 22px;
+  border-collapse: collapse;
+}
+
+.calendar__day {
+  padding: 0;
+  padding-bottom: 10px;
+  text-align: center;
+
+  @include font-size(normal, 14px, 18px);
+
+  color: $special_grey;
+
+  &--day-off {
+    color: $calendar-day-red;
+  }
+}
+
+.calendar__cell {
+  text-align: center;
+
+  @include font-size(normal, 14px, 18px);
+
+  color: rgba($special_grey, 0.3);
+  border: 1px solid $calendar-border;
+
+  &--available {
+    @include font-size(500, 14px, 18px);
+
+    color: $basic_blue_light;
+    background-color: $basic_blue_lighter;
+  }
+
+  &--checked {
+    color: $basic_white;
+    background-color: $basic_blue_light;
+  }
+
+  &--focus {
+    border: 2px solid $calendar-day-red;
+  }
+}

@@ -1,4 +1,6 @@
 .reg-form {
+  min-height: 536px;
+  padding-top: 105px;
   background-color: $link-dark;
   color: $basic_white;
 }
@@ -9,11 +11,58 @@
 
 .reg-form__title {
   margin: 0;
-  color: $special_orange;
+  padding-bottom: 19px;
+  text-align: center;
 
   @include font-size(bold, 24px, 24px);
+
+  color: $special_orange;
+}
+
+.reg-form__text {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .reg-form__signin-link {
   color: $basic_yellow;
+}
+
+.reg-form__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.reg-form__input {
+  flex-grow: 1;
+  min-height: 62px;
+  margin-right: -10px;
+  padding-left: 25px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  &::placeholder {
+    @include font-size(bold, 18px, 18px);
+
+    color: rgba($special_grey, 0.3);
+  }
+}
+
+.reg-form__btn {
+  align-self: stretch;
+  min-width: 60px;
+  padding: 0;
+  background-color: $basic_yellow;
+  border: none;
+  border-radius: 10px;
+}
+
+.reg-form__contacts-text {
+  margin: 0;
+  margin-bottom: 18px;
+  text-align: center;
 }

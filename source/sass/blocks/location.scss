@@ -1,5 +1,9 @@
 .location {
+  min-height: 238px;
+  padding-top: 63px;
   background-color: $basic_yellow;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .location__wrapper {
@@ -7,15 +11,40 @@
 }
 
 .location__address {
+  display: flex;
+  width: 204px;
   margin: 0;
-  text-transform: uppercase;
+  margin-bottom: 32px;
+  // padding-left: 61px;
 
   @include font-size(bold, 16px, 22px);
+
+  color: $basic_blue_light;
+  text-transform: uppercase;
+
+  &::before {
+    display: block;
+    content: "";
+    min-width: 45px;
+    height: 45px;
+    margin-right: 16px;
+    background-color: $basic_blue_light;
+    border-radius: 50%;
+  }
 }
 
 .location__btn {
-  text-decoration: none;
-  color: $basic_blue_light;
+  display: block;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+  padding-right: 22px;
 
   @include font-size(bold, 18px, 28px);
+
+  color: $basic_blue_light;
+  text-decoration: none;
+  border: 3px solid $basic_blue_light;
+  border-radius: 10px;
 }

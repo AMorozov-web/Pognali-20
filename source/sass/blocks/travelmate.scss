@@ -3,27 +3,181 @@
   width: 270px;
   min-height: 428px;
   background-color: $basic_white;
+  border-radius: 12px;
+
+  .catalog-page & {
+    min-height: 415px;
+    padding-top: 15px;
+  }
 }
 
-.travelmate__lvl {
+.travelmate__photo {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  .catalog-page & {
+    border-radius: 50%;
+  }
+}
+
+.travelmate__link {
+  .catalog-page & {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+  }
+}
+
+.travelmate__level {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  top: 17px;
+  left: 17px;
+
+  .catalog-page & {
+    position: static;
+  }
+}
+
+.travelmate__favorite {
+  position: absolute;
+  top: 55px;
+  left: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.travelmate__favorite-btn {
+  width: 31px;
+  height: 31px;
+  padding: 0;
+  background-color: $bg-like-btn;
+  border: none;
+  border-radius: 50%;
+}
+
+.travelmate__likes-count {
+  align-self: flex-end;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 6px;
+
+  @include font-size(bold, 14px, 16px);
 }
 
 .travelmate__flags-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
   @include list-style;
+
+  margin-top: -20px;
 }
 
 .travelmate__transport-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
   @include list-style;
+
+  margin-top: 15px;
+}
+
+.travelmate__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 13px;
+  margin-left: -10px;
+  text-align: center;
+
+  @include font-size(bold, 21px, 21px);
+
+  color: $basic_blue_light;
+
+  .catalog-page & {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 0;
+    margin-left: 15px;
+    text-align: left;
+  }
+
+  &::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    background-color: $bg-user-offline;
+    border-radius: 50%;
+
+    .catalog-page & {
+      margin: 0;
+      margin-top: 8px;
+      align-self: flex-start;
+    }
+  }
+
+  &--online::before {
+    background-color: $bg-user-online;
+  }
+}
+
+.travelmate__hashtags {
+  display: block;
+  max-width: 190px;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @include font-size(normal, 16px, 18px);
+
+  color: $special_grey;
+
+  .catalog-page & {
+    display: block;
+    margin: 0;
+    margin-top: 13px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+
+    @include font-size(normal, 15px, 18px);
+  }
+}
+
+.travelmate__wish-country {
+  margin-top: 25px;
+}
+
+.travelmate__inner-box {
+  margin-top: 22px;
+  border-top: 1px solid $basic_blue_lighter;
+}
+
+.travelmate__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.travelmate__btn-invite {
+  display: block;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  @include font-size(bold, 17px, 17px);
+
+  color: $basic_blue;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $basic_yellow;
+  border-radius: 25px;
 }

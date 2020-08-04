@@ -1,0 +1,32 @@
+.hashtags__title {
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin: 0;
+  margin-bottom: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 17px;
+  padding-right: 17px;
+  z-index: 1;
+  text-align: center;
+
+  @include font-size(bold, 16px, 18px);
+
+  color: $basic_blue_light;
+  background-color: $basic_blue_lighter;
+  text-transform: uppercase;
+}
+
+.hashtags__tags {
+  width: 100%;
+  padding: 25px;
+
+  @include font-size(normal, 16px, 18px);
+
+  color: rgba($special_grey, 0.6);
+  background-color: transparent;
+  border: 1px solid $letter-sort-border;
+  border-radius: 10px;
+  resize: none;
+}

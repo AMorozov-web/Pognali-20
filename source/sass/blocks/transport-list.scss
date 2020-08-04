@@ -1,0 +1,34 @@
+.transport-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form-page & {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid $letter-sort-border;
+    border-radius: 10px;
+  }
+}
+
+.transport-list__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .catalog-page & {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    background-color: $basic_blue_lighter;
+    border-radius: 50%;
+  }
+
+  .form-page & {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    background-color: $basic_white;
+    border-radius: 50%;
+  }
+}

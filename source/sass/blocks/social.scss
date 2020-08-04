@@ -6,13 +6,26 @@
   @include list-style;
 }
 
-.social__item:not(:last-child) {
-  margin-right: 25px;
+.social__item {
+  &:not(:last-child) {
+    margin-right: 25px;
+
+    .page-footer & {
+      margin: 0;
+    }
+  }
+
+  .page-footer & {
+    width: 45px;
+    height: 45px;
+    background-color: $basic_yellow;
+    border-radius: 50%;
+  }
 }
 
 .social__link {
   display: block;
   width: 23px;
   height: 23px;
-  background-color: #444444;
+  background-color: $basic_blue_light;
 }

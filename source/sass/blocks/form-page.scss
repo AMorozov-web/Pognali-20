@@ -1,8 +1,4 @@
-.catalog-page {
-  padding-bottom: 46px;
-}
-
-.catalog-page__title-wrapper {
+.form-page__title-wrapper {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -11,7 +7,7 @@
   border-bottom-left-radius: 20px;
 }
 
-.catalog-page__title {
+.form-page__title {
   position: relative;
   display: block;
   margin: 0;
@@ -27,9 +23,13 @@
     left: 0;
     content: "";
     display: block;
-    width: 173px;
+    width: 215px;
     height: 5px;
     background-color: $special_orange;
     border-radius: 4px;
   }
+}
+
+.form-page__profile {
+  margin-top: 24px;
 }

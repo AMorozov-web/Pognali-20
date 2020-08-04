@@ -1,0 +1,10 @@
+.filter-travelmates__wrapper {
+  @include wrapper;
+
+  padding-top: 26px;
+  padding-bottom: 22px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: $basic_yellow;
+  border-radius: 20px;
+}

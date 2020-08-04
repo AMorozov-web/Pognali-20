@@ -3,6 +3,10 @@
   color: $basic_white;
 }
 
+.travelmates__travelmates-list {
+  @include list-style;
+}
+
 .travelmates__wrapper {
   @include wrapper;
 }
@@ -20,10 +24,6 @@
 
 .travelmates__main-text--call {
   @include font-size(bold, 16px, 22px);
-}
-
-.travelmates__list {
-  @include list-style;
 }
 
 .travelmates__btn {

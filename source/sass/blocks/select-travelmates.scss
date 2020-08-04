@@ -1,0 +1,22 @@
+.select-travelmates__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @include font-size(bold, 22px, 22px);
+  letter-spacing: 0.02em;
+  color: $basic_blue_light;
+}
+
+.select-travelmates__btn {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  @include font-size(bold, 17px,17px);
+
+  font-family: inherit;
+  text-transform: uppercase;
+  background-color: $basic_white;
+  border: none;
+  border-radius: 25px;
+}
