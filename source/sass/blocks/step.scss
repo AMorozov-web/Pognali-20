@@ -2,6 +2,10 @@
   padding-top: 24px;
   background-color: $basic_white;
   border-radius: 10px;
+
+  &--first {
+    padding-bottom: 23px;
+  }
 }
 
 .step__description-wrapper,
@@ -39,4 +43,21 @@
 
 .step__duration {
   margin-bottom: 20px;
+}
+
+
+.step__btn {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  @include wrapper;
+  @include font-size(bold, 17px, 30px);
+
+  font-family: inherit;
+  color: $basic_blue_light;
+  text-transform: uppercase;
+  background-color: $basic_yellow;
+  border: none;
+  border-radius: 20px;
 }
