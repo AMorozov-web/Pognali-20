@@ -1,9 +1,12 @@
 .country-step__list {
   @include list-style;
   @include wrapper;
+
+  margin-bottom: 25px;
 }
 
 .country-step__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +17,6 @@
 }
 
 .country-step__input-wrapper {
-  position: relative;
   display: flex;
   justify-content: space-evenly;
   flex-grow: 1;
@@ -25,12 +27,22 @@
     position: absolute;
     content: "";
     top: calc(100% / 2 - 4px);
-    right: -4px;
+    right: 49px;
     display: block;
     width: 8px;
     height: 8px;
     background-color: $basic_blue_light;
     border-radius: 50%;
+
+    .country-step__country-choose & {
+      background-color: $basic_white;
+      border: 1px solid $border-level-select;
+    }
+
+    .country-step__add-country & {
+      background: transparent;
+      border: 1px solid $border-level-select;
+    }
   }
 }
 
@@ -39,7 +51,7 @@
   flex-shrink: 1;
   flex-grow: 1;
   width: 0;
-  min-height: 42px;
+  min-height: 41px;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 11px;
@@ -59,21 +71,37 @@
   padding: 0;
   background-color: tomato;
   border: none;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .country-step__flag-wrapper {
   display: flex;
+  width: 53px;
   min-height: 43px;
+  padding: 0;
   border: 1px solid $border-level-select;
   border-radius: 4px;
+
+  .country-step__country-choose & {
+    display: none;
+  }
+
+  .country-step__add-country & {
+    display: none;
+  }
+}
+
+.country-step__flag {
+  padding-top: 9px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .country-step__country-del-btn {
-  position: relative;
-  top: -11px;
-  right: -11px;
-  width: 22px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  min-width: 22px;
   height: 22px;
   padding: 0;
   border: none;
@@ -96,5 +124,9 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+
+  .country-step__add-country & {
+    display: none;
   }
 }
