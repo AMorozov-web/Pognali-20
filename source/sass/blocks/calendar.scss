@@ -1,0 +1,11 @@
+.calendar__wrapper {
+  @include wrapper;
+}
+
+.calendar__title-wrapper {
+  display: flex;
+}
+
+.calendar__month {
+  margin: 0;
+}

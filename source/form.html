@@ -191,80 +191,82 @@
               </div>
             </div>
             <div class="step__calendar calendar">
-              <div class="calendar__title-wrapper">
-                <button class="calendar__btn calendar__btn--prev-month" type="button"></button>
-                <h4 class="calendar__month">Март 2019</h4>
-                <button class="calendar__btn calendar__btn--next-month" type="button"></button>
+              <div class="calendar__wrapper">
+                <div class="calendar__title-wrapper">
+                  <button class="calendar__btn calendar__btn--prev-month" type="button"></button>
+                  <h4 class="calendar__month">Март 2019</h4>
+                  <button class="calendar__btn calendar__btn--next-month" type="button"></button>
+                </div>
+                <table class="calendar__table">
+                  <thead>
+                    <tr>
+                      <th class="calendar__day">П</th>
+                      <th class="calendar__day">В</th>
+                      <th class="calendar__day">С</th>
+                      <th class="calendar__day">Ч</th>
+                      <th class="calendar__day">П</th>
+                      <th class="calendar__day calendar__day--day-off">С</th>
+                      <th class="calendar__day calendar__day--day-off">В</th>
+                    </tr>
+                  </thead>
+                  <tbody class="calendar__table-body">
+                    <tr class="calendar__row">
+                      <td class="calendar__cell">23</td>
+                      <td class="calendar__cell">24</td>
+                      <td class="calendar__cell">25</td>
+                      <td class="calendar__cell">26</td>
+                      <td class="calendar__cell">27</td>
+                      <td class="calendar__cell">28</td>
+                      <td class="calendar__cell">1</td>
+                    </tr>
+                    <tr class="calendar__row">
+                      <td class="calendar__cell">2</td>
+                      <td class="calendar__cell">3</td>
+                      <td class="calendar__cell">4</td>
+                      <td class="calendar__cell">5</td>
+                      <td class="calendar__cell">6</td>
+                      <td class="calendar__cell">7</td>
+                      <td class="calendar__cell">8</td>
+                    </tr>
+                    <tr class="calendar__row">
+                      <td class="calendar__cell">9</td>
+                      <td class="calendar__cell">10</td>
+                      <td class="calendar__cell">11</td>
+                      <td class="calendar__cell">12</td>
+                      <td class="calendar__cell">13</td>
+                      <td class="calendar__cell">14</td>
+                      <td class="calendar__cell">15</td>
+                    </tr>
+                    <tr class="calendar__row">
+                      <td class="calendar__cell">16</td>
+                      <td class="calendar__cell">17</td>
+                      <td class="calendar__cell">18</td>
+                      <td class="calendar__cell">19</td>
+                      <td class="calendar__cell">20</td>
+                      <td class="calendar__cell">21</td>
+                      <td class="calendar__cell">22</td>
+                    </tr>
+                    <tr class="calendar__row">
+                      <td class="calendar__cell">23</td>
+                      <td class="calendar__cell">24</td>
+                      <td class="calendar__cell">25</td>
+                      <td class="calendar__cell calendar__cell--available calendar__cell--checked calendar__cell--focus">26</td>
+                      <td class="calendar__cell calendar__cell--available calendar__cell--checked">27</td>
+                      <td class="calendar__cell calendar__cell--available calendar__cell--checked">28</td>
+                      <td class="calendar__cell calendar__cell--available">29</td>
+                    </tr>
+                    <tr class="calendar__row">
+                      <td class="calendar__cell calendar__cell--available">30</td>
+                      <td class="calendar__cell calendar__cell--available">31</td>
+                      <td class="calendar__cell calendar__cell--available">1</td>
+                      <td class="calendar__cell calendar__cell--available">2</td>
+                      <td class="calendar__cell calendar__cell--available">3</td>
+                      <td class="calendar__cell calendar__cell--available">4</td>
+                      <td class="calendar__cell calendar__cell--available">5</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <table class="calendar__table">
-                <thead>
-                  <tr>
-                    <th class="calendar__day">П</th>
-                    <th class="calendar__day">В</th>
-                    <th class="calendar__day">С</th>
-                    <th class="calendar__day">Ч</th>
-                    <th class="calendar__day">П</th>
-                    <th class="calendar__day calendar__day--day-off">С</th>
-                    <th class="calendar__day calendar__day--day-off">В</th>
-                  </tr>
-                </thead>
-                <tbody class="calendar__table-body">
-                  <tr class="calendar__row">
-                    <td class="calendar__cell">23</td>
-                    <td class="calendar__cell">24</td>
-                    <td class="calendar__cell">25</td>
-                    <td class="calendar__cell">26</td>
-                    <td class="calendar__cell">27</td>
-                    <td class="calendar__cell">28</td>
-                    <td class="calendar__cell">1</td>
-                  </tr>
-                  <tr class="calendar__row">
-                    <td class="calendar__cell">2</td>
-                    <td class="calendar__cell">3</td>
-                    <td class="calendar__cell">4</td>
-                    <td class="calendar__cell">5</td>
-                    <td class="calendar__cell">6</td>
-                    <td class="calendar__cell">7</td>
-                    <td class="calendar__cell">8</td>
-                  </tr>
-                  <tr class="calendar__row">
-                    <td class="calendar__cell">9</td>
-                    <td class="calendar__cell">10</td>
-                    <td class="calendar__cell">11</td>
-                    <td class="calendar__cell">12</td>
-                    <td class="calendar__cell">13</td>
-                    <td class="calendar__cell">14</td>
-                    <td class="calendar__cell">15</td>
-                  </tr>
-                  <tr class="calendar__row">
-                    <td class="calendar__cell">16</td>
-                    <td class="calendar__cell">17</td>
-                    <td class="calendar__cell">18</td>
-                    <td class="calendar__cell">19</td>
-                    <td class="calendar__cell">20</td>
-                    <td class="calendar__cell">21</td>
-                    <td class="calendar__cell">22</td>
-                  </tr>
-                  <tr class="calendar__row">
-                    <td class="calendar__cell">23</td>
-                    <td class="calendar__cell">24</td>
-                    <td class="calendar__cell">25</td>
-                    <td class="calendar__cell calendar__cell--available calendar__cell--checked calendar__cell--focus">26</td>
-                    <td class="calendar__cell calendar__cell--available calendar__cell--checked">27</td>
-                    <td class="calendar__cell calendar__cell--available calendar__cell--checked">28</td>
-                    <td class="calendar__cell calendar__cell--available">29</td>
-                  </tr>
-                  <tr class="calendar__row">
-                    <td class="calendar__cell calendar__cell--available">30</td>
-                    <td class="calendar__cell calendar__cell--available">31</td>
-                    <td class="calendar__cell calendar__cell--available">1</td>
-                    <td class="calendar__cell calendar__cell--available">2</td>
-                    <td class="calendar__cell calendar__cell--available">3</td>
-                    <td class="calendar__cell calendar__cell--available">4</td>
-                    <td class="calendar__cell calendar__cell--available">5</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <button class="btn step__btn step__btn--next" type="button">Следующий шаг</button>
           </li>
