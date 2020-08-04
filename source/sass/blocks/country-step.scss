@@ -1,0 +1,100 @@
+.country-step__list {
+  @include list-style;
+  @include wrapper;
+}
+
+.country-step__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
+
+.country-step__input-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  border: 1px solid $border-level-select;
+  border-radius: 4px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 4px);
+    right: -4px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: $basic_blue_light;
+    border-radius: 50%;
+  }
+}
+
+.country-step__input {
+  flex-basis: auto;
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 0;
+  min-height: 42px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 11px;
+
+  @include font-size(500, 14px, 18px);
+
+  letter-spacing: 0.09em;
+  font-family: inherit;
+  color: $basic_blue_light;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+}
+
+.country-step__select {
+  width: 52px;
+  padding: 0;
+  background-color: tomato;
+  border: none;
+  border-radius: 4px;
+}
+
+.country-step__flag-wrapper {
+  display: flex;
+  min-height: 43px;
+  border: 1px solid $border-level-select;
+  border-radius: 4px;
+}
+
+.country-step__country-del-btn {
+  position: relative;
+  top: -11px;
+  right: -11px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 1px);
+    left: calc((100% - 11px) / 2);
+    width: 11px;
+    height: 1px;
+    background-color: $del-button-cross;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
