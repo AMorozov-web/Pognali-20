@@ -1,10 +1,24 @@
 .contact-link {
-  display: block;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 61px;
   color: $link-dark;
   text-decoration: none;
   text-transform: uppercase;
 
   @include font-size(bold, 16px, 18px);
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
 
   &--promo {
     width: 40px;

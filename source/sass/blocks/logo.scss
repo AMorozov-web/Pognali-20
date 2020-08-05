@@ -1,8 +1,15 @@
 .logo {
   width: 100px;
-  height: 15px;
+  height: 19px;
+}
 
-  .page-footer & {
+.logo__img {
+  .page-header--opened-menu &,
+  .page-header--no-js & {
+    display: block;
+    width: 100px;
     height: 19px;
+    padding-left: 100px;
+    background: url("../img/logo-mobile-blue@1x.png");
   }
 }
