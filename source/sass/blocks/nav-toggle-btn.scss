@@ -1,0 +1,9 @@
+.nav-toggle-btn {
+  width: 19px;
+  height: 18px;
+  border: none;
+
+  &--no-js {
+    display: none;
+  }
+}

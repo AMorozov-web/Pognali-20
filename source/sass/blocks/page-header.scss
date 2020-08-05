@@ -3,10 +3,10 @@
   min-height: 15px;
   padding-top: 28px;
   background-color: $basic_blue;
-}
 
-.page-header--no-js {
-  background-color: $basic_white;
+  &--no-js {
+    background-color: $basic_white;
+  }
 }
 
 .page-header__wrapper {
@@ -16,16 +16,6 @@
   height: 100%;
 
   @include wrapper;
-}
-
-.page-header__nav-toggle-btn {
-  width: 19px;
-  height: 18px;
-  border: none;
-
-  &--no-js {
-    display: none;
-  }
 }
 
 .page-header__main-nav {
