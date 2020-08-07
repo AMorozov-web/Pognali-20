@@ -1,24 +1,8 @@
 .contact-link {
-  position: relative;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  padding-left: 61px;
-  color: $link-dark;
   text-decoration: none;
-  text-transform: uppercase;
-
-  @include font-size(bold, 16px, 18px);
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    display: block;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-  }
 
   &--promo {
     width: 40px;
@@ -26,15 +10,38 @@
     border-radius: 50%;
   }
 
-  &--promo-phone {
-    background-color: $special_orange;
-  }
-
-  &--promo-email {
-    background-color: $special_yellow_dark;
-  }
-
   .reg-form__contacts & {
     color: $basic_yellow;
   }
+}
+
+.contact-link__icon {
+  flex-shrink: 0;
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-right: 16px;
+  background-color: $bg-contact-link;
+  border-radius: 50%;
+
+  .contact-link--promo &-phone {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    background-color: $special_orange;
+  }
+
+  .contact-link--promo &-email {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    background-color: $special_yellow_dark;
+  }
+}
+
+.contact-link__text {
+  @include font-size(bold, 16px, 18px);
+
+  color: $link-dark;
+  text-transform: uppercase;
 }
