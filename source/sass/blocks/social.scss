@@ -27,5 +27,25 @@
   display: block;
   width: 23px;
   height: 23px;
-  background-color: $basic_blue_light;
+  text-align: center;
+}
+
+.social__icon {
+  fill: $link-dark;
+
+  &--fb {
+    width: 11px;
+    height: 21px;
+  }
+
+  &--vk {
+    width: 23px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 18px;
+    height: 18px;
+    opacity: 0.5;
+  }
 }

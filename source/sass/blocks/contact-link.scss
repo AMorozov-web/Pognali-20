@@ -21,6 +21,8 @@
   width: 45px;
   height: 45px;
   margin-right: 16px;
+  padding-top: 13px;
+  text-align: center;
   background-color: $bg-contact-link;
   border-radius: 50%;
 
@@ -37,6 +39,12 @@
     margin-right: 0;
     background-color: $special_yellow_dark;
   }
+}
+
+.contact-link__icon {
+  width: 18px;
+  height: 17px;
+  fill: $basic_yellow;
 }
 
 .contact-link__text {
