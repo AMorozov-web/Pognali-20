@@ -15,7 +15,7 @@
   }
 }
 
-.contact-link__icon {
+.contact-link__icon-box {
   flex-shrink: 0;
   display: block;
   width: 45px;
@@ -24,14 +24,14 @@
   background-color: $bg-contact-link;
   border-radius: 50%;
 
-  .contact-link--promo &-phone {
+  .contact-link--promo &--phone {
     width: 40px;
     height: 40px;
     margin-right: 0;
     background-color: $special_orange;
   }
 
-  .contact-link--promo &-email {
+  .contact-link--promo &--email {
     width: 40px;
     height: 40px;
     margin-right: 0;
