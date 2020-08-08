@@ -1,6 +1,15 @@
 .promo {
-  background-color: $basic_blue;
+  padding-top: 52px;
+  padding-bottom: 39px;
   color: $basic_white;
+  background-color: $basic_blue;
+  background-image: url("../img/traveller-illustration-mobile@1x.png"),
+    url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 79px 182px,
+    left top;
+  background-size: auto, 100% 437px;
+  background-repeat: no-repeat;
 }
 
 .promo__wrapper {

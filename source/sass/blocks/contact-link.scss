@@ -26,6 +26,10 @@
   background-color: $bg-contact-link;
   border-radius: 50%;
 
+  .contact-link--promo & {
+    padding-top: 12px;
+  }
+
   .contact-link--promo &--phone {
     width: 40px;
     height: 40px;
@@ -45,6 +49,10 @@
   width: 18px;
   height: 17px;
   fill: $basic_yellow;
+
+  .contact-link--promo & {
+    fill: $basic_blue;
+  }
 }
 
 .contact-link__text {

@@ -1,5 +1,37 @@
+.country {
+  min-height: 190px;
+  border-radius: 10px;
+}
+
+.country__img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.country__description {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 80px;
+  margin-top: -14px;
+  padding: 25px;
+  background-color: $basic-white;
+  border-radius: 10px;
+}
+
+.country__flag {
+  position: absolute;
+  top: -12px;
+  left: 25px;
+}
+
+.country__title-box {
+  width: 137px;
+}
+
 .country__title {
   margin: 0;
+  margin-bottom: 3px;
 
   @include font-size(bold, 21px, 21px);
 }
@@ -12,18 +44,21 @@
 }
 
 .country__user-count {
+  position: relative;
   margin: 0;
   color: rgba($basic_blue, 0.3);
 
   @include font-size(500, 16px, 20px);
-}
 
-.countries__btn {
-  display: block;
-  background-color: $basic_yellow;
-  color: $basic_blue_light;
-  text-decoration: none;
-  border-radius: 10px;
-
-  @include font-size(bold, 18px, 18px);
+  &::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: -20px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/user.svg);
+    opacity: 0.1;
+  }
 }

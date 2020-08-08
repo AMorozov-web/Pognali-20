@@ -1,14 +1,31 @@
 .about-service {
+  position: relative;
+  margin-bottom: -25px;
+  z-index: 2;
+  min-height: 353px;
+  padding-top: 33px;
   color: $basic_white;
   background-color: $bg_dark_blue;
+  background-image: url(../img/about-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: top 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .about-service__wrapper {
   @include wrapper;
 }
 
+.about-service__inner-box {
+  width: 211px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .about-service__title {
   margin: 0;
+  margin-bottom: 20px;
   color: $special_orange;
 
   @include font-size(bold, 24px, 24px);
@@ -16,6 +33,7 @@
 
 .about-service__text {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .about-service__text--call {

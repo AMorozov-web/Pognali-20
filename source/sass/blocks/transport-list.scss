@@ -12,6 +12,9 @@
 }
 
 .transport-list__item {
+  width: 24px;
+  height: 24px;
+
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -30,5 +33,13 @@
     margin: 0;
     background-color: $basic_white;
     border-radius: 50%;
+  }
+}
+
+.transport-list__transport-icon {
+  fill: $transport-icon;
+
+  &--unwished {
+    fill-opacity: 0.15;
   }
 }

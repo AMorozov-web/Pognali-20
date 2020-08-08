@@ -1,18 +1,50 @@
 .travelmates {
-  background-color: $link-dark;
+  padding-top: 102px;
+  position: relative;
+  margin-top: -25px;
   color: $basic_white;
+  background-color: $link-dark;
+  background-image: url("../img/smolov-back-desktop@1x.png"),
+    url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: right 25px top 68px,
+    left -13px top 346px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 68px;
+    left: 0;
+    display: block;
+    width: 113px;
+    height: 132px;
+    background-color: $bg-dark-blue;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 }
 
 .travelmates__travelmates-list {
   @include list-style;
+
+  margin-bottom: 20px;
 }
 
 .travelmates__wrapper {
+  position: relative;
   @include wrapper;
+}
+
+.travelmates__main-title-box {
+  width: 217px;
+  margin-bottom: 54px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .travelmates__main-title {
   margin: 0;
+  margin-bottom: 20px;
   color: $special_orange;
 
   @include font-size(bold, 24px, 24px);
@@ -20,6 +52,10 @@
 
 .travelmates__main-text {
   margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }
 
 .travelmates__main-text--call {
@@ -27,6 +63,12 @@
 }
 
 .travelmates__btn {
+  position: relative;
+  min-height: 61px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   display: block;
   background-color: $basic_yellow;
   color: $basic_blue_light;
@@ -34,4 +76,17 @@
   border-radius: 10px;
 
   @include font-size(bold, 18px, 18px);
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 7px);
+    right: 25px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid $basic_blue_light;
+  }
 }

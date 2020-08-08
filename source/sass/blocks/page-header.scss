@@ -1,9 +1,11 @@
 .page-header {
+  position: relative;
   width: 100%;
   min-height: 15px;
   padding-top: 28px;
   background-color: $basic_blue;
 
+  &--opened-menu,
   &--no-js {
     background-color: $basic_white;
   }
@@ -19,8 +21,25 @@
 }
 
 .page-header__main-nav {
-  @include wrapper;
-
+  position: absolute;
   min-height: 470px;
-  margin-top: 76px;
+  padding-top: 52px;
+  padding-bottom: 41px;
+  transform: scaleY(0);
+  visibility: hidden;
+  opacity: 0;
+
+  .page-header--opened-menu &,
+  .page-header--no-js & {
+    top: 47px;
+    left: 0;
+    width: 100%;
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .page-header--no-js & {
+    position: static;
+  }
 }
