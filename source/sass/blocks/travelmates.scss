@@ -1,7 +1,10 @@
 .travelmates {
-  padding-top: 102px;
   position: relative;
+  z-index: 1;
   margin-top: -25px;
+  margin-bottom: -25px;
+  padding-top: 102px;
+  padding-bottom: 31px;
   color: $basic_white;
   background-color: $link-dark;
   background-image: url("../img/smolov-back-desktop@1x.png"),
@@ -9,6 +12,9 @@
   background-repeat: no-repeat;
   background-position: right 25px top 68px,
     left -13px top 346px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
 
   &::before {
     position: absolute;

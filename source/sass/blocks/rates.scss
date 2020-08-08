@@ -1,5 +1,23 @@
+.rates {
+  position: relative;
+  padding-top: 67px;
+  padding-bottom: 38px;
+  background-color: $bg-rates;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
 .rates__wrapper {
   @include wrapper;
+
+  padding-left: 25px;
+}
+
+.rates__title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 31px;
 }
 
 .rates__title {
@@ -10,7 +28,69 @@
 }
 
 .rates__list {
+  width: 200px;
+
   @include list-style;
+
+  margin-bottom: 31px;
+  border-top: 1px solid #E1E3E9;
+  border-bottom: 1px solid #E1E3E9;
+}
+
+.rates__item {
+  position: relative;
+  min-height: 65px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid #E1E3E9;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    right: -44px;
+    display: block;
+    width: 34px;
+    height: 34px;
+    padding-top: 9px;
+
+    @include font-size(normal, 16px, 16px);
+
+    color: $basic_white;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  &:first-of-type::after {
+    content: "1";
+    background-color: $special_orange;
+  }
+
+  &:nth-of-type(2)::after {
+    content: "2";
+    background-color: $special_yellow_dark;
+  }
+
+  &:nth-of-type(3)::after {
+    content: "3";
+    background-color: $basic_yellow;
+  }
+}
+
+.rates__text,
+.rates__price {
+  margin: 0;
+
+  @include font-size(300, 16px, 16px);
+
+  color: $special_grey;
+}
+
+.rates__text {
+  margin-bottom: 7px;
 }
 
 .rates__modal-open {
@@ -18,4 +98,12 @@
   text-decoration: none;
 
   @include font-size(bold, 16px, 16px);
+}
+
+.rates__business-rates {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  right: 25px;
+  z-index: 3;
 }

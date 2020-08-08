@@ -18,6 +18,8 @@
   .page-footer & {
     width: 45px;
     height: 45px;
+    padding-top: 13px;
+    padding-left: 11px;
     background-color: $basic_yellow;
     border-radius: 50%;
   }
@@ -47,5 +49,9 @@
     width: 18px;
     height: 18px;
     opacity: 0.5;
+
+    .page-footer__social & {
+      opacity: 1;
+    }
   }
 }

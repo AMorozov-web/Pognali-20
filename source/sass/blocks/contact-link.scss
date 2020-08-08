@@ -60,4 +60,8 @@
 
   color: $link-dark;
   text-transform: uppercase;
+
+  .reg-form__contact-link & {
+    color: $basic_yellow;
+  }
 }

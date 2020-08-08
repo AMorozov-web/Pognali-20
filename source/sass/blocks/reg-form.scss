@@ -1,8 +1,12 @@
 .reg-form {
+  position: relative;
+  z-index: 1;
   min-height: 536px;
-  padding-top: 105px;
+  padding-top: 85px;
   background-color: $link-dark;
   color: $basic_white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .reg-form__wrapper {
@@ -53,12 +57,26 @@
 }
 
 .reg-form__btn {
+  position: relative;
   align-self: stretch;
   min-width: 60px;
   padding: 0;
   background-color: $basic_yellow;
   border: none;
   border-radius: 10px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 7px);
+    right: 23px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid $basic_blue_light;
+  }
 }
 
 .reg-form__contacts-text {
