@@ -1,5 +1,5 @@
 .wish-country {
-  border-top: 1px solid $basic_blue_lighter;
+  border-top: 1px solid #edeff6;
 }
 
 .wish-country__wrapper {
@@ -19,7 +19,7 @@
   @include font-size(normal, 15px, 18px);
 
   text-transform: lowercase;
-  background-color: $basic_white;
+  background-color: #ffffff;
 }
 
 .wish-country__list {
@@ -41,6 +41,6 @@
 
   @include font-size(500, 15px, 16px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-transform: uppercase;
 }

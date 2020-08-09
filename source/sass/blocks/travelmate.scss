@@ -2,7 +2,7 @@
   position: relative;
   width: 270px;
   min-height: 428px;
-  background-color: $basic_white;
+  background-color: #ffffff;
   border-radius: 12px;
 
   .catalog-page & {
@@ -54,7 +54,7 @@
   width: 31px;
   height: 31px;
   padding: 0;
-  background-color: $bg-like-btn;
+  background-color: #f9eaea;
   border: none;
   border-radius: 50%;
 }
@@ -91,7 +91,7 @@
 
   @include font-size(bold, 21px, 21px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
 
   .catalog-page & {
     flex-direction: row-reverse;
@@ -107,7 +107,7 @@
     width: 6px;
     height: 6px;
     margin-right: 10px;
-    background-color: $bg-user-offline;
+    background-color: #f97676;
     border-radius: 50%;
 
     .catalog-page & {
@@ -118,7 +118,7 @@
   }
 
   &--online::before {
-    background-color: $bg-user-online;
+    background-color: #81e31e;
   }
 }
 
@@ -153,7 +153,7 @@
 
 .travelmate__inner-box {
   margin-top: 22px;
-  border-top: 1px solid $basic_blue_lighter;
+  border-top: 1px solid #edeff6;
 }
 
 .travelmate__inner-wrapper {

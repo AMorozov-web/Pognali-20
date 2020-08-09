@@ -20,7 +20,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-grow: 1;
-  border: 1px solid $border-level-select;
+  border: 1px solid #cbced9;
   border-radius: 4px;
 
   &::after {
@@ -31,22 +31,22 @@
     display: block;
     width: 8px;
     height: 8px;
-    background-color: $basic_blue_light;
+    background-color: #1d2e5b;
     border-radius: 50%;
 
     .country-step__country-choose & {
-      background-color: $basic_white;
-      border: 1px solid $border-level-select;
+      background-color: #ffffff;
+      border: 1px solid #cbced9;
     }
 
     .country-step__add-country & {
       background: transparent;
-      border: 1px solid $border-level-select;
+      border: 1px solid #cbced9;
     }
   }
 
   .country-step__add-country & {
-    background-color: $basic_blue_lighter;
+    background-color: #edeff6;
   }
 }
 
@@ -64,7 +64,7 @@
 
   letter-spacing: 0.09em;
   font-family: inherit;
-  color: $basic_blue_light;
+  color: #1d2e5b;
   background: transparent;
   text-transform: uppercase;
   border: none;
@@ -84,7 +84,7 @@
   width: 53px;
   min-height: 43px;
   padding: 0;
-  border: 1px solid $border-level-select;
+  border: 1px solid #cbced9;
   border-radius: 4px;
 
   .country-step__country-choose & {
@@ -120,7 +120,7 @@
     left: calc((100% - 11px) / 2);
     width: 11px;
     height: 1px;
-    background-color: $del-button-cross;
+    background-color: #afb0b5;
   }
 
   &::before {

@@ -6,7 +6,7 @@
   .form-page & {
     padding-top: 15px;
     padding-bottom: 15px;
-    border: 1px solid $letter-sort-border;
+    border: 1px solid #cbced9;
     border-radius: 10px;
   }
 }
@@ -23,7 +23,7 @@
     width: 32px;
     height: 32px;
     margin: 0;
-    background-color: $basic_blue_lighter;
+    background-color: #edeff6;
     border-radius: 50%;
   }
 
@@ -31,13 +31,13 @@
     width: 32px;
     height: 32px;
     margin: 0;
-    background-color: $basic_white;
+    background-color: #ffffff;
     border-radius: 50%;
   }
 }
 
 .transport-list__transport-icon {
-  fill: $transport-icon;
+  fill: #101d41;
 
   &--unwished {
     fill-opacity: 0.15;

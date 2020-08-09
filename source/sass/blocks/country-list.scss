@@ -8,11 +8,11 @@
 .country-list__link {
   @include font-size(bold, 16px, 18px);
 
-  color: rgba($link-dark, 0.3);
+  color: rgba(#192144, 0.3);
   text-decoration: none;
   text-transform: uppercase;
 
   &--active {
-    color: $link-dark;
+    color: #192144;
   }
 }

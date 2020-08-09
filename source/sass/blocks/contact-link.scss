@@ -23,7 +23,7 @@
   margin-right: 16px;
   padding-top: 13px;
   text-align: center;
-  background-color: $bg-contact-link;
+  background-color: #121936;
   border-radius: 50%;
 
   .contact-link--promo & {
@@ -58,7 +58,7 @@
 .contact-link__text {
   @include font-size(bold, 16px, 18px);
 
-  color: $link-dark;
+  color: #192144;
   text-transform: uppercase;
 
   .reg-form__contact-link & {

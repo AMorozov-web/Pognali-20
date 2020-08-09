@@ -9,7 +9,7 @@
   @include font-size(500, 16px, 16px);
 
   letter-spacing: 0.09em;
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-transform: uppercase;
 }
 
@@ -17,7 +17,7 @@
   @include font-size(500, 16px, 16px);
 
   letter-spacing: 0.09em;
-  color: rgba($basic_blue_light, 0.3);
+  color: rgba(#1d2e5b, 0.3);
   text-transform: uppercase;
 }
 
@@ -26,7 +26,7 @@
   justify-content: space-evenly;
   width: 100%;
   margin: 0 auto 20px;
-  border: 1px solid $letter-sort-border;
+  border: 1px solid #cbced9;
   border-radius: 4px;
 }
 
@@ -41,7 +41,7 @@
 
   @include font-size(500, 15px, 14px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-transform: uppercase;
   text-align: center;
   border: none;
@@ -63,7 +63,7 @@
     content: "";
     width: 14px;
     height: 2px;
-    background-color: $special_grey_light;
+    background-color: #cccccc;
   }
 
   &--add::after {
@@ -73,7 +73,7 @@
     content: "";
     width: 14px;
     height: 2px;
-    background-color: $special_grey_light;
+    background-color: #cccccc;
     transform: rotate(90deg);
   }
 }

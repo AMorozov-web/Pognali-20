@@ -14,12 +14,12 @@
     display: block;
     width: 25px;
     height: 3px;
-    background-color: $basic_white;
+    background-color: #ffffff;
     border-radius: 3px;
 
     .page-header--opened-menu & {
       top: 7px;
-      background-color: $special_grey_light;
+      background-color: #cccccc;
       transform: rotate(-45deg);
     }
   }
@@ -32,12 +32,12 @@
     display: block;
     width: 25px;
     height: 3px;
-    background-color: $basic_white;
+    background-color: #ffffff;
     border-radius: 3px;
 
     .page-header--opened-menu & {
       top: 7px;
-      background-color: $special_grey_light;
+      background-color: #cccccc;
       transform: rotate(45deg);
     }
   }

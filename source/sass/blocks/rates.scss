@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 67px;
   padding-bottom: 38px;
-  background-color: $bg-rates;
+  background-color: #e6e8f1;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -94,7 +94,7 @@
 }
 
 .rates__modal-open {
-  color: $link_light;
+  color: #132576;
   text-decoration: none;
 
   @include font-size(bold, 16px, 16px);

@@ -6,7 +6,7 @@
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: $bg_blue_header;
+  background-color: #182044;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -19,7 +19,7 @@
   @include wrapper;
   @include font-size(bold, 36px, 36px);
 
-  color: $basic_white;
+  color: #ffffff;
 
   &::after {
     position: absolute;

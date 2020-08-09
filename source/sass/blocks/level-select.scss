@@ -1,5 +1,5 @@
 .level-select {
-  border-top: 1px solid $border-select-travelmates;
+  border-top: 1px solid #f3c72b;
 }
 
 .level-select__title-btn {
@@ -11,7 +11,7 @@
   @include font-size(bold, 16px, 18px);
 
   font-family: inherit;
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-align: left;
   text-transform: uppercase;
   background-color: transparent;
@@ -35,9 +35,9 @@
     display: block;
     width: 16px;
     height: 11px;
-    background-color: $border-level-select;
-    border-top: 5px solid $basic_white;
-    border-bottom: 5px solid $basic_white;
+    background-color: #cbced9;
+    border-top: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
   }
 }
 
@@ -51,7 +51,7 @@
 
   letter-spacing: 0.07em;
   text-align: center;
-  border: 1px solid $border-level-select;
+  border: 1px solid #cbced9;
 
   &:first-child {
     margin-right: -1px;

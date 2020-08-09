@@ -4,7 +4,7 @@
   margin-bottom: -30px;
   padding-top: 101px;
   padding-bottom: 34px;
-  background-color: $basic_blue_lighter;
+  background-color: #edeff6;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -50,7 +50,7 @@
     left: 0;
     right: 0;
     bottom: -5px;
-    background-image: linear-gradient(180deg, transparent 50%, $basic_blue_lighter 100%);
+    background-image: linear-gradient(180deg, transparent 50%, #edeff6 100%);
   }
 }
 
@@ -63,7 +63,7 @@
   padding-right: 25px;
   display: block;
   background-color: $basic_yellow;
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-decoration: none;
   border-radius: 10px;
 
@@ -79,6 +79,6 @@
     height: 0;
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
-    border-left: 10px solid $basic_blue_light;
+    border-left: 10px solid #1d2e5b;
   }
 }

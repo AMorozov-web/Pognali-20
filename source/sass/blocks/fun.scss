@@ -13,7 +13,7 @@
 
   @include font-size(500, 18px, 18px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
 
   &::before {
     position: absolute;
@@ -23,7 +23,7 @@
     display: block;
     width: 12px;
     height: 2px;
-    background-color: $basic_blue_light;
+    background-color: #1d2e5b;
   }
 
   &::after {
@@ -34,7 +34,7 @@
     display: block;
     width: 6px;
     height: 6px;
-    background-color: $basic_blue_light;
+    background-color: #1d2e5b;
     border-radius: 50%;
   }
 }
@@ -57,7 +57,7 @@
     display: block;
     width: 2px;
     height: 283px;
-    background-color: $basic_blue_light;
+    background-color: #1d2e5b;
   }
 }
 
@@ -74,7 +74,7 @@
   font-family: inherit;
   color: $special_grey;
   resize: none;
-  border: 1px solid $letter-sort-border;
+  border: 1px solid #cbced9;
   border-radius: 4px;
 
   &::placeholder {

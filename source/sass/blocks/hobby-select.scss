@@ -1,6 +1,6 @@
 .hobby-select {
-  border-top: 1px solid $border-select-travelmates;
-  border-bottom: 1px solid $border-select-travelmates;
+  border-top: 1px solid #f3c72b;
+  border-bottom: 1px solid #f3c72b;
 }
 
 .hobby-select__title-btn {
@@ -12,7 +12,7 @@
   @include font-size(bold, 16px, 18px);
 
   font-family: inherit;
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-align: left;
   text-transform: uppercase;
   background-color: transparent;

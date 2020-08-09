@@ -1,6 +1,6 @@
 .step {
   padding-top: 24px;
-  background-color: $basic_white;
+  background-color: #ffffff;
   border-radius: 10px;
 
   &--1 {
@@ -31,7 +31,7 @@
 .step__title-text {
   @include font-size(bold, 20px, 20px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
 }
 
 .step__description {
@@ -59,7 +59,7 @@
   @include font-size(bold, 17px, 30px);
 
   font-family: inherit;
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-transform: uppercase;
   background-color: $basic_yellow;
   border: none;

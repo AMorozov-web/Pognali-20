@@ -4,7 +4,7 @@
   padding-bottom: 20px;
   padding-left: 25px;
   padding-right: 25px;
-  background-color: $basic_white;
+  background-color: #ffffff;
   border-radius: 10px;
 }
 
@@ -12,7 +12,7 @@
 .plan__travelmates,
 .plan__date {
   margin: 0;
-  color: $basic_blue_light;
+  color: #1d2e5b;
 }
 
 .plan__title {
@@ -45,7 +45,7 @@
 }
 
 .plan__change-btn {
-  color: rgba($basic_black, 0.3);
+  color: rgba(#000000, 0.3);
   text-decoration: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;

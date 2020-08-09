@@ -1,7 +1,7 @@
 .add-plan {
   margin-top: -30px;
   padding-top: 30px;
-  background-color: $special_blue_addplan;
+  background-color: #d4d9eb;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
@@ -21,7 +21,7 @@
 
   @include font-size(bold, 24px, 24px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
 }
 
 .add-plan__dots {
@@ -40,7 +40,7 @@
   width: 5px;
   height: 5px;
   margin-right: 16px;
-  background-color: rgba($basic_blue_light, 0.3);
+  background-color: rgba(#1d2e5b, 0.3);
   border-radius: 50%;
 
   &:last-child {
@@ -48,6 +48,6 @@
   }
 
   &--current {
-    background-color: $basic_blue_light;
+    background-color: #1d2e5b;
   }
 }

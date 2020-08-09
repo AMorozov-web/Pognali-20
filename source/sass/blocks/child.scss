@@ -7,7 +7,7 @@
 .child__label {
   @include font-size(normal, 15px, 15px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
 
   &::before {
     position: absolute;
@@ -16,7 +16,7 @@
     content: "";
     width: 26px;
     height: 26px;
-    border: 1px solid $border-level-select;
+    border: 1px solid #cbced9;
     border-radius: 4px;
   }
 }

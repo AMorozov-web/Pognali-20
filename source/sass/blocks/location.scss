@@ -20,7 +20,7 @@
 
   @include font-size(bold, 16px, 22px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-transform: uppercase;
 
   &::before {
@@ -29,7 +29,7 @@
     min-width: 45px;
     height: 45px;
     margin-right: 16px;
-    background-color: $basic_blue_light;
+    background-color: #1d2e5b;
     background-image: url("../img/icon_location.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -49,9 +49,9 @@
 
   @include font-size(bold, 18px, 28px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-decoration: none;
-  border: 3px solid $basic_blue_light;
+  border: 3px solid #1d2e5b;
   border-radius: 10px;
 
   &::after {
@@ -64,6 +64,6 @@
     height: 0;
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
-    border-left: 10px solid $basic_blue_light;
+    border-left: 10px solid #1d2e5b;
   }
 }

@@ -17,7 +17,7 @@
     position: absolute;
     top: 22px;
     right: 21px;
-    color: $basic_white;
+    color: #ffffff;
 
     @include font-size(bold, 18px, 18px);
   }
@@ -35,7 +35,7 @@
     z-index: 1;
     min-height: 140px;
     margin-top: -60px;
-    background-color: $special_orange_light;
+    background-color: #ffa530;
 
     &::after {
       content: "2";

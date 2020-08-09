@@ -4,7 +4,7 @@
 
   @include font-size(bold, 22px, 22px);
   letter-spacing: 0.02em;
-  color: $basic_blue_light;
+  color: #1d2e5b;
 }
 
 .select-travelmates__btn {
@@ -16,7 +16,7 @@
 
   font-family: inherit;
   text-transform: uppercase;
-  background-color: $basic_white;
+  background-color: #ffffff;
   border: none;
   border-radius: 25px;
 }
