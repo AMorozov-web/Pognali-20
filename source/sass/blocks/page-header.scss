@@ -9,6 +9,13 @@
   &--no-js {
     background-color: $basic_white;
   }
+
+  &--no-js {
+    z-index: 2;
+    margin-bottom: -30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
 }
 
 .page-header__wrapper {

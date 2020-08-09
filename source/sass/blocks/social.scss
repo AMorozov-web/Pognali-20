@@ -7,19 +7,10 @@
 }
 
 .social__item {
-  &:not(:last-child) {
-    margin-right: 25px;
-
-    .page-footer & {
-      margin: 0;
-    }
-  }
+  width: 45px;
+  height: 45px;
 
   .page-footer & {
-    width: 45px;
-    height: 45px;
-    padding-top: 13px;
-    padding-left: 11px;
     background-color: $basic_yellow;
     border-radius: 50%;
   }
@@ -30,6 +21,21 @@
   width: 23px;
   height: 23px;
   text-align: center;
+
+  &--fb {
+    padding-top: 11px;
+    padding-left: 17px;
+  }
+
+  &--vk {
+    padding-top: 12px;
+    padding-left: 10px;
+  }
+
+  &--inst {
+    padding-top: 13px;
+    padding-left: 14px;
+  }
 }
 
 .social__icon {
