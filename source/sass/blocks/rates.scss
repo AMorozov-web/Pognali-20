@@ -33,8 +33,8 @@
   @include list-style;
 
   margin-bottom: 31px;
-  border-top: 1px solid #E1E3E9;
-  border-bottom: 1px solid #E1E3E9;
+  border-top: 1px solid #e1e3e9;
+  border-bottom: 1px solid #e1e3e9;
 }
 
 .rates__item {
@@ -44,7 +44,7 @@
   padding-bottom: 16px;
 
   &:not(:last-of-type) {
-    border-bottom: 1px solid #E1E3E9;
+    border-bottom: 1px solid #e1e3e9;
   }
 
   &::after {

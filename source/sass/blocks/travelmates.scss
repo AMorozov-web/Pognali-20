@@ -37,8 +37,9 @@
 }
 
 .travelmates__wrapper {
-  position: relative;
   @include wrapper;
+
+  position: relative;
 }
 
 .travelmates__main-title-box {

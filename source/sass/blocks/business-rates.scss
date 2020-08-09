@@ -2,7 +2,7 @@
   min-height: 443px;
   padding-top: 34px;
   background-color: $basic_white;
-  box-shadow: 0px 2px 8px rgba(29, 46, 91, 0.14);
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
   border-radius: 20px;
 }
 
@@ -24,8 +24,8 @@
   @include list-style;
 
   margin-bottom: 34px;
-  border-top: 1px solid #E1E3E9;
-  border-bottom: 1px solid #E1E3E9;
+  border-top: 1px solid #e1e3e9;
+  border-bottom: 1px solid #e1e3e9;
 }
 
 .business-rates__item {
@@ -34,7 +34,7 @@
   padding-bottom: 11px;
 
   &:not(:last-of-type) {
-    border-bottom: 1px solid #E1E3E9;
+    border-bottom: 1px solid #e1e3e9;
   }
 }
 
