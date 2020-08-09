@@ -9,6 +9,16 @@
   background-position: 79px 182px,
     left top;
   background-size: auto, 100% 437px;
+
+  @media (min-width: 768px) {
+    min-height: 973px;
+    background-color: #182044;
+    background-image: url("../img/traveller-illustration-tablet@1x.png"),
+    url("../img/globe-back-tablet@1x.jpg");
+    background-position: bottom 320px right 108px,
+    right -350px bottom 180px;
+    background-size: auto 451px, 1472px 600px;
+  }
 }
 
 .promo__wrapper {
@@ -16,16 +26,29 @@
 }
 
 .promo__title {
+  display: block;
+  max-width: 399px;
+  min-height: 120px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
   @include font-size(bold, 36px, 40px);
+
+  @media (min-width: 768px) {
+    @include font-size(bold, 60px, 70px);
+  }
 }
 
 .promo__contacts {
   display: flex;
   justify-content: center;
   margin-top: 245px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .promo__contact-link span {
@@ -34,23 +57,54 @@
 
 .promo__login-link-box {
   flex-grow: 1;
+  max-width: 250px;
 }
 
 .promo__quote {
-  width: 165px;
+  display: block;
+  max-width: 450px;
   min-height: 128px;
   margin: 0;
-  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 28px;
-  margin-left: 25px;
   margin-bottom: 28px;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    margin-top: 86px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 211px;
+  }
+}
+
+.promo__quote-wrapper {
+  @include wrapper;
 }
 
 .promo__quote-text {
+  width: 165px;
   margin: 0;
   margin-bottom: 18px;
+
+  @media (min-width: 768px) {
+    width: 264px;
+    margin-bottom: 45px;
+
+    @include font-size(300, 28px, 33px);
+  }
 }
 
 .promo__quote-author {
+  display: block;
+  width: 165px;
+
   @include font-size(bold, 16px, 22px);
+
+  @media (min-width: 768px) {
+    width: 251px;
+
+    @include font-size(bold, 21px, 25px);
+  }
 }

@@ -13,6 +13,10 @@
   .reg-form__contacts & {
     color: $basic_yellow;
   }
+
+  &--page-header {
+    display: none;
+  }
 }
 
 .contact-link__icon-box {

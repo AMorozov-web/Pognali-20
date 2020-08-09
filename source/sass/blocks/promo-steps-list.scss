@@ -1,13 +1,22 @@
 .promo-steps-list {
   display: grid;
-  width: 100%;
+  max-width: 400px;
 
   @include list-style;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
 }
 
 .promo-steps-list__item {
   position: relative;
-  width: 100%;
+  display: block;
+  max-width: 400px;
   padding-top: 22px;
   padding-left: 24px;
   padding-right: 24px;
@@ -63,6 +72,54 @@
       content: "4";
     }
   }
+
+  @media (min-width: 768px) {
+    max-width: 100%;
+    min-height: 140px;
+    padding-top: 31px;
+    padding-left: 33px;
+    padding-bottom: 28px;
+    border-radius: 0;
+
+    &::after {
+      top: 88px;
+      left: 34px;
+
+      @include font-size(bold, 30px, 30px);
+    }
+
+    &:nth-child(2n-1) {
+      z-index: 1;
+      width: 369px;
+      margin: 0;
+    }
+
+    &:nth-child(2n) {
+      z-index: 2;
+      width: 344px;
+      margin: 0;
+      margin-left: -21px;
+    }
+
+    &:first-child {
+      margin: 0;
+      border-top-left-radius: 10px;
+    }
+
+    &:nth-child(2) {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    &:nth-child(3) {
+      border-bottom-left-radius: 10px;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
 }
 
 .promo-steps-list__item-text {
@@ -72,4 +129,10 @@
   color: $basic_blue;
 
   @include font-size(bold, 18px, 18px);
+
+  @media (min-width: 768px) {
+    width: 200px;
+
+    @include font-size(bold, 24px, 24px);
+  }
 }

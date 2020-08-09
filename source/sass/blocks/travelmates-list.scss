@@ -1,3 +1,9 @@
-.travelmates-list__item:not(:last-child) {
-  margin-bottom: 10px;
+.travelmates-list__item {
+  margin-right: auto;
+  margin-left: auto;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
+

@@ -16,6 +16,12 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
+
+  @media (min-width: 768px) {
+    & {
+      background-color: #182044;
+    }
+  }
 }
 
 .page-header__wrapper {
@@ -48,5 +54,15 @@
 
   .page-header--no-js & {
     position: static;
+  }
+}
+
+.page-header__contacts {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

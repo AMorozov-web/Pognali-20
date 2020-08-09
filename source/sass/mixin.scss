@@ -14,4 +14,8 @@
   width: calc(100% - 50px);
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 80px);
+  }
 }

@@ -1,6 +1,11 @@
 .logo {
   width: 100px;
   height: 19px;
+
+  @media (min-width: 768px) {
+    width: 166px;
+    height: 42px;
+  }
 }
 
 .logo__img {
@@ -11,5 +16,20 @@
     height: 19px;
     padding-left: 100px;
     background: url("../img/logo-mobile-blue@1x.png");
+  }
+
+
+  @media (min-width: 768px) {
+    & {
+      width: 166px;
+      height: 42px;
+    }
+
+    .page-header--opened-menu &,
+    .page-header--no-js & {
+    display: block;
+    padding-left: 166px;
+    background: url("../img/logo-tablet-blue@1x.png");
+    }
   }
 }
