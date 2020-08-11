@@ -55,6 +55,12 @@
   color: $special_orange;
 
   @include font-size(bold, 24px, 24px);
+
+  @media (min-width: 768px) {
+    margin-bottom: 57px;
+
+    @include font-size(bold, 45px, 45px);
+  }
 }
 
 .travelmates__main-text {
