@@ -55,12 +55,10 @@
 
 .promo__login-link-box {
   flex-grow: 1;
-  max-width: 250px;
 }
 
 .promo__quote {
   display: block;
-  max-width: 450px;
   min-height: 128px;
   margin: 0;
   margin-left: auto;
@@ -79,6 +77,9 @@
 
 .promo__quote-wrapper {
   @include wrapper;
+
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .promo__quote-text {

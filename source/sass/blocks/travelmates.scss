@@ -28,18 +28,32 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
   }
+
+  @media (min-width: 768px) {
+    padding-bottom: 87px;
+  }
 }
 
 .travelmates__travelmates-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   @include list-style;
 
   margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 81px;
+  }
 }
 
 .travelmates__wrapper {
   @include wrapper;
 
   position: relative;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .travelmates__main-title-box {
@@ -47,6 +61,12 @@
   margin-bottom: 54px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: 768px) {
+    width: 427px;
+    margin: 0;
+    margin-bottom: 59px;
+  }
 }
 
 .travelmates__main-title {
@@ -69,15 +89,24 @@
   &:not(:last-child) {
     margin-bottom: 25px;
   }
+
+  @media (min-width: 768px) {
+    @include font-size(300, 28px, 34px);
+  }
 }
 
 .travelmates__main-text--call {
   @include font-size(bold, 16px, 22px);
+
+  @media (min-width: 768px) {
+    width: 260px;
+
+    @include font-size(bold, 21px, 24px);
+  }
 }
 
 .travelmates__btn {
   position: relative;
-  max-width: 400px;
   min-height: 61px;
   margin-left: auto;
   margin-right: auto;
@@ -104,5 +133,16 @@
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
     border-left: 10px solid #1d2e5b;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 82px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 20px;
+
+    @include font-size(bold, 24px, 34px);
   }
 }

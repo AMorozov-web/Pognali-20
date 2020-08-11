@@ -9,6 +9,11 @@
     min-height: 415px;
     padding-top: 15px;
   }
+
+  @media (min-width: 768px) {
+    width: 285px;
+    min-height: 483px;
+  }
 }
 
 .travelmate__photo {
@@ -17,6 +22,11 @@
 
   .catalog-page & {
     border-radius: 50%;
+  }
+
+  @media (min-width: 768px) {
+    width: 285px;
+    height: 286px;
   }
 }
 
@@ -72,12 +82,20 @@
   @include list-style;
 
   margin-top: -20px;
+
+  @media (min-width: 768px) {
+    margin-top: -18px;
+  }
 }
 
 .travelmate__transport-list {
   @include list-style;
 
   margin-top: 15px;
+
+  @media (min-width: 768px) {
+    margin-top: 25px;
+  }
 }
 
 .travelmate__name {
@@ -120,6 +138,18 @@
   &--online::before {
     background-color: #81e31e;
   }
+
+  @media (min-width: 768px) {
+    margin-top: 19px;
+
+    @include font-size(bold, 24px, 22px);
+
+    &::before {
+      width: 8px;
+      height: 8px;
+      margin-right: 14px;
+    }
+  }
 }
 
 .travelmate__hashtags {
@@ -144,6 +174,13 @@
     text-align: left;
 
     @include font-size(normal, 15px, 18px);
+  }
+
+  @media (min-width: 768px) {
+    max-width: 223px;
+    margin-top: 23px;
+
+    @include font-size(normal, 20px, 23px);
   }
 }
 

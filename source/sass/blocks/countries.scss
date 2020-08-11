@@ -15,6 +15,9 @@
 
 .countries__wrapper {
   @include wrapper;
+
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .countries__title-box {
@@ -26,8 +29,6 @@
   @media (min-width: 768px) {
     width: 378px;
     margin: 0;
-    margin-left: 34px;
-    margin-right: 34px;
     padding-bottom: 104px;
   }
 }
@@ -58,6 +59,10 @@
   @include list-style;
 
   margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 44px;
+  }
 }
 
 .countries__item {

@@ -5,6 +5,10 @@
   background-color: #e6e8f1;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 63px;
+  }
 }
 
 .rates__wrapper {

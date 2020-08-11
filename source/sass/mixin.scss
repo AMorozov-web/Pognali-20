@@ -11,11 +11,11 @@
 }
 
 @mixin wrapper {
-  width: calc(100% - 50px);
+  width: 270px;
   margin-right: auto;
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 80px);
+    width: 688px;
   }
 }

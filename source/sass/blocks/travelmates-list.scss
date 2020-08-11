@@ -5,4 +5,13 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  @media (min-width: 768px) {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 50px;
+    }
+  }
 }
