@@ -7,6 +7,7 @@
   border-bottom-right-radius: 30px;
 
   @media (min-width: 768px) {
+    padding-top: 135px;
     padding-bottom: 63px;
   }
 }
@@ -15,16 +16,25 @@
   @include wrapper;
 
   padding-left: 25px;
+
+  @media (min-width: 768px) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
 }
 
 .rates__title-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 31px;
+
+  @media (min-width: 768px) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .rates__title {
@@ -32,21 +42,32 @@
   color: $special_orange;
 
   @include font-size(bold, 24px, 24px);
+
+  @media (min-width: 768px) {
+    @include font-size(bold, 45px, 45px);
+  }
+}
+
+.rates__icon {
+  @media (min-width: 768px) {
+    position: absolute;
+    bottom: 45px;
+    right: 85px;
+  }
 }
 
 .rates__list {
-  max-width: 400px;
-
   @include list-style;
 
   margin-bottom: 31px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @media (min-width: 768px) {
+    padding-left: 54px;
+  }
 }
 
 .rates__item {
   position: relative;
-  max-width: 200px;
   min-height: 65px;
   padding-top: 12px;
   padding-bottom: 16px;
@@ -71,6 +92,16 @@
     color: $basic_white;
     text-align: center;
     border-radius: 50%;
+
+    @media (min-width: 768px) {
+      top: 1;
+      left: -90px;
+      width: 68px;
+      height: 68px;
+      padding-top: 20px;
+
+      @include font-size(300, 28px, 28px);
+    }
   }
 
   &:first-of-type::after {
@@ -87,6 +118,15 @@
     content: "3";
     background-color: $basic_yellow;
   }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 68px;
+
+    @include font-size(300, 28px, 28px);
+  }
 }
 
 .rates__text,
@@ -96,10 +136,18 @@
   @include font-size(300, 16px, 16px);
 
   color: $special_grey;
+
+  @media (min-width: 768px) {
+    @include font-size(300, 28px, 28px);
+  }
 }
 
 .rates__text {
   margin-bottom: 7px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .rates__modal-open {
@@ -110,6 +158,14 @@
 
   color: #132576;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    position: relative;
+    padding-left: 89px;
+    text-align: left;
+
+    @include font-size(bold, 20px, 20px);
+  }
 }
 
 .rates__business-rates {

@@ -35,15 +35,14 @@
 }
 
 .travelmates__travelmates-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   @include list-style;
 
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 81px;
   }
 }
@@ -52,8 +51,11 @@
   @include wrapper;
 
   position: relative;
-  padding-left: 34px;
-  padding-right: 34px;
+
+  @media (min-width: 768px) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
 }
 
 .travelmates__main-title-box {

@@ -16,8 +16,10 @@
 .countries__wrapper {
   @include wrapper;
 
-  padding-left: 34px;
-  padding-right: 34px;
+  @media (min-width: 768px) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
 }
 
 .countries__title-box {
