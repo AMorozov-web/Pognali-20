@@ -9,10 +9,13 @@
   @media (min-width: 768px) {
     padding-top: 135px;
     padding-bottom: 63px;
+    background-color: #edeff6;
   }
 }
 
 .rates__wrapper {
+  position: relative;
+
   @include wrapper;
 
   padding-left: 25px;
@@ -20,6 +23,19 @@
   @media (min-width: 768px) {
     padding-left: 34px;
     padding-right: 34px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 85px;
+      right: 0;
+      z-index: 0;
+      display: block;
+      width: 198px;
+      height: 285px;
+      background-color: #e2e5f2;
+      border-radius: 20px;
+    }
   }
 }
 
@@ -34,6 +50,7 @@
   @media (min-width: 768px) {
     display: block;
     text-align: center;
+    margin-bottom: 74px;
   }
 }
 
@@ -51,23 +68,27 @@
 .rates__icon {
   @media (min-width: 768px) {
     position: absolute;
-    bottom: 45px;
-    right: 85px;
+    z-index: 1;
+    bottom: -20px;
+    right: 45px;
   }
 }
 
 .rates__list {
   @include list-style;
 
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 
   @media (min-width: 768px) {
+    position: relative;
+    z-index: 1;
     padding-left: 54px;
   }
 }
 
 .rates__item {
   position: relative;
+  max-width: 200px;
   min-height: 65px;
   padding-top: 12px;
   padding-bottom: 16px;
@@ -94,7 +115,7 @@
     border-radius: 50%;
 
     @media (min-width: 768px) {
-      top: 1;
+      top: 0;
       left: -90px;
       width: 68px;
       height: 68px;
@@ -123,6 +144,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
     min-height: 68px;
 
     @include font-size(300, 28px, 28px);
@@ -161,10 +183,28 @@
 
   @media (min-width: 768px) {
     position: relative;
-    padding-left: 89px;
+    min-height: 68px;
+    padding-top: 20px;
+    padding-left: 55px;
     text-align: left;
 
     @include font-size(bold, 20px, 20px);
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -35px;
+      display: block;
+      width: 68px;
+      height: 68px;
+      background-color: #e2e5f2;
+      background-image: url("../img/user.svg");
+      background-position: center center;
+      background-size: 27px 27px;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+    }
   }
 }
 

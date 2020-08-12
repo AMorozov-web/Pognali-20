@@ -47,6 +47,12 @@
     margin-right: 0;
     background-color: $special_yellow_dark;
   }
+
+  @media (min-width: 768px) {
+    width: 68px;
+    height: 68px;
+    padding-top: 20px;
+  }
 }
 
 .contact-link__icon {
@@ -56,6 +62,11 @@
 
   .contact-link--promo & {
     fill: $basic_blue;
+  }
+
+  @media (min-width: 768px) {
+    width: 27px;
+    height: 26px;
   }
 }
 
@@ -67,5 +78,9 @@
 
   .reg-form__contact-link & {
     color: $basic_yellow;
+  }
+
+  @media (min-width: 768px) {
+    @include font-size(bold, 28px, 28px);
   }
 }

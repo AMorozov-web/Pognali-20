@@ -7,10 +7,21 @@
   color: #ffffff;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+
+  @media (min-width: 768px) {
+    min-height: 772px;
+    padding-top: 133px;
+    padding-bottom: 60px;
+  }
 }
 
 .reg-form__wrapper {
   @include wrapper;
+
+  @media (min-width: 768px) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
 }
 
 .reg-form__title {
@@ -21,6 +32,12 @@
   @include font-size(bold, 24px, 24px);
 
   color: $special_orange;
+
+  @media (min-width: 768px) {
+    padding-bottom: 59px;
+
+    @include font-size(bold, 45px, 45px);
+  }
 }
 
 .reg-form__text {
@@ -31,6 +48,13 @@
   margin-left: auto;
   margin-bottom: 30px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    max-width: 640px;
+    padding-bottom: 65px;
+
+    @include font-size(300, 28px, 32px);
+  }
 }
 
 .reg-form__signin-link {
@@ -41,10 +65,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 400px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 60px;
+  }
 }
 
 .reg-form__input {
@@ -52,6 +79,7 @@
   min-height: 62px;
   margin-right: -10px;
   padding-left: 25px;
+  font-family: inherit;
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -60,6 +88,17 @@
     @include font-size(bold, 18px, 18px);
 
     color: rgba($special_grey, 0.3);
+  }
+
+  @media (min-width: 768px) {
+    min-height: 80px;
+    padding-left: 36px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    &::placeholder {
+      @include font-size(bold, 24px, 24px);
+    }
   }
 }
 
@@ -76,7 +115,7 @@
     position: absolute;
     content: "";
     top: calc(100% / 2 - 7px);
-    right: 23px;
+    right: calc(100% / 2 - 7px);
     display: block;
     width: 0;
     height: 0;
@@ -84,16 +123,25 @@
     border-bottom: 7px solid transparent;
     border-left: 10px solid #1d2e5b;
   }
+
+  @media (min-width: 768px) {
+    min-width: 80px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 }
 
 .reg-form__contacts-text {
   margin: 0;
   margin-bottom: 18px;
   text-align: center;
-}
 
-.reg-form__contacts {
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+
+    @include font-size(300, 28px, 30px);
+
+    letter-spacing: 0.01em;
+  }
 }
