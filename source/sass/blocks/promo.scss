@@ -22,7 +22,7 @@
     background-color: #192144;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     min-height: 973px;
     background-color: #182044;
     background-image: url("../img/globe-back-tablet@1x.jpg");
@@ -59,8 +59,16 @@
     background-repeat: no-repeat;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     @include font-size(bold, 60px, 70px);
+
+    &::after {
+      top: 242px;
+      right: -85px;
+      width: 372px;
+      height: 471px;
+      background-image: url("../img/traveller-illustration-tablet@1x.png");
+    }
   }
 }
 
@@ -70,7 +78,7 @@
   justify-content: center;
   margin-top: 245px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -93,7 +101,7 @@
   margin-bottom: 28px;
   padding: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-top: 86px;
     margin-left: 0;
     margin-right: 0;
@@ -113,7 +121,7 @@
   margin: 0;
   margin-bottom: 18px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 264px;
     margin-bottom: 45px;
 
@@ -127,7 +135,7 @@
 
   @include font-size(bold, 16px, 22px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 251px;
 
     @include font-size(bold, 21px, 25px);
