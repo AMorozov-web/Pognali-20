@@ -107,3 +107,19 @@
     @include font-size(bold, 21px, 25px);
   }
 }
+
+.promo__steps {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -39px;
+    right: -25px;
+    left: -25px;
+    display: block;
+    width: 320px;
+    height: 279px;
+    background-color: #192144;
+  }
+}
