@@ -9,7 +9,8 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
+    padding-top: 137px;
     padding-bottom: 89px;
   }
 }
@@ -52,7 +53,7 @@
     background-repeat: no-repeat;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 309px;
     margin: 0;
   }
@@ -67,7 +68,7 @@
 
   @include font-size(bold, 24px, 24px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 40px;
 
     @include font-size(bold, 45px, 45px);
@@ -80,7 +81,7 @@
   margin: 0;
   margin-bottom: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 31px;
 
     @include font-size(300, 28px, 33px);
@@ -90,7 +91,7 @@
 .about-service__text--call {
   @include font-size(bold, 16px, 22px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 52px;
 
     @include font-size(bold, 21px, 25px);
