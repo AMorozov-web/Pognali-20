@@ -30,6 +30,7 @@
   }
 
   &:first-child {
+    z-index: 1;
     min-height: 140px;
     background-color: $special_orange;
 
