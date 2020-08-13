@@ -7,37 +7,43 @@
   padding-bottom: 31px;
   color: #ffffff;
   background-color: #192144;
-  background-image: url("../img/smolov-back-desktop@1x.png"),
-    url("../img/rogovaya-back-mobile@1x.png");
-  background-repeat: no-repeat;
   background-position: right 25px top 68px,
     left -13px top 346px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 68px;
-    left: 0;
-    display: block;
-    width: 113px;
-    height: 132px;
-    background-color: #141b3b;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
 
   @media (min-width: 768px) {
     padding-bottom: 87px;
   }
 }
 
+.travelmates__wrapper {
+  @include wrapper;
+
+  @media (min-width: 768px) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
 .travelmates__travelmates-list {
+  position: relative;
+
   @include list-style;
 
   margin-bottom: 23px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -34px;
+    left: -34px;
+    display: block;
+    width: 71px;
+    height: 71px;
+    background-image: url("../img/rogovaya-back-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: 768px) {
     display: flex;
@@ -47,22 +53,38 @@
   }
 }
 
-.travelmates__wrapper {
-  @include wrapper;
-
-  position: relative;
-
-  @media (min-width: 768px) {
-    padding-left: 34px;
-    padding-right: 34px;
-  }
-}
-
 .travelmates__main-title-box {
+  position: relative;
+  z-index: 1;
   width: 217px;
   margin-bottom: 54px;
   margin-left: auto;
   margin-right: auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -34px;
+    right: 153px;
+    display: block;
+    width: 1134px;
+    height: 132px;
+    background-color: #141b3b;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -34px;
+    right: -25px;
+    display: block;
+    width: 143px;
+    height: 143px;
+    background-image: url("../img/smolov-back-desktop@1x.png");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: 768px) {
     width: 427px;
@@ -72,6 +94,8 @@
 }
 
 .travelmates__main-title {
+  position: relative;
+  z-index: 1;
   margin: 0;
   margin-bottom: 20px;
   color: $special_orange;
@@ -86,6 +110,8 @@
 }
 
 .travelmates__main-text {
+  position: relative;
+  z-index: 1;
   margin: 0;
 
   &:not(:last-child) {
