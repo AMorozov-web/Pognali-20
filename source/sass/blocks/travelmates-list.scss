@@ -1,3 +1,12 @@
+.travelmates-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .travelmates-list__item {
   margin-right: auto;
   margin-left: auto;
@@ -6,7 +15,7 @@
     margin-bottom: 10px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin: 0;
 
     &:not(:last-child) {
