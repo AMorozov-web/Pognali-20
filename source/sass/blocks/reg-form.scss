@@ -9,9 +9,12 @@
   border-bottom-right-radius: 30px;
 
   @media (min-width: 768px) {
+    margin-bottom: -55px;
     min-height: 772px;
     padding-top: 133px;
     padding-bottom: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 }
 

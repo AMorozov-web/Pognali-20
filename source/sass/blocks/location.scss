@@ -1,16 +1,18 @@
 .location {
   position: relative;
   min-height: 238px;
-  margin-top: -25px;
   padding-top: 63px;
   background-color: $basic_yellow;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 
   @media (min-width: 768px) {
+    margin-bottom: -55px;
     min-height: 378px;
     padding-top: 124px;
     padding-bottom: 84px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 }
 

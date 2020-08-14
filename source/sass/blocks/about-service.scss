@@ -10,8 +10,11 @@
   border-bottom-right-radius: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: -55px;
     padding-top: 137px;
     padding-bottom: 89px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 }
 
