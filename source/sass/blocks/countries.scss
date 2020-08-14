@@ -23,6 +23,7 @@
 }
 
 .countries__title-box {
+  position: relative;
   width: 216px;
   margin-left: auto;
   margin-right: auto;
@@ -32,6 +33,30 @@
     width: 378px;
     margin: 0;
     padding-bottom: 104px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 333px;
+      left: -37px;
+      display: block;
+      width: 141px;
+      height: 141px;
+      background-color: #e2e5f2;
+      border-radius: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 7px;
+      left: 363px;
+      display: block;
+      width: 288px;
+      height: 574px;
+      background-image: url("../img/flags-back@1x.png");
+      background-repeat: no-repeat;
+    }
   }
 }
 
