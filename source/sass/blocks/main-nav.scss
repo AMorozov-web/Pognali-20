@@ -1,16 +1,44 @@
 .main-nav {
   display: flex;
   flex-direction: column;
+  min-height: 470px;
+  padding-top: 52px;
+  padding-bottom: 41px;
   background-color: #ffffff;
 
   .page-header--no-js & {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    min-height: 53px;
+    padding: 0;
+    background: transparent;
+  }
 }
 
 .main-nav__wrapper {
   @include wrapper;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.main-nav__user-nav-list {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__contact-wrapper {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__contact-link {
@@ -20,4 +48,8 @@
 
 .main-nav__social {
   margin-top: 40px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
