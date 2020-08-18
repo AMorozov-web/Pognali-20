@@ -99,7 +99,7 @@
 
     &::after {
       top: -99px;
-      right: -490px;
+      right: -500px;
       width: 431px;
       height: 640px;
       background-image: url("../img/traveller-illustration-desktop@1x.png");
@@ -144,12 +144,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: inline-block;
-    grid-column: 3 / -1;
+    display: block;
+    grid-column: 4 / -1;
     grid-row: 1 / 2;
+    justify-self: center;
     width: 264px;
     margin: 0;
-    margin-left: auto;
   }
 }
 

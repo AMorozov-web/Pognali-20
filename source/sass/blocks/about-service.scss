@@ -16,6 +16,15 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 750px;
+    margin-bottom: -55px;
+    padding-top: 132px;
+    padding-bottom: 163px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }
 
 .about-service__wrapper {
@@ -23,6 +32,11 @@
 
   padding-left: 34px;
   padding-right: 34px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-left: 70px;
+  }
 }
 
 .about-service__inner-box {
@@ -76,6 +90,27 @@
       background-image: url("../img/about-tablet@1x.png");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 619px;
+    margin: 0;
+
+    &::before {
+      top: -62px;
+      left: -70px;
+      width: 212px;
+      height: 212px;
+      border-radius: 20px;
+    }
+
+    &::after {
+      top: -47px;
+      left: 620px;
+      width: 630px;
+      height: 665px;
+      background-image: url("../img/about-desktop@1x.png");
+    }
+  }
 }
 
 .about-service__title {
@@ -92,6 +127,10 @@
 
     @include font-size(bold, 45px, 45px);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .about-service__text {
@@ -105,6 +144,12 @@
 
     @include font-size(300, 28px, 33px);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+
+    @include font-size(300, 28px, 34px);
+  }
 }
 
 .about-service__text--call {
@@ -114,6 +159,12 @@
     margin-bottom: 52px;
 
     @include font-size(bold, 21px, 25px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+
+    @include font-size(bold, 21px, 24px);
   }
 }
 
