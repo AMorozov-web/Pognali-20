@@ -82,8 +82,8 @@
     margin: 0;
 
     &::before {
-      top: -97px;
-      left: -34px;
+      top: 0;
+      left: -203px;
       width: 143px;
       height: 143px;
       background-image: url("../img/smolov-back-desktop@1x.png");
@@ -155,14 +155,14 @@
     &::before {
       width: 212px;
       height: 212px;
-      top: -70px;
-      left: -37px;
+      top: -60px;
+      left: -69px;
       border-radius: 20px;
     }
 
     &::after {
-      top: -61px;
-      left: 333px;
+      top: 256px;
+      left: 61px;
       width: 285px;
       height: 285px;
       background-image: url("../img/rogovaya-back-desktop@1x.png");
@@ -257,12 +257,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    z-index: 1;
     align-self: center;
     width: 280px;
     min-height: 80px;
     margin: 0;
-    padding-top: 29px;
-    padding-bottom: 29px;
+    padding-top: 23px;
+    padding-bottom: 23px;
     padding-left: 33px;
   }
 }
