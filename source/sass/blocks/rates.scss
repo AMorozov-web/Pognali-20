@@ -120,6 +120,7 @@
   @media (min-width: $desktop-width) {
     max-width: 813px;
     min-height: 198px;
+    padding-left: 91px;
   }
 }
 
@@ -242,6 +243,11 @@
       background-repeat: no-repeat;
       border-radius: 50%;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    margin-left: 35px;
   }
 }
 
