@@ -6,12 +6,18 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding-top: 135px;
     padding-bottom: 63px;
     background-color: #edeff6;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 818px;
+    padding-top: 175px;
+    padding-bottom: 165px;
   }
 }
 
@@ -22,7 +28,7 @@
 
   padding-left: 25px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding-left: 34px;
     padding-right: 34px;
 
@@ -39,6 +45,18 @@
       border-radius: 20px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+
+    &::after {
+      top: 130px;
+      right: 254px;
+      width: 446px;
+      height: 300px;
+    }
+  }
 }
 
 .rates__title-box {
@@ -49,10 +67,14 @@
   margin-right: auto;
   margin-bottom: 31px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: block;
     text-align: center;
     margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 134px;
   }
 }
 
@@ -62,17 +84,25 @@
 
   @include font-size(bold, 24px, 24px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     @include font-size(bold, 45px, 45px);
   }
 }
 
 .rates__icon {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     z-index: 1;
     bottom: -20px;
     right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 180px;
+    right: 144px;
+    display: block;
+    width: 198px;
+    height: 198px;
   }
 }
 
@@ -81,10 +111,15 @@
 
   margin-bottom: 32px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     position: relative;
     z-index: 1;
     padding-left: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 813px;
+    min-height: 198px;
   }
 }
 
@@ -116,7 +151,7 @@
     text-align: center;
     border-radius: 50%;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       top: 0;
       left: -90px;
       width: 68px;
@@ -142,7 +177,7 @@
     background-color: $basic_yellow;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,7 +196,7 @@
 
   color: $special_grey;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     @include font-size(300, 28px, 28px);
   }
 }
@@ -169,7 +204,7 @@
 .rates__text {
   margin-bottom: 7px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
@@ -183,7 +218,7 @@
   color: #132576;
   text-decoration: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     position: relative;
     min-height: 68px;
     padding-top: 20px;
