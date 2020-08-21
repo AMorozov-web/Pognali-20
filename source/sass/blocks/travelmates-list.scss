@@ -10,16 +10,13 @@
 .travelmates-list__item {
   margin-right: auto;
   margin-left: auto;
-
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-bottom: 20px;
 
-    &:not(:last-child) {
-      margin-bottom: 0;
+    &:nth-child(2n-1) {
       margin-right: 50px;
     }
   }
