@@ -5,10 +5,6 @@
   padding-bottom: 39px;
   color: #ffffff;
   background-color: $basic_blue;
-  background-image: url("../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: 100% 437px;
 
   &::after {
     position: absolute;
@@ -29,9 +25,6 @@
   @media (min-width: $tablet-width) {
     min-height: 973px;
     background-color: #182044;
-    background-image: url("../img/globe-back-tablet@1x.jpg");
-    background-position: right -350px bottom 180px;
-    background-size: 1472px 600px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +35,8 @@
 }
 
 .promo__wrapper {
+  position: relative;
+
   @include wrapper;
 
   @media (min-width: $desktop-width) {
