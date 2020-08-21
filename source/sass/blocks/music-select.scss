@@ -1,6 +1,5 @@
 .music-select {
   border-top: 1px solid #f3c72b;
-  border-bottom: 1px solid #f3c72b;
 }
 
 .music-select__title-btn {
@@ -24,4 +23,22 @@
 
   padding-top: 2px;
   padding-bottom: 21px;
+}
+
+.music-select__label {
+  position: relative;
+  padding-left: 27px;
+
+  @include font-size(normal, 15px, 20px);
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
 }

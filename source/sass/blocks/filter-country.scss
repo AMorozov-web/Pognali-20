@@ -1,11 +1,13 @@
 .filter-country {
-  background-color: $special_blue_filter;
+  margin-top: -20px;
+  padding-top: 40px;
+  background-color: #e2e5f2;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .filter-country__wrapper {
   @include wrapper;
-
-  padding-top: 20px;
 }
 
 .filter-country__title-box {
@@ -37,35 +39,85 @@
 }
 
 .filter-country__toggle-btn {
-  width: 16px;
+  position: relative;
+  width: 20px;
   height: 16px;
   margin: 0;
   padding: 0;
   border: none;
-  background-color: $special_orange;
-}
+  background: transparent;
+  cursor: pointer;
 
-.filter-country__dropdown {
-  padding-left: 25px;
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 2px);
+    right: 0;
+    width: 3px;
+    height: 3px;
+    background-color: #192144;
+    border-radius: 50%;
+    box-shadow:
+    -8px 0 0 0 #192144,
+    -16px 0 0 0 #192144;
+  }
 }
 
 .filter-country__country-select-list {
+  position: absolute;
   margin-top: 14px;
+  visibility: hidden;
+  transform: scaleY(0);
+  opacity: 0;
+
+  &--selected {
+    position: static;
+    visibility: visible;
+    transform: scaleY(1);
+    opacity: 1;
+  }
 }
 
 .filter-country__close-btn {
+  position: relative;
   width: 100%;
   margin-top: 28px;
   margin-bottom: 28px;
   padding: 0;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 15px;
 
   @include font-size(bold, 16px, 20px);
 
+  color: #192144;
   font-family: inherit;
   background-color: #d6daed;
   text-transform: uppercase;
   border: none;
   border-radius: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 1px);
+    left: 80px;
+    width: 16px;
+    height: 2px;
+    background-color: #192144;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 1px);
+    left: 80px;
+    width: 16px;
+    height: 2px;
+    background-color: #192144;
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
 }

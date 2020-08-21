@@ -17,6 +17,10 @@
     border-bottom-right-radius: 30px;
   }
 
+  .page__body--catalog & {
+    background-color: #182044;
+  }
+
   @media (min-width: $tablet-width) {
     background-color: #182044;
     min-height: 50px;
