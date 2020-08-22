@@ -221,6 +221,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    max-width: 400px;
     min-height: 68px;
     padding-top: 20px;
     padding-left: 55px;
@@ -238,7 +239,7 @@
       height: 68px;
       background-color: #e2e5f2;
       background-image: url("../img/user.svg");
-      background-position: center center;
+      background-position: 21px 18px;
       background-size: 27px 27px;
       background-repeat: no-repeat;
       border-radius: 50%;
