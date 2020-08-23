@@ -3,6 +3,7 @@
 }
 
 .hobby-select__title-btn {
+  position: relative;
   width: 100%;
   padding: 0;
   padding-top: 14px;
@@ -16,6 +17,19 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 4px);
+    right: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #1d2e5b;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
 }
 
 .hobby-select__list {
@@ -40,5 +54,16 @@
     height: 18px;
     background-color: #ffffff;
     border-radius: 4px;
+  }
+
+  .hobby-select__input:checked + &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 5px);
+    left: 5px;
+    width: 9px;
+    height: 9px;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
   }
 }

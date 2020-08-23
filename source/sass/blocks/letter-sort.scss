@@ -8,7 +8,8 @@
   margin-left: 25px;
   margin-right: 25px;
   background-color: #ffffff;
-  border: 1px solid #cbced9;
+  border-top: 1px solid #cbced9;
+  border-left: 1px solid #cbced9;
 }
 
 .letter-sort__cell {
@@ -16,8 +17,9 @@
   width: 100%;
   height: 40px;
   padding: 0;
-  border: 1px solid #cbced9;
   text-align: center;
+  border-bottom: 1px solid #cbced9;
+  border-right: 1px solid #cbced9;
 }
 
 .letter-sort__link {
@@ -35,6 +37,6 @@
   &--active {
     color: #ffffff;
     background-color: #1d2e5b;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
