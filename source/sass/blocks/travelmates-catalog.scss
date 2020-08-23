@@ -1,3 +1,7 @@
+.travelmates-catalog {
+  padding-bottom: 46px;
+}
+
 .travelmates-catalog__wrapper {
   @include wrapper;
 }
@@ -53,6 +57,7 @@
 }
 
 .travelmates-catalog__btn-pagination {
+  position: relative;
   width: 100%;
   min-height: 51px;
   padding: 0;
@@ -60,7 +65,16 @@
   border: none;
 
   &:not(:last-child) {
-    border-right: 1px solid #edeff6;
+    margin-right: 1px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 7px);
+    display: block;
+    width: 0;
+    height: 0;
   }
 
   &--prev {
@@ -71,5 +85,19 @@
   &--next {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+
+  &--prev::after {
+    left: 63px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 10px solid #1d2e5b;
+  }
+
+  &--next::after {
+    right: 63px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid #1d2e5b;
   }
 }
