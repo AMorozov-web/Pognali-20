@@ -61,12 +61,35 @@
 }
 
 .travelmate__favorite-btn {
+  position: relative;
   width: 31px;
   height: 31px;
   padding: 0;
-  background-color: #f9eaea;
+  padding-top: 3px;
+  background-color: #e2e5f2;
   border: none;
   border-radius: 50%;
+
+  &--active {
+    background-color: #f9eaea;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 5px);
+    left: calc(100% / 2 - 6px);;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+    opacity: 0.35;
+  }
+
+  &--active::after {
+    background-image: url("../img/heart-active.svg");
+    opacity: 1;
+  }
 }
 
 .travelmate__likes-count {
@@ -76,6 +99,8 @@
   margin-left: 6px;
 
   @include font-size(bold, 14px, 16px);
+
+  color: #161c35;
 }
 
 .travelmate__flags-list {

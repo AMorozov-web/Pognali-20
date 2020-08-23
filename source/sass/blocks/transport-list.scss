@@ -15,6 +15,22 @@
   width: 24px;
   height: 24px;
 
+  &--plane {
+    padding-top: 7px;
+    padding-left: 8px;
+  }
+
+  &--bus {
+    padding-top: 7px;
+    padding-left: 10px;
+  }
+
+  &--bike,
+  &--walk {
+    padding-top: 7px;
+    padding-left: 9px;
+  }
+
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -36,10 +52,11 @@
   }
 }
 
-.transport-list__transport-icon {
+.transport-list__icon {
   fill: #101d41;
+  fill-opacity: 0.15;
 
-  &--unwished {
-    fill-opacity: 0.15;
+  &--checked {
+    fill-opacity: 1;
   }
 }
