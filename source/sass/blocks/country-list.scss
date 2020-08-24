@@ -5,6 +5,21 @@
   padding-bottom: 21px;
   padding-left: 25px;
   padding-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.country-list__item {
+  @media (min-width: $tablet-width) {
+    margin-right: 28px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .country-list__link {
@@ -16,5 +31,9 @@
 
   &--active {
     color: #192144;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-size(bold, 20px, 20px);
   }
 }

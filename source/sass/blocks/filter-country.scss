@@ -1,18 +1,25 @@
 .filter-country {
-  margin-top: -20px;
   padding-top: 40px;
   background-color: #e2e5f2;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 124px;
+    padding-bottom: 59px;
+  }
 }
 
 .filter-country__wrapper {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .filter-country__title-box {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -36,14 +43,20 @@
     height: 10px;
     background-color: $special_orange;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .filter-country__toggle-btn {
   position: relative;
   width: 20px;
-  height: 16px;
+  min-height: 16px;
   margin: 0;
+  margin-left: auto;
   padding: 0;
+  font-family: inherit;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -60,6 +73,53 @@
     box-shadow:
       -8px 0 0 0 #192144,
       -16px 0 0 0 #192144;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    min-width: 220px;
+    min-height: 20px;
+
+    &::after {
+      right: 38px;
+      width: 6px;
+      height: 6px;
+      box-shadow:
+        -12px 0 0 0 #192144,
+        -24px 0 0 0 #192144;
+    }
+  }
+}
+
+.filter-country__toggle-btn-text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+
+    @include font-size(bold, 20px ,20px);
+
+    color: #192144;
+    font-family: inherit;
+    text-transform: uppercase;
+
+    .filters--opened-menu &--close {
+      display: block;
+      margin-left: 10px;
+    }
+
+    .filters--closed-menu &--open {
+      display: block;
+    }
+  }
+}
+
+.filter-country__country-list {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -36px;
+    left: 0;
   }
 }
 
@@ -82,7 +142,6 @@
   position: relative;
   width: 100%;
   margin-top: 28px;
-  margin-bottom: 28px;
   padding: 0;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -119,5 +178,11 @@
     background-color: #192144;
     border-radius: 2px;
     transform: rotate(45deg);
+  }
+}
+
+.filter-country__dropdown {
+  @media (min-width: $tablet-width) {
+    padding-top: 63px;
   }
 }

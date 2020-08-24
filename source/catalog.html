@@ -104,13 +104,20 @@
         </a>
       </div>
     </div>
-    <section class="catalog-page__filters filters">
+    <section class="catalog-page__filters filters filters--opened-menu">
       <h2 class="visually-hidden">Подбор попутчика по стране назназначения, привычкам и интересам</h2>
       <div class="filters__filter-country filter-country">
         <div class="filter-country__wrapper">
           <div class="filter-country__title-box">
             <p class="filter-country__title">Фильтрация по странам</p>
-            <button class="filter-country__toggle-btn" type="button" aria-label="Показать все фильтры"></button>
+            <button class="filter-country__toggle-btn" type="button" aria-label="Показать/свернуть фильтры">
+              <span class="filter-country__toggle-btn-text filter-country__toggle-btn-text--open">
+                Показать все
+              </span>
+              <span class="filter-country__toggle-btn-text filter-country__toggle-btn-text--close">
+                Свернуть
+              </span>
+            </button>
           </div>
           <div class="filter-country__dropdown">
             <ul class="filter-country__country-list country-list">

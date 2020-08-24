@@ -1,8 +1,6 @@
 .catalog-page {
   position: relative;
   z-index: 1;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
 }
 
 .catalog-page__title-wrapper {
@@ -18,6 +16,8 @@
   @media (min-width: $tablet-width) {
     padding-top: 139px;
     padding-bottom: 73px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 }
 
@@ -92,5 +92,11 @@
 .catalog-page__link-back-icon {
   @media (min-width: $tablet-width) {
     fill: #ffffff;
+  }
+}
+
+.catalog-page__filters {
+  @media (min-width: $tablet-width) {
+    margin-top: -55px;
   }
 }
