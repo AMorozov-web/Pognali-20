@@ -14,6 +14,22 @@
   background-color: #182044;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 139px;
+    padding-bottom: 73px;
+  }
+}
+
+.catalog-page__title-box {
+  @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
 }
 
 .catalog-page__title {
@@ -21,7 +37,6 @@
   display: block;
   margin: 0;
 
-  @include wrapper;
   @include font-size(bold, 36px, 36px);
 
   color: #ffffff;
@@ -36,5 +51,46 @@
     height: 5px;
     background-color: $special_orange;
     border-radius: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-shrink: 1;
+
+    @include font-size(bold, 60px, 60px);
+
+    &::after {
+      bottom: -76px;
+      width: 288px;
+      height: 8px;
+    }
+  }
+}
+
+.catalog-page__link-back {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: auto;
+  }
+}
+
+.catalog-page__link-back-text {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 28px;
+
+    @include font-size(bold, 20px, 20px);
+
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+
+.catalog-page__link-back-icon {
+  @media (min-width: $tablet-width) {
+    fill: #ffffff;
   }
 }

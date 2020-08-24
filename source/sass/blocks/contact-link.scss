@@ -16,6 +16,12 @@
 
   &--page-header {
     display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
   }
 }
 
@@ -48,10 +54,24 @@
     background-color: $special_yellow_dark;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 68px;
     height: 68px;
     padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+
+    &--phone {
+      background-color: $special_orange;
+    }
+
+    &--email {
+      background-color: $special_yellow_dark;
+    }
   }
 }
 
@@ -64,9 +84,15 @@
     fill: $basic_blue;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 27px;
     height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 18px;
+    height: 18px;
+    fill: #161c35;
   }
 }
 
@@ -80,7 +106,7 @@
     color: $basic_yellow;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     @include font-size(bold, 28px, 28px);
   }
 }
