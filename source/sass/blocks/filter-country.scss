@@ -15,6 +15,8 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 }
 
@@ -116,10 +118,26 @@
 }
 
 .filter-country__country-list {
+  display: none;
+
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: -36px;
-    left: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &--dropdown {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.filter-country__letter-sort {
+  margin-left: 25px;
+  margin-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
@@ -178,6 +196,14 @@
     background-color: #192144;
     border-radius: 2px;
     transform: rotate(45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+
+    @include font-size(bold, 20px, 20px);
   }
 }
 

@@ -5,11 +5,17 @@
 
   @include list-style;
 
-  margin-left: 25px;
-  margin-right: 25px;
   background-color: #ffffff;
   border-top: 1px solid #cbced9;
   border-left: 1px solid #cbced9;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 33px;
+    row-gap: 20px;
+    min-width: 346px;
+    background: transparent;
+    border: none;
+  }
 }
 
 .letter-sort__cell {
@@ -20,6 +26,11 @@
   text-align: center;
   border-bottom: 1px solid #cbced9;
   border-right: 1px solid #cbced9;
+
+  @media (min-width: $tablet-width) {
+    height: fit-content;
+    border: none;
+  }
 }
 
 .letter-sort__link {
@@ -38,5 +49,18 @@
     color: #ffffff;
     background-color: #1d2e5b;
     transform: scale(1.05);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    @include font-size(bold, 60px, 60px);
+
+    color: rgba(#192144, 0.3);
+
+    &--active {
+      color: #192144;
+      background: transparent;
+    }  
   }
 }
