@@ -118,17 +118,9 @@
 }
 
 .filter-country__country-list {
-  display: none;
-
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-  }
-
-  &--dropdown {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
   }
 }
 
