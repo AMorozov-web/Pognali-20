@@ -139,21 +139,6 @@
   }
 }
 
-.filter-country__country-select-list {
-  position: absolute;
-  margin-top: 14px;
-  visibility: hidden;
-  transform: scaleY(0);
-  opacity: 0;
-
-  &--selected {
-    position: static;
-    visibility: visible;
-    transform: scaleY(1);
-    opacity: 1;
-  }
-}
-
 .filter-country__dropdown {
   @media (min-width: $tablet-width) {
     display: grid;
@@ -171,8 +156,25 @@
 }
 
 .filter-country__country-select-list {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  position: absolute;
+  margin-top: 14px;
+  visibility: hidden;
+  transform: scaleY(0);
+  opacity: 0;
+
+  &--selected {
+    position: static;
+    visibility: visible;
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--selected {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+  }
 }
 
 .filter-country__close-btn {

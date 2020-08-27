@@ -1,5 +1,13 @@
 .transport-select {
   border-top: 1px solid #f3c72b;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    padding-top: 25px;
+    border: none;
+  }
 }
 
 .transport-select__title-btn {
@@ -30,15 +38,40 @@
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    @include font-size(500, 20px, 20px);
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.transport-select__title-btn-add {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+
+    @include font-size(500, 20px, 20px);
+  }
 }
 
 .transport-select__list {
   display: flex;
+  align-items: center;
 
   @include list-style;
 
   padding-top: 2px;
   padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .transport-select__item:not(:last-child) {
@@ -63,6 +96,22 @@
   &--bike {
     padding-left: 8px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 44px;
+    height: 44px;
+    padding-top: 10px;
+
+    &--plane,
+    &--walk {
+      padding-left: 10px;
+    }
+
+    &--bus,
+    &--bike {
+      padding-left: 11px;
+    }
+  }
 }
 
 .transport-select__icon {
@@ -73,5 +122,10 @@
 
   .transport-select__input:checked ~ .transport-select__label & {
     fill-opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 22px;
   }
 }

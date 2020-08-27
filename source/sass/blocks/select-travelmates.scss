@@ -6,6 +6,12 @@
 
   color: #1d2e5b;
   letter-spacing: 0.02em;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+
+    @include font-size(bold, 30px, 30px);
+  }
 }
 
 .select-travelmates__btn {
@@ -21,4 +27,11 @@
   background-color: #ffffff;
   border: none;
   border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    @include font-size(bold, 20px,20px);
+  }
 }
