@@ -5,6 +5,8 @@
 
   @include list-style;
 
+  margin-left: 25px;
+  margin-right: 25px;
   background-color: #ffffff;
   border-top: 1px solid #cbced9;
   border-left: 1px solid #cbced9;
@@ -13,6 +15,7 @@
     column-gap: 33px;
     row-gap: 20px;
     min-width: 346px;
+    margin: 0;
     background: transparent;
     border: none;
   }
