@@ -881,11 +881,13 @@
         <h2 class="visually-hidden">Каталог попутчиков по Вашему запросу</h2>
         <ul class="travelmates-catalog__travelmates-list travelmates-list">
           <li class="travelmates-list__item travelmate">
-            <a class="travelmate__link" href="#">
+            <a href="#" class="travelmate__link travelmate__link--photo">
               <picture>
                 <img class="travelmate__photo" src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Таня Фирсова">
               </picture>
-              <h3 class="travelmate__name">Таня<br>Фирсова</h3>
+            </a>
+            <a href="#" class="travelmate__link travelmate__link--name">
+              <h3 class="travelmate__name">Таня Фирсова</h3>
             </a>
             <div class="travelmate__favorite">
               <button class="travelmate__favorite-btn travelmate__favorite-btn--active" aria-label="Добавить в избраное"></button>
@@ -950,9 +952,11 @@
             </div>
           </li>
           <li class="travelmates-list__item travelmate">
-            <a class="travelmate__link" href="#">
+            <a class="travelmate__link travelmate__link--photo" href="#">
               <img class="travelmate__photo travelmate__photo--catalog" src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Петя Демин">
-              <h3 class="travelmate__name">Петя<br>Демин</h3>
+            </a>
+            <a href="#" class="travelmate__link travelmate__link--name">
+              <h3 class="travelmate__name">Петя Демин</h3>
             </a>
             <div class="travelmate__favorite">
               <button class="travelmate__favorite-btn" aria-label="Добавить в избраное"></button>
@@ -1013,9 +1017,11 @@
             </div>
           </li>
           <li class="travelmates-list__item travelmate">
-            <a class="travelmate__link" href="#">
+            <a class="travelmate__link travelmate__link--photo" href="#">
               <img class="travelmate__photo travelmate__photo--catalog" src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Марк Смолов">
-              <h3 class="travelmate__name">Марк<br>Смолов</h3>
+            </a>
+            <a href="" class="travelmate__link travelmate__link--name">
+              <h3 class="travelmate__name">Марк Смолов</h3>
             </a>
             <div class="travelmate__favorite">
               <button class="travelmate__favorite-btn" aria-label="Добавить в избраное"></button>
@@ -1080,9 +1086,11 @@
             </div>
           </li>
           <li class="travelmates-list__item travelmate">
-            <a class="travelmate__link" href="#">
+            <a class="travelmate__link travelmate__link--photo" href="#">
               <img class="travelmate__photo travelmate__photo--catalog" src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Лариса Роговая">
-              <h3 class="travelmate__name travelmate__name--online">Лариса<br>Роговая</h3>
+            </a>
+            <a href="" class="travelmate__link travelmate__link--name">
+              <h3 class="travelmate__name travelmate__name--online">Лариса Роговая</h3>
             </a>
             <div class="travelmate__favorite">
               <button class="travelmate__favorite-btn" aria-label="Добавить в избраное"></button>
@@ -1147,6 +1155,28 @@
           <a class="travelmates-catalog__btn-more" href="#">Показать еще</a>
         </div>
         <div class="travelmates-catalog__pagination">
+          <ul class="travelmates-catalog__pagination-list pagination-list">
+            <li class="pagination-item pagination-item--current">
+              <a href="" class="pagination-link">
+                1
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a href="" class="pagination-link">
+                2
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a href="" class="pagination-link">
+                3
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a href="" class="pagination-link">
+                4
+              </a>
+            </li>
+          </ul>
           <button class="travelmates-catalog__btn-pagination travelmates-catalog__btn-pagination--prev" type="button"
             aria-label="Предыдущая страница">
           </button>

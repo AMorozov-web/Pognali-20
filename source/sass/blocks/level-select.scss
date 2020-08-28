@@ -169,6 +169,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 46px;
+    padding-top: 10px;
 
     @include font-size(500, 20px, 20px);
 

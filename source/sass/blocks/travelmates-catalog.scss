@@ -1,6 +1,11 @@
 .travelmates-catalog {
   padding-top: 31px;
   padding-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 124px;
+  }
 }
 
 .travelmates-catalog__wrapper {
@@ -48,6 +53,20 @@
   &::after {
     transform: rotate(90deg);
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 51px;
+    margin-bottom: 52px;
+    padding-left: 50px;
+
+    @include font-size(bold, 20px, 20px);
+
+    &::before,
+    &::after {
+      top: calc(100% / 2 - 1px);
+      width: 26px;
+    }
+  }
 }
 
 .travelmates-catalog__pagination {
@@ -55,6 +74,26 @@
   justify-content: center;
   align-items: center;
   margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: unset;
+    min-height: 100px;
+    width: 100%;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 28px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+}
+
+.travelmates-catalog__pagination-list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .travelmates-catalog__btn-pagination {
@@ -100,5 +139,27 @@
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
     border-left: 10px solid #1d2e5b;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 66px;
+    height: 50px;
+    border-radius: 0;
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+
+    &--prev {
+      margin-left: auto;
+    }
+
+    &--prev::after {
+      left: 40px;
+    }
+
+    &--next::after {
+      right: 40px;
+    }
   }
 }
