@@ -77,15 +77,18 @@
 }
 
 .level-select__range {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 2px;
+  background-color: rgba(#1d2e5b, 0.2);
+
   @media (min-width: $tablet-width) {
-    position: relative;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     align-self: center;
-    display: block;
     width: 281px;
     height: 3px;
-    background-color: rgba(#1d2e5b, 0.2);
     border-radius: 2px;
   }
 }
@@ -100,9 +103,9 @@
 
 .level-select__toggle {
   position: absolute;
-  top: -5px;
-  width: 13px;
-  height: 13px;
+  top: -4px;
+  width: 10px;
+  height: 10px;
   background-color: #1d2e5b;
   border-radius: 50%;
 
@@ -113,11 +116,18 @@
   &--max {
     right: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    top: -5px;
+    width: 13px;
+    height: 13px;
+  }
 }
 
 .level-select__input-wrapper {
   position: relative;
   display: flex;
+  margin-bottom: 21px;
 
   &::after {
     position: absolute;
@@ -135,6 +145,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     width: 148px;
+    margin-bottom: 0;
 
     &::after {
       width: 21px;

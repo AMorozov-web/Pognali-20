@@ -1,10 +1,22 @@
 .wish-country {
   border-top: 1px solid #edeff6;
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      margin-top: 21px;
+      margin-left: -35px;
+      margin-right: -25px;
+    }
+  }
 }
 
 .wish-country__wrapper {
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .wish-country__title {
@@ -12,18 +24,35 @@
   width: max-content;
   margin: 0;
   margin-top: -11px;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
+  margin-left: -10px;
   padding-left: 10px;
   padding-right: 10px;
 
   @include font-size(normal, 15px, 18px);
 
+  color: #444444;
   text-transform: lowercase;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      margin-left: 84px;
+    }
+  }
 }
 
 .wish-country__list {
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      display: flex;
+      align-items: center;
+      padding-left: 37px;
+      padding-right: 25px;
+    }
+  }
 }
 
 .wish-country__item {
@@ -34,6 +63,24 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 28px;
+    }
+  }
+}
+
+.wish-country__flag {
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      width: 35px;
+      height: 24px;
+    }
+  }
 }
 
 .wish-country__country {
@@ -43,4 +90,8 @@
 
   color: #1d2e5b;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(500, 20px, 20px);
+  }
 }

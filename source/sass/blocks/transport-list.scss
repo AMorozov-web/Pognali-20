@@ -9,6 +9,12 @@
     border: 1px solid #cbced9;
     border-radius: 10px;
   }
+
+  .catalog-page & {
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+    }
+  }
 }
 
 .transport-list__item {
@@ -41,6 +47,16 @@
     margin: 0;
     background-color: #edeff6;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 26px;
+      height: 26px;
+      margin-bottom: 7px;
+      padding: 0;
+      padding-top: 3px;
+      padding-left: 3px;
+      background: transparent;
+    }
   }
 
   .form-page & {
@@ -58,5 +74,12 @@
 
   &--checked {
     fill-opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

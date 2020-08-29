@@ -6,13 +6,31 @@
   border-radius: 12px;
 
   .catalog-page & {
+    display: grid;
+    grid-template-columns: 70px 120px auto;
+    grid-template-rows: 40px 30px auto auto auto 40px;
     min-height: 415px;
     padding-top: 15px;
+    padding-bottom: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 285px;
     min-height: 483px;
+
+    .catalog-page & {
+      grid-template-columns: 190px 150px auto 60px;
+      grid-template-rows: 30px auto 50px auto;
+      column-gap: 29px;
+      width: 100%;
+      min-height: 333px;
+      padding-top: 35px;
+      padding-bottom: 25px;
+      padding-left: 35px;
+      padding-right: 25px;
+    }
   }
 }
 
@@ -24,22 +42,55 @@
     border-radius: 50%;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 285px;
     height: 286px;
+
+    .catalog-page & {
+      width: 190px;
+      height: 190px;
+      border-radius: 20px;
+    }
   }
 }
 
 .travelmate__link {
   .catalog-page & {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-left: 20px;
-    padding-right: 20px;
     text-decoration: none;
+
+    &--photo {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+
+    &--name {
+      grid-column: 2 / 4;
+      grid-row: 1 / 2;
+    }
   }
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      height: fit-content;
+      padding: 0;
+
+      &--photo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+      }
+
+      &--name {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+      }
+    }
+  }
+}
+
+.travelmate__transport {
+  margin-top: -34px;
+  margin-left: 10px;
 }
 
 .travelmate__level {
@@ -49,6 +100,12 @@
 
   .catalog-page & {
     position: static;
+    margin-top: -23px;
+
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: -10px;
+    }
   }
 }
 
@@ -58,6 +115,16 @@
   left: 70px;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      position: static;
+      grid-column: 3 / 4;
+      grid-row: 3 / 4;
+      margin: 0;
+      margin-left: -28px;
+    }
+  }
 }
 
 .travelmate__favorite-btn {
@@ -90,6 +157,18 @@
     background-image: url("../img/heart-active.svg");
     opacity: 1;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      top: calc(100% / 2 - 8px);
+      left: calc(100% / 2 - 10px);
+    }
+  }
 }
 
 .travelmate__likes-count {
@@ -101,6 +180,14 @@
   @include font-size(bold, 14px, 16px);
 
   color: #161c35;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    margin: 0;
+    margin-left: 6px;
+
+    @include font-size(bold, 20px, 20px);
+  }
 }
 
 .travelmate__flags-list {
@@ -108,7 +195,7 @@
 
   margin-top: -20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-top: -18px;
   }
 }
@@ -118,7 +205,7 @@
 
   margin-top: 15px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-top: 25px;
   }
 }
@@ -139,9 +226,9 @@
   .catalog-page & {
     flex-direction: row-reverse;
     justify-content: space-between;
-    flex-grow: 1;
+    width: 100px;
     margin: 0;
-    margin-left: 15px;
+    margin-left: 16px;
     text-align: left;
   }
 
@@ -154,6 +241,9 @@
     border-radius: 50%;
 
     .catalog-page & {
+      position: absolute;
+      top: 0;
+      right: 0;
       margin: 0;
       margin-top: 8px;
       align-self: flex-start;
@@ -164,15 +254,24 @@
     background-color: #81e31e;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-top: 19px;
 
     @include font-size(bold, 24px, 22px);
+
+    .catalog-page & {
+      justify-content: flex-end;
+      margin-left: 7px;
+    }
 
     &::before {
       width: 8px;
       height: 8px;
       margin-right: 14px;
+
+      .catalog-page & {
+        margin-left: 22px;
+      }
     }
   }
 }
@@ -188,58 +287,98 @@
 
   @include font-size(normal, 16px, 18px);
 
-  color: $special_grey;
+  color: #444444;
 
   .catalog-page & {
-    display: block;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
     margin: 0;
-    margin-top: 13px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 12px;
     text-align: left;
 
     @include font-size(normal, 15px, 18px);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     max-width: 223px;
     margin-top: 23px;
 
     @include font-size(normal, 20px, 23px);
+
+    .catalog-page & {
+      grid-column: 2 / 4;
+      grid-row: 2 / 3;
+      margin: 0;
+      margin-top: 5px;
+      margin-left: 7px;
+      color: #000000;
+    }
   }
 }
 
 .travelmate__wish-country {
-  margin-top: 25px;
+  grid-column: 1 / 4;
+  margin-top: 10px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      grid-column: 1 / 5;
+      grid-row: 4 / -1;
+      margin: 0;
+    }
+  }
 }
 
 .travelmate__inner-box {
-  margin-top: 22px;
-  border-top: 1px solid #edeff6;
-}
-
-.travelmate__inner-wrapper {
+  grid-column: 1 / 4;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-right: 20px;
-  margin-left: 20px;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px solid #edeff6;
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      grid-column: 4 / -1;
+      grid-row: 1 / 4;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      border: none;
+    }
+  }
 }
 
 .travelmate__btn-invite {
+  grid-column: 1 / 4;
   display: block;
-  margin-top: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
 
   @include font-size(bold, 17px, 17px);
 
-  color: $basic_blue;
+  color: #161c35;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: $basic_yellow;
+  background-color: #ffd74b;
   border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      width: 150px;
+      min-height: 50px;
+      margin: 0;
+      padding-top: 14px;
+      padding-bottom: 14px;
+
+      @include font-size(bold, 20px, 20px);
+    }
+  }
 }

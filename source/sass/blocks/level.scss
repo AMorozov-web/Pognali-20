@@ -13,9 +13,8 @@
   display: block;
   width: max-content;
   margin: 0;
-  margin-top: -11px;
-  margin-bottom: 10px;
-  margin-right: -10px;
+  margin-right: 9px;
+  margin-bottom: 11px;
   padding-left: 10px;
   padding-right: 10px;
 
@@ -23,11 +22,18 @@
 
   text-transform: lowercase;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      display: none;
+    }
+  }
 }
 
 .level__wrapper {
   .catalog-page & {
     position: relative;
+    margin-right: 15px;
   }
 
   .form-page & {
@@ -42,6 +48,11 @@
   .catalog-page & {
     width: 45px;
     height: 45px;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   .form-page & {
@@ -87,6 +98,10 @@
 
   .catalog-page & {
     stroke-linecap: round;
+
+    @media (min-width: $tablet-width) {
+      stroke-width: 3px;
+    }
   }
 }
 
@@ -98,6 +113,10 @@
   .catalog-page & {
     top: 11px;
     left: 9px;
+
+    @media (min-width: $tablet-width) {
+      left: 17px;
+    }
   }
 
   .form-page & {
@@ -116,13 +135,17 @@
   .catalog-page & {
     color: #1d2e5b;
     border: none;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px solid rgba(#000000, 0.1);
+    }
   }
 
   .form-page & {
     @include font-size(bold, 38px, 38px);
 
     color: $basic_blue;
-    border-color: rgba($special_grey, 0.3);
+    border-color: rgba(#444444, 0.3);
   }
 }
 
@@ -137,6 +160,15 @@
 
     @include font-size(normal, 18px, 18px);
 
-    color: $special_grey;
+    color: #444444;
+  }
+
+  .catalog-page & {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      color: rgba(#000000, 0.4);
+    }
   }
 }
