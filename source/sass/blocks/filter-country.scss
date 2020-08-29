@@ -155,6 +155,10 @@
   grid-row: 1 / 2;
 }
 
+.filter-country__country-select-title {
+  display: none;
+}
+
 .filter-country__country-select-list {
   position: absolute;
   margin-top: 14px;

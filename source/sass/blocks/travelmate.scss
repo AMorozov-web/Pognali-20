@@ -91,6 +91,10 @@
 .travelmate__transport {
   margin-top: -34px;
   margin-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .travelmate__level {
@@ -101,7 +105,6 @@
   .catalog-page & {
     position: static;
     margin-top: -23px;
-
 
     @media (min-width: $tablet-width) {
       margin-bottom: -10px;
@@ -262,6 +265,7 @@
     .catalog-page & {
       justify-content: flex-end;
       margin-left: 7px;
+      width: fit-content;
     }
 
     &::before {
@@ -269,7 +273,8 @@
       height: 8px;
       margin-right: 14px;
 
-      .catalog-page & {
+      .catalog-page & { 
+        position: static;
         margin-left: 22px;
       }
     }
@@ -303,8 +308,6 @@
     max-width: 223px;
     margin-top: 23px;
 
-    @include font-size(normal, 20px, 23px);
-
     .catalog-page & {
       grid-column: 2 / 4;
       grid-row: 2 / 3;
@@ -312,6 +315,8 @@
       margin-top: 5px;
       margin-left: 7px;
       color: #000000;
+      
+      @include font-size(normal, 20px, 23px);
     }
   }
 }
