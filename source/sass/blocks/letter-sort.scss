@@ -19,6 +19,10 @@
     background: transparent;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .letter-sort__cell {

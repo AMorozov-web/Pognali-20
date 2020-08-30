@@ -89,15 +89,15 @@
   }
 
   .level--80 & {
-    stroke-dashoffset: calc(255 + (190 - (190 * 80 / 100)));
+    stroke-dashoffset: calc(251 + (190 - (190 * 80 / 100)));
   }
 
   .level--50 & {
-    stroke-dashoffset: calc(255 + (190 - (190 * 50 / 100)));
+    stroke-dashoffset: calc(251 + (190 - (190 * 50 / 100)));
   }
 
   .level--25 & {
-    stroke-dashoffset: calc(255 + (190 - (190 * 25 / 100)));
+    stroke-dashoffset: calc(251 + (190 - (190 * 25 / 100)));
   }
 
   .catalog-page & {

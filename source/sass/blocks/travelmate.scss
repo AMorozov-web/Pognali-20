@@ -273,7 +273,7 @@
       height: 8px;
       margin-right: 14px;
 
-      .catalog-page & { 
+      .catalog-page & {
         position: static;
         margin-left: 22px;
       }
@@ -315,7 +315,7 @@
       margin-top: 5px;
       margin-left: 7px;
       color: #000000;
-      
+
       @include font-size(normal, 20px, 23px);
     }
   }

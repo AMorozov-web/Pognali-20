@@ -19,6 +19,11 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 135px;
+    padding-bottom: 81px;
+  }
 }
 
 .catalog-page__title-box {
@@ -29,6 +34,11 @@
     align-items: center;
     padding-left: 34px;
     padding-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 66px;
+    padding-right: 66px;
   }
 }
 
@@ -62,6 +72,12 @@
       bottom: -76px;
       width: 288px;
       height: 8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      bottom: -84px;
     }
   }
 }
