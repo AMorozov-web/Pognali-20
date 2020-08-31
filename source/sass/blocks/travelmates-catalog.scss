@@ -6,6 +6,12 @@
     padding-top: 40px;
     padding-bottom: 124px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+    padding-top: 0;
+    padding-left: 59px;
+  }
 }
 
 .travelmates-catalog__wrapper {
@@ -21,11 +27,11 @@
 }
 
 .travelmates-catalog__btn-more-wrapper {
+  position: relative;
   width: fit-content;
   margin-top: 18px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
 }
 
 .travelmates-catalog__btn-more {

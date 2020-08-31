@@ -35,4 +35,10 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .catalog-page & {
+      margin-bottom: 30px;
+    }
+  }
 }

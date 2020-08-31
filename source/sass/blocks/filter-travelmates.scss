@@ -1,3 +1,12 @@
+.filter-travelmates {
+  @media (min-width: $desktop-width) {
+    .catalog-page & {
+      width: min-content;
+      padding-right: 59px;
+    }
+  }
+}
+
 .filter-travelmates__wrapper {
   @include wrapper;
 
@@ -18,7 +27,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 285px;
+    max-width: 285px;
+    margin: 0;
     margin-top: 50px;
     padding: 47px;
   }
