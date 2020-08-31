@@ -10,6 +10,10 @@
 
 .travelmates-catalog__wrapper {
   @include wrapper;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .travelmates-catalog__travelmates-list {

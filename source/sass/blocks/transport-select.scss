@@ -8,6 +8,11 @@
     padding-top: 25px;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 0;
+  }
 }
 
 .transport-select__title-btn {
@@ -34,7 +39,7 @@
     display: block;
     width: 0;
     height: 0;
-    border-top: 6px solid #1d2e5b;
+    border-bottom: 6px solid #1d2e5b;
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
   }
@@ -46,6 +51,14 @@
 
     &::after {
       display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+
+    &::after {
+      display: block;
     }
   }
 }
@@ -72,6 +85,10 @@
   @media (min-width: $tablet-width) {
 
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 32px;
   }
 }
 

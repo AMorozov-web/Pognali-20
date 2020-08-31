@@ -11,6 +11,12 @@
     border: none;
     border-bottom: 1px solid #f3c72b;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 0;
+    border: none;
+  }
 }
 
 .level-select__title-btn {
@@ -51,6 +57,14 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+
+    &::after {
+      display: block;
+    }
+  }
 }
 
 .food-select__title-btn-add {
@@ -74,6 +88,10 @@
     column-gap: 61px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .level-select__range {
@@ -90,6 +108,10 @@
     width: 281px;
     height: 3px;
     border-radius: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -114,7 +136,7 @@
   }
 
   &--max {
-    right: 0;
+    right: 0%;
   }
 
   @media (min-width: $tablet-width) {
@@ -151,6 +173,11 @@
       width: 21px;
       left: calc(50% - 11px);
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 
