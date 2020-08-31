@@ -1,11 +1,3 @@
-.filter-travelmates {
-  @media (min-width: $desktop-width) {
-    .catalog-page & {
-      padding-right: 59px;
-    }
-  }
-}
-
 .filter-travelmates__wrapper {
   @include wrapper;
 

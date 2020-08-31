@@ -8,6 +8,13 @@
       margin-right: -25px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .catalog-page & {
+      margin: 0;
+      border: none;
+    }
+  }
 }
 
 .wish-country__wrapper {
@@ -40,6 +47,12 @@
       margin-left: 84px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .catalog-page & {
+      display: none;
+    }
+  }
 }
 
 .wish-country__list {
@@ -49,6 +62,14 @@
     .catalog-page & {
       display: flex;
       align-items: center;
+      padding-left: 37px;
+      padding-right: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .catalog-page & {
+      display: block;
       padding-left: 37px;
       padding-right: 25px;
     }
