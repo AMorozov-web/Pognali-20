@@ -24,6 +24,7 @@
       grid-template-columns: 190px 150px auto 60px;
       grid-template-rows: 30px auto 50px auto;
       column-gap: 29px;
+      row-gap: 23px;
       width: 100%;
       min-height: 333px;
       padding-top: 35px;
@@ -35,12 +36,15 @@
 
   @media (min-width: $desktop-width) {
     .catalog-page & {
-      grid-template-columns: 285px auto auto auto;
-      grid-template-rows: repeat(3, auto);
-      column-gap: 36px;
+      grid-template-columns: 285px 150px auto auto;
+      grid-template-rows: 30px auto 50px;
+      column-gap: 54px;
       min-width: 951px;
-      min-height: 286px;
+      min-height: 285px;
       padding: 0;
+      padding-top: 46px;
+      padding-bottom: 46px;
+      padding-right: 43px;
       border-radius: 20px;
     }
   }
@@ -69,6 +73,8 @@
     .catalog-page & {
       width: 285px;
       height: 285px;
+      margin-top: -46px;
+      margin-bottom: -46px;
       border-radius: 0;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
@@ -114,6 +120,7 @@
       &--photo {
         grid-column: 1 / 2;
         grid-row: 1 / 4;
+        height: 193px;
       }
 
       &--name {
@@ -145,6 +152,11 @@
     @media (min-width: $tablet-width) {
       margin-bottom: -10px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -162,6 +174,12 @@
       grid-row: 3 / 4;
       margin: 0;
       margin-left: -28px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .catalog-page & {
+      margin-left: -54px;
     }
   }
 }
@@ -315,6 +333,23 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .catalog-page & {
+      flex-direction: row;
+      justify-content: unset;
+      margin: 0;
+
+      @include font-size(bold, 30px, 30px);
+
+      &::before {
+        margin: 0;
+        margin-left: -10px;
+        margin-right: 18px;
+        align-self: center;
+      }
+    }
+  }
 }
 
 .travelmate__hashtags {
@@ -361,6 +396,7 @@
       grid-column: 2 / 4;
       grid-row: 2 / 3;
       margin: 0;
+      padding-left: 8px;
     }
   }
 }
@@ -416,6 +452,7 @@
       flex-direction: row;
       align-items: center;
       margin: 0;
+      padding-left: 0;
       border: none;
     }
   }

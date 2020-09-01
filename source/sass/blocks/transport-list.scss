@@ -61,6 +61,11 @@
       padding-left: 3px;
       background: transparent;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+      margin-right: 14px;
+    }
   }
 
   .form-page & {

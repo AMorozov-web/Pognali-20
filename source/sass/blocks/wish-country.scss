@@ -70,8 +70,7 @@
   @media (min-width: $desktop-width) {
     .catalog-page & {
       display: block;
-      padding-left: 37px;
-      padding-right: 25px;
+      padding: 0;
     }
   }
 }
@@ -91,6 +90,13 @@
     &:not(:last-child) {
       margin-bottom: 0;
       margin-right: 28px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+      margin-right: 0;
     }
   }
 }
