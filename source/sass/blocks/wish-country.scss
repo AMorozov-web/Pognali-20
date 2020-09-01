@@ -1,10 +1,29 @@
 .wish-country {
-  border-top: 1px solid $basic_blue_lighter;
+  border-top: 1px solid #edeff6;
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      margin-top: 21px;
+      margin-left: -35px;
+      margin-right: -25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .catalog-page & {
+      margin: 0;
+      border: none;
+    }
+  }
 }
 
 .wish-country__wrapper {
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .wish-country__title {
@@ -12,18 +31,48 @@
   width: max-content;
   margin: 0;
   margin-top: -11px;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
+  margin-left: -10px;
   padding-left: 10px;
   padding-right: 10px;
 
   @include font-size(normal, 15px, 18px);
 
+  color: #444444;
   text-transform: lowercase;
-  background-color: $basic_white;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      margin-left: 84px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .catalog-page & {
+      display: none;
+    }
+  }
 }
 
 .wish-country__list {
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      display: flex;
+      align-items: center;
+      padding-left: 37px;
+      padding-right: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .catalog-page & {
+      display: block;
+      padding: 0;
+    }
+  }
 }
 
 .wish-country__item {
@@ -34,6 +83,31 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 28px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+      margin-right: 0;
+    }
+  }
+}
+
+.wish-country__flag {
+  @media (min-width: $tablet-width) {
+    .catalog-page & {
+      width: 35px;
+      height: 24px;
+    }
+  }
 }
 
 .wish-country__country {
@@ -41,6 +115,10 @@
 
   @include font-size(500, 15px, 16px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(500, 20px, 20px);
+  }
 }

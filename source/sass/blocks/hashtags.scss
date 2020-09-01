@@ -13,8 +13,8 @@
 
   @include font-size(bold, 16px, 18px);
 
-  color: $basic_blue_light;
-  background-color: $basic_blue_lighter;
+  color: #1d2e5b;
+  background-color: #edeff6;
   text-transform: uppercase;
 }
 
@@ -26,7 +26,7 @@
 
   color: rgba($special_grey, 0.6);
   background-color: transparent;
-  border: 1px solid $letter-sort-border;
+  border: 1px solid #cbced9;
   border-radius: 10px;
   resize: none;
 }

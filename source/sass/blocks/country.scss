@@ -1,7 +1,100 @@
+.country {
+  max-width: 270px;
+  min-height: 190px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    min-height: 140px;
+  }
+}
+
+.country__img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  @media (min-width: 768px) {
+    width: 186px;
+    height: 140px;
+    padding-left: 186px;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    &--th {
+      background-image: url("../img/thailand-desktop@1x.jpg");
+    }
+
+    &--fr {
+      background-image: url("../img/france-desktop@1x.jpg");
+    }
+
+    &--cz {
+      background-image: url("../img/czech-desktop@1x.jpg");
+    }
+  }
+}
+
+.country__description {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 80px;
+  margin-top: -14px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  @media (min-width: 768px) {
+    flex-grow: 1;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+.country__flag {
+  position: absolute;
+  top: -12px;
+  left: 25px;
+
+  @media (min-width: 768px) {
+    top: 17px;
+    left: calc(100% - 35px);
+    width: 70px;
+    height: 47px;
+  }
+}
+
+.country__title-box {
+  width: 137px;
+
+  @media (min-width: 768px) {
+    width: 216px;
+  }
+}
+
 .country__title {
   margin: 0;
+  margin-bottom: 3px;
 
   @include font-size(bold, 21px, 21px);
+
+  @media (min-width: 768px) {
+    margin-bottom: 5px;
+
+    @include font-size(bold, 24px, 24px);
+  }
 }
 
 .country__text {
@@ -9,21 +102,41 @@
   color: rgba($special_grey, 0.3);
 
   @include font-size(500, 16px, 18px);
+
+  @media (min-width: 768px) {
+    @include font-size(500, 20px, 20px);
+  }
 }
 
 .country__user-count {
+  position: relative;
   margin: 0;
   color: rgba($basic_blue, 0.3);
 
   @include font-size(500, 16px, 20px);
-}
 
-.countries__btn {
-  display: block;
-  background-color: $basic_yellow;
-  color: $basic_blue_light;
-  text-decoration: none;
-  border-radius: 10px;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: -20px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/user.svg");
+    opacity: 0.1;
+  }
 
-  @include font-size(bold, 18px, 18px);
+  @media (min-width: 768px) {
+    padding-left: 27px;
+
+    @include font-size(500, 20px, 20px);
+
+    &::before {
+      top: 0;
+      left: -5px;
+      width: 24px;
+      height: 24px;
+    }
+  }
 }

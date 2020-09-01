@@ -1,3 +1,15 @@
 .map {
-  min-height: 320px;
+  min-height: 322px;
+  margin-top: -25px;
+  margin-bottom: -25px;
+  background-color: #ffffff;
+  background-image: url("../img/background_map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @media (min-width: 768px) {
+    min-height: 581px;
+    margin: 0;
+  }
 }

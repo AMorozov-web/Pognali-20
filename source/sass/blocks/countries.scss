@@ -1,18 +1,226 @@
+.countries {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -30px;
+  padding-top: 101px;
+  padding-bottom: 34px;
+  background-color: #edeff6;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -55px;
+    padding-top: 149px;
+    padding-bottom: 80px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -55px;
+    padding-top: 176px;
+    padding-bottom: 149px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+}
+
 .countries__wrapper {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, fr);
+    grid-template-rows: auto 80px;
+    column-gap: 172px;
+    padding: 0;
+    padding-left: 70px;
+  }
+}
+
+.countries__title-box {
+  position: relative;
+  width: 216px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 378px;
+    margin: 0;
+    padding-bottom: 104px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 333px;
+      left: -37px;
+      display: block;
+      width: 141px;
+      height: 141px;
+      background-color: #e2e5f2;
+      border-radius: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 7px;
+      left: 363px;
+      display: block;
+      width: 288px;
+      height: 574px;
+      background-image: url("../img/flags-back@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-columns: 2 / -1;
+    grid-row: 1 / 2;
+    width: 378px;
+    margin: 0;
+    padding-bottom: 98px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -71px;
+      left: -825px;
+      display: block;
+      width: 141px;
+      height: 141px;
+      background-color: #e2e5f2;
+      border-radius: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -78px;
+      left: 231px;
+      display: block;
+      width: 288px;
+      height: 574px;
+      background-image: url("../img/flags-back@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .countries__main-title {
+  position: relative;
+  z-index: 1;
   margin: 0;
+  margin-bottom: 20px;
   color: $special_orange;
 
   @include font-size(bold, 24px, 24px);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+
+    @include font-size(bold, 45px, 45px);
+  }
 }
 
 .countries__main-text {
+  position: relative;
+  z-index: 1;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(300, 28px, 33px);
+  }
 }
 
 .countries__list {
   @include list-style;
+
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    max-width: 560px;
+    margin: 0;
+  }
+}
+
+.countries__item {
+  position: relative;
+  margin-bottom: 10px;
+
+  &:last-child::after {
+    position: absolute;
+    content: "";
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    background-image: linear-gradient(180deg, transparent 50%, #edeff6 100%);
+  }
+}
+
+.countries__btn {
+  position: relative;
+  min-height: 61px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: block;
+  background-color: $basic_yellow;
+  color: #1d2e5b;
+  text-decoration: none;
+  border-radius: 10px;
+
+  @include font-size(bold, 18px, 18px);
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 7px);
+    right: 25px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid #1d2e5b;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 82px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 20px;
+
+    @include font-size(bold, 24px, 34px);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / -1;
+    justify-self: start;
+    min-width: 275px;
+    min-height: 80px;
+    margin: 0;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
 }

@@ -1,9 +1,22 @@
 .transport-select {
-  border-top: 1px solid $border-select-travelmates;
-  border-bottom: 1px solid $border-select-travelmates;
+  border-top: 1px solid #f3c72b;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 120px auto;
+    align-items: center;
+    padding-top: 25px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 0;
+  }
 }
 
 .transport-select__title-btn {
+  position: relative;
   width: 100%;
   padding: 0;
   padding-top: 14px;
@@ -12,20 +25,71 @@
   @include font-size(bold, 16px, 18px);
 
   font-family: inherit;
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-align: left;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 4px);
+    right: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 6px solid #1d2e5b;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    @include font-size(500, 20px, 20px);
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+
+    &::after {
+      display: block;
+    }
+  }
+}
+
+.transport-select__title-btn-add {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+
+    @include font-size(500, 20px, 20px);
+  }
 }
 
 .transport-select__list {
   display: flex;
+  align-items: center;
 
   @include list-style;
 
   padding-top: 2px;
   padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 32px;
+  }
 }
 
 .transport-select__item:not(:last-child) {
@@ -33,9 +97,53 @@
 }
 
 .transport-select__label {
+  position: relative;
   display: block;
   width: 32px;
   height: 32px;
-  background-color: $basic_white;
+  padding-top: 7px;
+  background-color: #ffffff;
   border-radius: 50%;
+
+  &--plane,
+  &--walk {
+    padding-left: 7px;
+  }
+
+  &--bus,
+  &--bike {
+    padding-left: 8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 44px;
+    height: 44px;
+    padding-top: 10px;
+
+    &--plane,
+    &--walk {
+      padding-left: 10px;
+    }
+
+    &--bus,
+    &--bike {
+      padding-left: 11px;
+    }
+  }
+}
+
+.transport-select__icon {
+  width: 16px;
+  height: 16px;
+  fill: #1d2e5b;
+  fill-opacity: 0.15;
+
+  .transport-select__input:checked ~ .transport-select__label & {
+    fill-opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 22px;
+  }
 }

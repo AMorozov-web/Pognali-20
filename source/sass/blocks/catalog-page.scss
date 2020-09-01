@@ -1,14 +1,45 @@
 .catalog-page {
-  padding-bottom: 46px;
+  position: relative;
+  z-index: 1;
 }
 
 .catalog-page__title-wrapper {
+  position: relative;
+  z-index: 1;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: $bg_blue_header;
+  background-color: #182044;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 139px;
+    padding-bottom: 73px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 135px;
+    padding-bottom: 81px;
+  }
+}
+
+.catalog-page__title-box {
+  @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 66px;
+    padding-right: 66px;
+  }
 }
 
 .catalog-page__title {
@@ -16,10 +47,9 @@
   display: block;
   margin: 0;
 
-  @include wrapper;
   @include font-size(bold, 36px, 36px);
 
-  color: $basic_white;
+  color: #ffffff;
 
   &::after {
     position: absolute;
@@ -31,5 +61,82 @@
     height: 5px;
     background-color: $special_orange;
     border-radius: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-shrink: 1;
+
+    @include font-size(bold, 60px, 60px);
+
+    &::after {
+      bottom: -76px;
+      width: 288px;
+      height: 8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      bottom: -84px;
+    }
+  }
+}
+
+.catalog-page__link-back {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: auto;
+  }
+}
+
+.catalog-page__link-back-text {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 28px;
+
+    @include font-size(bold, 20px, 20px);
+
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+
+.catalog-page__link-back-icon {
+  @media (min-width: $tablet-width) {
+    fill: #ffffff;
+  }
+}
+
+.catalog-page__filter-country {
+  @media (min-width: $tablet-width) {
+    margin-top: -55px;
+  }
+}
+
+.catalog-page__content-wrapper {
+  @include wrapper;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 84px;
+  }
+}
+
+.catalog-page__filter-travelmates {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.catalog-page__travelmates-catalog {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
 }

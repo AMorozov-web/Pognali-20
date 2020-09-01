@@ -1,8 +1,26 @@
 .level-select {
-  border-top: 1px solid $border-select-travelmates;
+  border-top: 1px solid #f3c72b;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 127px auto;
+    grid-template-rows: auto;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 37px;
+    border: none;
+    border-bottom: 1px solid #f3c72b;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 0;
+    border: none;
+  }
 }
 
 .level-select__title-btn {
+  position: relative;
   width: 100%;
   padding: 0;
   padding-top: 14px;
@@ -11,21 +29,127 @@
   @include font-size(bold, 16px, 18px);
 
   font-family: inherit;
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-align: left;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 4px);
+    right: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 6px solid #1d2e5b;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    @include font-size(500, 20px, 20px);
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+
+    &::after {
+      display: block;
+    }
+  }
+}
+
+.food-select__title-btn-add {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+
+    @include font-size(500, 20px, 20px);
+  }
 }
 
 .level-select__list {
   padding-top: 2px;
   padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 281px 148px;
+    grid-template-rows: auto;
+    column-gap: 61px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.level-select__range {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 2px;
+  background-color: rgba(#1d2e5b, 0.2);
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    width: 281px;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.level-select__scrollbar {
+  position: absolute;
+  left: 30%;
+  right: 0;
+  height: 100%;
+  background-color: #1d2e5b;
+}
+
+.level-select__toggle {
+  position: absolute;
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #1d2e5b;
+  border-radius: 50%;
+
+  &--min {
+    left: 30%;
+  }
+
+  &--max {
+    right: 0%;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -5px;
+    width: 13px;
+    height: 13px;
+  }
 }
 
 .level-select__input-wrapper {
   position: relative;
   display: flex;
+  margin-bottom: 21px;
 
   &::after {
     position: absolute;
@@ -35,9 +159,25 @@
     display: block;
     width: 16px;
     height: 11px;
-    background-color: $border-level-select;
-    border-top: 5px solid $basic_white;
-    border-bottom: 5px solid $basic_white;
+    background-color: #cbced9;
+    border-top: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    width: 148px;
+    margin-bottom: 0;
+
+    &::after {
+      width: 21px;
+      left: calc(50% - 11px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -49,9 +189,10 @@
 
   @include font-size(500, 14px, 13px);
 
+  color: #1d2e5b;
   letter-spacing: 0.07em;
   text-align: center;
-  border: 1px solid $border-level-select;
+  border: 1px solid #cbced9;
 
   &:first-child {
     margin-right: -1px;
@@ -62,5 +203,14 @@
   &:last-child {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 46px;
+    padding-top: 10px;
+
+    @include font-size(500, 20px, 20px);
+
+    letter-spacing: 0.06em;
   }
 }

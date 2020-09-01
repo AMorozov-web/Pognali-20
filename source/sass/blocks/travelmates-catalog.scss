@@ -1,5 +1,24 @@
+.travelmates-catalog {
+  padding-top: 31px;
+  padding-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+    padding-top: 0;
+  }
+}
+
 .travelmates-catalog__wrapper {
   @include wrapper;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .travelmates-catalog__travelmates-list {
@@ -7,11 +26,11 @@
 }
 
 .travelmates-catalog__btn-more-wrapper {
+  position: relative;
   width: fit-content;
   margin-top: 18px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
 }
 
 .travelmates-catalog__btn-more {
@@ -23,7 +42,7 @@
 
   @include font-size(bold, 17px, 30px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -36,12 +55,26 @@
     content: "";
     width: 18px;
     height: 2px;
-    background-color: $basic_blue_light;
+    background-color: #1d2e5b;
     border-radius: 2px;
   }
 
   &::after {
     transform: rotate(90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 51px;
+    margin-bottom: 52px;
+    padding-left: 50px;
+
+    @include font-size(bold, 20px, 20px);
+
+    &::before,
+    &::after {
+      top: calc(100% / 2 - 1px);
+      width: 26px;
+    }
   }
 }
 
@@ -50,17 +83,47 @@
   justify-content: center;
   align-items: center;
   margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: unset;
+    min-height: 100px;
+    width: 100%;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 28px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+}
+
+.travelmates-catalog__pagination-list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .travelmates-catalog__btn-pagination {
+  position: relative;
   width: 100%;
   min-height: 51px;
   padding: 0;
-  background-color: $basic_white;
+  background-color: #ffffff;
   border: none;
 
   &:not(:last-child) {
-    border-right: 1px solid $basic_blue_lighter;
+    margin-right: 1px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 7px);
+    display: block;
+    width: 0;
+    height: 0;
   }
 
   &--prev {
@@ -71,5 +134,41 @@
   &--next {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+
+  &--prev::after {
+    left: 63px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 10px solid #1d2e5b;
+  }
+
+  &--next::after {
+    right: 63px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid #1d2e5b;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 66px;
+    height: 50px;
+    border-radius: 0;
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+
+    &--prev {
+      margin-left: auto;
+    }
+
+    &--prev::after {
+      left: 40px;
+    }
+
+    &--next::after {
+      right: 40px;
+    }
   }
 }

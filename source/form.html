@@ -144,7 +144,7 @@
           </ul>
         </div>
         <ul class="add-plan__steps-list steps-list">
-          <li class="steps-list__item step step--first">
+          <li class="steps-list__item step step--1">
             <div class="step__description-wrapper">
               <h3 class="step__title">
                 <span class="step__title-number">Шаг 1.</span>
@@ -270,21 +270,46 @@
             </div>
             <button class="step__btn step__btn--next" type="button">Следующий шаг</button>
           </li>
-          <li class="steps-list__item step">
+          <li class="steps-list__item step step--2">
             <div class="step__description-wrapper">
               <h3 class="step__title">
                 <span class="step__title-number">Шаг 2.</span>
                 <span class="step__title-text">Маршрут</span>
               </h3>
-              <p class="step__description">Укажите страны, которые вы хотели посетить. Это может быть одна
-                или сразу несколько.</p>
+              <p class="step__description">Укажите страны, которые вы хотели&nbsp;посетить. Это может быть одна или сразу несколько.</p>
             </div>
             <div class="step__country-step country-step">
               <ul class="country-step__list">
-                <li class="country-step__item">
-                  <input class="country-step__input" type="text" name="start-country" value="Босния и Герцеговина">
-                  <button class="country-step__select" type="button"></button>
-                  <div class="country-step__country-select-popup country-select-popup">
+                <li class="country-step__item country-step__start-country">
+                  <div class="country-step__input-wrapper">
+                    <input class="country-step__input" type="text" name="start-country" value="Босния и Герцеговина">
+                    <button class="country-step__select" type="button"></button>
+                  </div>
+                  <div class="country-step__flag-wrapper">
+                    <div class="country-step__flag">
+                      <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Босния и Герцеговина">
+                    </div>
+                  </div>
+                  <button class="country-step__country-del-btn" type="button" aria-label="Удалить"></button>
+                </li>
+                <li class="country-step__item country-step__wish-country-1">
+                  <div class="country-step__input-wrapper">
+                    <input class="country-step__input" type="text" name="wish-country-1" value="Чехия">
+                    <button class="country-step__select" type="button"></button>
+                  </div>
+                  <div class="country-step__flag-wrapper">
+                    <div class="country-step__flag">
+                      <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Чехия">
+                    </div>
+                  </div>
+                  <button class="country-step__country-del-btn" type="button" aria-label="Удалить"></button>
+                </li>
+                <li class="country-step__item country-step__country-choose">
+                  <div class="country-step__input-wrapper">
+                    <input class="country-step__input" type="text" name="wish-country-2" value="Выберите страну">
+                    <button class="country-step__select" type="button"></button>
+                  </div>
+                  <div class="country-step__country-select-popup country-select-popup visually-hidden">
                     <ul class="country-select-popup__country-litter country-litter">
                       <li class="country-litter__item country-litter__item--active">
                         <a class="country-litter__link country-litter__link--active" href="#">А</a>
@@ -326,125 +351,32 @@
                       <li class="country-select__item"><a class="country-select__link" href="#">Азербайджан</a></li>
                     </ul>
                   </div>
-                  <div class="country-step__flag">
-                    <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Босния и Герцеговина">
+                  <div class="country-step__flag-wrapper">
+                    <div class="country-step__flag country-step__flag--hide">
+                      <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Неизвестно">
+                    </div>
                   </div>
                   <button class="country-step__country-del-btn" type="button" aria-label="Удалить"></button>
                 </li>
-                <li class="country-step__item">
-                  <input class="country-step__input" type="text" name="wish-country-1" value="Чехия">
-                  <button class="country-step__select" type="button"></button>
-                  <div class="country-step__flag">
-                    <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Чехия">
+                <li class="country-step__item country-step__add-country">
+                  <div class="country-step__input-wrapper">
+                    <input class="country-step__input" type="text" name="wish-country-3" value="Добавить страну">
+                    <button class="country-step__select" type="button"></button>
                   </div>
-                  <button class="country-step__country-del-btn" type="button" aria-label="Удалить"></button>
-                </li>
-                <li class="country-step__item">
-                  <input class="country-step__input" type="text" name="wish-country-2" value="Выберите страну">
-                  <button class="country-step__select" type="button"></button>
-                  <div class="country-step__country-select-popup country-select-popup">
-                    <ul class="country-select-popup__country-litter country-litter">
-                      <li class="country-litter__item country-litter__item--active">
-                        <a class="country-litter__link country-litter__link--active" href="#">А</a>
-                      </li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Б</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">В</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Г</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Д</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Е</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">З</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">И</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">К</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Л</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">М</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Н</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">О</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">П</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Р</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">С</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Т</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">У</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Ф</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Х</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Ч</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Ш</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Э</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Ю</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Я</a></li>
-                    </ul>
-                    <ul class="country-select-popup__country-select country-select">
-                      <li class="country-select__item"><a class="country-select__link" href="#">Афганистан</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Албания</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Алжир</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Андорра</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Аргентина</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Армения</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Австралия</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Австрия</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Азербайджан</a></li>
-                    </ul>
+                  <div class="country-step__flag-wrapper">
+                    <div class="country-step__flag country-step__flag--hide">
+                      <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Неизвестно">
+                    </div>
                   </div>
-                  <div class="country-step__flag country-step__flag--hide">
-                    <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Неизвестно">
-                  </div>
-                  <button class="country-step__country-del-btn" type="button" aria-label="Удалить"></button>
-                </li>
-                <li class="country-step__item">
-                  <input class="country-step__input" type="text" name="wish-country-3" value="Добавить страну">
-                  <button class="country-step__select" type="button"></button>
-                  <div class="country-step__country-select-popup country-select-popup">
-                    <ul class="country-select-popup__country-litter country-litter">
-                      <li class="country-litter__item country-litter__item--active">
-                        <a class="country-litter__link country-litter__link--active" href="#">А</a>
-                      </li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Б</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">В</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Г</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Д</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Е</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">З</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">И</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">К</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Л</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">М</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Н</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">О</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">П</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Р</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">С</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Т</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">У</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Ф</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Х</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Ч</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Ш</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Э</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Ю</a></li>
-                      <li class="country-litter__item"><a class="country-litter__link" href="#">Я</a></li>
-                    </ul>
-                    <ul class="country-select-popup__country-select country-select">
-                      <li class="country-select__item"><a class="country-select__link" href="#">Афганистан</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Албания</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Алжир</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Андорра</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Аргентина</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Армения</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Австралия</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Австрия</a></li>
-                      <li class="country-select__item"><a class="country-select__link" href="#">Азербайджан</a></li>
-                    </ul>
-                  </div>
-                  <div class="country-step__flag country-step__flag--hide">
-                    <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Неизвестно">
-                  </div>
-                  <button class="country-step__country-del-btn country-step__country-del-btn--hide" type="button" aria-label="Удалить"></button>
+                  <button class="country-step__country-del-btn country-step__country-del-btn--hide" type="button"
+                    aria-label="Удалить"></button>
                 </li>
               </ul>
             </div>
             <button class="btn step__btn step__btn--next" type="button">Следующий шаг</button>
             <button class="btn step__btn step__paginate step__btn--prev" type="button">На шаг назад</button>
           </li>
-          <li class="steps-list__item step step--hide">
+          <li class="steps-list__item step step--3">
             <div class="step__description-wrapper">
               <h3 class="step__title">
                 <span class="step__title-number">Шаг 3.</span>
@@ -453,15 +385,25 @@
               <p class="step__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
             </div>
             <ul class="step__fun-list fun-list">
-              <li class="fun-list__item fun">
-                <h4 class="fun__country">Босния и герцоговина</h4>
+              <li class="fun-list__item fun fun__start-country">
+                <div class="fun__title-wrapper">
+                  <h4 class="fun__country-name">Босния и Герцеговина</h4>
+                  <div class="fun__country-flag-wrapper">
+                    <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Босния и Герцеговина">
+                  </div>
+                </div>
                 <div class="fun__text-wrapper">
                   <textarea class="fun__text" placeholder="План действий" name="start-country-fun" required=""></textarea>
                   <p class="fun__text-error">Это поле должно быть заполнено</p>
                 </div>
               </li>
               <li class="fun-list__item fun">
-                <h4 class="fun__country">Чехия</h4>
+                <div class="fun__title-wrapper">
+                  <h4 class="fun__country-name">Чехия</h4>
+                  <div class="fun__country-flag-wrapper">
+                    <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Чехия">
+                  </div>
+                </div>
                 <div class="fun__text-wrapper">
                   <textarea class="fun__text" placeholder="План действий" name="wish-country-fun-1" required="">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                   <p class="fun__text-error">Это поле должно быть заполнено</p>

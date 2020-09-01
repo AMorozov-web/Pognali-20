@@ -1,9 +1,22 @@
 .hobby-select {
-  border-top: 1px solid $border-select-travelmates;
-  border-bottom: 1px solid $border-select-travelmates;
+  border-top: 1px solid #f3c72b;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 127px auto;
+    align-items: center;
+    padding-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 0;
+    border: none;
+  }
 }
 
 .hobby-select__title-btn {
+  position: relative;
   width: 100%;
   padding: 0;
   padding-top: 14px;
@@ -12,11 +25,52 @@
   @include font-size(bold, 16px, 18px);
 
   font-family: inherit;
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-align: left;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 4px);
+    right: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 6px solid #1d2e5b;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    @include font-size(500, 20px, 20px);
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+
+    &::after {
+      display: block;
+    }
+  }
+}
+
+.hobby-select__title-btn-add {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+
+    @include font-size(500, 20px, 20px);
+  }
 }
 
 .hobby-select__list {
@@ -24,8 +78,81 @@
 
   padding-top: 2px;
   padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-bottom: 32px;
+  }
+}
+
+.hobby-select__item {
+  @media (min-width: $desktop-width) {
+    .catalog-page & {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
 }
 
 .hobby-select__label {
+  position: relative;
+  padding-left: 27px;
+
   @include font-size(normal, 15px, 20px);
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+
+  .hobby-select__input:checked + &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 5px);
+    left: 5px;
+    width: 9px;
+    height: 9px;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      top: -4px;
+      left: 0;
+    }
+
+    .hobby-select__input:checked + &::after {
+      top: calc(100% / 2 - 6px);
+      left: 7px;
+      width: 11px;
+      height: 11px;
+    }
+  }
+}
+
+.hobby-select__text {
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+
+    @include font-size(normal, 20px, 20px);
+  }
 }

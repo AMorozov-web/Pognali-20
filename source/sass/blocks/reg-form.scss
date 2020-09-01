@@ -1,12 +1,41 @@
 .reg-form {
+  position: relative;
+  z-index: 1;
   min-height: 536px;
-  padding-top: 105px;
-  background-color: $link-dark;
-  color: $basic_white;
+  padding-top: 85px;
+  background-color: #192144;
+  color: #ffffff;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -55px;
+    min-height: 772px;
+    padding-top: 133px;
+    padding-bottom: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 849px;
+    padding-top: 208px;
+    padding-bottom: 102px;
+  }
 }
 
 .reg-form__wrapper {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 73px;
+    padding-right: 73px;
+  }
 }
 
 .reg-form__title {
@@ -17,12 +46,33 @@
   @include font-size(bold, 24px, 24px);
 
   color: $special_orange;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 59px;
+
+    @include font-size(bold, 45px, 45px);
+  }
 }
 
 .reg-form__text {
+  display: block;
+  max-width: 400px;
   margin: 0;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 640px;
+    padding-bottom: 65px;
+
+    @include font-size(300, 28px, 32px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 60px;
+  }
 }
 
 .reg-form__signin-link {
@@ -33,14 +83,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .reg-form__input {
   flex-grow: 1;
   min-height: 62px;
   margin-right: -10px;
+  padding: 0;
   padding-left: 25px;
+  font-family: inherit;
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -50,19 +112,100 @@
 
     color: rgba($special_grey, 0.3);
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 80px;
+    margin-right: 0;
+    padding-left: 36px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    &::placeholder {
+      @include font-size(bold, 24px, 24px);
+    }
+  }
 }
 
 .reg-form__btn {
+  position: relative;
   align-self: stretch;
   min-width: 60px;
   padding: 0;
   background-color: $basic_yellow;
+  font-family: inherit;
   border: none;
   border-radius: 10px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 7px);
+    right: calc(100% / 2 - 7px);
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid #1d2e5b;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 330px;
+    padding-left: 36px;
+
+    &::after {
+      right: 34px;
+    }
+  }
+}
+
+.reg-form__btn-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    @include font-size(bold, 24px, 24px);
+
+    font-family: inherit;
+    text-align: left;
+    color: #1d2e5b;
+  }
 }
 
 .reg-form__contacts-text {
   margin: 0;
   margin-bottom: 18px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+
+    @include font-size(300, 28px, 30px);
+
+    letter-spacing: 0.01em;
+  }
+}
+
+.reg-form__contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.reg-form__contact-link {
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 110px;
+    }
+  }
 }

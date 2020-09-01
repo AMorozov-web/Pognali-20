@@ -1,18 +1,64 @@
+.business-rates {
+  min-height: 443px;
+  padding-top: 34px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+  border-radius: 20px;
+}
+
+.business-rates__wrapper {
+  @include wrapper;
+}
+
 .business-rates__title {
   margin: 0;
-  color: $special_orange;
+  margin-bottom: 28px;
 
   @include font-size(bold, 24px, 24px);
+
+  text-align: center;
+  color: $special_orange;
 }
 
 .business-rates__list {
   @include list-style;
+
+  margin-bottom: 34px;
+  border-top: 1px solid #e1e3e9;
+  border-bottom: 1px solid #e1e3e9;
+}
+
+.business-rates__item {
+  min-height: 66px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid #e1e3e9;
+  }
+}
+
+.business-rates__text,
+.business-rates__price {
+  margin: 0;
+}
+
+.business-rates__text {
+  margin-bottom: 3px;
 }
 
 .business-rates__close {
-  color: $basic_blue_light;
-  text-transform: uppercase;
-  border: none;
+  display: block;
+  width: 100%;
+  min-height: 59px;
+  padding: 0;
 
   @include font-size(bold, 16px, 24px);
+
+  font-family: inherit;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }

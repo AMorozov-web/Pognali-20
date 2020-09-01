@@ -1,8 +1,42 @@
 .logo {
   width: 100px;
-  height: 15px;
+  height: 19px;
 
-  .page-footer & {
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 52px;
+  }
+}
+
+.logo__img {
+  .page-header--opened-menu &,
+  .page-header--no-js & {
+    display: block;
+    width: 100px;
     height: 19px;
+    padding-left: 100px;
+    background: url("../img/logo-mobile-blue@1x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    height: 42px;
+
+    .page-header--opened-menu &,
+    .page-header--no-js & {
+      display: block;
+      padding-left: 166px;
+      background: url("../img/logo-tablet-blue@1x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 52px;
   }
 }

@@ -1,6 +1,6 @@
 .page {
   height: 100%;
-  font-family: "BloggerSans", "Comic Sans MS", sans-serif;
+  font-family: "BloggerSans", "Tahoma", sans-serif;
 
   @include font-size(300, 16px, 22px);
 }
@@ -10,5 +10,13 @@
   min-height: 100%;
   margin: 0;
   padding: 0;
-  background-color: $basic_blue_lighter;
+  background-color: #192144;
+
+  &--catalog {
+    background-color: #edeff6;
+  }
+
+  &--form {
+    background-color: #d4d9eb;
+  }
 }

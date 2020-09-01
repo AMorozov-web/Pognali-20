@@ -1,12 +1,28 @@
 .letter-sort {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  width: calc(100% - 25px);
+  width: 220px;
 
   @include list-style;
 
-  background-color: $basic_white;
-  border: 1px solid $letter-sort-border;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: #ffffff;
+  border-top: 1px solid #cbced9;
+  border-left: 1px solid #cbced9;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 33px;
+    row-gap: 20px;
+    min-width: 346px;
+    margin: 0;
+    background: transparent;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .letter-sort__cell {
@@ -14,8 +30,14 @@
   width: 100%;
   height: 40px;
   padding: 0;
-  border: 1px solid $letter-sort-border;
   text-align: center;
+  border-bottom: 1px solid #cbced9;
+  border-right: 1px solid #cbced9;
+
+  @media (min-width: $tablet-width) {
+    height: fit-content;
+    border: none;
+  }
 }
 
 .letter-sort__link {
@@ -26,13 +48,26 @@
 
   @include font-size(500, 14px, 14px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-decoration: none;
   text-transform: uppercase;
 
   &--active {
-    color: $basic_white;
-    background-color: $basic_blue_light;
-    transform: scale(1.1);
+    color: #ffffff;
+    background-color: #1d2e5b;
+    transform: scale(1.05);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    @include font-size(bold, 60px, 60px);
+
+    color: rgba(#192144, 0.3);
+
+    &--active {
+      color: #192144;
+      background: transparent;
+    }
   }
 }

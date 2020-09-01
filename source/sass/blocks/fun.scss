@@ -1,0 +1,89 @@
+.fun__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -18px;
+  margin-bottom: -18px;
+}
+
+.fun__country-name {
+  position: relative;
+  margin: 0;
+  padding-left: 11px;
+
+  @include font-size(500, 18px, 18px);
+
+  color: #1d2e5b;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 1px);
+    left: -8px;
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: #1d2e5b;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 3px);
+    left: 0;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #1d2e5b;
+    border-radius: 50%;
+  }
+}
+
+.fun__country-flag-wrapper {
+  padding-top: 4px;
+}
+
+.fun__text-wrapper {
+  position: relative;
+  width: fit-content;
+  min-height: 283px;
+  padding-top: 25px;
+
+  .fun__start-country &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -10px;
+    display: block;
+    width: 2px;
+    height: 283px;
+    background-color: #1d2e5b;
+  }
+}
+
+.fun__text {
+  width: 220px;
+  height: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+
+  @include font-size(normal, 16px, 22px);
+
+  font-family: inherit;
+  color: $special_grey;
+  resize: none;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+
+  &::placeholder {
+    font-family: inherit;
+    color: rgba($special_grey, 0.3);
+  }
+}
+
+.fun__text-error {
+  display: none;
+  margin: 0;
+}

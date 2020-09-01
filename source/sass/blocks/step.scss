@@ -1,10 +1,15 @@
 .step {
   padding-top: 24px;
-  background-color: $basic_white;
+  background-color: #ffffff;
   border-radius: 10px;
 
-  &--first {
+  &--1 {
     padding-bottom: 23px;
+  }
+
+  &--2,
+  &--3 {
+    padding-bottom: 10px;
   }
 }
 
@@ -26,7 +31,7 @@
 .step__title-text {
   @include font-size(bold, 20px, 20px);
 
-  color: $basic_blue_light;
+  color: #1d2e5b;
 }
 
 .step__description {
@@ -45,7 +50,6 @@
   margin-bottom: 20px;
 }
 
-
 .step__btn {
   display: block;
   padding-top: 7px;
@@ -55,9 +59,24 @@
   @include font-size(bold, 17px, 30px);
 
   font-family: inherit;
-  color: $basic_blue_light;
+  color: #1d2e5b;
   text-transform: uppercase;
   background-color: $basic_yellow;
   border: none;
   border-radius: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &--prev {
+    background: transparent;
+  }
+}
+
+.step__fun-list {
+  @include list-style;
+  @include wrapper;
+
+  margin-bottom: 22px;
 }
