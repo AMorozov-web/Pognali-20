@@ -1,5 +1,7 @@
 .step {
   padding-top: 24px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: #ffffff;
   border-radius: 10px;
 
@@ -15,8 +17,6 @@
 
 .step__description-wrapper,
 .step__input-wrapper {
-  @include wrapper;
-
   margin-bottom: 27px;
 }
 
@@ -52,10 +52,10 @@
 
 .step__btn {
   display: block;
+  width: 100%;
   padding-top: 7px;
   padding-bottom: 7px;
 
-  @include wrapper;
   @include font-size(bold, 17px, 30px);
 
   font-family: inherit;
@@ -76,7 +76,6 @@
 
 .step__fun-list {
   @include list-style;
-  @include wrapper;
 
   margin-bottom: 22px;
 }

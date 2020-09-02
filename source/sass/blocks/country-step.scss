@@ -1,6 +1,5 @@
 .country-step__list {
   @include list-style;
-  @include wrapper;
 
   margin-bottom: 25px;
 }
@@ -17,6 +16,7 @@
 }
 
 .country-step__input-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
   flex-grow: 1;
@@ -27,7 +27,7 @@
     position: absolute;
     content: "";
     top: calc(100% / 2 - 4px);
-    right: 49px;
+    right: -4px;
     display: block;
     width: 8px;
     height: 8px;
@@ -35,13 +35,31 @@
     border-radius: 50%;
 
     .country-step__country-choose & {
+      right: 49px;
       background-color: #ffffff;
       border: 1px solid #cbced9;
     }
 
     .country-step__add-country & {
+      right: 49px;
       background: transparent;
       border: 1px solid #cbced9;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 27px;
+    width: 30px;
+    background: linear-gradient(90deg, transparent 10%, #ffffff 82%);
+    background-size: cover;
+
+    .country-step__country-choose &,
+    .country-step__add-country & {
+      background: transparent;
     }
   }
 
@@ -72,11 +90,26 @@
 }
 
 .country-step__select {
-  width: 52px;
+  position: relative;
+  width: 27px;
   padding: 0;
-  background-color: tomato;
+  background: transparent;
   border: none;
   border-radius: 3px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% / 2 - 7px);
+    right: 16px;
+    width: 9px;
+    height: 9px;
+    border-bottom: 1px solid #cbced9;
+    border-left: 1px solid #cbced9;
+    background: transparent;
+    transform: rotate(-45deg);
+  }
 }
 
 .country-step__flag-wrapper {
@@ -84,7 +117,6 @@
   width: 53px;
   min-height: 43px;
   padding: 0;
-  border: 1px solid #cbced9;
   border-radius: 4px;
 
   .country-step__country-choose & {

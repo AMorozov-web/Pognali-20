@@ -74,6 +74,14 @@
     margin: 0;
     background-color: #ffffff;
     border-radius: 50%;
+
+    &--plane,
+    &--bus,
+    &--bike,
+    &--walk {
+      padding-top: 7px;
+      padding-left: 8px;
+    }
   }
 }
 
@@ -89,6 +97,15 @@
     .catalog-page & {
       width: 20px;
       height: 20px;
+    }
+  }
+
+  .form-page & {
+    fill: #1d2e5b;
+    fill-opacity: 0.15;
+
+    &--checked {
+      fill-opacity: 1;
     }
   }
 }
