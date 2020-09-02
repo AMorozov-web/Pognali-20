@@ -1,10 +1,21 @@
 .fun__title-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-top: -18px;
   margin-bottom: -18px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 35px;
+    width: 43px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 10%, #ffffff 60%);
+  }
 }
 
 .fun__country-name {

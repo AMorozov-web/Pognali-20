@@ -12,6 +12,29 @@
 
   &:not(:last-child) {
     margin-bottom: 22px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -16px;
+      right: 53px;
+      width: 1px;
+      height: 10px;
+      background-color: #cbced9;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -16px;
+      right: 50px;
+      width: 7px;
+      height: 7px;
+      background: transparent;
+      border-bottom: 1px solid #cbced9;
+      border-left: 1px solid #cbced9;
+      transform: rotate(-45deg);
+    }
   }
 }
 
@@ -110,6 +133,22 @@
     background: transparent;
     transform: rotate(-45deg);
   }
+
+  .country-step__add-country & {
+    &::before,
+    &::after {
+      top: calc(100% / 2 - 1px);
+      width: 14px;
+      height: 2px;
+      background-color: #c2c4c9;
+      border: none;
+      transform: none;
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
 }
 
 .country-step__flag-wrapper {
@@ -117,6 +156,7 @@
   width: 53px;
   min-height: 43px;
   padding: 0;
+  border: 1px solid #cbced9;
   border-radius: 4px;
 
   .country-step__country-choose & {
