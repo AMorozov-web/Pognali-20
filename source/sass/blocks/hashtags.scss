@@ -1,3 +1,11 @@
+.hashtags {
+  .form-page & {
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+  }
+}
+
 .hashtags__title {
   position: relative;
   display: block;
@@ -16,6 +24,19 @@
   color: #1d2e5b;
   background-color: #edeff6;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: -10px;
+    left: calc(100% / 2 - 25px);
+    margin: 0;
+    padding-left: 14px;
+    padding-right: 14px;
+
+    @include font-size(500, 20px, 20px);
+
+    letter-spacing: 0.1em;
+  }
 }
 
 .hashtags__tags {
@@ -24,9 +45,18 @@
 
   @include font-size(normal, 16px, 18px);
 
-  color: rgba($special_grey, 0.6);
+  color: rgba(#444444, 0.6);
   background-color: transparent;
   border: 1px solid #cbced9;
   border-radius: 10px;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @include font-size(normal, 20px, 22px);
+  }
 }

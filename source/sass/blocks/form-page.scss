@@ -5,6 +5,13 @@
   background-color: #182044;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 134px;
+    padding-bottom: 81px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }
 
 .form-page__title {
@@ -19,14 +26,28 @@
 
   &::after {
     position: absolute;
+    content: "";
     bottom: -23px;
     left: 0;
-    content: "";
     display: block;
     width: 215px;
     height: 5px;
     background-color: $special_orange;
     border-radius: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+    padding-right: 34px;
+
+    @include font-size(bold, 60px, 60px);
+
+    &::after {
+      bottom: -84px;
+      left: 36px;
+      width: 354px;
+      height: 8px;
+    }
   }
 }
 

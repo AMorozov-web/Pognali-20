@@ -1,10 +1,26 @@
 .profile {
   padding-top: 24px;
   padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 59px;
+  }
 }
 
 .profile__wrapper {
   @include wrapper;
+
+  .form-page & {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 308px 1fr;
+      grid-template-rows: 94px 60px 95px;
+      row-gap: 52px;
+      padding-left: 34px;
+      padding-right: 34px;
+    }
+  }
 }
 
 .profile__box {
@@ -14,12 +30,27 @@
   margin-bottom: 18px;
   padding-left: 18px;
   padding-right: 18px;
+
+  .form-page & {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 
 .profile__photo {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    border-radius: 5px;
+  }
 }
 
 .profile__photo-change-btn {
@@ -36,9 +67,28 @@
   background-color: $special_blue_light;
   border: none;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    border-radius: 10px;
+  }
 }
 
 .profile__hashtags {
   margin-top: 18px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    margin: 0;
+  }
+}
+
+.profile__transport {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
