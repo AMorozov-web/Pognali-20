@@ -6,6 +6,17 @@
   padding-right: 25px;
   background-color: #ffffff;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 35px;
+    min-height: 152px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
 }
 
 .plan__title,
@@ -17,14 +28,32 @@
 
 .plan__title {
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+  }
 }
 
 .plan__number {
   @include font-size(500, 16px, 16px);
+
+  @media (min-width: $tablet-width) {
+    @include font-size(500, 20px, 20px);
+  }
 }
 
 .plan__title-text {
   @include font-size(bold, 16px, 16px);
+
+  @media (min-width: $tablet-width) {
+    @include font-size(bold, 24px, 24px);
+  }
 }
 
 .plan__travelmates,
@@ -34,14 +63,29 @@
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(500, 20px, 20px);
+  }
 }
 
 .plan__travelmates {
   margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    align-self: end;
+    margin: 0;
+    letter-spacing: 0.1em;
+  }
 }
 
 .plan__date {
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    align-self: end;
+    margin: 0;
+  }
 }
 
 .plan__change-btn {
@@ -49,4 +93,10 @@
   text-decoration: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+    align-self: end;
+    letter-spacing: 0.1em;
+  }
 }

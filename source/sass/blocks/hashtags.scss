@@ -28,7 +28,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: -10px;
-    left: calc(100% / 2 - 25px);
+    left: calc(100% / 2 - 39px);
     margin: 0;
     padding-left: 14px;
     padding-right: 14px;
@@ -46,6 +46,7 @@
   @include font-size(normal, 16px, 18px);
 
   color: rgba(#444444, 0.6);
+  font-family: inherit;
   background-color: transparent;
   border: 1px solid #cbced9;
   border-radius: 10px;
