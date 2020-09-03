@@ -13,11 +13,30 @@
   &--3 {
     padding-bottom: 10px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 56px;
+    padding-left: 43px;
+    padding-right: 43px;
+    border-radius: 30px;
+  }
 }
 
-.step__description-wrapper,
+.step__description-wrapper {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+}
+
 .step__input-wrapper {
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .step__title {
@@ -25,6 +44,10 @@
   flex-direction: column;
   margin: 0;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .step__title-number,
@@ -32,6 +55,10 @@
   @include font-size(bold, 20px, 20px);
 
   color: #1d2e5b;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(bold, 36px, 36px);
+  }
 }
 
 .step__description {
@@ -39,7 +66,13 @@
 
   @include font-size(normal, 16px, 22px);
 
-  color: $special_grey;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+
+    @include font-size(normal, 20px, 24px);
+  }
 }
 
 .step__count-travelmates {

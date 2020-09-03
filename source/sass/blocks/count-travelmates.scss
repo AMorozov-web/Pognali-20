@@ -1,5 +1,10 @@
 .count-travelmates {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    border-top: 1px solid #e1e3e9;
+  }
 }
 
 .count-travelmates__label-wrapper {
@@ -7,6 +12,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .count-travelmates__label {
@@ -15,6 +24,12 @@
   letter-spacing: 0.09em;
   color: #1d2e5b;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(500, 20px, 20px);
+
+    letter-spacing: 0.1em;
+  }
 }
 
 .count-travelmates__unit {
@@ -23,13 +38,21 @@
   letter-spacing: 0.09em;
   color: rgba(#1d2e5b, 0.3);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(500, 20px, 20px);
+
+    letter-spacing: 0.08em;
+  }
 }
 
 .count-travelmates__input-wrapper {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin: 0 auto 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
   border: 1px solid #cbced9;
   border-radius: 4px;
 }
@@ -49,6 +72,10 @@
   text-transform: uppercase;
   text-align: center;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(500, 20px, 20px);
+  }
 }
 
 .count-travelmates__btn {
@@ -60,24 +87,29 @@
   background-color: transparent;
   border: none;
 
-  &::before {
+  &::before,
+  &::after {
     position: absolute;
-    top: 21px;
-    left: 14px;
+    top: calc(100% / 2 - 1px);
+    left: calc(100% / 2 - 6px);
     content: "";
-    width: 14px;
+    width: 13px;
     height: 2px;
     background-color: #cccccc;
   }
 
   &--add::after {
-    position: absolute;
-    top: 21px;
-    left: 14px;
-    content: "";
-    width: 14px;
-    height: 2px;
-    background-color: #cccccc;
     transform: rotate(90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 70px;
+
+    &::before,
+    &::after {
+      left: calc(100% / 2 - 10px);
+      width: 21px;
+    }
   }
 }
