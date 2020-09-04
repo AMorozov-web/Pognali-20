@@ -77,6 +77,12 @@
   text-align: center;
   border: none;
 
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
   @media (min-width: $tablet-width) {
     @include font-size(500, 20px, 20px);
   }
