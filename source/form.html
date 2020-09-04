@@ -279,13 +279,17 @@
                 <table class="calendar__table">
                   <thead>
                     <tr>
-                      <th class="calendar__day">П</th>
-                      <th class="calendar__day">В</th>
-                      <th class="calendar__day">С</th>
-                      <th class="calendar__day">Ч</th>
-                      <th class="calendar__day">П</th>
-                      <th class="calendar__day calendar__day--day-off">С</th>
-                      <th class="calendar__day calendar__day--day-off">В</th>
+                      <th class="calendar__day">
+                        П<span class="calendar__day-add">н</span>
+                      </th>
+                      <th class="calendar__day">
+                        В<span class="calendar__day-add">т</span>
+                      </th>
+                      <th class="calendar__day">С<span class="calendar__day-add">р</span></th>
+                      <th class="calendar__day">Ч<span class="calendar__day-add">т</span></th>
+                      <th class="calendar__day">П<span class="calendar__day-add">т</span></th>
+                      <th class="calendar__day calendar__day--day-off">С<span class="calendar__day-add">б</span></th>
+                      <th class="calendar__day calendar__day--day-off">В<span class="calendar__day-add">с</span></th>
                     </tr>
                   </thead>
                   <tbody class="calendar__table-body">
@@ -347,7 +351,9 @@
                 </table>
               </div>
             </div>
-            <button class="step__btn step__btn--next" type="button">Следующий шаг</button>
+            <div class="step__btn-wrapper">
+              <button class="step__btn step__btn--next" type="button">Следующий шаг</button>
+            </div>
           </li>
           <li class="steps-list__item step step--2">
             <div class="step__description-wrapper">
@@ -452,8 +458,10 @@
                 </li>
               </ul>
             </div>
-            <button class="btn step__btn step__btn--next" type="button">Следующий шаг</button>
-            <button class="btn step__btn step__paginate step__btn--prev" type="button">На шаг назад</button>
+            <div class="step__btn-wrapper">
+              <button class="btn step__btn step__btn--next" type="button">Следующий шаг</button>
+              <button class="btn step__btn step__paginate step__btn--prev" type="button">На шаг назад</button>
+            </div>
           </li>
           <li class="steps-list__item step step--3">
             <div class="step__description-wrapper">
@@ -489,8 +497,10 @@
                 </div>
               </li>
             </ul>
-            <button class="btn step__btn step__btn--submit" type="submit">Отправить</button>
-            <button class="btn step__btn step__btn--prev" type="button">На шаг назад</button>
+            <div class="step__btn-wrapper">
+              <button class="btn step__btn step__btn--submit" type="submit">Отправить</button>
+              <button class="btn step__btn step__btn--prev" type="button">На шаг назад</button>
+            </div>
           </li>
         </ul>
       </div>

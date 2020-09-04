@@ -35,6 +35,8 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 60px;
   }
 }
@@ -77,13 +79,39 @@
 
 .step__count-travelmates {
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .step__duration {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: 0;
+  }
+}
+
+.step__child {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.step__btn-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 286px auto;
+    column-gap: 60px;
+    width: 100%;
+    min-height: 80px;
+  }
 }
 
 .step__btn {
+  position: relative;
   display: block;
   width: 100%;
   padding-top: 7px;
@@ -94,7 +122,7 @@
   font-family: inherit;
   color: #1d2e5b;
   text-transform: uppercase;
-  background-color: $basic_yellow;
+  background-color: #ffd74b;
   border: none;
   border-radius: 20px;
 
@@ -104,6 +132,43 @@
 
   &--prev {
     background: transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+    padding-right: 33px;
+
+    @include font-size(bold, 24px, 24px);
+
+    text-transform: unset;
+    text-align: left;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(100% / 2 - 7px);
+      right: 33px;
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 10px solid #1d2e5b;
+    }
+
+    &--prev {
+      padding-right: 0;
+
+      &::after {
+        left: 0;
+        border-left: none;
+        border-right: 10px solid #1d2e5b;
+      }
+    }
   }
 }
 

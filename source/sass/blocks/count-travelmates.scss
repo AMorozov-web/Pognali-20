@@ -55,6 +55,10 @@
   margin-bottom: 20px;
   border: 1px solid #cbced9;
   border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .count-travelmates__input {
