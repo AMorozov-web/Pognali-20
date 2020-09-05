@@ -163,6 +163,16 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 45px;
+
+    &::before {
+      .country-step__add-country & {
+        display: none;
+      }
+    }
+  }
 }
 
 .country-step__input {
@@ -269,6 +279,10 @@
       border-width: 2px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    right: 45px;
+  }
 }
 
 .country-step__flag-wrapper {
@@ -298,6 +312,10 @@
       display: block;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 225px;
+  }
 }
 
 .country-step__flag-box {
@@ -311,6 +329,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 40px;
   }
 }
 
@@ -372,5 +395,9 @@
       height: 2px;
       background-color: rgba(#000000, 0.1);
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
   }
 }

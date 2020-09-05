@@ -222,6 +222,11 @@
     width: 100%;
     min-height: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 489px;
+    margin-top: -10px;
+  }
 }
 
 .step__btn {
@@ -281,6 +286,21 @@
         left: 0;
         border-left: none;
         border-right: 10px solid #1d2e5b;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--prev {
+      padding-left: 76px;
+      border-radius: 0;
+
+      .step--2 & {
+        border-left: 1px solid #e1e3e9;
+      }
+
+      &::after {
+        left: 41px;
       }
     }
   }
