@@ -226,6 +226,11 @@
     visibility: visible;
     transform: scaleY(1);
     opacity: 1;
+
+    &--selected {
+      grid-column: unset;
+      grid-row: unset;
+    }
   }
 }
 
