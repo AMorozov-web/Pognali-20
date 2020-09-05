@@ -163,8 +163,13 @@
   .form-page & {
     @include font-size(bold, 38px, 38px);
 
-    color: $basic_blue;
+    color: #161c35;
     border-color: rgba(#444444, 0.3);
+
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+      border-color: rgba(#ffffff, 0.3);
+    }
   }
 }
 
@@ -174,20 +179,25 @@
 
   @include font-size(normal, 14px, 14px);
 
-  .form-page & {
-    text-align: center;
-
-    @include font-size(normal, 18px, 18px);
-
-    color: #444444;
-  }
-
   .catalog-page & {
     display: none;
 
     @media (min-width: $tablet-width) {
       display: block;
       color: rgba(#000000, 0.4);
+    }
+  }
+
+  .form-page & {
+    text-align: center;
+
+    @include font-size(normal, 18px, 18px);
+
+    color: #444444;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 2px;
+      color: #ffffff;
     }
   }
 }

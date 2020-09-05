@@ -1,3 +1,9 @@
+.form-page {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .form-page__title-wrapper {
   width: 100%;
   padding-top: 61px;
@@ -11,6 +17,11 @@
     padding-bottom: 81px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 127px;
+    padding-bottom: 76px;
   }
 }
 
@@ -47,6 +58,16 @@
       left: 36px;
       width: 354px;
       height: 8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 64px;
+    padding-right: 64px;
+
+    &::after {
+      bottom: -80px;
+      left: 66px;
     }
   }
 }

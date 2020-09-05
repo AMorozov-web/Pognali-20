@@ -6,6 +6,11 @@
     padding-top: 65px;
     padding-bottom: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    padding-bottom: 54px;
+  }
 }
 
 .profile__wrapper {
@@ -19,6 +24,13 @@
       row-gap: 52px;
       padding-left: 34px;
       padding-right: 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 732px 384px;
+      grid-template-rows: 105px;
+      column-gap: 140px;
+      row-gap: unset;
     }
   }
 }
@@ -38,6 +50,19 @@
       margin: 0;
       padding: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      grid-column: unset;
+      grid-row: unset;
+    }
+  }
+}
+
+.profile__level {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 104px;
+    right: 389px;
   }
 }
 
@@ -51,6 +76,37 @@
     height: 94px;
     border-radius: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 73px;
+    right: 158px;
+    width: 190px;
+    height: 190px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+
+.profile__photo-caption {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 100%;
+    min-height: 47px;
+    margin-top: -6px;
+    padding: 13px;
+
+    @include font-size(500, 20px, 18px);
+
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #dfe3f0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 }
 
 .profile__photo-change-btn {
@@ -61,10 +117,10 @@
 
   @include font-size(500, 20px, 18px);
 
-  color: $basic_blue;
+  color: #161c35;
   font-family: inherit;
   text-transform: uppercase;
-  background-color: $special_blue_light;
+  background-color: #dfe3f0;
   border: none;
   border-radius: 20px;
 
@@ -72,6 +128,23 @@
     grid-column: 1 / 4;
     grid-row: 2 / 3;
     border-radius: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 263px;
+    right: 158px;
+    width: 190px;
+    height: 47px;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.profile__photo-change-btn-add {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -83,6 +156,11 @@
     grid-column: 1 / 4;
     grid-row: 3 / 4;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
 }
 

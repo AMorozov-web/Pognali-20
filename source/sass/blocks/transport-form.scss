@@ -37,6 +37,10 @@
 
       letter-spacing: 0.08em;
     }
+
+    @media (min-width: $tablet-width) {
+      bottom: 12px;
+    }
   }
 }
 
