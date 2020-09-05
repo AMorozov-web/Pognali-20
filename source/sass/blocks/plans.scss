@@ -9,6 +9,13 @@
     padding-top: 57px;
     padding-bottom: 76px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+    padding-bottom: 64px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
 }
 
 .plans__wrapper {
@@ -17,6 +24,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 34px;
     padding-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 64px;
+    padding-right: 0;
   }
 }
 
