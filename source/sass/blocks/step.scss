@@ -100,6 +100,14 @@
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     padding-right: 0;
+
+    .step--2 & {
+      padding-right: 173px; // Для полного соответствия макету
+    }
+
+    .step--3 & {
+      padding-right: 100px; // Для полного соответствия макету
+    }
   }
 }
 

@@ -76,6 +76,12 @@
       border-radius: 50%;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: 765px;
+    }
+  }
 }
 
 .fun__country-flag-wrapper {
@@ -84,6 +90,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 6px;
     padding-right: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 122px;
   }
 }
 
@@ -124,6 +134,12 @@
       background-color: #1d2e5b;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .fun-list__item:not(:last-child) &::before {
+      left: 771px;
+    }
+  }
 }
 
 .fun__text {
@@ -156,6 +172,16 @@
     padding-right: 115px; // для внешнего соответствия макету
 
     @include font-size(normal, 20px, 23px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    @include font-size(normal, 20px, 20px);
   }
 }
 
