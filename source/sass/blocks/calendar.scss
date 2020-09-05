@@ -11,6 +11,10 @@
     min-height: 86px;
     margin-bottom: 39px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
+  }
 }
 
 .calendar__month {
@@ -74,6 +78,16 @@
       right: 17px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--prev-month::before {
+      left: 0;
+    }
+
+    &--next-month::before {
+      right: 0;
+    }
+  }
 }
 
 .calendar__table {
@@ -85,6 +99,10 @@
   @media (min-width: $tablet-width) {
     min-height: 441px;
     margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
   }
 }
 
@@ -107,6 +125,12 @@
 
     @include font-size(normal, 18px, 18px);
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 16px;
+    padding-bottom: 18px;
+    text-align: left;
+  }
 }
 
 .calendar__day-add {
@@ -118,7 +142,25 @@
   }
 }
 
+.calendar__table-body {
+  @media (min-width: $tablet-width) {
+    min-height: 441px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 427px;
+  }
+}
+
+.calendar__row {
+  @media (min-width: $desktop-width) {
+    height: calc(100% / 6);
+  }
+}
+
 .calendar__cell {
+  width: calc(100% / 7);
+
   @include font-size(normal, 14px, 18px);
 
   color: rgba(#444444, 0.3);
@@ -152,5 +194,34 @@
       padding: 0;
       border-width: 4px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 14px;
+    padding-left: 16px;
+    vertical-align: top;
+    text-align: left;
+
+    &--available {
+      @include font-size(normal, 18px, 18px);
+    }
+  }
+}
+
+.calendar__month-begin {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.calendar__day-arrival,
+.calendar__day-departure {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-top: 5px;
   }
 }

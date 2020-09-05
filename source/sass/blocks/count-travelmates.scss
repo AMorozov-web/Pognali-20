@@ -5,6 +5,14 @@
     padding-top: 25px;
     border-top: 1px solid #e1e3e9;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 221px auto 74px;
+    grid-template-rows: auto;
+    padding-top: 0;
+    border: none;
+  }
 }
 
 .count-travelmates__label-wrapper {
@@ -15,6 +23,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    margin-bottom: 0;
   }
 }
 
@@ -44,6 +58,10 @@
 
     letter-spacing: 0.08em;
   }
+
+  @media (min-width: $desktop-width) {
+    color: #1d2e5b;
+  }
 }
 
 .count-travelmates__input-wrapper {
@@ -58,6 +76,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
   }
 }
 

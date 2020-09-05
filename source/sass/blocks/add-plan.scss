@@ -9,6 +9,13 @@
     padding-top: 53px;
     padding-bottom: 93px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 143px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
 }
 
 .add-plan__wrapper {
@@ -17,6 +24,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 34px;
     padding-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -27,6 +39,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+    padding-left: 64px;
   }
 }
 
@@ -57,6 +74,10 @@
     min-width: 76px;
     min-height: 6px;
     margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
