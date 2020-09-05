@@ -16,6 +16,14 @@
     height: 100%;
     background: linear-gradient(90deg, transparent 10%, #ffffff 60%);
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .fun__country-name {
@@ -49,10 +57,41 @@
     background-color: #1d2e5b;
     border-radius: 50%;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+
+    @include font-size(bold, 30px, 30px);
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      top: calc(100% / 2 - 7px);
+      left: 533px;
+      width: 15px;
+      height: 15px;
+      background-color: #1d2e5b;
+      border-radius: 50%;
+    }
+  }
 }
 
 .fun__country-flag-wrapper {
   padding-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
+    padding-right: 31px;
+  }
+}
+
+.fun__country-flag {
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
 }
 
 .fun__text-wrapper {
@@ -61,7 +100,7 @@
   min-height: 283px;
   padding-top: 25px;
 
-  .fun__start-country &::before {
+  .fun-list__item:not(:last-child) &::before {
     position: absolute;
     content: "";
     top: 0;
@@ -70,6 +109,20 @@
     width: 2px;
     height: 283px;
     background-color: #1d2e5b;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 140px;
+    padding-right: 30px;
+
+    .fun-list__item:not(:last-child) &::before {
+      top: -23px;
+      left: 539px;
+      width: 3px;
+      height: 266px;
+      background-color: #1d2e5b;
+    }
   }
 }
 
@@ -84,14 +137,25 @@
   @include font-size(normal, 16px, 22px);
 
   font-family: inherit;
-  color: $special_grey;
+  color: #444444;
   resize: none;
   border: 1px solid #cbced9;
   border-radius: 4px;
 
   &::placeholder {
     font-family: inherit;
-    color: rgba($special_grey, 0.3);
+    color: rgba(#444444, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 140px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 19px;
+    padding-right: 115px; // для внешнего соответствия макету
+
+    @include font-size(normal, 20px, 23px);
   }
 }
 
