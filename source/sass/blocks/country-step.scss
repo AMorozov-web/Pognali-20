@@ -200,10 +200,6 @@
     color: #1d2e5b;
   }
 
-  .country-step__country-choose &:focus::placeholder {
-    color: transparent;
-  }
-
   @media (min-width: $tablet-width) {
     min-height: 70px;
     padding-top: 22px;
