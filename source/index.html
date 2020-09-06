@@ -9,7 +9,9 @@
   </head>
 
   <body class="page__body page__body--index">
-    <header class="page-header page-header--opened-men page-header--no-j">
+    <!-- При загрузке JS у page__body убирается класс page__body--no-js -->
+    <header class="page-header">
+      <!-- Для открытия меню к page-header добавляется класс page-header--opened-menu -->
       <div class="page-header__wrapper">
         <a class="page-header__logo logo">
           <picture>
@@ -97,21 +99,6 @@
         <h2 class="visually-hidden">Путешествовать с попутчиками - легко!</h2>
         <div class="promo__wrapper">
           <p class="promo__title">В путешествие с&nbsp;крутыми попутчиками!</p>
-          <div class="promo__contacts">
-            <a class="promo__contact-link contact-link contact-link--promo contact-link--phone" href="tel:+78005558628" aria-label="Позвоните нам">
-              <div class="contact-link__icon-box contact-link__icon-box--phone">
-                <svg class="contact-link__icon contact-link__icon--phone" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="17" viewBox="0 0 18 18" xml:space="preserve"><path d="M12.6 18h-.8c-3.6-.4-6.2-2.1-8.1-4.3C1.8 11.6.3 8.8 0 5V4c.1-.7.4-1.1.8-1.5C1.2 2 2 1.4 2.6 1.3c.5 0 1.3.3 1.6.8.3.4.4 1.2.6 1.8.1.6.4 1.4.4 2-.2.9-1.3 1.3-1.7 1.9 1.1 2.8 3 4.8 5.4 6.2.6-.3 1.2-1.4 2-1.4.3 0 .7.2 1 .3.3.1.6.2 1 .4.5.2 1.4.5 1.7.9.3.4.5 1.2.4 1.7-.1.8-1.6 1.8-2.4 2.1z" /><path class="st0" d="M9.1 1.1c4.3 0 7.8 3.6 7.8 8H18c0-5-4-9.1-8.9-9.1v1.1zM9.1 6.9V8c.6 0 1 .5 1 1.1h1.1c0-1.2-.9-2.2-2.1-2.2z"/><path class="st0" d="M9.1 4.6c2.4 0 4.4 2 4.4 4.5h1.2c0-3.1-2.5-5.7-5.5-5.7v1.2h-.1z"/></svg>
-              </div>
-            </a>
-            <a class="promo__contact-link contact-link contact-link--promo contact-link--email" href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам">
-              <div class="contact-link__icon-box contact-link__icon-box--email">
-                <svg class="contact-link__icon contact-link__icon--email" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="17" viewBox="0 0 18 14" xml:space="preserve"><path d="M14.9 1.8c1.2-1 .9-1.8-.7-1.8H3.7c-1.5 0-1.8.8-.6 1.8l3.7 3.1c1.2 1 3.2 1 4.4 0l3.7-3.1z"/><path class="st0" d="M11.9 7.1c-1.2 1-2.2 1.8-2.2 1.8-.1.1-.2.1-.3.1h-.1c-.1.1-.2.1-.3.1-.1 0-.2 0-.3-.1h-.1c-.1 0-.2 0-.3-.1 0 0-1-.8-2.2-1.8L2.2 3.8C1 2.8 0 3.3 0 4.8v6.3C0 12.7 1.3 14 2.8 14h12.3c1.6 0 2.8-1.3 2.8-2.8V4.8c0-1.6-1-2-2.2-1l-3.8 3.3z"/></svg>
-              </div>
-            </a>
-            <div class="promo__login-link-box">
-              <a class="promo__login-link login-link login-link--promo" href="login.html">Авторизация</a>
-            </div>
-          </div>
           <blockquote class="promo__quote">
             <div class="promo__quote-wrapper">
               <p class="promo__quote-text">«Лучшее приложение, что я видел в жизни!»</p>
@@ -287,6 +274,7 @@
         </div>
       </section>
       <section class="index-page__rates rates">
+        <!-- Для открытия модального окна к rates добавляется класс rates--modal-open -->
         <div class="rates__wrapper">
           <h2 class="visually-hidden">Тарифы</h2>
           <div class="rates__title-box">
@@ -309,7 +297,7 @@
           </ul>
           <a class="rates__modal-open" href="business-rates.html">Показать тарифы для бизнеса</a>
         </div>
-        <div class="rates__business-rates business-rates visually-hidden">
+        <div class="rates__business-rates business-rates">
           <div class="business-rates__wrapper">
             <h2 class="business-rates__title">Бизнес-тарифы</h2>
             <ul class="business-rates__list">

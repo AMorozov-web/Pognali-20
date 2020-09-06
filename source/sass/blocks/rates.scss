@@ -212,7 +212,7 @@
 
 .rates__modal-open {
   display: block;
-  text-align: center;
+  text-align: left;
 
   @include font-size(bold, 16px, 16px);
 
@@ -225,7 +225,6 @@
     min-height: 68px;
     padding-top: 20px;
     padding-left: 55px;
-    text-align: left;
 
     @include font-size(bold, 20px, 20px);
 

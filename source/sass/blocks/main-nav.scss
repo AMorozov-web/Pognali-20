@@ -6,7 +6,12 @@
   padding-bottom: 41px;
   background-color: #ffffff;
 
-  .page-header--no-js & {
+  .page-header--opened-menu & {
+    z-index: 6;
+  }
+
+  .page-body--no-js & {
+    padding-bottom: 10px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }

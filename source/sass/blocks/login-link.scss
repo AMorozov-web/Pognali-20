@@ -4,25 +4,23 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  background-color: $basic-yellow;
-  color: $basic-blue;
+  background-color: #ffd74b;
+  color: #161c35;
   border-radius: 25px;
   text-decoration: none;
   text-transform: uppercase;
 
   @include font-size(bold, 17px, 30px);
 
-  &--promo {
+  &--page-header {
     @include font-size(bold, 17px, 20px);
   }
 
-  &--page-header {
-    @include font-size(bold, 20px, 20px);
-  }
-
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     min-width: 188px;
     min-height: 50px;
     padding-top: 15px;
+
+    @include font-size(bold, 20px, 20px);
   }
 }

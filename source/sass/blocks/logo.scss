@@ -15,7 +15,7 @@
 
 .logo__img {
   .page-header--opened-menu &,
-  .page-header--no-js & {
+  .page-body--no-js & {
     display: block;
     width: 100px;
     height: 19px;
@@ -28,7 +28,7 @@
     height: 42px;
 
     .page-header--opened-menu &,
-    .page-header--no-js & {
+    .page-body--no-js & {
       display: block;
       padding-left: 166px;
       background: url("../img/logo-tablet-blue@1x.png");

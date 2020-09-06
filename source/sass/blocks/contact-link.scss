@@ -4,18 +4,18 @@
   align-items: center;
   text-decoration: none;
 
-  &--promo {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-
   .reg-form__contacts & {
-    color: $basic_yellow;
+    color: #ffd74b;
   }
 
   &--page-header {
-    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
 
     @media (min-width: $desktop-width) {
       display: block;
@@ -36,22 +36,22 @@
   background-color: #121936;
   border-radius: 50%;
 
-  .contact-link--promo & {
+  .contact-link--page-header & {
     padding-top: 12px;
   }
 
-  .contact-link--promo &--phone {
+  .contact-link--page-header &--phone {
     width: 40px;
     height: 40px;
     margin-right: 0;
-    background-color: $special_orange;
+    background-color: #ff8d30;
   }
 
-  .contact-link--promo &--email {
+  .contact-link--page-header &--email {
     width: 40px;
     height: 40px;
     margin-right: 0;
-    background-color: $special_yellow_dark;
+    background-color: #ffbd30;
   }
 
   @media (min-width: $tablet-width) {
@@ -61,16 +61,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 50px;
-    height: 50px;
-    padding-top: 15px;
+    .contact-link--page-header & {
+      width: 50px;
+      height: 50px;
+      padding-top: 15px;
+    }
 
     &--phone {
-      background-color: $special_orange;
+      background-color: #ff8d30;
     }
 
     &--email {
-      background-color: $special_yellow_dark;
+      background-color: #ffbd30;
     }
   }
 }
@@ -78,10 +80,10 @@
 .contact-link__icon {
   width: 18px;
   height: 17px;
-  fill: $basic_yellow;
+  fill: #ffd74b;
 
-  .contact-link--promo & {
-    fill: $basic_blue;
+  .contact-link--page-header & {
+    fill: #161c35;
   }
 
   @media (min-width: $tablet-width) {
@@ -103,7 +105,7 @@
   text-transform: uppercase;
 
   .reg-form__contact-link & {
-    color: $basic_yellow;
+    color: #ffd74b;
   }
 
   @media (min-width: $tablet-width) {
