@@ -45,7 +45,7 @@
     min-height: 973px;
     background-color: #182044;
     background-image: url("../img/globe-back-tablet@1x.jpg");
-    background-position: top 293px center;
+    background-position: top 250px center;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,7 +98,7 @@
     @include font-size(bold, 60px, 70px);
 
     &::after {
-      top: 242px;
+      top: 247px;
       right: -85px;
       width: 372px;
       height: 471px;
@@ -161,7 +161,7 @@
     margin-top: 86px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 211px;
+    margin-bottom: 216px;
   }
 
   @media (min-width: $desktop-width) {

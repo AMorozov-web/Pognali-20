@@ -42,7 +42,7 @@
   @include wrapper;
 
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 
   @media (min-width: $mobile-width) {
     .page-body--no-js & {
