@@ -18,7 +18,7 @@
     padding-right: 34px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: 576px 178px 306px auto;
     grid-template-rows: auto;
     min-height: 97px;

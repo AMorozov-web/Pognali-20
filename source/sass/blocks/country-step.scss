@@ -195,6 +195,15 @@
   border: none;
   border-radius: 4px;
 
+  .country-step__country-choose &::placeholder,
+  .country-step__add-country &::placeholder {
+    color: #1d2e5b;
+  }
+
+  .country-step__country-choose &:focus::placeholder {
+    color: transparent;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 70px;
     padding-top: 22px;
