@@ -109,12 +109,13 @@
 .page-header__contacts {
   position: absolute;
   z-index: 5;
-  top: 445px;
+  top: 473px;
   display: flex;
   width: 270px;
 
   @media (min-width: $mobile-width) {
-    .page__body--no-js & {
+    .page__body--no-js &,
+    .page-header--scroll & {
       display: none;
     }
   }

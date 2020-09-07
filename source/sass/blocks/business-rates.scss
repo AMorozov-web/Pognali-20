@@ -12,6 +12,12 @@
     @media (min-width: $tablet-width) {
       padding-top: 54px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 750px;
+      min-height: 526px;
+      border-radius: 30px;
+    }
   }
 }
 
@@ -22,6 +28,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 90px;
     padding-right: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -111,5 +122,10 @@
     min-height: 108px;
 
     @include font-size(bold, 24px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
 }

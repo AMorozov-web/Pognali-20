@@ -65,14 +65,27 @@
       width: 50px;
       height: 50px;
       padding-top: 15px;
+
+      &--phone {
+        background-color: #ff8d30;
+      }
+
+      &--email {
+        background-color: #ffbd30;
+      }
     }
 
-    &--phone {
-      background-color: #ff8d30;
-    }
+    .reg-form__contact-link & {
+      width: 90px;
+      height: 90px;
 
-    &--email {
-      background-color: #ffbd30;
+      &--phone {
+        padding-top: 25px;
+      }
+
+      &--email {
+        padding-top: 30px;
+      }
     }
   }
 }
@@ -94,7 +107,18 @@
   @media (min-width: $desktop-width) {
     width: 18px;
     height: 18px;
-    fill: #161c35;
+
+    .reg-form__contact-link & {
+      &--phone {
+        width: 36px;
+        height: 34px;
+      }
+
+      &--email {
+        width: 36px;
+        height: 25px;
+      }
+    }
   }
 }
 
