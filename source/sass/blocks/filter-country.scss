@@ -51,19 +51,12 @@
 
   @include font-size(bold, 16px ,18px);
 
-  color: $link-dark;
+  color: #192144;
   text-transform: uppercase;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 0;
-    display: block;
-    width: 15px;
-    height: 10px;
-    background-color: $special_orange;
-  }
+  background-image: url("../img/filter.svg");
+  background-size: 15px 10px;
+  background-repeat: no-repeat;
+  background-position: center left;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -72,8 +65,11 @@
   @media (min-width: $desktop-width) {
     display: block;
     margin-right: 30px;
+    padding-left: 45px;
 
     @include font-size(bold, 20px ,20px);
+
+    background-size: 23px 15px;
   }
 }
 
