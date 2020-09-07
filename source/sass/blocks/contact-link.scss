@@ -36,18 +36,21 @@
   background-color: #121936;
   border-radius: 50%;
 
-  .contact-link--page-header & {
+  .page-header__contact-link &,
+  .promo__contact-link & {
     padding-top: 12px;
   }
 
-  .contact-link--page-header &--phone {
+  .page-header__contact-link &--phone,
+  .promo__contact-link &--phone {
     width: 40px;
     height: 40px;
     margin-right: 0;
     background-color: #ff8d30;
   }
 
-  .contact-link--page-header &--email {
+  .page-header__contact-link &--email,
+  .promo__contact-link &--email {
     width: 40px;
     height: 40px;
     margin-right: 0;
@@ -58,10 +61,15 @@
     width: 68px;
     height: 68px;
     padding-top: 20px;
+
+    .page-header__contact-link & {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    .contact-link--page-header & {
+    .page-header__contact-link & {
+      display: block;
       width: 50px;
       height: 50px;
       padding-top: 15px;
@@ -95,7 +103,8 @@
   height: 17px;
   fill: #ffd74b;
 
-  .contact-link--page-header & {
+  .page-header__contact-link &,
+  .promo__contact-link & {
     fill: #161c35;
   }
 

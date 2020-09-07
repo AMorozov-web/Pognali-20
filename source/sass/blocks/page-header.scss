@@ -107,31 +107,10 @@
 }
 
 .page-header__contacts {
-  position: absolute;
-  z-index: 5;
-  top: 473px;
-  display: flex;
-  width: 270px;
-
-  @media (min-width: $mobile-width) {
-    .page__body--no-js &,
-    .page-header--scroll & {
-      display: none;
-    }
-  }
+  display: none;
 
   @media (min-width: $tablet-width) {
-    position: static;
-    z-index: unset;
-    align-items: center;
-    width: unset;
-
-    .page__body--no-js & {
-      display: block;
-      order: -1;
-      align-self: flex-end;
-      margin-bottom: -42px;
-    }
+    display: flex;
   }
 
   @media (min-width: $desktop-width) {
