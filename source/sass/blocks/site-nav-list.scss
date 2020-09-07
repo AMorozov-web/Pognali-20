@@ -4,6 +4,10 @@
   margin-bottom: 50px;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 144px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     margin: 0;
@@ -12,8 +16,13 @@
 }
 
 .site-nav-list__item {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 3px;
+    text-align: unset;
 
     &:not(:first-child) {
       margin-left: 34px;
@@ -42,6 +51,10 @@
   text-decoration: none;
 
   @include font-size(500, 30px, 35px);
+
+  @media (min-width: $tablet-width) {
+    @include font-size(500, 60px, 71px);
+  }
 
   @media (min-width: $desktop-width) {
     @include font-size(500, 20px, 20px);

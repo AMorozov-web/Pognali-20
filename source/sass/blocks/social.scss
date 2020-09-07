@@ -4,6 +4,10 @@
   align-items: center;
 
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    justify-content: left;
+  }
 }
 
 .social__item {

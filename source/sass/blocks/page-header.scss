@@ -7,20 +7,26 @@
   background-color: #161c35;
 
   &--opened-menu,
-  .page-body--no-js & {
+  &--scroll,
+  .page__body--no-js & {
     background-color: #ffffff;
   }
 
-  .page-body--no-js & {
+  &--scroll {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .page__body--no-js & {
     z-index: 2;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
 
-  .page__body--catalog & {
-    background-color: #182044;
-  }
-
+  .page__body--catalog &,
   .page__body--form & {
     background-color: #182044;
   }
@@ -29,29 +35,40 @@
     background-color: #182044;
     min-height: 50px;
     padding-top: 40px;
+    padding-bottom: 40px;
+
+    &--opened-menu,
+    .page__body--no-js & {
+      background-color: #ffffff;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-height: 53px;
     padding-top: 46px;
+    padding-bottom: 46px;
     background-color: #161c35;
   }
 }
 
 .page-header__wrapper {
-  @include wrapper;
-
   display: flex;
   align-items: center;
 
+  @include wrapper;
+
   @media (min-width: $mobile-width) {
-    .page-body--no-js & {
+    .page__body--no-js & {
       flex-direction: column;
     }
   }
 }
 
 .page-header__logo {
+  .page__body--no-js & {
+    align-self: flex-start;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 40px;
   }
@@ -64,16 +81,20 @@
   opacity: 0;
 
   .page-header--opened-menu &,
-  .page-body--no-js & {
+  .page__body--no-js & {
     top: 47px;
     left: 0;
     width: 100%;
     transform: scaleY(1);
     visibility: visible;
     opacity: 1;
+
+    @media (min-width: $tablet-width) {
+      top: 117px;
+    }
   }
 
-  .page-body--no-js & {
+  .page__body--no-js & {
     position: static;
   }
 
@@ -88,12 +109,12 @@
 .page-header__contacts {
   position: absolute;
   z-index: 5;
-  top: 472px;
+  top: 445px;
   display: flex;
   width: 270px;
 
   @media (min-width: $mobile-width) {
-    .page-body--no-js & {
+    .page__body--no-js & {
       display: none;
     }
   }
@@ -103,6 +124,13 @@
     z-index: unset;
     align-items: center;
     width: unset;
+
+    .page__body--no-js & {
+      display: block;
+      order: -1;
+      align-self: flex-end;
+      margin-bottom: -42px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -121,7 +149,7 @@
 .page-header__nav-toggle-btn {
   margin-left: auto;
 
-  .page-body--no-js & {
+  .page__body--no-js & {
     display: none;
   }
 

@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="page__body page__body--index">
+  <body class="page__body page__body--index page__body--no-j">
     <!-- При загрузке JS у page__body убирается класс page__body--no-js -->
-    <header class="page-header">
-      <!-- Для открытия меню к page-header добавляется класс page-header--opened-menu -->
+    <header class="page-header page-header--opened-men page-header--scrol">
+      <!-- Для открытия меню к page-header добавляется класс page-header--opened-menu. Для фиксации меню при прокрутке страницы - добавляется класс page-header--scroll -->
       <div class="page-header__wrapper">
         <a class="page-header__logo logo">
           <picture>
@@ -273,7 +273,7 @@
           <a class="travelmates__btn" href="catalog.html">Показать всех</a>
         </div>
       </section>
-      <section class="index-page__rates rates">
+      <section class="index-page__rates rates rates--modal-open">
         <!-- Для открытия модального окна к rates добавляется класс rates--modal-open -->
         <div class="rates__wrapper">
           <h2 class="visually-hidden">Тарифы</h2>

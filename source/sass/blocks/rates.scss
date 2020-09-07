@@ -237,9 +237,9 @@
       width: 68px;
       height: 68px;
       background-color: #e2e5f2;
-      background-image: url("../img/user.svg");
-      background-position: 21px 18px;
-      background-size: 27px 27px;
+      background-image: url("../img/businessman.svg");
+      background-position: 16px 14px;
+      background-size: 37px 37px;
       background-repeat: no-repeat;
       border-radius: 50%;
     }
@@ -258,4 +258,10 @@
   left: 25px;
   right: 25px;
   z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    top: 55px;
+    left: 38px;
+    right: 38px;
+  }
 }
