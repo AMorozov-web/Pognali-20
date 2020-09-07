@@ -32,10 +32,17 @@
 .filter-country__title-box {
   display: flex;
   align-items: center;
-  margin-bottom: 150px;
+
+  .filter-country--opened-menu & {
+    margin-bottom: 150px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+
+    .filter-country--opened-menu & {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -73,6 +80,18 @@
   }
 }
 
+.filter-country__title-add {
+  display: none;
+
+  .filter-country--opened-menu & {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
 .filter-country__toggle-btn {
   position: relative;
   width: 20px;
@@ -99,19 +118,55 @@
       -16px 0 0 0 #192144;
   }
 
+  .filter-country--opened-menu & {
+    &::before {
+      position: absolute;
+      content: "";
+      top: calc(100% / 2 - 2px);
+      right: 0;
+      width: 19px;
+      height: 2px;
+      background-color: #192144;
+      border-radius: 1px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      width: 19px;
+      height: 2px;
+      border-radius: 1px;
+      box-shadow: none;
+      transform: rotate(-45deg);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     min-width: 220px;
     min-height: 20px;
+    margin-right: -2px;
 
     &::after {
-      right: 0;
       width: 6px;
       height: 6px;
       box-shadow:
         -12px 0 0 0 #192144,
         -24px 0 0 0 #192144;
+    }
+
+    .filter-country--opened-menu & {
+      &::before {
+        width: 27px;
+        height: 2px;
+        transform: rotate(42deg);
+      }
+
+      &::after {
+        width: 27px;
+        height: 2px;
+        transform: rotate(-42deg);
+      }
     }
   }
 }
@@ -130,7 +185,11 @@
 
     &--open {
       display: block;
-      margin-left: 35px;
+      margin-left: 40px;
+
+      .filter-country--opened-menu & {
+        display: none;
+      }
     }
 
     .filter-country--opened-menu &--close {
@@ -144,15 +203,39 @@
   position: absolute;
   top: 49px;
   left: 24px;
+  transform: scaleY(0);
+  visibility: hidden;
+  opacity: 0;
+
+  .filter-country--opened-menu & {
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+  }
 
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
     align-items: center;
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
   }
 }
 
 .filter-country__dropdown {
+  position: absolute;
+  transform: scaleY(0);
+  visibility: hidden;
+  opacity: 0;
+
+  .filter-country--opened-menu & {
+    position: static;
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, auto);
