@@ -406,3 +406,11 @@
     right: 0;
   }
 }
+
+.country-step__dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+}
