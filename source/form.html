@@ -394,7 +394,8 @@
               <button class="step__btn step__btn--next" type="button">Следующий шаг</button>
             </div>
           </li>
-          <li class="steps-list__item step step--2">
+          <li class="steps-list__item step step--2 step--opened-men">
+            <!-- Для открытия меню к step--2 добавляется класс step--opened-menu -->
             <div class="step__description-wrapper">
               <h3 class="step__title">
                 <span class="step__title-number">Шаг 2.</span>
@@ -447,43 +448,44 @@
                   <div class="country-step__dropdown-menu">
                     <ul class="country-step__litter-list">
                       <li class="country-step__litter-item country-step__litter-item--active">
-                        <a class="country-step__litter-link country-step__litter-link--active" href="#">А</a>
+                        <a class="country-step__litter-link" href="#">А</a>
                       </li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Б</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">В</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Г</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Д</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Е</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">З</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">И</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">К</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Л</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">М</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Н</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">О</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">П</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Р</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">С</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Т</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">У</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Ф</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Х</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Ч</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Ш</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Э</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Ю</a></li>
-                      <li class="country-step__litter-item"><a class="country-litter__link" href="#">Я</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Б</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">В</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Г</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Д</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Е</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">З</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">И</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">К</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Л</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">М</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Н</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">О</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">П</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Р</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">С</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Т</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">У</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Ф</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Х</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Ч</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Ш</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Э</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Ю</a></li>
+                      <li class="country-step__litter-item"><a class="country-step__litter-link" href="#">Я</a></li>
                     </ul>
                     <ul class="country-step__country-list">
-                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Афганистан</a></li>
-                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Албания</a></li>
-                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Алжир</a></li>
-                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Андорра</a></li>
-                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Аргентина</a></li>
-                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Армения</a></li>
                       <li class="country-step__country-item"><a class="country-step__country-link" href="#">Австралия</a></li>
                       <li class="country-step__country-item"><a class="country-step__country-link" href="#">Австрия</a></li>
                       <li class="country-step__country-item"><a class="country-step__country-link" href="#">Азербайджан</a></li>
+                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Албания</a></li>
+                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Алжир</a></li>
+                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Ангола</a></li>
+                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Андорра</a></li>
+                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Антигуа и Барбуда</a></li>
+                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Аргентина</a></li>
+                      <li class="country-step__country-item"><a class="country-step__country-link" href="#">Армения</a></li>
                     </ul>
                   </div>
                   <div class="country-step__flag-wrapper">
