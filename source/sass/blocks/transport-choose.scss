@@ -1,0 +1,58 @@
+.transport-choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 94px;
+  }
+}
+
+.transport-choose__item {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  &--plane,
+  &--bus,
+  &--bike,
+  &--walk {
+    padding-top: 7px;
+    padding-left: 8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 44px;
+    height: 44px;
+
+    &--plane,
+    &--bus,
+    &--bike,
+    &--walk {
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.transport-choose__icon {
+  fill: #101d41;
+  fill-opacity: 0.15;
+
+  .transport-choose__input:checked ~ .transport-choose__label & {
+    fill-opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 22px;
+    fill: #1d2e5b;
+    fill-opacity: 0.15;
+  }
+}
