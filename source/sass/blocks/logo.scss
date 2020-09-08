@@ -20,7 +20,8 @@
     width: 100px;
     height: 19px;
     padding-left: 100px;
-    background: url("../img/logo-mobile-blue@1x.png");
+    background-image: url("../img/logo-mobile-blue@1x.png");
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $tablet-width) {
@@ -33,12 +34,19 @@
       width: 166px;
       height: 42px;
       padding-left: 166px;
-      background: url("../img/logo-tablet-blue@1x.png");
+      background-image: url("../img/logo-tablet-blue@1x.png");
+      background-repeat: no-repeat;
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 200px;
     height: 52px;
+    background-image: url("../img/logo-desktop-white@1x.png");
+    background-repeat: no-repeat;
+
+    .page__body--no-js & {
+      padding: 0;
+    }
   }
 }

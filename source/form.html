@@ -9,7 +9,9 @@
 </head>
 
 <body class="page__body page__body--form">
-  <header class="page-header page-header--opened-men page-header--no-j">
+  <!-- При загрузке JS у page__body убирается класс page__body--no-js -->
+  <header class="page-header page-header--opened-men page-header--scrol">
+    <!-- Для открытия меню к page-header добавляется класс page-header--opened-menu. Для фиксации меню при прокрутке страницы добавляется класс page-header--scroll -->
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo logo">
         <picture>
@@ -97,21 +99,20 @@
         </div>
       </nav>
       <div class="page-header__contacts">
-        <a class="page-header__contact-link contact-link contact-link--page-header contact-link--phone"
-          href="tel:+78005558628" aria-label="Позвоните нам">
+        <a class="page-header__contact-link contact-link contact-link--phone" href="tel:+78005558628"
+          aria-label="Позвоните нам">
           <div class="contact-link__icon-box contact-link__icon-box--phone">
             <svg class="contact-link__icon contact-link__icon--phone" version="1.1" xmlns="http://www.w3.org/2000/svg"
               x="0" y="0" width="18" height="17" viewBox="0 0 18 18" xml:space="preserve">
               <path
-                d="M12.6 18h-.8c-3.6-.4-6.2-2.1-8.1-4.3C1.8 11.6.3 8.8 0 5V4c.1-.7.4-1.1.8-1.5C1.2 2 2 1.4 2.6 1.3c.5 0 1.3.3 1.6.8.3.4.4 1.2.6 1.8.1.6.4 1.4.4 2-.2.9-1.3 1.3-1.7 1.9 1.1 2.8 3 4.8 5.4 6.2.6-.3 1.2-1.4 2-1.4.3 0 .7.2 1 .3.3.1.6.2 1 .4.5.2 1.4.5 1.7.9.3.4.5 1.2.4 1.7-.1.8-1.6 1.8-2.4 2.1z"
-                id="UrwUhy_1_" />
+                d="M12.6 18h-.8c-3.6-.4-6.2-2.1-8.1-4.3C1.8 11.6.3 8.8 0 5V4c.1-.7.4-1.1.8-1.5C1.2 2 2 1.4 2.6 1.3c.5 0 1.3.3 1.6.8.3.4.4 1.2.6 1.8.1.6.4 1.4.4 2-.2.9-1.3 1.3-1.7 1.9 1.1 2.8 3 4.8 5.4 6.2.6-.3 1.2-1.4 2-1.4.3 0 .7.2 1 .3.3.1.6.2 1 .4.5.2 1.4.5 1.7.9.3.4.5 1.2.4 1.7-.1.8-1.6 1.8-2.4 2.1z" />
               <path class="st0"
                 d="M9.1 1.1c4.3 0 7.8 3.6 7.8 8H18c0-5-4-9.1-8.9-9.1v1.1zM9.1 6.9V8c.6 0 1 .5 1 1.1h1.1c0-1.2-.9-2.2-2.1-2.2z" />
               <path class="st0" d="M9.1 4.6c2.4 0 4.4 2 4.4 4.5h1.2c0-3.1-2.5-5.7-5.5-5.7v1.2h-.1z" /></svg>
           </div>
         </a>
-        <a class="page-header__contact-link contact-link contact-link--page-header contact-link--email"
-          href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам">
+        <a class="page-header__contact-link contact-link contact-link--email" href="mailto:mail@htmlacademy.ru"
+          aria-label="Напишите нам">
           <div class="contact-link__icon-box contact-link__icon-box--email">
             <svg class="contact-link__icon contact-link__icon--email" version="1.1" xmlns="http://www.w3.org/2000/svg"
               x="0" y="0" width="18" height="17" viewBox="0 0 18 14" xml:space="preserve">

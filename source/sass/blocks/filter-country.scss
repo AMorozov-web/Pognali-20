@@ -7,8 +7,8 @@
   border-bottom-left-radius: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 124px;
-    padding-bottom: 75px;
+    padding-top: 80px;
+    padding-bottom: 56px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -34,6 +34,7 @@
   display: flex;
   align-items: center;
 
+  .page__body--no-js &,
   .filter-country--opened-menu & {
     margin-bottom: 150px;
   }
@@ -41,6 +42,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
 
+    .page__body--no-js &,
     .filter-country--opened-menu & {
       margin-bottom: 0;
     }
@@ -84,6 +86,7 @@
 .filter-country__title-add {
   display: none;
 
+  .page__body--no-js &,
   .filter-country--opened-menu & {
     display: inline;
   }
@@ -104,6 +107,10 @@
   border: none;
   background: transparent;
   cursor: pointer;
+
+  .page__body--no-js & {
+    display: none;
+  }
 
   &::after {
     position: absolute;
@@ -208,6 +215,7 @@
   visibility: hidden;
   opacity: 0;
 
+  .page__body--no-js &,
   .filter-country--opened-menu & {
     transform: scaleY(1);
     visibility: visible;
@@ -230,6 +238,7 @@
   visibility: hidden;
   opacity: 0;
 
+  .page__body--no-js &,
   .filter-country--opened-menu & {
     position: static;
     transform: scaleY(1);
@@ -244,6 +253,11 @@
     column-gap: 100px;
     row-gap: 78px;
     padding-top: 63px;
+
+    .page__body--no-js & {
+      grid-template-rows: auto;
+      row-gap: unset;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -253,6 +267,10 @@
     row-gap: 51px;
     padding-left: 15px;
     padding-right: 15px;
+
+    .page__body--no-js & {
+      row-gap: 51px;
+    }
   }
 }
 
@@ -332,6 +350,10 @@
   text-transform: uppercase;
   border: none;
   border-radius: 20px;
+
+  .page__body--no-js & {
+    display: none;
+  }
 
   &::before {
     position: absolute;

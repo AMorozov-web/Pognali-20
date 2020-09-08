@@ -6,29 +6,41 @@
   padding-bottom: 28px;
   background-color: #161c35;
 
-  &--opened-menu,
-  &--scroll,
-  .page__body--no-js & {
-    background-color: #ffffff;
-  }
-
   &--scroll {
     position: fixed;
     z-index: 5;
     top: 0;
     left: 0;
     right: 0;
+    background-color: #ffffff;
   }
 
-  .page__body--no-js & {
-    z-index: 2;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+  &--opened-menu {
+    @media (max-width: $tablet-width-only) {
+      background-color: #ffffff;
+    }
   }
 
   .page__body--catalog &,
   .page__body--form & {
     background-color: #182044;
+
+    &--scroll {
+      background-color: #ffffff;
+    }
+
+    &--opened-menu {
+      @media (max-width: $tablet-width-only) {
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  .page__body--no-js & {
+    @media (max-width: $tablet-width-only) {
+      z-index: 2;
+      background-color: #ffffff;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -36,11 +48,6 @@
     min-height: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
-
-    &--opened-menu,
-    .page__body--no-js & {
-      background-color: #ffffff;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -57,9 +64,19 @@
 
   @include wrapper;
 
-  @media (min-width: $mobile-width) {
+  .page__body--no-js & {
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
     .page__body--no-js & {
       flex-direction: column;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .page__body--no-js & {
+      flex-direction: row;
     }
   }
 }
@@ -111,10 +128,26 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+
+    .page__body--no-js & {
+      order: -1;
+      align-self: flex-end;
+      margin-bottom: -40px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    align-self: unset;
+    order: unset;
     margin-left: auto;
+    margin-bottom: 0;
+
+    .page__body--no-js &,
+    .page-header--opened-menu & {
+      order: unset;
+      align-self: unset;
+      margin-bottom: 0;
+    }
   }
 }
 

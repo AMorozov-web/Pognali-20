@@ -40,6 +40,10 @@
         width: 60px;
         height: 2px;
         background-color: #ffffff;
+
+        .page-header--scroll & {
+          background-color: #192144;
+        }
       }
     }
   }
@@ -60,5 +64,9 @@
     @include font-size(500, 20px, 20px);
 
     color: #ffffff;
+
+    .page-header--scroll & {
+      color: #192144;
+    }
   }
 }
