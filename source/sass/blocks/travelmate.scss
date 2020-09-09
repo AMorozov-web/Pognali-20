@@ -4,6 +4,15 @@
   min-height: 428px;
   background-color: #ffffff;
   border-radius: 12px;
+  overflow: hidden;
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+
+    .travelmate__photo {
+      transform: scale(1.1);
+    }
+  }
 
   .catalog-page & {
     display: grid;
@@ -48,6 +57,10 @@
       border-radius: 20px;
     }
   }
+}
+
+.travelmate__photo-box {
+  overflow: hidden;
 }
 
 .travelmate__photo {
@@ -248,6 +261,8 @@
 }
 
 .travelmate__flags-list {
+  position: relative;
+
   @include list-style;
 
   margin-top: -20px;
@@ -275,10 +290,21 @@
   margin-top: 13px;
   margin-left: -10px;
   text-align: center;
+  text-decoration: none;
+  outline: none;
 
   @include font-size(bold, 21px, 21px);
 
   color: #1d2e5b;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   .catalog-page & {
     flex-direction: row-reverse;

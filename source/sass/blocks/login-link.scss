@@ -10,6 +10,15 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(#161c35, 0.3);
+  }
+
   @include font-size(bold, 17px, 20px);
 
   .main-nav__user-nav-list & {

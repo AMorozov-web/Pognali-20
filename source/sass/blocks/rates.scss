@@ -213,11 +213,21 @@
 .rates__modal-open {
   display: block;
   text-align: left;
+  outline-color: #132576;
 
   @include font-size(bold, 16px, 16px);
 
   color: #132576;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;

@@ -3,24 +3,37 @@
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
+  outline: none;
 
   .reg-form__contacts & {
     color: #ffd74b;
   }
 
-  &--page-header {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  @media (min-width: $desktop-width) {
+    .page-header &--phone {
+      &:hover > .contact-link__icon-box--phone,
+      &:focus > .contact-link__icon-box--phone {
+        background-color: #f26926;
+      }
 
-    @media (min-width: $tablet-width) {
-      display: none;
+      &:active > .contact-link__icon-box--phone {
+        .contact-link__icon--phone {
+          opacity: 0.3;
+        }
+      }
     }
 
-    @media (min-width: $desktop-width) {
-      display: block;
-      width: 50px;
-      height: 50px;
+    .page-header &--email {
+      &:hover > .contact-link__icon-box--email,
+      &:focus > .contact-link__icon-box--email {
+        background-color: #f26926;
+      }
+
+      &:active > .contact-link__icon-box--email {
+        .contact-link__icon--email {
+          opacity: 0.3;
+        }
+      }
     }
   }
 }
@@ -72,7 +85,7 @@
       display: block;
       width: 50px;
       height: 50px;
-      padding-top: 15px;
+      padding-top: 16px;
 
       &--phone {
         background-color: #ff8d30;
