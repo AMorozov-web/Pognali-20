@@ -104,6 +104,27 @@
   text-decoration: none;
   border: 3px solid #1d2e5b;
   border-radius: 10px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #192144;
+
+    &::after {
+      border-left: 10px solid #ffffff;
+    }
+  }
+
+  &:active {
+    .location__btn-text {
+      opacity: 0.3;
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 
   &::after {
     position: absolute;

@@ -46,6 +46,21 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
   &::before,
   &::after {
     position: absolute;
@@ -112,6 +127,7 @@
   padding: 0;
   background-color: #ffffff;
   border: none;
+  cursor: pointer;
 
   &:not(:last-child) {
     margin-right: 1px;
@@ -148,6 +164,17 @@
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
     border-left: 10px solid #1d2e5b;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

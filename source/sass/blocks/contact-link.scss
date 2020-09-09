@@ -10,40 +10,49 @@
   }
 
   @media (min-width: $desktop-width) {
-    .page-header &--phone {
-      &:hover > .contact-link__icon-box--phone,
-      &:focus > .contact-link__icon-box--phone {
-        background-color: #f26926;
-      }
-
-      &:active > .contact-link__icon-box--phone {
-        .contact-link__icon--phone {
-          opacity: 0.3;
-        }
-      }
-    }
-
-    .reg-form &--phone {
-      &:hover > .contact-link__icon-box--phone,
-      &:focus > .contact-link__icon-box--phone {
-        background-color: #f26926;
-      }
-
-      &:active > .contact-link__icon-box--phone {
-        .contact-link__icon--phone {
-          opacity: 0.3;
-        }
-      }
-    }
-
+    .page-header &--phone,
     .page-header &--email {
-      &:hover > .contact-link__icon-box--email,
-      &:focus > .contact-link__icon-box--email {
-        background-color: #f26926;
+      &:hover,
+      &:focus {
+        .contact-link__icon-box {
+          &--phone {
+            background-color: #f26926;
+          }
+
+          &--email {
+            background-color: #ff8d30;
+          }
+        }
       }
 
-      &:active > .contact-link__icon-box--email {
-        .contact-link__icon--email {
+      &:active {
+        .contact-link__icon {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    .reg-form &--phone,
+    .reg-form &--email {
+      &:hover,
+      &:focus {
+        .contact-link__icon {
+          fill: #ffbd30;
+        }
+
+        .contact-link__text {
+          color: #ffbd30;
+        }
+      }
+
+      &:active {
+        .contact-link__icon {
+          fill: #ffd74b;
+          opacity: 0.3;
+        }
+
+        .contact-link__text {
+          color: #ffd74b;
           opacity: 0.3;
         }
       }

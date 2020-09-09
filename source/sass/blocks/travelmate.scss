@@ -207,8 +207,32 @@
   border: none;
   border-radius: 50%;
 
-  &--active {
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.1;
+    }
+  }
+
+  &--checked {
     background-color: #f9eaea;
+
+    &:hover,
+    &:focus {
+      background-color: #f9d8d8;
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 
   &::after {
@@ -223,7 +247,7 @@
     opacity: 0.35;
   }
 
-  &--active::after {
+  &--checked::after {
     background-image: url("../img/heart-active.svg");
     opacity: 1;
   }
@@ -498,6 +522,15 @@
   text-decoration: none;
   background-color: #ffd74b;
   border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(#161c35, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     .catalog-page & {

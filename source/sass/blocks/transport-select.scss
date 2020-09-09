@@ -31,6 +31,15 @@
   background-color: transparent;
   border: none;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -143,6 +152,44 @@
   &--bus,
   &--bike {
     padding-left: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
+
+    .transport-select__icon {
+      fill: #b2b2b2;
+      fill-opacity: 1;
+    }
+  }
+
+  &:active {
+    filter: none;
+    background-color: #e2e5f1;
+
+    .transport-select__icon {
+      fill: #1d2e5b;
+      fill-opacity: 0.1;
+    }
+  }
+
+  .transport-select__input:checked ~ & {
+    &:hover,
+    &:focus {
+      fill: #1d2e5b;
+      fill-opacity: 0.7;
+    }
+
+    &:active {
+      filter: none;
+      background-color: #e2e5f1;
+
+      .transport-select__icon {
+        fill: #1d2e5b;
+        fill-opacity: 0.3;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {

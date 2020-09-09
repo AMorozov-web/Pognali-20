@@ -33,6 +33,17 @@
   border: none;
   border-radius: 25px;
 
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.14));
+  }
+
+  &:active {
+    color: rgba(#161c35, 0.3);
+    background-color: #f3c72b;
+    filter: none;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 36px;
     padding-top: 18px;

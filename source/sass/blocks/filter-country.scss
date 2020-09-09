@@ -106,10 +106,20 @@
   font-family: inherit;
   border: none;
   background: transparent;
+  outline: none;
   cursor: pointer;
 
   .page__body--no-js & {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   &::after {
@@ -350,6 +360,21 @@
   text-transform: uppercase;
   border: none;
   border-radius: 20px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #c8cee8;
+  }
+
+  &:active {
+    color: rgba(#192144, 0.3);
+
+    &::before,
+    &::after {
+      background-color: rgba(#192144, 0.3);
+    }
+  }
 
   .page__body--no-js & {
     display: none;

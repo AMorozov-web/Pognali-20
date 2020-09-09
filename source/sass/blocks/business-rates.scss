@@ -117,6 +117,17 @@
   border: none;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #edeff6;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 108px;

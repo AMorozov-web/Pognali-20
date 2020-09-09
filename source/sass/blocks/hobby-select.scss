@@ -31,6 +31,15 @@
   background-color: transparent;
   border: none;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -139,6 +148,15 @@
   padding-left: 27px;
 
   @include font-size(normal, 15px, 20px);
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before {
     position: absolute;

@@ -35,6 +35,15 @@
   background-color: transparent;
   border: none;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -161,6 +170,16 @@
   height: 10px;
   background-color: #1d2e5b;
   border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
+  }
 
   &--min {
     left: 30%;
@@ -224,6 +243,14 @@
   letter-spacing: 0.07em;
   text-align: center;
   border: 1px solid #cbced9;
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus {
+    border-color: #161c35;
+  }
 
   &:first-child {
     margin-right: -1px;

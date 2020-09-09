@@ -90,6 +90,15 @@
     align-items: center;
     text-decoration: none;
     margin-left: auto;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

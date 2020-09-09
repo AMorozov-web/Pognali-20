@@ -15,8 +15,9 @@
     background-color: #ffffff;
   }
 
-  &--opened-menu {
+  .page__body--no-js & {
     @media (max-width: $tablet-width-only) {
+      z-index: 2;
       background-color: #ffffff;
     }
   }
@@ -28,19 +29,6 @@
     &--scroll {
       background-color: #ffffff;
     }
-
-    &--opened-menu {
-      @media (max-width: $tablet-width-only) {
-        background-color: #ffffff;
-      }
-    }
-  }
-
-  .page__body--no-js & {
-    @media (max-width: $tablet-width-only) {
-      z-index: 2;
-      background-color: #ffffff;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -48,6 +36,30 @@
     min-height: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
+
+    &--scroll {
+      background-color: #ffffff;
+    }
+
+    .page__body--catalog &,
+    .page__body--form & {
+      &--scroll {
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  @media (max-width: $tablet-width-only) {
+    &--opened-menu {
+      background-color: #ffffff;
+    }
+
+    .page__body--catalog &,
+    .page__body--form & {
+      &--opened-menu {
+        background-color: #ffffff;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -55,6 +67,10 @@
     padding-top: 46px;
     padding-bottom: 46px;
     background-color: #161c35;
+
+    &--scroll {
+      background-color: #ffffff;
+    }
   }
 }
 
