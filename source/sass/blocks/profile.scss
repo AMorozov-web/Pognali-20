@@ -125,6 +125,17 @@
   background-color: #dfe3f0;
   border: none;
   border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #d1d7d9;
+  }
+
+  &:active {
+    color: rgba(#161c35, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 4;

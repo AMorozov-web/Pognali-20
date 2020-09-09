@@ -15,9 +15,21 @@
 .transport-choose__item {
   width: 32px;
   height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.transport-choose__label {
+  display: block;
+  width: 32px;
+  height: 32px;
   margin: 0;
   background-color: #ffffff;
   border-radius: 50%;
+  cursor: pointer;
 
   &--plane,
   &--bus,
@@ -25,6 +37,46 @@
   &--walk {
     padding-top: 7px;
     padding-left: 8px;
+  }
+
+  .transport-choose__input:checked + & {
+    &:hover,
+    &:focus {
+      .transport-choose__icon {
+        fill: #1d2e5b;
+        fill-opacity: 0.7;
+      }
+    }
+
+    &:active {
+      filter: none;
+      background-color: #e2e5f1;
+
+      .transport-choose__icon {
+        fill: #1d2e5b;
+        fill-opacity: 0.3;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
+
+    .transport-choose__icon {
+      fill: #b2b2b2;
+      fill-opacity: 1;
+    }
+  }
+
+  &:active {
+    filter: none;
+    background-color: #e2e5f1;
+
+    .transport-choose__icon {
+      fill: #1d2e5b;
+      fill-opacity: 0.1;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -52,7 +104,5 @@
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 22px;
-    fill: #1d2e5b;
-    fill-opacity: 0.15;
   }
 }

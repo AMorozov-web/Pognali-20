@@ -56,6 +56,20 @@
   border: 1px solid #cbced9;
   border-radius: 10px;
   resize: none;
+  outline: none;
+
+  &:hover {
+    border: 1px solid #aeb4cb;
+  }
+
+  &:focus {
+    border: 1px solid #161c35;
+  }
+
+  &:not(:placeholder-shown) {
+    color: #444444;
+    border: 1px solid #161c35;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 36px;

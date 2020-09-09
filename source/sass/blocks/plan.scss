@@ -116,6 +116,15 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
+  &:hover,
+  &:focus {
+    color: rgba(#000000, 0.6);
+  }
+
+  &:active {
+    color: rgba(#000000, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     justify-self: end;
     align-self: end;

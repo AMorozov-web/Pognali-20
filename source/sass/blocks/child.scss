@@ -14,6 +14,21 @@
 
   color: #1d2e5b;
 
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: #959bb2;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #959bb2;
+      opacity: 0.2;
+      border: none;
+    }
+  }
+
   &::before {
     position: absolute;
     top: 0;
