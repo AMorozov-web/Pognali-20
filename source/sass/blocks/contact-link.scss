@@ -23,6 +23,19 @@
       }
     }
 
+    .reg-form &--phone {
+      &:hover > .contact-link__icon-box--phone,
+      &:focus > .contact-link__icon-box--phone {
+        background-color: #f26926;
+      }
+
+      &:active > .contact-link__icon-box--phone {
+        .contact-link__icon--phone {
+          opacity: 0.3;
+        }
+      }
+    }
+
     .page-header &--email {
       &:hover > .contact-link__icon-box--email,
       &:focus > .contact-link__icon-box--email {

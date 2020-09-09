@@ -111,11 +111,35 @@
   margin-right: -10px;
   padding: 0;
   padding-left: 25px;
+
+  @include font-size(bold, 18px, 18px);
+
   font-family: inherit;
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #edeff6;
+
+    &::placeholder {
+      color: rgba(#444444, 0.5);
+    }
+  }
+
+  &:not(:placeholder-shown) {
+    color: #ffffff;
+    background-color: #192144;
+    border: 4px solid #ffffff;
+  }
+
+  &:invalid {
+    color: #ff0000;
+    background-color: #ffffff;
+    border: solid 4px transparent;
+  }
 
   &::placeholder {
     @include font-size(bold, 18px, 18px);
@@ -147,6 +171,23 @@
   font-family: inherit;
   border: none;
   border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    .reg-form__btn-text {
+      color: rgba(#1d2e5b, 0.3);
+    }
+
+    &::after {
+      border-left: 10px solid rgba(#1d2e5b, 0.3);
+    }
+  }
 
   &::after {
     position: absolute;
