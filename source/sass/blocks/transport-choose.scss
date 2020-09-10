@@ -23,6 +23,7 @@
 }
 
 .transport-choose__label {
+  position: relative;
   display: block;
   width: 32px;
   height: 32px;
@@ -37,6 +38,52 @@
   &--walk {
     padding-top: 7px;
     padding-left: 8px;
+  }
+
+  &[data-hover] {
+    &::before {
+      position: absolute;
+      content: attr(data-hover);
+      z-index: 8;
+      top: -138%;
+      left: 50%;
+      display: none;
+      padding-top: 16px;
+      padding-bottom: 17px;
+      padding-right: 24px;
+      padding-left: 24px;
+
+      @include font-size(normal, 20px, 20px);
+
+      color: #ffffff;
+      white-space: nowrap;
+      background-color: #101d41;
+      border-radius: 4px;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 3;
+      bottom: 90%;
+      left: 50%;
+      display: none;
+      width: 0;
+      height: 0;
+
+      border-top: 9px solid #101d41;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent;
+      transform: translateX(-50%) translateY(-41%);
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        display: block;
+      }
+    }
   }
 
   .transport-choose__input:checked + & {
