@@ -77,7 +77,7 @@
     &:hover .site-nav-list__span,
     &:focus .site-nav-list__span {
       color: #ffd74b;
-      transform: translateY(-100%);
+      transform: translateY(-110%);
     }
   }
 }
@@ -89,7 +89,7 @@
 
   &::before {
     position: absolute;
-    top: 100%;
+    top: 110%;
     content: attr(data-hover);
     transform: translate3d(0, 0, 0);
   }

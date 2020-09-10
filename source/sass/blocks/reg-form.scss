@@ -135,16 +135,16 @@
     border: 4px solid #ffffff;
   }
 
-  &:invalid {
-    color: #ff0000;
-    background-color: #ffffff;
-    border: solid 4px transparent;
-  }
-
   &::placeholder {
     @include font-size(bold, 18px, 18px);
 
     color: rgba(#444444, 0.3);
+  }
+
+  &--invalid {
+    color: #ff0000;
+    background-color: #ffffff;
+    border: solid 4px transparent;
   }
 
   @media (min-width: $tablet-width) {

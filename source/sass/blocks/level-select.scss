@@ -52,13 +52,13 @@
     display: block;
     width: 0;
     height: 0;
-    border-bottom: 6px solid #1d2e5b;
+    border-top: 6px solid #1d2e5b;
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
 
     .list--opened & {
       border: none;
-      border-top: 6px solid #1d2e5b;
+      border-bottom: 6px solid #1d2e5b;
       border-right: 5px solid transparent;
       border-left: 5px solid transparent;
     }

@@ -175,11 +175,13 @@
     color: transparent;
   }
 
-  &:placeholder-shown {
+  &--invalid {
     border: 1px solid #f47e7e;
 
-    & + .fun__text-error {
-      display: block;
+    @media (min-width: $desktop-width) {
+      & + .fun__text-error {
+        display: block;
+      }
     }
   }
 
