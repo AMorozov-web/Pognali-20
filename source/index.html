@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
   </head>
 
   <body class="page__body page__body--index page__body--no-j">
@@ -360,7 +365,7 @@
           <p class="reg-form__text">Зарегистрируйтесь, это&nbsp;быстро&nbsp;и&nbsp;бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее&nbsp;<a class="reg-form__signin-link" href="login.html">авторизуйтесь</a>.
           </p>
           <form class="reg-form__form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="reg-form__input" type="email" name="email" placeholder="E-mail" required>
+            <input class="reg-form__input" type="email" name="email" placeholder="E-mail" aria-label="Введите Ваш e-mail" required>
             <!-- При отправек данных в случае невалидно заполненного поля ввода email добавляем класс reg-form__input--invalid -->
             <button class="reg-form__btn" type="submit" aria-label="Отправить"><span class="reg-form__btn-text">Регистрация</span></button>
           </form>
