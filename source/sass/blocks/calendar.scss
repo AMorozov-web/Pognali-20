@@ -218,6 +218,9 @@
 
       &:hover,
       &:focus {
+        color: #ffffff;
+        background-color: #1d2e5b;
+
         &::after {
           border: 4px solid #ff5c23;
         }

@@ -277,7 +277,12 @@
 
     &:hover,
     &:focus {
+      color: rgba(#1d2e5b, 0.7);
       background: transparent;
+
+      &::after {
+        border-right-color: rgba(#1d2e5b, 0.7);
+      }
     }
 
     &:active {
