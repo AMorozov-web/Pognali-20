@@ -1,3 +1,11 @@
+.transport-form {
+  .form-page & {
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+  }
+}
+
 .transport-form__title {
   position: relative;
   display: block;
@@ -16,6 +24,24 @@
   color: #1d2e5b;
   background-color: #edeff6;
   text-transform: uppercase;
+
+  .form-page & {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      bottom: 0;
+      left: calc(100% / 2 - 76px);
+      padding-left: 19px;
+      padding-right: 19px;
+
+      @include font-size(500, 20px, 20px);
+
+      letter-spacing: 0.08em;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 12px;
+    }
+  }
 }
 
 .transport-form__list {

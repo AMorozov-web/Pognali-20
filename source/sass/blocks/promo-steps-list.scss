@@ -7,11 +7,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 140px);
     max-width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: unset;
     max-width: 100%;
   }
 }

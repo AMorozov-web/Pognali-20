@@ -18,6 +18,10 @@
     background-color: #ffffff;
     border-radius: 3px;
 
+    .page-header--scroll & {
+      background-color: #cccccc;
+    }
+
     .page-header--opened-menu & {
       top: 7px;
       background-color: #cccccc;
@@ -36,14 +40,14 @@
     background-color: #ffffff;
     border-radius: 3px;
 
+    .page-header--scroll & {
+      background-color: #cccccc;
+    }
+
     .page-header--opened-menu & {
       top: 7px;
       background-color: #cccccc;
       transform: rotate(45deg);
     }
-  }
-
-  .page-header--no-js & {
-    display: none;
   }
 }

@@ -1,0 +1,155 @@
+.transport-choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 94px;
+  }
+}
+
+.transport-choose__item {
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.transport-choose__label {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--plane,
+  &--bus,
+  &--bike,
+  &--walk {
+    padding-top: 7px;
+    padding-left: 8px;
+  }
+
+  &[data-hover] {
+    &::before {
+      position: absolute;
+      content: attr(data-hover);
+      z-index: 8;
+      top: -138%;
+      left: 50%;
+      display: none;
+      padding-top: 16px;
+      padding-bottom: 17px;
+      padding-right: 24px;
+      padding-left: 24px;
+
+      @include font-size(normal, 20px, 20px);
+
+      color: #ffffff;
+      white-space: nowrap;
+      background-color: #101d41;
+      border-radius: 4px;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 3;
+      bottom: 90%;
+      left: 50%;
+      display: none;
+      width: 0;
+      height: 0;
+
+      border-top: 9px solid #101d41;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent;
+      transform: translateX(-50%) translateY(-41%);
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  .transport-choose__input:checked + & {
+    &:hover,
+    &:focus {
+      .transport-choose__icon {
+        fill: #1d2e5b;
+        fill-opacity: 0.7;
+      }
+    }
+
+    &:active {
+      filter: none;
+      background-color: #e2e5f1;
+
+      .transport-choose__icon {
+        fill: #1d2e5b;
+        fill-opacity: 0.3;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
+
+    .transport-choose__icon {
+      fill: #b2b2b2;
+      fill-opacity: 1;
+    }
+  }
+
+  &:active {
+    filter: none;
+    background-color: #e2e5f1;
+
+    .transport-choose__icon {
+      fill: #1d2e5b;
+      fill-opacity: 0.1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 44px;
+    height: 44px;
+
+    &--plane,
+    &--bus,
+    &--bike,
+    &--walk {
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.transport-choose__icon {
+  fill: #101d41;
+  fill-opacity: 0.15;
+
+  .transport-choose__input:checked ~ .transport-choose__label & {
+    fill-opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 22px;
+  }
+}

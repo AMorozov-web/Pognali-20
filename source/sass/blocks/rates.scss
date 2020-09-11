@@ -52,7 +52,7 @@
 
     &::after {
       top: 130px;
-      right: 254px;
+      right: 188px;
       width: 446px;
       height: 300px;
     }
@@ -99,7 +99,7 @@
 
   @media (min-width: $desktop-width) {
     top: 180px;
-    right: 144px;
+    right: 75px;
     display: block;
     width: 198px;
     height: 198px;
@@ -118,7 +118,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 813px;
+    max-width: 900px;
     min-height: 198px;
     padding-left: 91px;
   }
@@ -212,12 +212,22 @@
 
 .rates__modal-open {
   display: block;
-  text-align: center;
+  text-align: left;
+  outline-color: #132576;
 
   @include font-size(bold, 16px, 16px);
 
   color: #132576;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -225,7 +235,6 @@
     min-height: 68px;
     padding-top: 20px;
     padding-left: 55px;
-    text-align: left;
 
     @include font-size(bold, 20px, 20px);
 
@@ -238,9 +247,9 @@
       width: 68px;
       height: 68px;
       background-color: #e2e5f2;
-      background-image: url("../img/user.svg");
-      background-position: 21px 18px;
-      background-size: 27px 27px;
+      background-image: url("../img/businessman.svg");
+      background-position: 16px 14px;
+      background-size: 37px 37px;
       background-repeat: no-repeat;
       border-radius: 50%;
     }
@@ -259,4 +268,15 @@
   left: 25px;
   right: 25px;
   z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    top: 55px;
+    left: 38px;
+    right: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 164px;
+    left: 345px;
+  }
 }

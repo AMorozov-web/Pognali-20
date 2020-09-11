@@ -12,11 +12,8 @@
   padding: 0;
   background-color: #192144;
 
-  &--catalog {
-    background-color: #edeff6;
-  }
-
+  &--catalog,
   &--form {
-    background-color: #d4d9eb;
+    background-color: #edeff6;
   }
 }

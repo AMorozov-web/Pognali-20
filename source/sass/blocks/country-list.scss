@@ -20,12 +20,22 @@
 .country-list__link {
   @include font-size(bold, 16px, 18px);
 
-  color: rgba(#192144, 0.3);
+  color: #192144;
   text-decoration: none;
   text-transform: uppercase;
+  opacity: 0.3;
 
-  &--active {
-    color: #192144;
+  &--current {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
   }
 
   @media (min-width: $tablet-width) {

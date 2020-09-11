@@ -5,5 +5,9 @@
 .steps-list__item {
   &:not(:last-child) {
     margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 39px;
+    }
   }
 }

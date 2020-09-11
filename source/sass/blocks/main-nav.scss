@@ -6,9 +6,19 @@
   padding-bottom: 41px;
   background-color: #ffffff;
 
-  .page-header--no-js & {
+  .page-header--opened-menu & {
+    z-index: 6;
+  }
+
+  .page__body--no-js & {
+    padding-bottom: 10px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+    padding-bottom: 92px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,9 +33,15 @@
 .main-nav__wrapper {
   @include wrapper;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 97px;
+    padding-right: 97px;
+  }
+
   @media (min-width: $desktop-width) {
     width: auto;
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -48,6 +64,10 @@
 
 .main-nav__social {
   margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 129px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;

@@ -4,25 +4,32 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  background-color: $basic-yellow;
-  color: $basic-blue;
+  background-color: #ffd74b;
+  color: #161c35;
   border-radius: 25px;
   text-decoration: none;
   text-transform: uppercase;
 
-  @include font-size(bold, 17px, 30px);
-
-  &--promo {
-    @include font-size(bold, 17px, 20px);
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
   }
 
-  &--page-header {
-    @include font-size(bold, 20px, 20px);
+  &:active {
+    color: rgba(#161c35, 0.3);
   }
 
-  @media (min-width: 768px) {
+  @include font-size(bold, 17px, 20px);
+
+  .main-nav__user-nav-list & {
+    @include font-size(bold, 17px, 30px);
+  }
+
+  @media (min-width: $tablet-width) {
     min-width: 188px;
     min-height: 50px;
     padding-top: 15px;
+
+    @include font-size(bold, 20px, 20px);
   }
 }

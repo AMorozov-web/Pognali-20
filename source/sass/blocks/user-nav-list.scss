@@ -4,6 +4,10 @@
   width: 100%;
   margin-bottom: 50px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .user-nav-list__item {
@@ -16,8 +20,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  background-color: $basic-yellow;
-  color: $basic-blue;
+  background-color: #ffd74b;
+  color: #161c35;
   border-radius: 25px;
   text-decoration: none;
   text-transform: uppercase;

@@ -1,9 +1,29 @@
 .fun__title-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   margin-top: -18px;
   margin-bottom: -18px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 35px;
+    width: 43px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 10%, #ffffff 60%);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .fun__country-name {
@@ -37,10 +57,51 @@
     background-color: #1d2e5b;
     border-radius: 50%;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+
+    @include font-size(bold, 30px, 30px);
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      top: calc(100% / 2 - 7px);
+      left: 533px;
+      width: 15px;
+      height: 15px;
+      background-color: #1d2e5b;
+      border-radius: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: 765px;
+    }
+  }
 }
 
 .fun__country-flag-wrapper {
   padding-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
+    padding-right: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 122px;
+  }
+}
+
+.fun__country-flag {
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
 }
 
 .fun__text-wrapper {
@@ -49,7 +110,7 @@
   min-height: 283px;
   padding-top: 25px;
 
-  .fun__start-country &::before {
+  .fun-list__item:not(:last-child) &::before {
     position: absolute;
     content: "";
     top: 0;
@@ -59,31 +120,118 @@
     height: 283px;
     background-color: #1d2e5b;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 140px;
+    padding-right: 30px;
+
+    .fun-list__item:not(:last-child) &::before {
+      top: -23px;
+      left: 539px;
+      width: 3px;
+      height: 266px;
+      background-color: #1d2e5b;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .fun-list__item:not(:last-child) &::before {
+      left: 771px;
+    }
+  }
 }
 
 .fun__text {
+  position: relative;
+  z-index: 1;
   width: 220px;
   height: 220px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 13px;
+  padding-right: 13px;
 
   @include font-size(normal, 16px, 22px);
 
   font-family: inherit;
-  color: $special_grey;
-  resize: none;
+  color: #444444;
+  background: transparent;
   border: 1px solid #cbced9;
   border-radius: 4px;
+  resize: none;
+  outline: none;
 
   &::placeholder {
     font-family: inherit;
-    color: rgba($special_grey, 0.3);
+    color: rgba(#444444, 0.3);
+  }
+
+  &:hover {
+    border: 1px solid #959bb2;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+
+  &--invalid {
+    border: 1px solid #f47e7e;
+
+    @media (min-width: $desktop-width) {
+      & + .fun__text-error {
+        display: block;
+      }
+    }
+  }
+
+  &:not(:placeholder-shown) {
+    border: 1px solid #161c35;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 140px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 19px;
+    padding-right: 115px; // для внешнего соответствия макету
+
+    @include font-size(normal, 20px, 23px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    @include font-size(normal, 20px, 20px);
   }
 }
 
 .fun__text-error {
   display: none;
-  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 174px;
+    left: 2px;
+    width: 727px;
+    min-height: 56px;
+    margin: 0;
+    margin-top: -66px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 21px;
+    padding-right: 21px;
+
+    @include font-size(normal, 20px, 20px);
+
+    color: #ff0000;
+    background-color: #ffefef;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
 }

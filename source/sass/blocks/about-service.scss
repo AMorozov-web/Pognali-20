@@ -118,7 +118,7 @@
   z-index: 1;
   margin: 0;
   margin-bottom: 20px;
-  color: $special_orange;
+  color: #ff8d30;
 
   @include font-size(bold, 24px, 24px);
 
@@ -180,13 +180,23 @@
     padding-bottom: 27px;
     padding-left: 33px;
     padding-right: 33px;
+    outline: none;
 
     @include font-size(bold, 24px, 24px);
 
     color: #1d2e5b;
     text-decoration: none;
-    background-color: $basic_yellow;
+    background-color: #ffd74b;
     border-radius: 20px;
+
+    &:hover,
+    &:focus {
+      background-color: #ffbd30;
+    }
+
+    &:active {
+      color: rgba(#1d2e5b, 0.3);
+    }
 
     &::after {
       position: absolute;
@@ -199,6 +209,10 @@
       border-top: 7px solid transparent;
       border-bottom: 7px solid transparent;
       border-left: 10px solid #1d2e5b;
+    }
+
+    &:active::after {
+      border-left: 10px solid rgba(#1d2e5b, 0.3);
     }
   }
 }

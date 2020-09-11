@@ -2,12 +2,32 @@
   position: relative;
   padding-top: 2px;
   padding-left: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+    padding-left: 58px;
+  }
 }
 
 .child__label {
   @include font-size(normal, 15px, 15px);
 
   color: #1d2e5b;
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: #959bb2;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #959bb2;
+      opacity: 0.2;
+      border: none;
+    }
+  }
 
   &::before {
     position: absolute;
@@ -18,5 +38,28 @@
     height: 26px;
     border: 1px solid #cbced9;
     border-radius: 4px;
+  }
+
+  .child__input:checked + &::before {
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    background-position: center center;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-size(500, 20px, 20px);
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    &::before {
+      width: 36px;
+      height: 36px;
+    }
+
+    .child__input:checked + &::before {
+      background-size: 11px 11px;
+    }
   }
 }

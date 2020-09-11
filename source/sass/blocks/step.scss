@@ -1,5 +1,7 @@
 .step {
   padding-top: 24px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: #ffffff;
   border-radius: 10px;
 
@@ -11,13 +13,39 @@
   &--3 {
     padding-bottom: 10px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 56px;
+    padding-left: 43px;
+    padding-right: 43px;
+    border-radius: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 101px;
+    padding-bottom: 106px;
+    padding-left: 159px;
+    padding-right: 160px;
+    border-radius: 60px;
+  }
 }
 
-.step__description-wrapper,
-.step__input-wrapper {
-  @include wrapper;
-
+.step__description-wrapper {
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 577px auto;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 195px;
+    row-gap: 33px;
+    margin-bottom: 54px;
+  }
 }
 
 .step__title {
@@ -25,6 +53,17 @@
   flex-direction: column;
   margin: 0;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    flex-direction: row;
+    margin-bottom: 0;
+  }
 }
 
 .step__title-number,
@@ -32,6 +71,16 @@
   @include font-size(bold, 20px, 20px);
 
   color: #1d2e5b;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(bold, 36px, 36px);
+  }
+}
+
+.step__title-number {
+  @media (min-width: $desktop-width) {
+    margin-right: 12px;
+  }
 }
 
 .step__description {
@@ -39,44 +88,267 @@
 
   @include font-size(normal, 16px, 22px);
 
-  color: $special_grey;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+
+    @include font-size(normal, 20px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-right: 0;
+
+    .step--2 & {
+      padding-right: 173px; // Для полного соответствия макету
+    }
+
+    .step--3 & {
+      padding-right: 100px; // Для полного соответствия макету
+    }
+  }
+}
+
+.step__dots {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / 3;
+    display: block;
+
+    @include list-style;
+  }
+}
+
+.step__dot {
+  position: relative;
+  padding-left: 36px;
+
+  &:not(:last-child) {
+    margin-bottom: 27px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: calc(100% / 2 - 3px);
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(#1d2e5b, 0.3);
+    border-radius: 50%;
+  }
+
+  &--current::before {
+    background-color: #1d2e5b;
+  }
+}
+
+.step__dot-description {
+  margin: 0;
+
+  @include font-size(normal, 20px, 24px);
+
+  color: rgba(#000000, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+
+  .step__dot--current & {
+    color: #000000;
+  }
+}
+
+.step__input-wrapper {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 475px auto;
+    grid-template-rows: repeat(2, 70px);
+    column-gap: 282px;
+    row-gap: 14px;
+    margin-bottom: 33px;
+    padding-top: 30px;
+    border-top: 1px solid #e1e3e9;
+  }
 }
 
 .step__count-travelmates {
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-bottom: 0;
+  }
 }
 
 .step__duration {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.step__child {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-bottom: 0;
+  }
+}
+
+.step__btn-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 286px auto;
+    column-gap: 60px;
+    width: 100%;
+    min-height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 489px;
+    margin-top: -10px;
+  }
 }
 
 .step__btn {
+  position: relative;
   display: block;
+  width: 100%;
   padding-top: 7px;
   padding-bottom: 7px;
 
-  @include wrapper;
   @include font-size(bold, 17px, 30px);
 
   font-family: inherit;
   color: #1d2e5b;
   text-transform: uppercase;
-  background-color: $basic_yellow;
+  background-color: #ffd74b;
   border: none;
   border-radius: 20px;
+  outline: none;
+  cursor: pointer;
 
   &:not(:last-child) {
     margin-bottom: 5px;
   }
 
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+
+    &::after {
+      border-left-color: rgba(#1d2e5b, 0.3);
+    }
+  }
+
   &--prev {
     background: transparent;
+
+    &:hover,
+    &:focus {
+      color: rgba(#1d2e5b, 0.7);
+      background: transparent;
+
+      &::after {
+        border-right-color: rgba(#1d2e5b, 0.7);
+      }
+    }
+
+    &:active {
+      color: rgba(#1d2e5b, 0.3);
+
+      &::after {
+        border-right-color: rgba(#1d2e5b, 0.3);
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+    padding-right: 33px;
+
+    @include font-size(bold, 24px, 24px);
+
+    text-transform: unset;
+    text-align: left;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(100% / 2 - 7px);
+      right: 33px;
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 10px solid #1d2e5b;
+    }
+
+    &--prev {
+      padding-right: 0;
+
+      &::after {
+        left: 0;
+        border-left: none;
+        border-right: 10px solid #1d2e5b;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--prev {
+      padding-left: 76px;
+      border-radius: 0;
+
+      .step--2 & {
+        border-left: 1px solid #e1e3e9;
+      }
+
+      &::after {
+        left: 41px;
+      }
+    }
   }
 }
 
 .step__fun-list {
   @include list-style;
-  @include wrapper;
 
   margin-bottom: 22px;
 }

@@ -2,24 +2,31 @@
   @include list-style;
 }
 
-.pagination-item {
+.pagination-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-
-  &--current {
-    background-color: #ffd74b;
-  }
-}
-
-.pagination-link {
   color: #1d2e5b;
 
   @include font-size(bold, 20px, 20px);
 
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 50%;
+
+  &--current {
+    background-color: #ffd74b;
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba(#1d2e5b, 0.6);
+  }
+
+  &:active {
+    color: #1d2e5b;
+    background-color: #ffd74b;
+  }
 }

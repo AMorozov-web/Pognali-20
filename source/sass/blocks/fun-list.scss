@@ -1,0 +1,22 @@
+.fun-list {
+  .form-page & {
+    @media (min-width: $tablet-width) {
+      padding-top: 36px;
+      border-top: 1px solid #e1e3e9;
+    }
+  }
+}
+
+.fun-list__item {
+  .form-page & {
+    @media (min-width: $tablet-width) {
+      &:not(:last-child) {
+        margin-bottom: 44px;
+      }
+
+      &:last-child {
+        margin-bottom: 49px;
+      }
+    }
+  }
+}

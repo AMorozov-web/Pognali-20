@@ -20,6 +20,7 @@
 
 .select-travelmates__btn {
   width: 100%;
+  margin-top: 5px;
   padding-top: 12px;
   padding-bottom: 12px;
 
@@ -31,6 +32,17 @@
   background-color: #ffffff;
   border: none;
   border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.14));
+  }
+
+  &:active {
+    color: rgba(#161c35, 0.3);
+    background-color: #f3c72b;
+    filter: none;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 36px;

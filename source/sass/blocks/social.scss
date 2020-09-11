@@ -4,16 +4,15 @@
   align-items: center;
 
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    justify-content: left;
+  }
 }
 
 .social__item {
   width: 45px;
   height: 45px;
-
-  .page-footer & {
-    background-color: $basic_yellow;
-    border-radius: 50%;
-  }
 
   @media (min-width: $tablet-width) {
     width: 62px;
@@ -37,6 +36,22 @@
 
   &--inst {
     padding-top: 13px;
+  }
+
+  .page-footer & {
+    background-color: #ffd74b;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: #ffbd30;
+    }
+  }
+
+  &:active {
+    .social__icon {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -94,11 +109,6 @@
     &--instagram {
       width: 22px;
       height: 22px;
-      opacity: 0.5;
-
-      .page-footer__social & {
-        opacity: 1;
-      }
     }
   }
 }

@@ -6,15 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" crossorigin="anonymous">
 </head>
 
-<body class="page__body page__body--catalog">
-  <header class="page-header page-header--opened-men page-header--no-j">
+<body class="page__body page__body--catalog page__body--no-j">
+  <!-- При загрузке JS у page__body убирается класс page__body--no-js -->
+  <header class="page-header page-header--opened-men page-header--scrol">
+    <!-- Для открытия меню к page-header добавляется класс page-header--opened-menu. Для фиксации меню при прокрутке страницы добавляется класс page-header--scroll -->
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo logo">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
-          <img class="logo__img" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип сервиса «Погнали?»">
+          <img class="logo__img" src="img/logo-mobile-white@1x.png" width="100" height="19"
+            alt="Логотип сервиса «Погнали?»">
         </picture>
       </a>
       <button class="page-header__nav-toggle-btn nav-toggle-btn" type="button" aria-label="Открыть/закрыть меню"></button>
@@ -22,13 +30,25 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__site-nav-list site-nav-list">
             <li class="site-nav-list__item">
-              <a class="site-nav-list__link" href="#">О Сервисе</a>
+              <a class="site-nav-list__link" href="#">
+                <span class="site-nav-list__span" data-hover="О&nbsp;сервисе">
+                  О сервисе
+                </span>
+              </a>
             </li>
             <li class="site-nav-list__item">
-              <a class="site-nav-list__link" href="form.html">Направления</a>
+              <a class="site-nav-list__link" href="form.html">
+                <span class="site-nav-list__span" data-hover="Направления">
+                  Направления
+                </span>
+              </a>
             </li>
             <li class="site-nav-list__item">
-              <a class="site-nav-list__link" href="catalog.html">Попутчики</a>
+              <a class="site-nav-list__link" href="catalog.html">
+                <span class="site-nav-list__span" data-hover="Попутчики">
+                  Попутчики
+                </span>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__user-nav-list user-nav-list">
@@ -75,14 +95,27 @@
         </div>
       </nav>
       <div class="page-header__contacts">
-        <a class="page-header__contact-link contact-link contact-link--page-header contact-link--phone" href="tel:+78005558628" aria-label="Позвоните нам">
+        <a class="page-header__contact-link contact-link contact-link--phone" href="tel:+78005558628"
+          aria-label="Позвоните нам">
           <div class="contact-link__icon-box contact-link__icon-box--phone">
-            <svg class="contact-link__icon contact-link__icon--phone" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="17" viewBox="0 0 18 18" xml:space="preserve"><path d="M12.6 18h-.8c-3.6-.4-6.2-2.1-8.1-4.3C1.8 11.6.3 8.8 0 5V4c.1-.7.4-1.1.8-1.5C1.2 2 2 1.4 2.6 1.3c.5 0 1.3.3 1.6.8.3.4.4 1.2.6 1.8.1.6.4 1.4.4 2-.2.9-1.3 1.3-1.7 1.9 1.1 2.8 3 4.8 5.4 6.2.6-.3 1.2-1.4 2-1.4.3 0 .7.2 1 .3.3.1.6.2 1 .4.5.2 1.4.5 1.7.9.3.4.5 1.2.4 1.7-.1.8-1.6 1.8-2.4 2.1z" id="UrwUhy_1_"/><path class="st0" d="M9.1 1.1c4.3 0 7.8 3.6 7.8 8H18c0-5-4-9.1-8.9-9.1v1.1zM9.1 6.9V8c.6 0 1 .5 1 1.1h1.1c0-1.2-.9-2.2-2.1-2.2z"/><path class="st0" d="M9.1 4.6c2.4 0 4.4 2 4.4 4.5h1.2c0-3.1-2.5-5.7-5.5-5.7v1.2h-.1z"/></svg>
+            <svg class="contact-link__icon contact-link__icon--phone" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              x="0" y="0" width="18" height="17" viewBox="0 0 18 18" xml:space="preserve">
+              <path
+                d="M12.6 18h-.8c-3.6-.4-6.2-2.1-8.1-4.3C1.8 11.6.3 8.8 0 5V4c.1-.7.4-1.1.8-1.5C1.2 2 2 1.4 2.6 1.3c.5 0 1.3.3 1.6.8.3.4.4 1.2.6 1.8.1.6.4 1.4.4 2-.2.9-1.3 1.3-1.7 1.9 1.1 2.8 3 4.8 5.4 6.2.6-.3 1.2-1.4 2-1.4.3 0 .7.2 1 .3.3.1.6.2 1 .4.5.2 1.4.5 1.7.9.3.4.5 1.2.4 1.7-.1.8-1.6 1.8-2.4 2.1z" />
+              <path class="st0"
+                d="M9.1 1.1c4.3 0 7.8 3.6 7.8 8H18c0-5-4-9.1-8.9-9.1v1.1zM9.1 6.9V8c.6 0 1 .5 1 1.1h1.1c0-1.2-.9-2.2-2.1-2.2z" />
+              <path class="st0" d="M9.1 4.6c2.4 0 4.4 2 4.4 4.5h1.2c0-3.1-2.5-5.7-5.5-5.7v1.2h-.1z" /></svg>
           </div>
         </a>
-        <a class="page-header__contact-link contact-link contact-link--page-header contact-link--email" href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам">
+        <a class="page-header__contact-link contact-link contact-link--email" href="mailto:mail@htmlacademy.ru"
+          aria-label="Напишите нам">
           <div class="contact-link__icon-box contact-link__icon-box--email">
-            <svg class="contact-link__icon contact-link__icon--email" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="17" viewBox="0 0 18 14" xml:space="preserve"><path d="M14.9 1.8c1.2-1 .9-1.8-.7-1.8H3.7c-1.5 0-1.8.8-.6 1.8l3.7 3.1c1.2 1 3.2 1 4.4 0l3.7-3.1z"/><path class="st0" d="M11.9 7.1c-1.2 1-2.2 1.8-2.2 1.8-.1.1-.2.1-.3.1h-.1c-.1.1-.2.1-.3.1-.1 0-.2 0-.3-.1h-.1c-.1 0-.2 0-.3-.1 0 0-1-.8-2.2-1.8L2.2 3.8C1 2.8 0 3.3 0 4.8v6.3C0 12.7 1.3 14 2.8 14h12.3c1.6 0 2.8-1.3 2.8-2.8V4.8c0-1.6-1-2-2.2-1l-3.8 3.3z"/></svg>
+            <svg class="contact-link__icon contact-link__icon--email" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              x="0" y="0" width="18" height="17" viewBox="0 0 18 14" xml:space="preserve">
+              <path d="M14.9 1.8c1.2-1 .9-1.8-.7-1.8H3.7c-1.5 0-1.8.8-.6 1.8l3.7 3.1c1.2 1 3.2 1 4.4 0l3.7-3.1z" />
+              <path class="st0"
+                d="M11.9 7.1c-1.2 1-2.2 1.8-2.2 1.8-.1.1-.2.1-.3.1h-.1c-.1.1-.2.1-.3.1-.1 0-.2 0-.3-.1h-.1c-.1 0-.2 0-.3-.1 0 0-1-.8-2.2-1.8L2.2 3.8C1 2.8 0 3.3 0 4.8v6.3C0 12.7 1.3 14 2.8 14h12.3c1.6 0 2.8-1.3 2.8-2.8V4.8c0-1.6-1-2-2.2-1l-3.8 3.3z" />
+              </svg>
           </div>
         </a>
         <div class="page-header__login-link-box">
@@ -105,13 +138,14 @@
       </div>
     </div>
     <section class="catalog-page__filter-country filter-country filter-country--opened-men">
+      <!-- Для открытия выпадающего меню к filter-country добавляется класс filter-country--opened-menu -->
       <h2 class="visually-hidden">Подбор попутчика по стране назназначения</h2>
       <div class="filter-country__wrapper">
         <div class="filter-country__title-box">
-          <p class="filter-country__title">Фильтрация по странам:</p>
+          <p class="filter-country__title">Фильтрация по странам<span class="filter-country__title-add">:</span></p>
           <ul class="filter-country__country-list country-list">
             <li class="country-list__item">
-              <a class="country-list__link country-list__link--active" href="#">Европа</a>
+              <a class="country-list__link country-list__link--current" href="#">Европа</a>
             </li>
             <li class="country-list__item">
               <a class="country-list__link" href="#">Азия</a>
@@ -833,6 +867,7 @@
             method="post">
             <p class="select-travelmates__title">Подберите идеального попутчика</p>
             <div class="select-travelmates__hobby-select hobby-select">
+              <!-- Для открытия выпадающего меню к hobby-select добавляется класс list--opened -->
               <button class="hobby-select__title-btn" type="button" aria-label="Показать-скрыть">Хобби<span
                   class="hobby-select__title-btn-add">:</span></button>
               <ul class="hobby-select__list">
@@ -860,6 +895,7 @@
               </ul>
             </div>
             <div class="select-travelmates__music-select music-select">
+              <!-- Для открытия выпадающего меню к music-select добавляется класс list--opened -->
               <button class="music-select__title-btn" type="button" aria-label="Показать-скрыть">Музыка<span
                   class="music-select__title-btn-add">:</span></button>
               <ul class="music-select__list">
@@ -887,6 +923,7 @@
               </ul>
             </div>
             <div class="select-travelmates__food-select food-select">
+              <!-- Для открытия выпадающего меню к food-select добавляется класс list--opened -->
               <button class="food-select__title-btn" type="button" aria-label="Показать-скрыть">Еда<span
                   class="food-select__title-btn-add">:</span></button>
               <ul class="food-select__list">
@@ -911,6 +948,7 @@
               </ul>
             </div>
             <div class="select-travelmates__transport-select transport-select">
+              <!-- Для открытия выпадающего меню к transport-select добавляется класс list--opened -->
               <button class="transport-select__title-btn" type="button" aria-label="Показать-скрыть">Транспорт<span
                   class="transport-select__title-btn-add">:</span></button>
               <ul class="transport-select__list">
@@ -966,6 +1004,7 @@
               </ul>
             </div>
             <div class="select-travelmates__level-select level-select">
+              <!-- Для открытия выпадающего меню к level-select добавляется класс list--opened -->
               <button class="level-select__title-btn" type="button" aria-label="Показать-скрыть">Левел<span
                   class="level-select__title-btn-add">:</span></button>
               <div class="level-select__list">
@@ -998,7 +1037,7 @@
                 <h3 class="travelmate__name">Таня Фирсова</h3>
               </a>
               <div class="travelmate__favorite">
-                <button class="travelmate__favorite-btn travelmate__favorite-btn--active" aria-label="Добавить в избраное"></button>
+                <button class="travelmate__favorite-btn travelmate__favorite-btn--checked" aria-label="Добавить в избраное"></button>
                 <p class="travelmate__likes-count">1,5 M</p>
               </div>
               <p class="travelmate__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
@@ -1053,7 +1092,7 @@
                   </div>
                 </div>
               </div>
-              <a class="travelmate__btn-invite btn" href="#">Позвать!</a>
+              <a class="travelmate__btn-invite" href="#">Позвать!</a>
             </li>
             <li class="travelmates-list__item travelmate">
               <a class="travelmate__link travelmate__link--photo" href="#">
@@ -1240,7 +1279,7 @@
                   </div>
                 </div>
               </div>
-              <a class="travelmate__btn-invite btn" href="#">Позвать!</a>
+              <a class="travelmate__btn-invite" href="#">Позвать!</a>
             </li>
           </ul>
           <div class="travelmates-catalog__btn-more-wrapper">
@@ -1248,8 +1287,8 @@
           </div>
           <div class="travelmates-catalog__pagination">
             <ul class="travelmates-catalog__pagination-list pagination-list">
-              <li class="pagination-item pagination-item--current">
-                <a href="" class="pagination-link">
+              <li class="pagination-item">
+                <a href="" class="pagination-link  pagination-link--current">
                   1
                 </a>
               </li>
@@ -1305,8 +1344,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__text">Разработано</p>
           <svg class="copyright__link-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="33" viewBox="0 0 27 34"><path d="M13.6 0h-.2L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm5.7 16.8l-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8L25 13.5l-4.5 2.6-7.1-4.2v1.4l5.9 3.5zM1.9 15.1l11.4 6.8v1l-8-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.9V17l3.4-2v10l-11.6 6.9-11.4-7v-9.8zm0-3v-9l11.6-1.2 11.6 1.2v9L13.5 5.3v-.1h-.2v.1L1.9 12.1z"/></svg>
         </a>
       </div>

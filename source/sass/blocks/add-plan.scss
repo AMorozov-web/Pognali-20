@@ -1,19 +1,50 @@
 .add-plan {
-  margin-top: -30px;
   padding-top: 30px;
+  padding-bottom: 73px;
   background-color: #d4d9eb;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+    padding-bottom: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 143px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
 }
 
 .add-plan__wrapper {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .add-plan__title-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+    padding-left: 64px;
+  }
 }
 
 .add-plan__title {
@@ -22,6 +53,10 @@
   @include font-size(bold, 24px, 24px);
 
   color: #1d2e5b;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(bold, 36px, 36px);
+  }
 }
 
 .add-plan__dots {
@@ -34,6 +69,16 @@
   @include list-style;
 
   margin-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 76px;
+    min-height: 6px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .add-plan__dot {
@@ -49,5 +94,11 @@
 
   &--current {
     background-color: #1d2e5b;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 6px;
+    height: 6px;
+    margin-right: 29px;
   }
 }

@@ -3,24 +3,59 @@
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
-
-  &--promo {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
+  outline: none;
 
   .reg-form__contacts & {
-    color: $basic_yellow;
+    color: #ffd74b;
   }
 
-  &--page-header {
-    display: none;
+  @media (min-width: $desktop-width) {
+    .page-header &--phone,
+    .page-header &--email {
+      &:hover,
+      &:focus {
+        .contact-link__icon-box {
+          &--phone {
+            background-color: #f26926;
+          }
 
-    @media (min-width: $desktop-width) {
-      display: block;
-      width: 50px;
-      height: 50px;
+          &--email {
+            background-color: #ff8d30;
+          }
+        }
+      }
+
+      &:active {
+        .contact-link__icon {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    .reg-form &--phone,
+    .reg-form &--email {
+      &:hover,
+      &:focus {
+        .contact-link__icon {
+          fill: #ffbd30;
+        }
+
+        .contact-link__text {
+          color: #ffbd30;
+        }
+      }
+
+      &:active {
+        .contact-link__icon {
+          fill: #ffd74b;
+          opacity: 0.3;
+        }
+
+        .contact-link__text {
+          color: #ffd74b;
+          opacity: 0.3;
+        }
+      }
     }
   }
 }
@@ -36,41 +71,64 @@
   background-color: #121936;
   border-radius: 50%;
 
-  .contact-link--promo & {
+  .page-header__contact-link &,
+  .promo__contact-link & {
     padding-top: 12px;
   }
 
-  .contact-link--promo &--phone {
+  .page-header__contact-link &--phone,
+  .promo__contact-link &--phone {
     width: 40px;
     height: 40px;
     margin-right: 0;
-    background-color: $special_orange;
+    background-color: #ff8d30;
   }
 
-  .contact-link--promo &--email {
+  .page-header__contact-link &--email,
+  .promo__contact-link &--email {
     width: 40px;
     height: 40px;
     margin-right: 0;
-    background-color: $special_yellow_dark;
+    background-color: #ffbd30;
   }
 
   @media (min-width: $tablet-width) {
     width: 68px;
     height: 68px;
     padding-top: 20px;
+
+    .page-header__contact-link & {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 50px;
-    height: 50px;
-    padding-top: 15px;
+    .page-header__contact-link & {
+      display: block;
+      width: 50px;
+      height: 50px;
+      padding-top: 16px;
 
-    &--phone {
-      background-color: $special_orange;
+      &--phone {
+        background-color: #ff8d30;
+      }
+
+      &--email {
+        background-color: #ffbd30;
+      }
     }
 
-    &--email {
-      background-color: $special_yellow_dark;
+    .reg-form__contact-link & {
+      width: 90px;
+      height: 90px;
+
+      &--phone {
+        padding-top: 25px;
+      }
+
+      &--email {
+        padding-top: 30px;
+      }
     }
   }
 }
@@ -78,10 +136,11 @@
 .contact-link__icon {
   width: 18px;
   height: 17px;
-  fill: $basic_yellow;
+  fill: #ffd74b;
 
-  .contact-link--promo & {
-    fill: $basic_blue;
+  .page-header__contact-link &,
+  .promo__contact-link & {
+    fill: #161c35;
   }
 
   @media (min-width: $tablet-width) {
@@ -92,7 +151,18 @@
   @media (min-width: $desktop-width) {
     width: 18px;
     height: 18px;
-    fill: #161c35;
+
+    .reg-form__contact-link & {
+      &--phone {
+        width: 36px;
+        height: 34px;
+      }
+
+      &--email {
+        width: 36px;
+        height: 25px;
+      }
+    }
   }
 }
 
@@ -103,7 +173,7 @@
   text-transform: uppercase;
 
   .reg-form__contact-link & {
-    color: $basic_yellow;
+    color: #ffd74b;
   }
 
   @media (min-width: $tablet-width) {

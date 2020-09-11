@@ -21,8 +21,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 135px;
-    padding-bottom: 81px;
+    padding-top: 127px;
+    padding-bottom: 76px;
   }
 }
 
@@ -77,7 +77,7 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      bottom: -84px;
+      bottom: -80px;
     }
   }
 }
@@ -90,6 +90,15 @@
     align-items: center;
     text-decoration: none;
     margin-left: auto;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

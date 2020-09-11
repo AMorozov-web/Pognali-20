@@ -6,13 +6,19 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     min-height: 140px;
     margin-top: -55px;
     padding-top: 46px;
     padding-bottom: 32px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    .page__body--form & {
+      position: relative;
+    }
   }
 }
 
@@ -23,7 +29,7 @@
 
   @include wrapper;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -32,7 +38,7 @@
 .page-footer__logo {
   margin-bottom: 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
@@ -40,7 +46,7 @@
 .page-footer__social {
   margin-bottom: 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
@@ -49,7 +55,7 @@
   align-self: stretch;
   min-width: 270px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     min-width: 154px;
   }
 }
