@@ -20,9 +20,26 @@
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo logo">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
-          <img class="logo__img" src="img/logo-mobile-white@1x.png" width="100" height="19"
-            alt="Логотип сервиса «Погнали?»">
+          <!-- <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x"> -->
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+          <img class="logo__img logo__img--white" src="img/logo-mobile-white@1x.png"
+            srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип Погнали">
+        </picture>
+        <picture>
+          <!-- <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x"> -->
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+          <img class="logo__img logo__img--blue" src="img/logo-mobile-blue@1x.png"
+            srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип сервиса «Погнали?»">
         </picture>
       </a>
       <button class="page-header__nav-toggle-btn nav-toggle-btn" type="button" aria-label="Открыть/закрыть меню"></button>
@@ -1030,7 +1047,12 @@
             <li class="travelmates-list__item travelmate">
               <a href="#" class="travelmate__link travelmate__link--photo">
                 <picture>
-                  <img class="travelmate__photo" src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Таня Фирсова">
+                  <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x"> -->
+                  <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                  <img class="travelmate__photo" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70" alt="Таня Фирсова">
                 </picture>
               </a>
               <a href="#" class="travelmate__link travelmate__link--name">
@@ -1096,7 +1118,14 @@
             </li>
             <li class="travelmates-list__item travelmate">
               <a class="travelmate__link travelmate__link--photo" href="#">
-                <img class="travelmate__photo travelmate__photo--catalog" src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Петя Демин">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x"> -->
+                  <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                  <img class="travelmate__photo" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" alt="Петя Демин">
+                </picture>
               </a>
               <a href="#" class="travelmate__link travelmate__link--name">
                 <h3 class="travelmate__name">Петя Демин</h3>
@@ -1157,7 +1186,14 @@
             </li>
             <li class="travelmates-list__item travelmate">
               <a class="travelmate__link travelmate__link--photo" href="#">
-                <img class="travelmate__photo travelmate__photo--catalog" src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Марк Смолов">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x"> -->
+                  <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                  <img class="travelmate__photo" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="Марк Смолов">
+                </picture>
               </a>
               <a href="" class="travelmate__link travelmate__link--name">
                 <h3 class="travelmate__name">Марк Смолов</h3>
@@ -1222,7 +1258,14 @@
             </li>
             <li class="travelmates-list__item travelmate">
               <a class="travelmate__link travelmate__link--photo" href="#">
-                <img class="travelmate__photo travelmate__photo--catalog" src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Лариса Роговая">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x"> -->
+                  <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                  <img class="travelmate__photo" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" alt="Лариса Роговая">
+                </picture>
               </a>
               <a href="" class="travelmate__link travelmate__link--name">
                 <h3 class="travelmate__name travelmate__name--online">Лариса Роговая</h3>
@@ -1322,8 +1365,18 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo logo">
-        <img class="logo__img" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
-      </div>
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+                      <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x"> -->
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img class="logo__img logo__img--blue" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
+              width="100" height="19" alt="Логотип сервиса «Погнали?»">
+          </picture>
+        </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">

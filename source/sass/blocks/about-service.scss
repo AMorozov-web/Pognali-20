@@ -71,6 +71,7 @@
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/about-mobile@2x.png");
+      background-size: contain;
     }
   }
 
@@ -95,6 +96,7 @@
 
       @media (min-resolution: 1.5dppx) {
         background-image: url("../img/about-tablet@2x.png");
+        background-size: contain;
       }
     }
   }
@@ -120,6 +122,7 @@
 
       @media (min-resolution: 1.5dppx) {
         background-image: url("../img/about-desktop@2x.png");
+        background-size: contain;
       }
     }
   }

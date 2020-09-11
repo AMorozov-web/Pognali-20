@@ -77,6 +77,11 @@
       height: 574px;
       background-image: url("../img/flags-back@1x.png");
       background-repeat: no-repeat;
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/flags-back@2x.png");
+        background-size: contain;
+      }
     }
   }
 
@@ -100,15 +105,8 @@
     }
 
     &::after {
-      position: absolute;
-      content: "";
       top: -78px;
       left: 231px;
-      display: block;
-      width: 288px;
-      height: 574px;
-      background-image: url("../img/flags-back@1x.png");
-      background-repeat: no-repeat;
     }
   }
 }

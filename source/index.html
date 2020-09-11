@@ -295,13 +295,13 @@
               </div>
               <ul class="travelmate__flags-list flags-list">
                 <li class="flags-list__item" data-hover="Шри-Ланка">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Шри-Ланка">
+                  <img src="img/icon-flag-sri-lanka.svg" width="35" height="24" alt="Шри-Ланка">
                 </li>
                 <li class="flags-list__item" data-hover="Тайланд">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Тайланд">
+                  <img src="img/icon-flag-thailand.svg" width="35" height="24" alt="Тайланд">
                 </li>
                 <li class="flags-list__item" data-hover="Сейшелы">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Сейшелы">
+                  <img src="img/icon-flag-seychelles.svg" width="35" height="24" alt="Сейшелы">
                 </li>
               </ul>
               <a href="#" class="travelmate__name">Таня Фирсова</a>
@@ -352,10 +352,10 @@
               </div>
               <ul class="travelmate__flags-list flags-list">
                 <li class="flags-list__item" data-hover="Бельгия">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Бельгия">
+                  <img src="img/icon-flag-belgium.svg" width="35" height="24" alt="Бельгия">
                 </li>
                 <li class="flags-list__item" data-hover="Чехия">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Чехия">
+                  <img src="img/icon-flag-czech.svg" width="35" height="24" alt="Чехия">
                 </li>
               </ul>
               <a href="#" class="travelmate__name travelmate__name--online">Петя Демин</a>
@@ -476,12 +476,12 @@
           <div class="location__address-wrapper">
             <p class="location__address">ул. Большая Конюшенная,&nbsp;19/8</p>
           </div>
-          <a class="location__btn" href="#">
+          <a class="location__btn" href="https://yandex.ru/maps/-/CCQxJ-eeOC" target="_blank">
             <span class="location__btn-text">Проложить маршрут</span>
           </a>
         </div>
       </section>
-      <section class="index-page__map map">
+      <section class="index-page__map map" id="map">
         <h2 class="visually-hidden">Карта</h2>
         <!-- Reserved for Yandex-map or Google-map API -->
       </section>
@@ -528,5 +528,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
