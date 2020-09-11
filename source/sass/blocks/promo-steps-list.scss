@@ -38,7 +38,7 @@
   &:first-child {
     z-index: 1;
     min-height: 160px;
-    background-color: $special_orange;
+    background-color: #ff8d30;
 
     &::after {
       content: "1";
@@ -60,7 +60,7 @@
     z-index: 2;
     min-height: 140px;
     margin-top: -80px;
-    background-color: $special_yellow_dark;
+    background-color:  #ffbd30;
 
     &::after {
       content: "3";
@@ -71,7 +71,7 @@
     z-index: 3;
     min-height: 80px;
     margin-top: -60px;
-    background-color: $basic_yellow;
+    background-color:  #ffd74b;
 
     &::after {
       content: "4";
@@ -190,7 +190,7 @@
   display: block;
   width: 150px;
   min-height: 36px;
-  color: $basic_blue;
+  color: #161c35;
 
   @include font-size(bold, 18px, 18px);
 
