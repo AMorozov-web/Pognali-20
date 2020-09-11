@@ -11,9 +11,9 @@
   }
 
   .page__body--no-js & {
-    padding-bottom: 10px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    @media (max-width: $tablet-width-only) {
+      padding-bottom: 10px;
+    }
   }
 
   @media (min-width: $tablet-width) {
