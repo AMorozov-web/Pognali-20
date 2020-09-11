@@ -151,7 +151,8 @@
         <button class="profile__photo-change-btn" type="button"><span class="profile__photo-change-btn-add">Сменить</span> фото</button>
         <div class="profile__hashtags hashtags">
           <h3 class="hashtags__title">Тэги</h3>
-          <textarea class="hashtags__tags" name="tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
+          <label class="visually-hidden" for="hashtags">Хэштеги</label>
+          <textarea class="hashtags__tags" name="tags" id="hashtags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
         </div>
         <div class="profile__transport transport-form">
           <h3 class="transport-form__title">Транспорт</h3>
@@ -270,8 +271,8 @@
                 <div class="count-travelmates__input-wrapper">
                   <input class="count-travelmates__input" type="number" name="count-travelmates"
                     id="count-travelmates" min="0" value="2">
-                  <button class="count-travelmates__btn count-travelmates__btn--subtract" type="button"></button>
-                  <button class="count-travelmates__btn count-travelmates__btn--add" type="button"></button>
+                  <button class="count-travelmates__btn count-travelmates__btn--subtract" type="button" aria-label="Снизить количество попутчиков"></button>
+                  <button class="count-travelmates__btn count-travelmates__btn--add" type="button"aria-label="Добавить количество попутчиков"></button>
                 </div>
               </div>
               <div class="step__duration duration">
@@ -281,12 +282,12 @@
                 </div>
                 <div class="duration__input-wrapper">
                   <input class="duration__input" type="number" name="travel-duration" id="duration" min="0" value="2">
-                  <button class="duration__btn duration__btn--subtract" type="button"></button>
-                  <button class="duration__btn duration__btn--add" type="button"></button>
+                  <button class="duration__btn duration__btn--subtract" type="button" aria-label="Меньше дней"></button>
+                  <button class="duration__btn duration__btn--add" type="button" aria-label="Больше дней"></button>
                 </div>
               </div>
               <div class="step__child child">
-                <input class="child__input visually-hidden" type="checkbox" name="child" value="child" id="child">
+                <input class="child__input visually-hidden" type="checkbox" name="child" value="child" id="child" checked>
                 <label class="child__label" for="child">
                   Можно с детьми
                 </label>
@@ -295,9 +296,9 @@
             <div class="step__calendar calendar">
               <div class="calendar__wrapper">
                 <div class="calendar__title-wrapper">
-                  <button class="calendar__btn calendar__btn--prev-month" type="button"></button>
+                  <button class="calendar__btn calendar__btn--prev-month" type="button" aria-label="Предыдущий месяц"></button>
                   <h4 class="calendar__month">Март 2019</h4>
-                  <button class="calendar__btn calendar__btn--next-month" type="button"></button>
+                  <button class="calendar__btn calendar__btn--next-month" type="button" aria-label="Следующий месяц"></button>
                 </div>
                 <table class="calendar__table">
                   <thead>
@@ -414,8 +415,9 @@
               <ul class="country-step__list">
                 <li class="country-step__item country-step__start-country">
                   <div class="country-step__input-wrapper">
-                    <input class="country-step__input" type="text" name="start-country" value="Босния и Герцеговина">
-                    <button class="country-step__select" type="button"></button>
+                    <label for="start-country" class="visually-hidden">Страна отправления</label>
+                    <input class="country-step__input" type="text" name="start-country" id="start-country" value="Босния и Герцеговина">
+                    <button class="country-step__select" type="button" aria-label="Выбрать страну"></button>
                   </div>
                   <div class="country-step__flag-wrapper">
                     <div class="country-step__flag-box">
@@ -426,8 +428,9 @@
                 </li>
                 <li class="country-step__item country-step__target-country">
                   <div class="country-step__input-wrapper">
-                    <input class="country-step__input" type="text" name="wish-country-1" value="Чехия">
-                    <button class="country-step__select" type="button"></button>
+                    <label for="wish-country-1" class="visually-hidden">Страна для посещения</label>
+                    <input class="country-step__input" type="text" name="wish-country-1" id="wish-country-1" value="Чехия">
+                    <button class="country-step__select" type="button" aria-label="Выбрать страну"></button>
                   </div>
                   <div class="country-step__flag-wrapper">
                     <div class="country-step__flag-box">
@@ -438,8 +441,9 @@
                 </li>
                 <li class="country-step__item country-step__country-choose">
                   <div class="country-step__input-wrapper">
-                    <input class="country-step__input" type="text" name="wish-country-2" placeholder="Выберите страну" value="" readonly>
-                    <button class="country-step__select" type="button"></button>
+                    <label class="visually-hidden" for="wish-country-2">Страна для посещения</label>
+                    <input class="country-step__input" type="text" name="wish-country-2" id="wish-country-2" placeholder="Выберите страну" value="" readonly>
+                    <button class="country-step__select" type="button" aria-label="Выбрать страну"></button>
                   </div>
                   <div class="country-step__dropdown-menu">
                     <ul class="country-step__litter-list">
@@ -492,8 +496,9 @@
                 </li>
                 <li class="country-step__item country-step__add-country">
                   <div class="country-step__input-wrapper">
-                    <input class="country-step__input" type="text" name="wish-country-3" placeholder="Добавить страну" value="" readonly>
-                    <button class="country-step__select" type="button"></button>
+                    <label class="visually-hidden" for="wish-country-3">Страна для посещения</label>
+                    <input class="country-step__input" type="text" name="wish-country-3" id="wish-country-3" placeholder="Добавить страну" value="" readonly>
+                    <button class="country-step__select" type="button" aria-label="Выбрать страну"></button>
                   </div>
                   <div class="country-step__flag-wrapper">
                     <div class="country-step__flag-box country-step__flag-box--hide">
@@ -537,8 +542,9 @@
                   </div>
                 </div>
                 <div class="fun__text-wrapper">
-                  <textarea class="fun__text" placeholder="План действий" name="start-country-fun" required=""></textarea>
-                  <!-- При отправек данных в случае незаполненного поля ввода добавляем класс fun__text--invalid -->
+                  <label for="start-country-fun" class="visually-hidden">План действий</label>
+                  <textarea class="fun__text" placeholder="План действий" name="start-country-fun"  id="start-country-fun" required=""></textarea>
+                  <!-- При отправке данных в случае незаполненного поля ввода добавляем класс fun__text--invalid -->
                   <p class="fun__text-error">Это поле должно быть заполнено</p>
                 </div>
               </li>
@@ -550,8 +556,9 @@
                   </div>
                 </div>
                 <div class="fun__text-wrapper">
-                  <textarea class="fun__text" placeholder="План действий" name="wish-country-fun-1" required="">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-                  <!-- При отправек данных в случае незаполненного поля ввода добавляем класс fun__text--invalid -->
+                  <label for="wish-country-fun-1" class="visually-hidden">План действий</label>
+                  <textarea class="fun__text" placeholder="План действий" name="wish-country-fun-1" id="wish-country-fun-1" required="">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  <!-- При отправке данных в случае незаполненного поля ввода добавляем класс fun__text--invalid -->
                   <p class="fun__text-error">Это поле должно быть заполнено</p>
                 </div>
               </li>
