@@ -68,6 +68,11 @@
     height: 353px;
     background-image: url("../img/about-mobile@1x.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/about-mobile@2x.png");
+      background-size: contain;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -88,6 +93,11 @@
       width: 376px;
       height: 548px;
       background-image: url("../img/about-tablet@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/about-tablet@2x.png");
+        background-size: contain;
+      }
     }
   }
 
@@ -109,6 +119,11 @@
       width: 630px;
       height: 665px;
       background-image: url("../img/about-desktop@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/about-desktop@2x.png");
+        background-size: contain;
+      }
     }
   }
 }

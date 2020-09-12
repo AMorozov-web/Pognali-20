@@ -98,6 +98,8 @@
 }
 
 .page-header__logo {
+  flex-shrink: 0;
+
   .page__body--no-js & {
     align-self: flex-start;
   }

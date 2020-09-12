@@ -38,6 +38,15 @@
     padding-top: 13px;
   }
 
+  .page-header & {
+    &:hover,
+    &:focus {
+      .social__icon {
+        opacity: 0.6;
+      }
+    }
+  }
+
   .page-footer & {
     background-color: #ffd74b;
     border-radius: 50%;

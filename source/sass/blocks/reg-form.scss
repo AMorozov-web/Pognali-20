@@ -1,7 +1,8 @@
 .reg-form {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   min-height: 536px;
+  margin-bottom: -25px;
   padding-top: 85px;
   background-color: #192144;
   color: #ffffff;
@@ -120,8 +121,13 @@
   border-bottom-left-radius: 10px;
   outline: none;
 
-  &:hover,
-  &:focus {
+  &::placeholder {
+    @include font-size(bold, 18px, 62px);
+
+    color: rgba(#444444, 0.3);
+  }
+
+  &:hover {
     background-color: #edeff6;
 
     &::placeholder {
@@ -129,16 +135,16 @@
     }
   }
 
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+
   &:not(:placeholder-shown) {
     color: #ffffff;
     background-color: #192144;
     border: 4px solid #ffffff;
-  }
-
-  &::placeholder {
-    @include font-size(bold, 18px, 18px);
-
-    color: rgba(#444444, 0.3);
   }
 
   &--invalid {
@@ -157,7 +163,7 @@
     @include font-size(bold, 24px, 24px);
 
     &::placeholder {
-      @include font-size(bold, 24px, 24px);
+      @include font-size(bold, 24px, 80px);
     }
   }
 }

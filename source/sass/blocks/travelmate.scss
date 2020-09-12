@@ -206,6 +206,7 @@
   background-color: #e2e5f2;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -242,13 +243,13 @@
     left: calc(100% / 2 - 6px);
     width: 12px;
     height: 12px;
-    background-image: url("../img/heart.svg");
+    background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     opacity: 0.35;
   }
 
   &--checked::after {
-    background-image: url("../img/heart-active.svg");
+    background-image: url("../img/icon-heart-active.svg");
     opacity: 1;
   }
 

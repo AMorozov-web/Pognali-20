@@ -14,39 +14,42 @@
 }
 
 .logo__img {
-  .page-header--opened-menu &,
-  .page__body--no-js & {
-    display: block;
-    width: 100px;
-    height: 19px;
-    padding-left: 100px;
-    background-image: url("../img/logo-mobile-blue@1x.png");
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+
+  &--blue {
+    display: none;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 166px;
-    height: 42px;
-
-    .page-header--opened-menu &,
-    .page__body--no-js & {
+  .page-footer & {
+    &--blue {
       display: block;
-      width: 166px;
-      height: 42px;
-      padding-left: 166px;
-      background-image: url("../img/logo-tablet-blue@1x.png");
-      background-repeat: no-repeat;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    width: 200px;
-    height: 52px;
-    background-image: url("../img/logo-desktop-white@1x.png");
-    background-repeat: no-repeat;
+  .page__body--no-js & {
+    display: none;
 
-    .page__body--no-js & {
-      padding: 0;
+    &--blue {
+      display: block;
+    }
+  }
+
+  .page-header--opened-menu & {
+    @media (max-width: $tablet-width-only) {
+      display: none;
+
+      &--blue {
+        display: block;
+      }
+    }
+  }
+
+  .page-header--scroll & {
+    display: none;
+
+    &--blue {
+      display: block;
     }
   }
 }

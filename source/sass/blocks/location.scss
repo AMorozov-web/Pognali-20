@@ -1,8 +1,9 @@
 .location {
   position: relative;
+  z-index: 1;
   min-height: 238px;
   padding-top: 63px;
-  background-color: $basic_yellow;
+  background-color: #ffd74b;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 
@@ -57,7 +58,7 @@
     height: 45px;
     margin-right: 16px;
     background-color: #1d2e5b;
-    background-image: url("../img/icon_location.svg");
+    background-image: url("../img/icon-location.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 21px 21px;

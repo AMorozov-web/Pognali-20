@@ -30,6 +30,7 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -146,6 +147,7 @@
 .music-select__label {
   position: relative;
   padding-left: 27px;
+  cursor: pointer;
 
   @include font-size(normal, 15px, 20px);
 
@@ -176,7 +178,7 @@
     left: 5px;
     width: 9px;
     height: 9px;
-    background-image: url("../img/tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
   }
 

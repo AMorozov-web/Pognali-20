@@ -80,7 +80,7 @@
 
 .rates__title {
   margin: 0;
-  color: $special_orange;
+  color: #ff8d30;
 
   @include font-size(bold, 24px, 24px);
 
@@ -148,7 +148,7 @@
 
     @include font-size(normal, 16px, 16px);
 
-    color: $basic_white;
+    color: #ffffff;
     text-align: center;
     border-radius: 50%;
 
@@ -165,17 +165,17 @@
 
   &:first-of-type::after {
     content: "1";
-    background-color: $special_orange;
+    background-color: #ff8d30;
   }
 
   &:nth-of-type(2)::after {
     content: "2";
-    background-color: $special_yellow_dark;
+    background-color: #ffbd30;
   }
 
   &:nth-of-type(3)::after {
     content: "3";
-    background-color: $basic_yellow;
+    background-color: #ffd74b;
   }
 
   @media (min-width: $tablet-width) {
@@ -195,7 +195,7 @@
 
   @include font-size(300, 16px, 16px);
 
-  color: $special_grey;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     @include font-size(300, 28px, 28px);
@@ -247,9 +247,9 @@
       width: 68px;
       height: 68px;
       background-color: #e2e5f2;
-      background-image: url("../img/businessman.svg");
-      background-position: 16px 14px;
-      background-size: 37px 37px;
+      background-image: url("../img/icon-business.svg");
+      background-position: 20px 18px;
+      background-size: 27px 27px;
       background-repeat: no-repeat;
       border-radius: 50%;
     }
@@ -258,7 +258,7 @@
   @media (min-width: $desktop-width) {
     width: 360px;
     margin-left: 35px;
-    padding-top: 25px;
+    padding-top: 24px;
   }
 }
 
