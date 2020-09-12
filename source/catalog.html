@@ -1013,8 +1013,10 @@
                   class="level-select__title-btn-add">:</span></button>
               <div class="level-select__list">
                 <div class="level-select__input-wrapper">
-                  <input class="level-select__input level-select__input--min" type="text" name="min-level" value="30">
-                  <input class="level-select__input level-select__input--max" type="text" name="max-level" value="100">
+                  <label class="visually-hidden" for="min-level">Минимальный уровень</label>
+                  <input class="level-select__input level-select__input--min" type="text" name="min-level" id="min-level" value="30">
+                  <label class="visually-hidden" for="max-level">Максимальный уровень</label>
+                  <input class="level-select__input level-select__input--max" type="text" name="max-level" id="max-level" value="100">
                 </div>
                 <div class="level-select__range">
                   <div class="level-select__scrollbar"></div>
