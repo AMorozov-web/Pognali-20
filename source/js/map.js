@@ -1,6 +1,6 @@
 window.onload = function() {
-  const pognalyMap;
-  const pognalyPlaceMark;
+  let pognalyMap;
+  let pognalyPlaceMark;
 
   ymaps.ready({
       successCallback: function () {
