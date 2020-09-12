@@ -38,12 +38,12 @@ exports.styles = styles;
 // Html
 
 const html = () => {
-  return gulp.src('source/*.html')
+  return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest("build"));
 };
 
 exports.html = html;
@@ -64,9 +64,9 @@ exports.images = images;
 // Webp
 
 const makewebp = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest('source/img'));
+    .pipe(gulp.dest("build/img"));
 };
 
 exports.makewebp = makewebp;
@@ -77,7 +77,7 @@ const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 };
 
 exports.sprite = sprite;
@@ -99,13 +99,13 @@ exports.js = js;
 
 const copy = () => {
   return gulp.src([
-    'source/fonts/**/*.{woff,woff2}',
-    'source/img/**',
-    'source/*.ico'
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/*.ico"
     ], {
-      base: 'source'
+      base: "source"
   })
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest("build"));
 };
 
 exports.copy = copy;
@@ -123,7 +123,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -149,6 +149,7 @@ const build = (done) => gulp.series(
   "clean",
   "styles",
   "sprite",
+  "makewebp",
   "js",
   "copy",
   "html"
@@ -160,9 +161,9 @@ exports.build = build;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", { delay: 1100 }, gulp.series('styles', 'reboot'));
-  gulp.watch("source/js/*.js").on("change", gulp.series('js', 'reboot'));
-  gulp.watch("source/*.html").on("change", gulp.series('sprite', 'html', 'reboot'));
+  gulp.watch("source/sass/**/*.scss", { delay: 1100 }, gulp.series("styles", "reboot"));
+  gulp.watch("source/js/*.js").on("change", gulp.series("js", "reboot"));
+  gulp.watch("source/*.html").on("change", gulp.series("sprite", "html", "reboot"));
 };
 
 exports.default = gulp.series(

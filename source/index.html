@@ -12,12 +12,9 @@
     <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
   </head>
-  <body class="page__body page__body--index page__body--no-j">
+  <body class="page__body page__body--index page__body--no-js">
     <!-- При загрузке JS у page__body убирается класс page__body--no-js -->
-    <div style="display: none;">
-      <include src="build/img/sprite.svg"></include>
-    </div>
-    <header class="page-header page-header--opened-men page-header--scrol">
+    <header class="page-header">
       <!-- Для открытия меню к page-header добавляется класс page-header--opened-menu. Для фиксации меню при прокрутке страницы добавляется класс page-header--scroll -->
       <div class="page-header__wrapper">
         <a class="page-header__logo logo">
@@ -73,7 +70,7 @@
               <a class="main-nav__contact-link contact-link contact-link--phone" href="tel:+78005558628">
                 <div class="contact-link__icon-box contact-link__icon-box--phone">
                   <svg class="contact-link__icon contact-link__icon--phone" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 36 36">
-                    <use xlink:href="#icon-contacts-phone"></use>
+                    <use xlink:href="/img/sprite.svg#icon-contacts-phone"></use>
                   </svg>
                 </div>
                 <span class="contact-link__text">8 800 555-86-28</span>
@@ -83,7 +80,7 @@
               <a class="main-nav__contact-link contact-link contact-link--email" href="mailto:mail@htmlacademy.ru">
                 <div class="contact-link__icon-box contact-link__icon-box--email">
                   <svg class="contact-link__icon contact-link__icon--email" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 36 26">
-                    <use xlink:href="#icon-contacts-mail"></use>
+                    <use xlink:href="/img/sprite.svg#icon-contacts-mail"></use>
                   </svg>
                 </div>
                 <span class="contact-link__text">mail@htmlacademy.ru</span>
@@ -94,21 +91,21 @@
                 <li class="social__item">
                   <a class="social__link social__link--fb" href="#" title="Мы в Фейсбуке" aria-label="Мы в Фейсбуке">
                     <svg class="social__icon social__icon--fb" xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21">
-                      <use xlink:href="#icon-facebook"></use>
+                      <use xlink:href="/img/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
                   <a class="social__link social__link--vk" href="#" title="Мы Вконтакте" aria-label="Мы Вконтакте">
                     <svg class="social__icon social__icon--vk" xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 30 15.8">
-                      <use xlink:href="#icon-vk"></use>
+                      <use xlink:href="/img/sprite.svg#icon-vk"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
                   <a class="social__link social__link--inst" href="#" title="Мы в Инстаграме" aria-label="Мы в Инстаграме">
                     <svg class="social__icon social__icon--instagram" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="18" viewBox="0 0 23 23" xml:space="preserve">
-                      <use xlink:href="#icon-instagram"></use>
+                      <use xlink:href="/img/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -120,14 +117,14 @@
           <a class="page-header__contact-link contact-link contact-link--phone" href="tel:+78005558628" aria-label="Позвоните нам">
             <div class="contact-link__icon-box contact-link__icon-box--phone">
               <svg class="contact-link__icon contact-link__icon--phone" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="17" viewBox="0 0 18 18" xml:space="preserve">
-                <use xlink:href="#icon-topmenu-phone"></use>
+                <use xlink:href="/img/sprite.svg#icon-topmenu-phone"></use>
               </svg>
             </div>
           </a>
           <a class="page-header__contact-link contact-link contact-link--email" href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам">
             <div class="contact-link__icon-box contact-link__icon-box--email">
               <svg class="contact-link__icon contact-link__icon--email" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="17" viewBox="0 0 18 14" xml:space="preserve">
-                <use xlink:href="#icon-topmenu-mail"></use>
+                <use xlink:href="/img/sprite.svg#icon-topmenu-mail"></use>
               </svg>
             </div>
           </a>
@@ -147,14 +144,14 @@
             <a class="promo__contact-link contact-link contact-link--phone" href="tel:+78005558628" aria-label="Позвоните нам">
               <div class="contact-link__icon-box contact-link__icon-box--phone">
                 <svg class="contact-link__icon contact-link__icon--phone" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="17" viewBox="0 0 18 18" xml:space="preserve">
-                  <use xlink:href="#icon-topmenu-phone"></use>
+                  <use xlink:href="/img/sprite.svg#icon-topmenu-phone"></use>
                 </svg>
               </div>
             </a>
             <a class="promo__contact-link contact-link contact-link--email" href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам">
               <div class="contact-link__icon-box contact-link__icon-box--email">
                 <svg class="contact-link__icon contact-link__icon--email" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="17" viewBox="0 0 18 14" xml:space="preserve">
-                  <use xlink:href="#icon-topmenu-mail"></use>
+                  <use xlink:href="/img/sprite.svg#icon-topmenu-mail"></use>
                 </svg>
               </div>
             </a>
@@ -210,7 +207,7 @@
               </picture>
               <div class="country__description">
                 <svg class="country__flag" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="35" height="24" viewBox="0 0 70 47" xml:space="preserve" aria-label="Флаг Тайланда">
-                  <use xlink:href="#icon-flag-thailand"></use>
+                  <use xlink:href="/img/sprite.svg#icon-flag-thailand"></use>
                 </svg>
                 <div class="country__title-box">
                   <h3 class="country__title">Таиланд</h3>
@@ -228,7 +225,7 @@
               </picture>
               <div class="country__description">
                 <svg class="country__flag" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="35" height="24" viewBox="0 0 70 47" xml:space="preserve" aria-label="Флаг Франции">
-                  <use xlink:href="#icon-flag-france"></use>
+                  <use xlink:href="/img/sprite.svg#icon-flag-france"></use>
                 </svg>
                 <div class="country__title-box">
                   <h3 class="country__title">Франция</h3>
@@ -246,7 +243,7 @@
               </picture>
               <div class="country__description">
                 <svg class="country__flag" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="35" height="24" viewBox="0 0 70 47" xml:space="preserve" aria-label="Флаг Чехии">
-                  <use xlink:href="#icon-flag-czech"></use>
+                  <use xlink:href="/img/sprite.svg#icon-flag-czech"></use>
                 </svg>
                 <div class="country__title-box">
                   <h3 class="country__title">Чехия</h3>
@@ -291,17 +288,17 @@
               <ul class="travelmate__flags-list flags-list">
                 <li class="flags-list__item" data-hover="Шри-Ланка">
                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 70 47" aria-label="Шри-Ланка">
-                    <use xlink:href="#icon-flag-sri-lanka"></use>
+                    <use xlink:href="/img/sprite.svg#icon-flag-sri-lanka"></use>
                   </svg>
                 </li>
                 <li class="flags-list__item" data-hover="Тайланд">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Тайланд">
-                    <use xlink:href="#icon-flag-thailand"></use>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 70 47" aria-label="Тайланд">
+                    <use xlink:href="/img/sprite.svg#icon-flag-thailand"></use>
                   </svg>
                 </li>
                 <li class="flags-list__item" data-hover="Сейшелы">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Сейшелы">
-                    <use xlink:href="#icon-flag-seychelles"></use>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 70 47" aria-label="Сейшелы">
+                    <use xlink:href="/img/sprite.svg#icon-flag-seychelles"></use>
                   </svg>
                 </li>
               </ul>
@@ -310,22 +307,22 @@
               <ul class="travelmate__transport-list transport-list">
                 <li class="transport-list__item" data-hover="Авиаперелет">
                   <svg class="transport-list__icon transport-list__icon--checked" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 19 21">
-                    <use xlink:href="#icon-plane"></use>
+                    <use xlink:href="/img/sprite.svg#icon-plane"></use>
                   </svg>
                 </li>
                 <li class="transport-list__item" data-hover="Автотранспорт">
                   <svg class="transport-list__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
-                    <use xlink:href="#icon-bus"></use>
+                    <use xlink:href="/img/sprite.svg#icon-bus"></use>
                   </svg>
                 </li>
                 <li class="transport-list__item" data-hover="Велосипед">
                   <svg class="transport-list__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 21">
-                    <use xlink:href="#icon-bike"></use>
+                    <use xlink:href="/img/sprite.svg#icon-bike"></use>
                   </svg>
                 </li>
                 <li class="transport-list__item" data-hover="Пешком">
                   <svg class="transport-list__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 20 21"><ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                    <use xlink:href="#icon-run"></use>
+                    <use xlink:href="/img/sprite.svg#icon-run"></use>
                   </svg>
                 </li>
               </ul>
@@ -353,13 +350,13 @@
               </div>
               <ul class="travelmate__flags-list flags-list">
                 <li class="flags-list__item" data-hover="Бельгия">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Бельгия">
-                    <use xlink:href="#icon-flag-belgium"></use>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 70 47" aria-label="Бельгия">
+                    <use xlink:href="/img/sprite.svg#icon-flag-belgium"></use>
                   </svg>
                 </li>
                 <li class="flags-list__item" data-hover="Чехия">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Чехия">
-                    <use xlink:href="#icon-flag-czech"></use>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 70 47" aria-label="Чехия">
+                    <use xlink:href="/img/sprite.svg#icon-flag-czech"></use>
                   </svg>
                 </li>
               </ul>
@@ -368,22 +365,22 @@
               <ul class="travelmate__transport-list transport-list">
                 <li class="transport-list__item" data-hover="Авиаперелет">
                   <svg class="transport-list__icon transport-list__icon--checked" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 19 21">
-                    <use xlink:href="#icon-plane"></use>
+                    <use xlink:href="/img/sprite.svg#icon-plane"></use>
                   </svg>
                 </li>
                 <li class="transport-list__item" data-hover="Автотранспорт">
                   <svg class="transport-list__icon  transport-list__icon--checked" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
-                    <use xlink:href="#icon-bus"></use>
+                    <use xlink:href="/img/sprite.svg#icon-bus"></use>
                   </svg>
                 </li>
                 <li class="transport-list__item" data-hover="Велосипед">
                   <svg class="transport-list__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 21">
-                    <use xlink:href="#icon-bike"></use>
+                    <use xlink:href="/img/sprite.svg#icon-bike"></use>
                   </svg>
                 </li>
                 <li class="transport-list__item" data-hover="Пешком">
                   <svg class="transport-list__icon transport-list__icon--checked" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 20 21">
-                    <use xlink:href="#icon-run"></use>
+                    <use xlink:href="/img/sprite.svg#icon-run"></use>
                   </svg>
                 </li>
               </ul>
@@ -398,7 +395,7 @@
           <h2 class="visually-hidden">Тарифы</h2>
           <div class="rates__title-box">
             <p class="rates__title">Добавьте свой профиль</p>
-            <img class="rates__icon" src="img/rates@1x.png" srcset="img/rates@2x.jpg 2x" width="100" height="100" alt="Обратите внимание на наши тарифы">
+            <img class="rates__icon" src="img/rates@1x.png" srcset="img/rates@2x.png 2x" width="100" height="100" alt="Обратите внимание на наши тарифы">
           </div>
           <ul class="rates__list">
             <li class="rates__item">
@@ -458,7 +455,7 @@
             <a class="reg-form__contact-link contact-link contact-link--phone" href="tel:+78005558628">
               <div class="contact-link__icon-box contact-link__icon-box--phone">
                 <svg class="contact-link__icon contact-link__icon--phone" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 36 36">
-                  <use xlink:href="#icon-contacts-phone"></use>
+                  <use xlink:href="/img/sprite.svg#icon-contacts-phone"></use>
                 </svg>
               </div>
               <span class="contact-link__text">8 800 555-86-28</span>
@@ -466,7 +463,7 @@
             <a class="reg-form__contact-link contact-link contact-link--email" href="mailto:mail@htmlacademy.ru">
               <div class="contact-link__icon-box contact-link__icon-box--email">
                 <svg class="contact-link__icon contact-link__icon--email" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 36 26">
-                  <use xlink:href="#icon-contacts-mail"></use>
+                  <use xlink:href="/img/sprite.svg#icon-contacts-mail"></use>
                 </svg>
               </div>
               <span class="contact-link__text">mail@htmlacademy.ru</span>
@@ -506,21 +503,21 @@
             <li class="social__item">
               <a class="social__link social__link--fb" href="#" title="Мы в Фейсбуке" aria-label="Мы в Фейсбуке">
                 <svg class="social__icon social__icon--fb" xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21">
-                  <use xlink:href="#icon-facebook"></use>
+                  <use xlink:href="/img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--vk" href="#" title="Мы Вконтакте" aria-label="Мы Вконтакте">
                 <svg class="social__icon social__icon--vk" xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 30 15.8">
-                  <use xlink:href="#icon-vk"></use>
+                  <use xlink:href="/img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--inst" href="#" title="Мы в Инстаграме" aria-label="Мы в Инстаграме">
                 <svg class="social__icon social__icon--instagram" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="18" viewBox="0 0 23 23" xml:space="preserve">
-                  <use xlink:href="#icon-instagram"></use>
+                  <use xlink:href="/img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
@@ -530,7 +527,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="copyright__text">Разработано</p>
             <svg class="copyright__link-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="33" viewBox="0 0 27 34">
-              <use xlink:href="#icon-htmlacademy"></use>
+              <use xlink:href="/img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>

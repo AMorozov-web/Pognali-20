@@ -12,12 +12,9 @@
   <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" crossorigin="anonymous">
 </head>
-<body class="page__body page__body--catalog page__body--no-j">
+<body class="page__body page__body--catalog page__body--no-js">
   <!-- При загрузке JS у page__body убирается класс page__body--no-js -->
-  <div style="display: none;">
-    <include src="build/img/sprite.svg"></include>
-  </div>
-  <header class="page-header page-header--opened-men page-header--scrol">
+  <header class="page-header">
     <!-- Для открытия меню к page-header добавляется класс page-header--opened-menu. Для фиксации меню при прокрутке страницы добавляется класс page-header--scroll -->
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo logo">
@@ -73,7 +70,7 @@
             <a class="main-nav__contact-link contact-link contact-link--phone" href="tel:+78005558628">
               <div class="contact-link__icon-box contact-link__icon-box--phone">
                 <svg class="contact-link__icon contact-link__icon--phone" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 36 36">
-                  <use xlink:href="#icon-contacts-phone"></use>
+                  <use xlink:href="/img/sprite.svg#icon-contacts-phone"></use>
                 </svg>
               </div>
               <span class="contact-link__text">8 800 555-86-28</span>
@@ -83,7 +80,7 @@
             <a class="main-nav__contact-link contact-link contact-link--email" href="mailto:mail@htmlacademy.ru">
               <div class="contact-link__icon-box contact-link__icon-box--email">
                 <svg class="contact-link__icon contact-link__icon--email" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 36 26">
-                  <use xlink:href="#icon-contacts-mail"></use>
+                  <use xlink:href="/img/sprite.svg#icon-contacts-mail"></use>
                 </svg>
               </div>
               <span class="contact-link__text">mail@htmlacademy.ru</span>
@@ -94,21 +91,21 @@
               <li class="social__item">
                 <a class="social__link social__link--fb" href="#" title="Мы в Фейсбуке" aria-label="Мы в Фейсбуке">
                   <svg class="social__icon social__icon--fb" xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21">
-                    <use xlink:href="#icon-facebook"></use>
+                    <use xlink:href="/img/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--vk" href="#" title="Мы Вконтакте" aria-label="Мы Вконтакте">
                   <svg class="social__icon social__icon--vk" xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 30 15.8">
-                    <use xlink:href="#icon-vk"></use>
+                    <use xlink:href="/img/sprite.svg#icon-vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--inst" href="#" title="Мы в Инстаграме" aria-label="Мы в Инстаграме">
                   <svg class="social__icon social__icon--instagram" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="18" viewBox="0 0 23 23" xml:space="preserve">
-                    <use xlink:href="#icon-instagram"></use>
+                    <use xlink:href="/img/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -120,14 +117,14 @@
         <a class="page-header__contact-link contact-link contact-link--phone" href="tel:+78005558628" aria-label="Позвоните нам">
           <div class="contact-link__icon-box contact-link__icon-box--phone">
             <svg class="contact-link__icon contact-link__icon--phone" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="17" viewBox="0 0 18 18" xml:space="preserve">
-              <use xlink:href="#icon-topmenu-phone"></use>
+              <use xlink:href="/img/sprite.svg#icon-topmenu-phone"></use>
             </svg>
           </div>
         </a>
         <a class="page-header__contact-link contact-link contact-link--email" href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам">
           <div class="contact-link__icon-box contact-link__icon-box--email">
             <svg class="contact-link__icon contact-link__icon--email" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="17" viewBox="0 0 18 14" xml:space="preserve">
-              <use xlink:href="#icon-topmenu-mail"></use>
+              <use xlink:href="/img/sprite.svg#icon-topmenu-mail"></use>
             </svg>
           </div>
         </a>
@@ -144,12 +141,12 @@
         <a href="index.html" class="catalog-page__link-back">
           <p class="catalog-page__link-back-text">На главную</p>
           <svg class="catalog-page__link-back-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="16" viewBox="0 0 32 16.1">
-            <use xlink:href="#icon-return"></use>
+            <use xlink:href="/img/sprite.svg#icon-return"></use>
           </svg>
         </a>
       </div>
     </div>
-    <section class="catalog-page__filter-country filter-country filter-country--opened-men">
+    <section class="catalog-page__filter-country filter-country">
       <!-- Для открытия выпадающего меню к filter-country добавляется класс filter-country--opened-menu -->
       <h2 class="visually-hidden">Подбор попутчика по стране назназначения</h2>
       <div class="filter-country__wrapper">
@@ -971,7 +968,7 @@
                     aria-label="Авиаперелеты">
                     <svg class="transport-select__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                       viewBox="0 0 19 21">
-                      <use xlink:href="#icon-plane"></use>
+                      <use xlink:href="/img/sprite.svg#icon-plane"></use>
                     </svg>
                   </label>
                 </li>
@@ -982,7 +979,7 @@
                     aria-label="Автотранспорт">
                     <svg class="transport-select__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                       viewBox="0 0 17 21">
-                      <use xlink:href="#icon-bus"></use>
+                      <use xlink:href="/img/sprite.svg#icon-bus"></use>
                     </svg>
                   </label>
                 </li>
@@ -993,7 +990,7 @@
                     aria-label="Велосипед">
                     <svg class="transport-select__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                       viewBox="0 0 24 21">
-                      <use xlink:href="#icon-bike"></use>
+                      <use xlink:href="/img/sprite.svg#icon-bike"></use>
                     </svg>
                   </label>
                 </li>
@@ -1004,7 +1001,7 @@
                     aria-label="Пешком">
                     <svg class="transport-select__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                       viewBox="0 0 20 21">
-                      <use xlink:href="#icon-run"></use>
+                      <use xlink:href="/img/sprite.svg#icon-run"></use>
                     </svg>
                   </label>
                 </li>
@@ -1059,19 +1056,19 @@
                   <ul class="wish-country__list">
                     <li class="wish-country__item">
                       <svg class="wish-country__flag" xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Шри-Ланка">
-                        <use xlink:href="#icon-flag-sri-lanka"></use>
+                        <use xlink:href="/img/sprite.svg#icon-flag-sri-lanka"></use>
                       </svg>
                       <span class="wish-country__country">Шри-ланка</span>
                     </li>
                     <li class="wish-country__item">
                       <svg class="wish-country__flag" xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Тайланд">
-                        <use xlink:href="#icon-flag-thailand"></use>
+                        <use xlink:href="/img/sprite.svg#icon-flag-thailand"></use>
                       </svg>
                       <span class="wish-country__country">Тайланд</span>
                     </li>
                     <li class="wish-country__item">
                       <svg class="wish-country__flag" xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Сейшелы">
-                        <use xlink:href="#icon-flag-seychelles"></use>
+                        <use xlink:href="/img/sprite.svg#icon-flag-seychelles"></use>
                       </svg>
                       <span class="wish-country__country">Сейшелы</span>
                     </li>
@@ -1084,22 +1081,22 @@
                   <ul class="transport__transport-list transport-list">
                     <li class="transport-list__item" data-hover="Авиаперелет">
                       <svg class="transport-list__icon transport-list__icon--checked" xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 19 21">
-                        <use xlink:href="#icon-plane"></use>
+                        <use xlink:href="/img/sprite.svg#icon-plane"></use>
                       </svg>
                     </li>
                     <li class="transport-list__item" data-hover="Автотранспорт">
                       <svg class="transport-list__icon" xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 17 21">
-                        <use xlink:href="#icon-bus"></use>
+                        <use xlink:href="/img/sprite.svg#icon-bus"></use>
                       </svg>
                     </li>
                     <li class="transport-list__item" data-hover="Велосипед">
                       <svg class="transport-list__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 24 21">
-                        <use xlink:href="#icon-bike"></use>
+                        <use xlink:href="/img/sprite.svg#icon-bike"></use>
                       </svg>
                     </li>
                     <li class="transport-list__item" data-hover="Пешком">
                       <svg class="transport-list__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 20 21"><ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                        <use xlink:href="#icon-run"></use>
+                        <use xlink:href="/img/sprite.svg#icon-run"></use>
                       </svg>
                     </li>
                   </ul>
@@ -1145,13 +1142,13 @@
                   <ul class="wish-country__list">
                     <li class="wish-country__item">
                       <svg class="wish-country__flag" xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Бельгия">
-                        <use xlink:href="#icon-flag-belgium"></use>
+                        <use xlink:href="/img/sprite.svg#icon-flag-belgium"></use>
                       </svg>
                       <span class="wish-country__country">Бельгия</span>
                     </li>
                     <li class="wish-country__item">
                       <svg class="wish-country__flag" xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Чехия">
-                        <use xlink:href="#icon-flag-czech"></use>
+                        <use xlink:href="/img/sprite.svg#icon-flag-czech"></use>
                       </svg>
                       <span class="wish-country__country">Чехия</span>
                     </li>
@@ -1164,22 +1161,22 @@
                   <ul class="transport__transport-list transport-list">
                     <li class="transport-list__item" data-hover="Авиаперелет">
                       <svg class="transport-list__icon transport-list__icon--checked" xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 19 21">
-                        <use xlink:href="#icon-plane"></use>
+                        <use xlink:href="/img/sprite.svg#icon-plane"></use>
                       </svg>
                     </li>
                     <li class="transport-list__item" data-hover="Автотранспорт">
                       <svg class="transport-list__icon transport-list__icon--checked" xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 17 21">
-                        <use xlink:href="#icon-bus"></use>
+                        <use xlink:href="/img/sprite.svg#icon-bus"></use>
                       </svg>
                     </li>
                     <li class="transport-list__item" data-hover="Велосипед">
                       <svg class="transport-list__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 24 21">
-                        <use xlink:href="#icon-bike"></use>
+                        <use xlink:href="/img/sprite.svg#icon-bike"></use>
                       </svg>
                     </li>
                     <li class="transport-list__item" data-hover="Пешком">
                       <svg class="transport-list__icon transport-list__icon--checked" xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 20 21">
-                        <use xlink:href="#icon-run"></use>
+                        <use xlink:href="/img/sprite.svg#icon-run"></use>
                       </svg>
                     </li>
                   </ul>
@@ -1225,19 +1222,19 @@
                   <ul class="wish-country__list">
                     <li class="wish-country__item">
                       <svg class="wish-country__flag" xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="США">
-                        <use xlink:href="#icon-flag-usa"></use>
+                        <use xlink:href="/img/sprite.svg#icon-flag-usa"></use>
                       </svg>
                       <span class="wish-country__country">США</span>
                     </li>
                     <li class="wish-country__item">
                       <svg class="wish-country__flag" xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Австралия">
-                        <use xlink:href="#icon-flag-australia"></use>
+                        <use xlink:href="/img/sprite.svg#icon-flag-australia"></use>
                       </svg>
                       <span class="wish-country__country">Австралия</span>
                     </li>
                     <li class="wish-country__item">
                       <svg class="wish-country__flag" xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Доминика">
-                        <use xlink:href="#icon-flag-dominica"></use>
+                        <use xlink:href="/img/sprite.svg#icon-flag-dominica"></use>
                       </svg>
                       <span class="wish-country__country">Доминика</span>
                     </li>
@@ -1250,22 +1247,22 @@
                   <ul class="transport__transport-list transport-list">
                     <li class="transport-list__item" data-hover="Авиаперелет">
                       <svg class="transport-list__icon transport-list__icon--checked" xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 19 21">
-                        <use xlink:href="#icon-plane"></use>
+                        <use xlink:href="/img/sprite.svg#icon-plane"></use>
                       </svg>
                     </li>
                     <li class="transport-list__item" data-hover="Автотранспорт">
                       <svg class="transport-list__icon" xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 17 21">
-                        <use xlink:href="#icon-bus"></use>
+                        <use xlink:href="/img/sprite.svg#icon-bus"></use>
                       </svg>
                     </li>
                     <li class="transport-list__item" data-hover="Велосипед">
                       <svg class="transport-list__icon transport-list__icon--checked" xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 24 21">
-                        <use xlink:href="#icon-bike"></use>
+                        <use xlink:href="/img/sprite.svg#icon-bike"></use>
                       </svg>
                     </li>
                     <li class="transport-list__item" data-hover="Пешком">
                       <svg class="transport-list__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 20 21"><ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                        <use xlink:href="#icon-run"></use>
+                        <use xlink:href="/img/sprite.svg#icon-run"></use>
                       </svg>
                     </li>
                   </ul>
@@ -1311,13 +1308,13 @@
                   <ul class="wish-country__list">
                     <li class="wish-country__item">
                       <svg class="wish-country__flag" xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Великобритания">
-                        <use xlink:href="#icon-flag-united-kingdom"></use>
+                        <use xlink:href="/img/sprite.svg#icon-flag-united-kingdom"></use>
                       </svg>
                       <span class="wish-country__country">Великобритания</span>
                     </li>
                     <li class="wish-country__item">
                       <svg class="wish-country__flag" xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 70 47" aria-label="Германия">
-                        <use xlink:href="#icon-flag-germany"></use>
+                        <use xlink:href="/img/sprite.svg#icon-flag-germany"></use>
                       </svg>
                       <span class="wish-country__country">Германия</span>
                     </li>
@@ -1330,22 +1327,22 @@
                   <ul class="transport__transport-list transport-list">
                     <li class="transport-list__item" data-hover="Авиаперелет">
                       <svg class="transport-list__icon transport-list__icon--checked" xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 19 21">
-                        <use xlink:href="#icon-plane"></use>
+                        <use xlink:href="/img/sprite.svg#icon-plane"></use>
                       </svg>
                     </li>
                     <li class="transport-list__item" data-hover="Автотранспорт">
                       <svg class="transport-list__icon transport-list__icon--checked" xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 17 21">
-                        <use xlink:href="#icon-bus"></use>
+                        <use xlink:href="/img/sprite.svg#icon-bus"></use>
                       </svg>
                     </li>
                     <li class="transport-list__item" data-hover="Велосипед">
                       <svg class="transport-list__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 24 21">
-                        <use xlink:href="#icon-bike"></use>
+                        <use xlink:href="/img/sprite.svg#icon-bike"></use>
                       </svg>
                     </li>
                     <li class="transport-list__item" data-hover="Пешком">
                       <svg class="transport-list__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 20 21">
-                        <use xlink:href="#icon-run"></use>
+                        <use xlink:href="/img/sprite.svg#icon-run"></use>
                       </svg>
                     </li>
                   </ul>
@@ -1421,21 +1418,21 @@
           <li class="social__item">
             <a class="social__link social__link--fb" href="#" title="Мы в Фейсбуке" aria-label="Мы в Фейсбуке">
               <svg class="social__icon social__icon--fb" xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21">
-                <use xlink:href="#icon-facebook"></use>
+                <use xlink:href="/img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--vk" href="#" title="Мы Вконтакте" aria-label="Мы Вконтакте">
               <svg class="social__icon social__icon--vk" xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 30 15.8">
-                <use xlink:href="#icon-vk"></use>
+                <use xlink:href="/img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--inst" href="#" title="Мы в Инстаграме" aria-label="Мы в Инстаграме">
               <svg class="social__icon social__icon--instagram" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="18" viewBox="0 0 23 23" xml:space="preserve">
-                <use xlink:href="#icon-instagram"></use>
+                <use xlink:href="/img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -1445,7 +1442,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">Разработано</p>
           <svg class="copyright__link-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="33" viewBox="0 0 27 34">
-            <use xlink:href="#icon-htmlacademy"></use>
+            <use xlink:href="/img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>

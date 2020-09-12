@@ -28,10 +28,12 @@
   }
 
   .page__body--no-js & {
-    display: none;
+    @media (max-width: $tablet-width-only) {
+      display: none;
 
-    &--blue {
-      display: block;
+      &--blue {
+        display: block;
+      }
     }
   }
 
