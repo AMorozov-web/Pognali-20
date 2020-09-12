@@ -63,10 +63,6 @@
   }
 
   &:focus {
-    border: 1px solid #161c35;
-  }
-
-  &:not(:placeholder-shown) {
     color: #444444;
     border: 1px solid #161c35;
   }
