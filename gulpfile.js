@@ -14,6 +14,7 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const posthtml = require("gulp-posthtml");
 const include  = require("posthtml-include");
+const uglify  = require("gulp-uglify-es").default;
 
 // Styles
 
@@ -81,6 +82,19 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
+// JS
+
+const js = () => {
+  return gulp.src("source/js/**/*.js")
+    .pipe(uglify())
+    .pipe(rename (function (path) {
+      path.basename += ".min"
+    }))
+    .pipe(gulp.dest("build/js"))
+};
+
+exports.js = js;
+
 // Copy
 
 const copy = () => {
@@ -121,6 +135,8 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reboot
+
 const reboot = (done) => {
   server.reload;
   done();
@@ -135,6 +151,7 @@ const build = (done) => gulp.series(
   "styles",
   "sprite",
   "copy",
+  "js",
   "html"
 )
   (done);
@@ -145,6 +162,7 @@ exports.build = build;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", { delay: 1100 }, gulp.series('styles', 'reboot'));
+  gulp.watch("source/js/*.js").on("change", gulp.series('js', 'reboot'));
   gulp.watch("source/*.html").on("change", gulp.series('sprite', 'html', 'reboot'));
 };
 
