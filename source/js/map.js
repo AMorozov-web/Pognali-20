@@ -1,12 +1,12 @@
 window.onload = function() {
-  let pognalyMap;
-  let pognalyPlaceMark;
+  const pognalyMap;
+  const pognalyPlaceMark;
 
   ymaps.ready({
       successCallback: function () {
         pognalyMap = new ymaps.Map("map", {
               center: [59.938653, 30.323115],
-              zoom: 15,
+              zoom: 16,
               controls: [],
           },
           {
@@ -34,7 +34,7 @@ window.onload = function() {
 
           });
 
-          pognalyMap.behaviors.disable('scrollZoom')
+          pognalyMap.behaviors.disable('scrollZoom');
           pognalyMap.geoObjects.add(pognalyPlaceMark);
       }
   });

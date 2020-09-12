@@ -27,22 +27,29 @@
     }
   }
 
-  .page-header & {
-    .page-header--opened-menu &,
-    .page__body--no-js & {
+  .page__body--no-js & {
+    display: none;
+
+    &--blue {
+      display: block;
+    }
+  }
+
+  .page-header--opened-menu & {
+    @media (max-width: $tablet-width-only) {
       display: none;
 
       &--blue {
         display: block;
       }
     }
+  }
 
-    .page-header--scroll & {
-      display: none;
+  .page-header--scroll & {
+    display: none;
 
-      &--blue {
-        display: block;
-      }
+    &--blue {
+      display: block;
     }
   }
 }
