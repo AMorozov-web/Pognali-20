@@ -19,9 +19,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 849px;
-    padding-top: 208px;
-    padding-bottom: 102px;
+    min-height: 750px;
+    padding-top: 104px;
+    padding-bottom: 90px;
   }
 }
 
@@ -79,7 +79,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 60px;
+    &:nth-child(3) {
+      padding-left: 18px;
+      margin-bottom: 61px;
+    }
   }
 }
 
@@ -100,16 +103,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 4px;
-  margin-left: 4px;
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;
+    margin-right: 4px;
+    margin-left: 4px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 70px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -227,7 +232,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 330px;
+    min-width: 325px;
     padding-left: 36px;
 
     &::after {
@@ -263,13 +268,20 @@
 
     letter-spacing: 0.01em;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+    padding-left: 275px;
+    text-align: left;
+  }
 }
 
 .reg-form__contacts {
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    padding-left: 145px;
   }
 }
 

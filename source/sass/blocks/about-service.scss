@@ -20,7 +20,7 @@
   @media (min-width: $desktop-width) {
     min-height: 750px;
     margin-bottom: -55px;
-    padding-top: 132px;
+    padding-top: 128px;
     padding-bottom: 163px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -117,7 +117,7 @@
     }
 
     &::after {
-      top: -47px;
+      top: -45px;
       left: 620px;
       width: 630px;
       height: 665px;
@@ -192,7 +192,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 85px;
+    margin-bottom: 88px;
+    padding-right: 180px;
 
     @include font-size(bold, 21px, 24px);
   }
@@ -243,6 +244,12 @@
 
     &:active::after {
       border-left: 10px solid rgba(#1d2e5b, 0.3);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      right: 35px;
     }
   }
 }

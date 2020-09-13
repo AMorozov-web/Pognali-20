@@ -5,7 +5,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row-reverse;
     max-width: 100%;
@@ -19,7 +19,7 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 186px;
     height: 140px;
     border-radius: 0;
@@ -41,7 +41,7 @@
   background-color: #ffffff;
   border-radius: 10px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     flex-grow: 1;
     flex-direction: column;
     margin: 0;
@@ -53,6 +53,10 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 22px;
+  }
 }
 
 .country__flag {
@@ -60,18 +64,22 @@
   top: -15px;
   left: 25px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     top: 17px;
     left: calc(100% - 35px);
     width: 70px;
     height: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
   }
 }
 
 .country__title-box {
   width: 137px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 216px;
   }
 }
@@ -82,7 +90,7 @@
 
   @include font-size(bold, 21px, 21px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 5px;
 
     @include font-size(bold, 24px, 24px);
@@ -95,7 +103,7 @@
 
   @include font-size(500, 16px, 18px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     @include font-size(500, 20px, 20px);
   }
 }
@@ -124,7 +132,7 @@
     opacity: 0.1;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-top: -10px;
     padding-top: 0;
     padding-left: 27px;

@@ -11,6 +11,10 @@
       justify-content: center;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -5px;
+  }
 }
 
 .travelmates-list__item {

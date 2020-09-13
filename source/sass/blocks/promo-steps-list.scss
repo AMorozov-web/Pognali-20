@@ -139,9 +139,6 @@
     border-radius: 0;
 
     &::after {
-      top: 30px;
-      left: 268px;
-
       @include font-size(bold, 24px, 24px);
     }
 
@@ -152,6 +149,11 @@
       border-radius: 0;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
+
+      &::after {
+        top: 26px;
+        left: 268px;
+      }
     }
 
     &:nth-child(2) {
@@ -162,6 +164,11 @@
       border-radius: 0;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
+
+      &::after {
+        top: 26px;
+        left: 301px;
+      }
     }
 
     &:nth-child(3) {
@@ -173,6 +180,11 @@
       border-radius: 0;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
+
+      &::after {
+        top: 26px;
+        left: 301px;
+      }
     }
 
     &:last-child {
@@ -182,6 +194,11 @@
       margin: 0;
       margin-left: -90px;
       border-radius: 20px;
+
+      &::after {
+        top: 26px;
+        left: 269px;
+      }
     }
   }
 }

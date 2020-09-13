@@ -180,6 +180,11 @@
       margin-bottom: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    top: 21px;
+    left: 21px;
+  }
 }
 
 .travelmate__favorite {
@@ -397,6 +402,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 16px;
+
     .catalog-page & {
       flex-direction: row;
       justify-content: unset;

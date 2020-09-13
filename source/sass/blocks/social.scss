@@ -10,6 +10,10 @@
     justify-content: left;
     margin-left: -13px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -48px;
+  }
 }
 
 .social__item {
