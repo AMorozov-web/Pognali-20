@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: -55px;
-    padding-top: 149px;
+    padding-top: 124px;
     padding-bottom: 80px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -52,13 +52,13 @@
   @media (min-width: $tablet-width) {
     width: 378px;
     margin: 0;
-    padding-bottom: 104px;
+    padding-bottom: 106px;
 
     &::before {
       position: absolute;
       content: "";
-      top: 333px;
-      left: -37px;
+      top: 337px;
+      left: -33px;
       display: block;
       width: 141px;
       height: 141px;
@@ -69,8 +69,8 @@
     &::after {
       position: absolute;
       content: "";
-      top: 7px;
-      left: 363px;
+      top: 11px;
+      left: 366px;
       display: block;
       width: 288px;
       height: 574px;
@@ -120,7 +120,7 @@
   @include font-size(bold, 24px, 24px);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 58px;
 
     @include font-size(bold, 45px, 45px);
   }
@@ -139,7 +139,7 @@
 .countries__list {
   @include list-style;
 
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 44px;
@@ -155,7 +155,7 @@
 
 .countries__item {
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 
   &:last-child {
     margin-bottom: 0;
@@ -219,8 +219,8 @@
 
   @media (min-width: $tablet-width) {
     min-height: 82px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     padding-left: 32px;
     padding-right: 32px;
     border-radius: 20px;

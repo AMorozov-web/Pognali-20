@@ -7,7 +7,7 @@
   border-bottom-right-radius: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 135px;
+    padding-top: 124px;
     padding-bottom: 63px;
     background-color: #edeff6;
     border-bottom-left-radius: 60px;
@@ -155,8 +155,8 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      top: 0;
-      left: -90px;
+      top: -1px;
+      left: -88px;
       width: 68px;
       height: 68px;
       padding-top: 20px;
@@ -237,7 +237,7 @@
     position: relative;
     max-width: 400px;
     min-height: 68px;
-    padding-top: 20px;
+    padding-top: 24px;
     padding-left: 55px;
 
     @include font-size(bold, 20px, 20px);
@@ -252,8 +252,8 @@
       height: 68px;
       background-color: #e2e5f2;
       background-image: url("../img/icon-business.svg");
-      background-position: 20px 18px;
-      background-size: 27px 27px;
+      background-position: 23px 22px;
+      background-size: 23px 23px;
       background-repeat: no-repeat;
       border-radius: 50%;
     }

@@ -14,7 +14,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: -55px;
-    padding-top: 208px;
+    padding-top: 192px;
     padding-bottom: 87px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -70,10 +70,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 81px;
+    margin-bottom: 64px;
 
     &::before {
-      top: -97px;
+      top: -93px;
       left: -34px;
       width: 143px;
       height: 143px;
@@ -144,14 +144,14 @@
     &::before {
       width: 212px;
       height: 212px;
-      top: -70px;
-      left: -37px;
+      top: -67px;
+      left: -34px;
       border-radius: 20px;
     }
 
     &::after {
-      top: -61px;
-      left: 333px;
+      top: -57px;
+      left: 336px;
       width: 285px;
       height: 285px;
       background-image: url("../img/rogovaya-back-desktop@1x.png");
@@ -210,10 +210,20 @@
 
   @media (min-width: $tablet-width) {
     @include font-size(300, 28px, 34px);
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 42px;
+  }
+}
+
+.travelmates__br {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -273,13 +283,17 @@
 
   @media (min-width: $tablet-width) {
     min-height: 82px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     padding-left: 32px;
     padding-right: 32px;
     border-radius: 20px;
 
     @include font-size(bold, 24px, 34px);
+
+    &::after {
+      right: 35px;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -10,8 +10,8 @@
 
   @media (min-width: $tablet-width) {
     min-height: 140px;
-    margin-top: -55px;
-    padding-top: 46px;
+    margin-top: -63px;
+    padding-top: 47px;
     padding-bottom: 32px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
@@ -52,5 +52,6 @@
 
   @media (min-width: $tablet-width) {
     min-width: 154px;
+    margin-top: 0;
   }
 }

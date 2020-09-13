@@ -81,14 +81,14 @@
   @media (min-width: $tablet-width) {
     max-width: 100%;
     min-height: 140px;
-    padding-top: 31px;
+    padding-top: 27px;
     padding-left: 33px;
     padding-bottom: 28px;
     border-radius: 0;
 
     &::after {
-      top: 88px;
-      left: 34px;
+      top: 86px;
+      left: 32px;
 
       @include font-size(bold, 30px, 30px);
     }
@@ -101,28 +101,28 @@
 
     &:nth-child(2n) {
       z-index: 2;
-      width: 344px;
+      width: 365px;
       margin: 0;
-      margin-left: -10px;
+      margin-left: -20px;
     }
 
     &:first-child {
       margin: 0;
-      border-top-left-radius: 10px;
+      border-top-left-radius: 20px;
     }
 
     &:nth-child(2) {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
 
     &:nth-child(3) {
-      border-bottom-left-radius: 10px;
+      border-bottom-left-radius: 20px;
     }
 
     &:last-child {
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
     }
   }
 

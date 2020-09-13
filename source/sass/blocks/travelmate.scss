@@ -28,6 +28,7 @@
   @media (min-width: $tablet-width) {
     width: 285px;
     min-height: 483px;
+    border-radius: 20px;
 
     .catalog-page & {
       grid-template-columns: 190px 150px auto 60px;
@@ -74,6 +75,9 @@
   @media (min-width: $tablet-width) {
     width: 285px;
     height: 286px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 
     .catalog-page & {
       width: 190px;
@@ -157,6 +161,11 @@
   position: absolute;
   top: 18px;
   left: 17px;
+
+  @media (min-width: $tablet-width) {
+    top: 24px;
+    left: 21px;
+  }
 
   .catalog-page & {
     position: static;
@@ -303,7 +312,7 @@
   margin-top: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 25px;
+    margin-top: 21px;
   }
 }
 
@@ -363,7 +372,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 19px;
+    justify-content: left;
+    margin-top: 18px;
+    margin-left: 44px;
 
     @include font-size(bold, 24px, 22px);
 
@@ -429,6 +440,8 @@
   @media (min-width: $tablet-width) {
     max-width: 223px;
     margin-top: 23px;
+
+    @include font-size(normal, 20px, 23px);
 
     .catalog-page & {
       grid-column: 2 / 4;

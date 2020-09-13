@@ -48,6 +48,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 973px;
+    padding-top: 28px;
     background-color: #182044;
     background-image: url("../img/globe-back-tablet@1x.jpg");
     background-position: top 250px center;
@@ -119,7 +120,7 @@
 
     &::after {
       top: 247px;
-      right: -85px;
+      right: -73px;
       width: 372px;
       height: 471px;
       background-image: url("../img/traveller-illustration-tablet@1x.png");
@@ -237,7 +238,7 @@
   font-style: inherit;
 
   @media (min-width: $tablet-width) {
-    width: 251px;
+    width: 250px;
 
     @include font-size(bold, 21px, 25px);
   }
