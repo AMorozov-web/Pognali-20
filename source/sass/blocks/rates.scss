@@ -40,7 +40,7 @@
       z-index: 0;
       display: block;
       width: 198px;
-      height: 285px;
+      height: calc(100% - 138px);
       background-color: #e2e5f2;
       border-radius: 20px;
     }
@@ -54,7 +54,7 @@
       top: 130px;
       right: 188px;
       width: 446px;
-      height: 300px;
+      height: calc(100% - 183px);
     }
   }
 }
@@ -126,6 +126,8 @@
 
 .rates__item {
   position: relative;
+  display: flex;
+  flex-direction: column;
   max-width: 200px;
   min-height: 65px;
   padding-top: 12px;
@@ -179,7 +181,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
@@ -203,9 +205,11 @@
 }
 
 .rates__text {
+  max-width: 95%;
   margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
+    max-width: 70%;
     margin: 0;
   }
 }
