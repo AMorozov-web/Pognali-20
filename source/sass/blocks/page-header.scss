@@ -15,18 +15,18 @@
     background-color: #ffffff;
   }
 
-  .page__body--no-js & {
-    @media (max-width: $tablet-width-only) {
-      z-index: 2;
-      background-color: #ffffff;
-    }
-  }
-
   .page__body--catalog &,
   .page__body--form & {
     background-color: #182044;
 
     &--scroll {
+      background-color: #ffffff;
+    }
+  }
+
+  .page__body--no-js & {
+    @media (max-width: $tablet-width-only) {
+      z-index: 2;
       background-color: #ffffff;
     }
   }

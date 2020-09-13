@@ -53,7 +53,7 @@
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
 
-    .list--opened & {
+    .hobby-select--opened-list & {
       border: none;
       border-bottom: 6px solid #1d2e5b;
       border-right: 5px solid transparent;
@@ -105,8 +105,14 @@
   visibility: hidden;
   opacity: 0;
 
-  .page__body--no-js &,
-  .list--opened & {
+  .hobby-select--opened-list & {
+    position: static;
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .page__body--no-js & {
     position: static;
     transform: scaleY(1);
     visibility: visible;

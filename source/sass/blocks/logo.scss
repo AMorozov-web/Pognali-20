@@ -27,14 +27,7 @@
     }
   }
 
-  .page__body--no-js & {
-    display: none;
-
-    &--blue {
-      display: block;
-    }
-  }
-
+  .page__body--no-js &,
   .page-header--opened-menu & {
     @media (max-width: $tablet-width-only) {
       display: none;

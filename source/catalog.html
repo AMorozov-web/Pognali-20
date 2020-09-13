@@ -12,12 +12,12 @@
   <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" crossorigin="anonymous">
 </head>
-<body class="page__body page__body--catalog page__body--no-j">
+<body class="page__body page__body--catalog page__body--no-js">
   <!-- При загрузке JS у page__body убирается класс page__body--no-js -->
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="page-header page-header--opened-men page-header--scrol">
+  <header class="page-header">
     <!-- Для открытия меню к page-header добавляется класс page-header--opened-menu. Для фиксации меню при прокрутке страницы добавляется класс page-header--scroll -->
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo logo">
@@ -149,7 +149,7 @@
         </a>
       </div>
     </div>
-    <section class="catalog-page__filter-country filter-country filter-country--opened-men">
+    <section class="catalog-page__filter-country filter-country filter-country--opened-menu">
       <!-- Для открытия выпадающего меню к filter-country добавляется класс filter-country--opened-menu -->
       <h2 class="visually-hidden">Подбор попутчика по стране назназначения</h2>
       <div class="filter-country__wrapper">
@@ -878,8 +878,8 @@
           <form class="filter-travelmates__select-travelmates select-travelmates" action="https://echo.htmlacademy.ru"
             method="post">
             <p class="select-travelmates__title">Подберите идеального попутчика</p>
-            <div class="select-travelmates__hobby-select hobby-select">
-              <!-- Для открытия выпадающего меню к hobby-select добавляется класс list--opened -->
+            <div class="select-travelmates__hobby-select hobby-select hobby-select--opened-list">
+              <!-- Для открытия выпадающего меню к hobby-select добавляется класс hobby-select--opened-list -->
               <button class="hobby-select__title-btn" type="button" aria-label="Показать-скрыть">Хобби<span
                   class="hobby-select__title-btn-add">:</span></button>
               <ul class="hobby-select__list">
@@ -906,8 +906,8 @@
                 </li>
               </ul>
             </div>
-            <div class="select-travelmates__music-select music-select">
-              <!-- Для открытия выпадающего меню к music-select добавляется класс list--opened -->
+            <div class="select-travelmates__music-select music-select music-select--opened-list">
+              <!-- Для открытия выпадающего меню к music-select добавляется класс music-select--opened-list -->
               <button class="music-select__title-btn" type="button" aria-label="Показать-скрыть">Музыка<span
                   class="music-select__title-btn-add">:</span></button>
               <ul class="music-select__list">
@@ -934,8 +934,8 @@
                 </li>
               </ul>
             </div>
-            <div class="select-travelmates__food-select food-select">
-              <!-- Для открытия выпадающего меню к food-select добавляется класс list--opened -->
+            <div class="select-travelmates__food-select food-select food-select--opened-list">
+              <!-- Для открытия выпадающего меню к food-select добавляется класс food-select--opened-list -->
               <button class="food-select__title-btn" type="button" aria-label="Показать-скрыть">Еда<span
                   class="food-select__title-btn-add">:</span></button>
               <ul class="food-select__list">
@@ -959,8 +959,8 @@
                 </li>
               </ul>
             </div>
-            <div class="select-travelmates__transport-select transport-select">
-              <!-- Для открытия выпадающего меню к transport-select добавляется класс list--opened -->
+            <div class="select-travelmates__transport-select transport-select transport-select--opened-list">
+              <!-- Для открытия выпадающего меню к transport-select добавляется класс transport-select--opened-list -->
               <button class="transport-select__title-btn" type="button" aria-label="Показать-скрыть">Транспорт<span
                   class="transport-select__title-btn-add">:</span></button>
               <ul class="transport-select__list">
@@ -1010,8 +1010,8 @@
                 </li>
               </ul>
             </div>
-            <div class="select-travelmates__level-select level-select">
-              <!-- Для открытия выпадающего меню к level-select добавляется класс list--opened -->
+            <div class="select-travelmates__level-select level-select level-select--opened-list">
+              <!-- Для открытия выпадающего меню к level-select добавляется класс level-select--opened-list -->
               <button class="level-select__title-btn" type="button" aria-label="Показать-скрыть">Левел<span
                   class="level-select__title-btn-add">:</span></button>
               <div class="level-select__list">
