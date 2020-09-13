@@ -3,7 +3,7 @@
   margin-bottom: -25px;
   z-index: 3;
   min-height: 353px;
-  padding-top: 34px;
+  padding-top: 32px;
   color: #ffffff;
   background-color: #192144;
   border-bottom-left-radius: 30px;
@@ -30,8 +30,8 @@
 .about-service__wrapper {
   @include wrapper;
 
-  padding-left: 34px;
-  padding-right: 34px;
+  padding-left: 25px;
+  padding-right: 25px;
 
   @media (min-width: $desktop-width) {
     padding: 0;
@@ -42,13 +42,11 @@
 .about-service__inner-box {
   position: relative;
   width: 211px;
-  margin-left: auto;
-  margin-right: auto;
 
   &::before {
     position: absolute;
     content: "";
-    top: -34px;
+    top: -32px;
     right: 153px;
     display: block;
     width: 1134px;
@@ -61,8 +59,8 @@
   &::after {
     position: absolute;
     content: "";
-    top: -34px;
-    right: -45px;
+    top: -32px;
+    right: -48px;
     display: block;
     width: 292px;
     height: 353px;

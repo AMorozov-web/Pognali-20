@@ -1,6 +1,6 @@
 .rates {
   position: relative;
-  padding-top: 67px;
+  padding-top: 62px;
   padding-bottom: 38px;
   background-color: #e6e8f1;
   border-bottom-left-radius: 30px;
@@ -65,7 +65,7 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -109,7 +109,7 @@
 .rates__list {
   @include list-style;
 
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -129,9 +129,9 @@
   display: flex;
   flex-direction: column;
   max-width: 200px;
-  min-height: 65px;
+  min-height: 63px;
   padding-top: 12px;
-  padding-bottom: 16px;
+  padding-bottom: 14px;
   border-top: 1px solid #e1e3e9;
 
   &:last-of-type {

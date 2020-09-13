@@ -1,12 +1,12 @@
 .promo {
   position: relative;
   min-height: 908px;
-  padding-top: 24px;
+  padding-top: 17px;
   padding-bottom: 39px;
   color: #ffffff;
   background-color: #161c35;
   background-image: url("../img/globe-back-mobile@1x.jpg");
-  background-position: top -70px center;
+  background-position: top -75px center;
   background-repeat: no-repeat;
 
   @media (min-resolution: 1.5dppx) {
@@ -101,7 +101,7 @@
     position: absolute;
     content: "";
     top: 130px;
-    right: 30px;
+    right: 23px;
     display: block;
     width: 192px;
     height: 255px;
@@ -181,10 +181,9 @@
   display: block;
   min-height: 128px;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 29px;
-  margin-bottom: 28px;
+  margin-left: -13px;
+  margin-top: 27px;
+  margin-bottom: 29px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -234,6 +233,8 @@
   width: 165px;
 
   @include font-size(bold, 16px, 22px);
+
+  font-style: inherit;
 
   @media (min-width: $tablet-width) {
     width: 251px;

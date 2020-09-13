@@ -1,6 +1,6 @@
 .country {
   max-width: 270px;
-  min-height: 190px;
+  min-height: 180px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -31,8 +31,11 @@
   display: flex;
   justify-content: space-between;
   min-height: 80px;
-  margin-top: -14px;
-  padding: 25px;
+  margin-top: -17px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: #ffffff;
   border-radius: 10px;
 
@@ -97,7 +100,10 @@
 
 .country__user-count {
   position: relative;
+  display: block;
+  min-width: 42px;
   margin: 0;
+  padding-top: 3px;
   color: rgba(#161c35, 0.3);
 
   @include font-size(500, 16px, 20px);
@@ -105,12 +111,14 @@
   &::before {
     position: absolute;
     content: "";
-    top: 3px;
-    left: -20px;
+    top: 8px;
+    left: -16px;
     display: block;
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
     background-image: url("../img/icon-user.svg");
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
     opacity: 0.1;
   }
 

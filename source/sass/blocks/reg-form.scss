@@ -1,9 +1,9 @@
 .reg-form {
   position: relative;
   z-index: 2;
-  min-height: 536px;
+  min-height: 503px;
   margin-bottom: -25px;
-  padding-top: 85px;
+  padding-top: 70px;
   background-color: #192144;
   color: #ffffff;
   border-bottom-left-radius: 30px;
@@ -41,7 +41,7 @@
 
 .reg-form__title {
   margin: 0;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   text-align: center;
 
   @include font-size(bold, 24px, 24px);
@@ -95,7 +95,7 @@
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
