@@ -1,9 +1,9 @@
 .country-select-list {
   @include list-style;
 
-  padding-top: 14px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-top: 13px;
+  padding-left: 27px;
+  padding-right: 27px;
 
   @media (min-width: $tablet-width) {
     padding: 0;

@@ -31,8 +31,7 @@
   width: max-content;
   margin: 0;
   margin-top: -11px;
-  margin-bottom: 18px;
-  margin-left: -10px;
+  margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
 
@@ -58,6 +57,9 @@
 .wish-country__list {
   @include list-style;
 
+  margin-bottom: 9px;
+  padding-left: 7px;
+
   @media (min-width: $tablet-width) {
     .catalog-page & {
       display: flex;
@@ -81,7 +83,7 @@
   align-items: center;
 
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $tablet-width) {

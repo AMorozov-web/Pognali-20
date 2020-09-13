@@ -18,11 +18,11 @@
     display: grid;
     grid-template-columns: 70px 120px auto;
     grid-template-rows: 40px 30px auto auto auto 40px;
-    min-height: 415px;
-    padding-top: 15px;
+    min-height: 390px;
+    padding-top: 13px;
     padding-bottom: 22px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 18px;
+    padding-right: 21px;
   }
 
   @media (min-width: $tablet-width) {
@@ -150,7 +150,7 @@
 
 .travelmate__transport {
   margin-top: -34px;
-  margin-left: 10px;
+  margin-left: 19px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -189,8 +189,8 @@
 
 .travelmate__favorite {
   position: absolute;
-  top: 55px;
-  left: 70px;
+  top: 51px;
+  left: 67px;
   display: flex;
   align-items: center;
 
@@ -350,6 +350,7 @@
     justify-content: space-between;
     width: 100px;
     margin: 0;
+    margin-top: -3px;
     margin-left: 16px;
     text-align: left;
   }
@@ -439,6 +440,8 @@
     grid-row: 3 / 4;
     margin: 0;
     margin-top: 12px;
+    margin-bottom: 15px;
+    margin-left: 8px;
     text-align: left;
 
     @include font-size(normal, 15px, 18px);
@@ -474,7 +477,7 @@
 
 .travelmate__wish-country {
   grid-column: 1 / 4;
-  margin-top: 10px;
+  margin-top: 7px;
   margin-left: -20px;
   margin-right: -20px;
 
@@ -504,6 +507,11 @@
   margin-left: -20px;
   margin-right: -20px;
   border-top: 1px solid #edeff6;
+
+  .catalog-page & {
+    padding-bottom: 6px;
+    padding-top: 13px;
+  }
 
   @media (min-width: $tablet-width) {
     .catalog-page & {

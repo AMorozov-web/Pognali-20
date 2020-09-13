@@ -7,8 +7,8 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 26px;
+  padding-bottom: 15px;
   background-color: #182044;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -53,7 +53,7 @@
 
   &::after {
     position: absolute;
-    bottom: -23px;
+    bottom: -16px;
     left: 0;
     content: "";
     display: block;

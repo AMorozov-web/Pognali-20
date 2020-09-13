@@ -8,7 +8,10 @@
 }
 
 .country-list__item {
+  margin-bottom: 5px;
+
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     margin-right: 28px;
 
     &:last-child {

@@ -19,10 +19,11 @@
 }
 
 .select-travelmates__btn {
-  width: 100%;
+  width: calc(100% + 10px);
   margin-top: 5px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  margin-left: -5px;
+  padding-top: 14px;
+  padding-bottom: 11px;
 
   @include font-size(bold, 17px,17px);
 

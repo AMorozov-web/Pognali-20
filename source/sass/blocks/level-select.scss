@@ -23,8 +23,8 @@
   position: relative;
   width: 100%;
   padding: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
   @include font-size(bold, 16px, 18px);
 
@@ -48,7 +48,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: calc(100% / 2 - 4px);
+    top: calc(100% / 2 - 3px);
     right: 0;
     display: block;
     width: 0;
@@ -101,7 +101,7 @@
 .level-select__list {
   position: absolute;
   padding-top: 2px;
-  padding-bottom: 21px;
+  padding-bottom: 19px;
   transform: scaleY(0);
   visibility: hidden;
   opacity: 0;
@@ -206,7 +206,7 @@
 .level-select__input-wrapper {
   position: relative;
   display: flex;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
 
   &::after {
     position: absolute;
