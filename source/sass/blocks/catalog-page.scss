@@ -14,7 +14,7 @@
   border-bottom-left-radius: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 139px;
+    padding-top: 88px;
     padding-bottom: 73px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -90,6 +90,7 @@
     align-items: center;
     text-decoration: none;
     margin-left: auto;
+    padding-top: 10px;
 
     &:hover,
     &:focus {

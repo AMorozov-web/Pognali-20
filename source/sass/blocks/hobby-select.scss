@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 127px auto;
     align-items: center;
-    padding-top: 38px;
+    padding-top: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,6 +124,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    margin-right: -17px;
     padding: 0;
     transform: scaleY(1);
     visibility: visible;
@@ -143,6 +144,12 @@
 .hobby-select__item {
   &:not(:last-child) {
     margin-bottom: 7px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {

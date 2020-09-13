@@ -154,6 +154,7 @@
     align-self: center;
     width: 281px;
     height: 3px;
+    margin-bottom: 5px;
     border-radius: 2px;
   }
 
@@ -164,7 +165,7 @@
 
 .level-select__scrollbar {
   position: absolute;
-  left: 30%;
+  left: 25%;
   right: 0;
   height: 100%;
   background-color: #1d2e5b;
@@ -189,7 +190,7 @@
   }
 
   &--min {
-    left: 30%;
+    left: 25%;
   }
 
   &--max {
