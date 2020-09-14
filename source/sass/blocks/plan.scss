@@ -13,7 +13,7 @@
     grid-template-rows: auto 35px;
     min-height: 152px;
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
     padding-left: 34px;
     padding-right: 34px;
   }
@@ -47,6 +47,7 @@
     justify-content: space-between;
     align-items: flex-start;
     margin: 0;
+    padding-left: 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,6 +110,10 @@
   @media (min-width: $tablet-width) {
     align-self: end;
     margin: 0;
+
+    .plan:nth-of-type(2) & {
+      margin-left: 4px;
+    }
   }
 }
 

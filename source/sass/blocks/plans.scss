@@ -6,7 +6,7 @@
   border-top-right-radius: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 57px;
+    padding-top: 52px;
     padding-bottom: 76px;
   }
 
@@ -41,7 +41,7 @@
   color: #1d2e5b;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 49px;
 
     @include font-size(bold, 36px, 36px);
   }

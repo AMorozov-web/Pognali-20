@@ -13,8 +13,8 @@
   border-bottom-left-radius: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 134px;
-    padding-bottom: 81px;
+    padding-top: 89px;
+    padding-bottom: 71px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -54,7 +54,7 @@
     @include font-size(bold, 60px, 60px);
 
     &::after {
-      bottom: -84px;
+      bottom: -75px;
       left: 36px;
       width: 354px;
       height: 8px;
