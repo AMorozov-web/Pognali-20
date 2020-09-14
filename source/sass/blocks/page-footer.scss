@@ -20,6 +20,10 @@
   @media (min-width: $desktop-width) {
     margin-top: -49px;
 
+    .page__body--index & {
+      margin-top: -63px;
+    }
+
     .page__body--form & {
       position: relative;
     }

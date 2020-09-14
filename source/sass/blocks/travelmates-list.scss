@@ -20,7 +20,7 @@
 .travelmates-list__item {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -42,7 +42,7 @@
 
   @media (min-width: $desktop-width) {
     .catalog-page & {
-      margin-bottom: 30px;
+      margin-bottom: 31px;
     }
   }
 }
