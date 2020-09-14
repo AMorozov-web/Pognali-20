@@ -29,4 +29,10 @@
       margin-left: 6px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .catalog-page & {
+      margin-left: 0;
+    }
+  }
 }

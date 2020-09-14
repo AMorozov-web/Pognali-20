@@ -76,7 +76,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
 
     &::after {
       display: block;
@@ -91,6 +91,10 @@
     display: inline;
 
     @include font-size(500, 20px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -134,6 +138,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     display: block;
+    padding-top: 4px;
     padding-bottom: 32px;
     transform: scaleY(0);
     visibility: hidden;
@@ -155,7 +160,7 @@
   @media (min-width: $desktop-width) {
     .catalog-page & {
       &:not(:last-child) {
-        margin-bottom: 16px;
+        margin-bottom: 17px;
       }
     }
   }

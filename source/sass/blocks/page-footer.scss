@@ -18,6 +18,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -49px;
+
     .page__body--form & {
       position: relative;
     }

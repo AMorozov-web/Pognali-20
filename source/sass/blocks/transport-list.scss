@@ -108,7 +108,10 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
-      margin-right: 14px;
+
+      &:not(:last-child) {
+        margin-right: 7px;
+      }
     }
   }
 }

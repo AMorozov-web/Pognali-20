@@ -57,8 +57,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 20px;
-    padding-right: 40px;
+    padding-right: 44px;
   }
 }
 
@@ -284,14 +283,11 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: unset;
-    column-gap: 70px;
-    row-gap: 51px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    .page__body--no-js & {
-      row-gap: 51px;
-    }
+    column-gap: 11px;
+    row-gap: unset;
+    padding-top: 68px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -310,12 +306,32 @@
   @media (min-width: $desktop-width) {
     display: block;
     margin: 0;
-    margin-bottom: 44px;
+    margin-bottom: 32px;
     color: #192144;
 
     @include font-size(bold, 60px, 60px);
 
     text-transform: uppercase;
+
+    .filter-country__country-select--ch & {
+      margin-bottom: 37px;
+    }
+
+    .filter-country__country-select--sh & {
+      margin-bottom: 37px;
+    }
+
+    .filter-country__country-select--ae & {
+      margin-bottom: 39px;
+    }
+
+    .filter-country__country-select--yu & {
+      margin-bottom: 38px;
+    }
+
+    .filter-country__country-select--ya & {
+      margin-bottom: 37px;
+    }
   }
 }
 
@@ -341,7 +357,6 @@
 
   @media (min-width: $desktop-width) {
     position: static;
-    min-height: fit-content;
     visibility: visible;
     transform: scaleY(1);
     opacity: 1;
@@ -349,6 +364,28 @@
     &--selected {
       grid-column: unset;
       grid-row: unset;
+    }
+
+    &--b {
+      margin-bottom: 49px;
+    }
+
+    &--k {
+      margin-bottom: 46px;
+    }
+
+    &--n {
+      margin-bottom: 88px;
+    }
+
+    &--s {
+      margin-bottom: 45px;
+    }
+
+    &--yu {
+      .filter-country__country-select-list {
+        margin-left: 4px;
+      }
     }
   }
 }
@@ -446,13 +483,14 @@
     grid-column: 1 / 6;
     grid-row: unset;
     width: auto;
-    margin-left: -30px;
-    margin-right: -30px;
+    margin-top: 62px;
+    margin-left: -39px;
+    margin-right: -39px;
 
     &::before,
     &::after {
       top: calc(100% / 2 - 1px);
-      left: calc(100% / 2 - 70px);
+      left: calc(100% / 2 - 67px);
     }
   }
 }

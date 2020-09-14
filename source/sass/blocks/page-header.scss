@@ -79,6 +79,10 @@
     &--scroll {
       background-color: #ffffff;
     }
+
+    .page__body--catalog & {
+      padding-top: 48px;
+    }
   }
 }
 

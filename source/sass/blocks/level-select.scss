@@ -80,7 +80,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
 
     &::after {
       display: block;
@@ -88,13 +88,17 @@
   }
 }
 
-.food-select__title-btn-add {
+.level-select__title-btn-add {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: inline;
 
     @include font-size(500, 20px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -235,7 +239,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 }
 
