@@ -61,8 +61,8 @@
   }
 
   .form-page & {
-    width: 100px;
-    height: 100px;
+    width: 103px;
+    height: 103px;
 
     @media (min-width: $tablet-width) {
       width: 94px;
@@ -115,6 +115,8 @@
   }
 
   .form-page & {
+    stroke-width: 2px;
+
     @media (min-width: $tablet-width) {
       stroke-width: 2px;
     }
@@ -137,7 +139,7 @@
 
   .form-page & {
     top: 18px;
-    left: 28px;
+    left: 29px;
 
     @media (min-width: $tablet-width) {
       left: 26px;
@@ -190,6 +192,7 @@
   }
 
   .form-page & {
+    margin-top: 6px;
     text-align: center;
 
     @include font-size(normal, 18px, 18px);

@@ -46,7 +46,10 @@
 
 .hashtags__tags {
   width: 100%;
-  padding: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   @include font-size(normal, 16px, 18px);
 

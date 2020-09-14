@@ -71,6 +71,8 @@
 }
 
 .plan__title-text {
+  margin-left: -1px;
+
   @include font-size(bold, 16px, 16px);
 
   @media (min-width: $tablet-width) {

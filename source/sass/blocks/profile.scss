@@ -41,8 +41,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 18px;
-  padding-left: 18px;
+  margin-bottom: 10px;
+  padding-left: 16px;
   padding-right: 18px;
 
   .form-page & {
@@ -61,6 +61,8 @@
 }
 
 .profile__level {
+  margin-top: -1px;
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 104px;
@@ -114,8 +116,8 @@
 .profile__photo-change-btn {
   width: 100%;
   padding: 0;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
   @include font-size(500, 20px, 18px);
 
@@ -162,8 +164,8 @@
 }
 
 .profile__hashtags {
-  margin-top: 18px;
-  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 4;

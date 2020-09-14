@@ -5,7 +5,11 @@
   align-items: center;
   width: 100%;
   margin-top: -18px;
-  margin-bottom: -18px;
+  margin-bottom: -16px;
+
+  .fun--wish-country-1 & {
+    margin-top: -20px;
+  }
 
   &::after {
     position: absolute;
@@ -38,8 +42,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: calc(100% / 2 - 1px);
-    left: -8px;
+    top: calc(100% / 2);
+    left: -14px;
     display: block;
     width: 12px;
     height: 2px;
@@ -49,8 +53,8 @@
   &::after {
     position: absolute;
     content: "";
-    top: calc(100% / 2 - 3px);
-    left: 0;
+    top: calc(100% / 2 - 2px);
+    left: -3px;
     display: block;
     width: 6px;
     height: 6px;
@@ -107,14 +111,18 @@
 .fun__text-wrapper {
   position: relative;
   width: fit-content;
-  min-height: 283px;
+  min-height: 220px;
   padding-top: 25px;
+
+  .fun--start-country & {
+    margin-bottom: 32px;
+  }
 
   .fun-list__item:not(:last-child) &::before {
     position: absolute;
     content: "";
-    top: 0;
-    left: -10px;
+    top: -1px;
+    left: -14px;
     display: block;
     width: 2px;
     height: 283px;

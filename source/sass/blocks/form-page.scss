@@ -6,8 +6,8 @@
 
 .form-page__title-wrapper {
   width: 100%;
-  padding-top: 61px;
-  padding-bottom: 21px;
+  padding-top: 25px;
+  padding-bottom: 15px;
   background-color: #182044;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -38,7 +38,7 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: -23px;
+    bottom: -17px;
     left: 0;
     display: block;
     width: 215px;
