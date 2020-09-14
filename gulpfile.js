@@ -163,7 +163,7 @@ exports.build = build;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", { delay: 1100 }, gulp.series("styles", "reboot"));
   gulp.watch("source/js/*.js").on("change", gulp.series("js", "reboot"));
-  gulp.watch("source/*.html").on("change", gulp.series("sprite", "html", "reboot"));
+  gulp.watch("source/*.html").on("change", gulp.series("html", sync.reload));
 };
 
 exports.default = gulp.series(

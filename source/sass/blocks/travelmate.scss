@@ -41,13 +41,19 @@
       grid-template-columns: 190px 150px auto 60px;
       grid-template-rows: 30px auto 50px auto;
       column-gap: 29px;
-      row-gap: 23px;
+      row-gap: 12px;
       width: 100%;
       min-height: 333px;
-      padding-top: 35px;
+      padding-top: 36px;
       padding-bottom: 25px;
       padding-left: 35px;
       padding-right: 25px;
+    }
+
+    &--smolov {
+      .catalog-page & {
+        padding-bottom: 23px;
+      }
     }
   }
 
@@ -207,6 +213,7 @@
       grid-column: 3 / 4;
       grid-row: 3 / 4;
       margin: 0;
+      margin-top: -14px;
       margin-left: -28px;
     }
   }
@@ -375,7 +382,7 @@
       top: 0;
       right: 0;
       margin: 0;
-      margin-top: 8px;
+      margin-top: 12px;
       align-self: flex-start;
     }
   }
@@ -393,8 +400,10 @@
 
     .catalog-page & {
       justify-content: flex-end;
-      margin-left: 7px;
+      margin-left: 5px;
       width: fit-content;
+
+      @include font-size(bold, 30px, 30px);
     }
 
     &::before {
@@ -494,6 +503,9 @@
       grid-row: 4 / -1;
       align-self: center;
       margin: 0;
+      margin-top: 13px;
+      margin-left: -35px;
+      margin-right: -25px;
     }
   }
 
@@ -534,6 +546,8 @@
       flex-direction: column;
       align-items: center;
       margin: 0;
+      padding: 0;
+      padding-bottom: 7px;
       border: none;
     }
   }
@@ -580,8 +594,9 @@
       grid-column: 2 / 3;
       grid-row: 3 / 4;
       width: 150px;
-      min-height: 50px;
+      height: 50px;
       margin: 0;
+      margin-top: -6px;
       padding-top: 14px;
       padding-bottom: 14px;
 

@@ -1,17 +1,8 @@
 .wish-country {
   border-top: 1px solid #edeff6;
 
-  @media (min-width: $tablet-width) {
-    .catalog-page & {
-      margin-top: 21px;
-      margin-left: -35px;
-      margin-right: -25px;
-    }
-  }
-
   @media (min-width: $desktop-width) {
     .catalog-page & {
-      margin: 0;
       border: none;
     }
   }
@@ -43,7 +34,7 @@
 
   @media (min-width: $tablet-width) {
     .catalog-page & {
-      margin-left: 84px;
+      margin-left: 75px;
     }
   }
 
@@ -64,6 +55,7 @@
     .catalog-page & {
       display: flex;
       align-items: center;
+      margin: 0;
       padding-left: 37px;
       padding-right: 25px;
     }
@@ -91,7 +83,7 @@
 
     &:not(:last-child) {
       margin-bottom: 0;
-      margin-right: 28px;
+      margin-right: 23px;
     }
   }
 

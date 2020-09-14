@@ -15,6 +15,10 @@
     padding-bottom: 54px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+
+    &--opened-menu {
+      padding-bottom: 73px;
+    }
   }
 }
 
@@ -254,26 +258,12 @@
   visibility: hidden;
   opacity: 0;
 
-  .page__body--no-js &,
-  .filter-country--opened-menu & {
+  .filter-country--opened-menu &,
+  .page__body--no-js & {
     position: static;
     transform: scaleY(1);
     visibility: visible;
     opacity: 1;
-  }
-
-  .filter-country--opened-menu & {
-    position: absolute;
-    top: 175px;
-    left: -25px;
-    right: -25px;
-    z-index: 1;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 27px;
-    background-color: #e2e5f2;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
   }
 
   @media (min-width: $tablet-width) {

@@ -123,6 +123,7 @@
 
   @media (min-width: $tablet-width) {
     position: static;
+    margin-left: 1px;
     padding: 0;
     transform: scaleY(1);
     visibility: visible;
@@ -140,6 +141,10 @@
 
 .transport-select__item:not(:last-child) {
   margin-right: 1px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .transport-select__label {

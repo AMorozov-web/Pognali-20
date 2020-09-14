@@ -15,9 +15,12 @@
     background-color: #ffffff;
   }
 
+  .page__body--catalog & {
+    padding-top: 19px;
+  }
+
   .page__body--catalog &,
   .page__body--form & {
-    padding-top: 19px;
     background-color: #182044;
 
     &--scroll {
@@ -40,6 +43,10 @@
 
     &--scroll {
       background-color: #ffffff;
+    }
+
+    .page__body--catalog & {
+      padding-top: 40px;
     }
 
     .page__body--catalog &,
