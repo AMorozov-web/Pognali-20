@@ -23,6 +23,13 @@
     padding-bottom: 22px;
     padding-left: 18px;
     padding-right: 21px;
+    border-radius: 20px;
+  }
+
+  &--smolov {
+    .catalog-page & {
+      padding-bottom: 17px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -485,6 +492,7 @@
     .catalog-page & {
       grid-column: 1 / 5;
       grid-row: 4 / -1;
+      align-self: center;
       margin: 0;
     }
   }
@@ -503,7 +511,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 16px;
   margin-left: -20px;
   margin-right: -20px;
   border-top: 1px solid #edeff6;
@@ -511,6 +519,12 @@
   .catalog-page & {
     padding-bottom: 6px;
     padding-top: 13px;
+  }
+
+  .travelmate--smolov & {
+    .catalog-page & {
+      padding-bottom: 13px;
+    }
   }
 
   @media (min-width: $tablet-width) {

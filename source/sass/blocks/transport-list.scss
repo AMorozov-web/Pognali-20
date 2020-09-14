@@ -20,23 +20,23 @@
   height: 24px;
 
   &--plane {
-    padding-top: 6px;
-    padding-left: 5px;
+    padding-top: 7px;
+    padding-left: 8px;
   }
 
   &--bus {
     padding-top: 7px;
-    padding-left: 4px;
+    padding-left: 9px;
   }
 
   &--bike {
     padding-top: 7px;
-    padding-left: 4px;
+    padding-left: 9px;
   }
 
   &--walk {
-    padding-top: 5px;
-    padding-left: 4px;
+    padding-top: 8px;
+    padding-left: 8px;
   }
 
   &:not(:last-child) {

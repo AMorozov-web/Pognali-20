@@ -2,7 +2,8 @@
   display: block;
   width: max-content;
   margin: 0;
-  margin-bottom: 20px;
+  margin-top: -4px;
+  margin-bottom: 16px;
   padding-left: 10px;
   padding-right: 10px;
 
@@ -21,11 +22,11 @@
 .transport__transport-list {
   @include list-style;
 
-  margin-left: 7px;
+  margin-left: 6px;
 
   @media (min-width: $tablet-width) {
     .catalog-page & {
-      margin: 0;
+      margin-left: 6px;
     }
   }
 }
