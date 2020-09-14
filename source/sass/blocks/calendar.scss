@@ -95,11 +95,11 @@
 
   @media (min-width: $desktop-width) {
     &--prev-month::before {
-      left: 0;
+      left: 4px;
     }
 
     &--next-month::before {
-      right: 0;
+      right: 4px;
     }
   }
 }
@@ -115,7 +115,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 57px;
+    margin-bottom: 67px;
   }
 }
 

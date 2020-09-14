@@ -4,6 +4,10 @@
       padding-top: 20px;
       border-top: 1px solid #e1e3e9;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 61px;
+    }
   }
 }
 
@@ -16,6 +20,12 @@
 
       &:last-child {
         margin-bottom: 42px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &:last-child {
+        margin-bottom: 63px;
       }
     }
   }

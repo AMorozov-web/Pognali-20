@@ -199,9 +199,34 @@
   @media (min-width: $desktop-width) {
     padding-right: 45px;
 
+    .country-step__start-country & {
+      padding-top: 62px;
+    }
+
+    .country-step__add-country & {
+      padding-bottom: 56px;
+    }
+
     &::before {
       .country-step__add-country & {
         display: none;
+      }
+    }
+
+    &::after {
+      right: -8px;
+
+      .country-step__start-country & {
+        top: calc(100% / 2 + 14px);
+      }
+
+      .country-step__add-country & {
+        top: calc(100% / 2 - 38px);
+      }
+
+      .country-step__country-choose &,
+      .country-step__add-country & {
+        right: -8px;
       }
     }
   }
@@ -477,6 +502,10 @@
 
   @media (min-width: $desktop-width) {
     width: 225px;
+
+    .country-step__start-country & {
+      margin-top: 62px;
+    }
   }
 }
 
@@ -585,7 +614,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 0;
+    right: -2px;
+
+    .country-step__start-country & {
+      top: calc(100% / 2 + 10px);
+    }
   }
 }
 

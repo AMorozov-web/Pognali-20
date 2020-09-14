@@ -6,13 +6,12 @@
   border-top-right-radius: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
+    padding-top: 52px;
     padding-bottom: 123px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
-    padding-bottom: 143px;
+    padding-bottom: 120px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
   }
@@ -42,8 +41,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 54px;
-    padding-left: 64px;
+    margin-bottom: 57px;
+    padding-left: 68px;
   }
 }
 

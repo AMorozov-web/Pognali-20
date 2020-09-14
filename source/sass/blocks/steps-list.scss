@@ -20,4 +20,16 @@
       margin-bottom: 48px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.step--2 {
+      margin-bottom: 44px;
+    }
+  }
 }

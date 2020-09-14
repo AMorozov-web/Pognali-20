@@ -11,8 +11,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 54px;
-    padding-bottom: 115px;
+    padding-top: 51px;
+    padding-bottom: 120px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
   }
@@ -41,9 +41,14 @@
   color: #1d2e5b;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 49px;
+    margin-bottom: 51px;
+    padding-left: 0;
 
     @include font-size(bold, 36px, 36px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 7px;
   }
 }
 
@@ -59,6 +64,12 @@
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
       margin-bottom: 11px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 14px;
     }
   }
 }

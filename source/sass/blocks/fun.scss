@@ -83,7 +83,7 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      left: 765px;
+      left: 767px;
     }
   }
 }
@@ -97,7 +97,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 122px;
+    padding-top: 13px;
+    padding-right: 115px;
   }
 }
 
@@ -148,8 +149,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 19px;
+
     .fun-list__item:not(:last-child) &::before {
-      left: 771px;
+      left: 773px;
     }
   }
 }
