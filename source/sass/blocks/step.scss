@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 48px;
+    padding-top: 46px;
     padding-bottom: 56px;
     padding-left: 43px;
     padding-right: 43px;
@@ -44,7 +44,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 36px;
+
+    .step--2 & {
+      margin-bottom: 31px;
+    }
+
+    .step--3 & {
+      margin-bottom: 35px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -64,7 +72,11 @@
   margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 44px;
+    margin-bottom: 37px;
+
+    .step--3 & {
+      margin-bottom: 33px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -103,6 +115,10 @@
     padding-right: 10px;
 
     @include font-size(normal, 20px, 24px);
+
+    .step--2 & {
+      padding-right: 135px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -176,7 +192,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -225,7 +241,7 @@
 
 .step__child {
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -236,13 +252,10 @@
 }
 
 .step__btn-wrapper {
-  margin-left: -4px;
-  margin-right: -5px;
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 286px auto;
-    column-gap: 60px;
+    column-gap: 64px;
     width: 100%;
     min-height: 80px;
   }
@@ -311,8 +324,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 33px;
-    padding-right: 33px;
+    padding-left: 36px;
+    padding-right: 36px;
 
     @include font-size(bold, 24px, 24px);
 
@@ -326,8 +339,8 @@
     &::after {
       position: absolute;
       content: "";
-      top: calc(100% / 2 - 7px);
-      right: 33px;
+      top: calc(100% / 2 - 8px);
+      right: 37px;
       display: block;
       width: 0;
       height: 0;
@@ -340,7 +353,7 @@
       padding-right: 0;
 
       &::after {
-        left: 0;
+        left: 4px;
         border-left: none;
         border-right: 10px solid #1d2e5b;
       }

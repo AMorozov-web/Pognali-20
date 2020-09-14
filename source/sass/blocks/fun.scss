@@ -72,8 +72,8 @@
     }
 
     &::after {
-      top: calc(100% / 2 - 7px);
-      left: 533px;
+      top: calc(100% / 2 - 6px);
+      left: 522px;
       width: 15px;
       height: 15px;
       background-color: #1d2e5b;
@@ -134,9 +134,13 @@
     min-height: 140px;
     padding-right: 30px;
 
+    .fun--start-country & {
+      margin-bottom: 0;
+    }
+
     .fun-list__item:not(:last-child) &::before {
-      top: -23px;
-      left: 539px;
+      top: -28px;
+      left: 528px;
       width: 3px;
       height: 266px;
       background-color: #1d2e5b;

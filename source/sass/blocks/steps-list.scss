@@ -3,11 +3,21 @@
 }
 
 .steps-list__item {
-  &:not(:last-child) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 39px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.step--2 {
+      margin-bottom: 48px;
     }
   }
 }

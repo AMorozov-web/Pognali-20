@@ -175,18 +175,18 @@
     }
 
     &::after {
-      top: calc(100% / 2 - 15px);
-      right: -8px;
+      top: calc(100% / 2 - 17px);
+      right: -6px;
       width: 14px;
       height: 14px;
 
       .country-step__start-country & {
-        top: calc(100% / 2 + 7px);
+        top: calc(100% / 2 + 4px);
       }
 
       .country-step__country-choose &,
       .country-step__add-country & {
-        right: -8px;
+        right: -6px;
       }
 
       .country-step__add-country & {
@@ -490,6 +490,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 21px;
     padding-top: 12px;
   }
 
@@ -575,7 +577,7 @@
     &::before,
     &::after {
       top: calc(100% / 2 - 1px);
-      left: calc((100% - 25px) / 2);
+      left: calc((100% - 36px) / 2);
       width: 25px;
       height: 2px;
       background-color: rgba(#000000, 0.1);
