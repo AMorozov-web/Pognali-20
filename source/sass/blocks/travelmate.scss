@@ -422,8 +422,19 @@
       margin-right: 14px;
 
       .catalog-page & {
-        position: static;
+        position: absolute;
+        top: calc(100% / 2 - 16px);
+        right: calc(100% - 221px);
         margin-left: 22px;
+      }
+    }
+
+    .travelmate--rogovaya & {
+      .catalog-page & {
+        &::before {
+          top: calc(100% / 2 - 19px);
+          right: calc(100% - 256px);
+        }
       }
     }
   }
@@ -441,6 +452,7 @@
       @include font-size(bold, 30px, 30px);
 
       &::before {
+        position: static;
         margin: 0;
         margin-left: -10px;
         margin-right: 18px;
@@ -491,6 +503,10 @@
 
       @include font-size(normal, 20px, 23px);
     }
+
+    .travelmate--demin & {
+      line-height: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -501,6 +517,10 @@
       margin: 0;
       margin-top: 6px;
       padding-left: 8px;
+    }
+
+    .travelmate--demin & {
+      line-height: 23px;
     }
   }
 }
@@ -550,9 +570,21 @@
     padding-top: 13px;
   }
 
+  .travelmate--demin & {
+    .catalog-page & {
+      margin-top: 21px;
+    }
+  }
+
   .travelmate--smolov & {
     .catalog-page & {
       padding-bottom: 13px;
+    }
+  }
+
+  .travelmate--rogovaya & {
+    .catalog-page & {
+      margin-top: 21px;
     }
   }
 
@@ -566,6 +598,24 @@
       padding: 0;
       padding-bottom: 7px;
       border: none;
+    }
+
+    .travelmate--demin & {
+      .catalog-page & {
+        margin-top: 0;
+      }
+    }
+
+    .travelmate--rogovaya & {
+      .catalog-page & {
+        margin-top: 0;
+      }
+    }
+
+    .travelmate--smolov & {
+      .catalog-page & {
+        padding-bottom: 7px;
+      }
     }
   }
 

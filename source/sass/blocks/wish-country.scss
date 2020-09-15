@@ -59,12 +59,38 @@
       padding-left: 37px;
       padding-right: 25px;
     }
+
+    .travelmate--firsova & {
+      .catalog-page & {
+        padding-left: 34px;
+      }
+    }
+
+    .travelmate--smolov & {
+      .catalog-page & {
+        padding-left: 34px;
+      }
+    }
+
+    .travelmate--rogovaya & {
+      .catalog-page & {
+        padding-left: 35px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
     .catalog-page & {
       display: block;
       padding: 0;
+    }
+
+    .travelmate--firsova &,
+    .travelmate--smolov &,
+    .travelmate--rogovaya & {
+      .catalog-page & {
+        padding-left: 0;
+      }
     }
   }
 }
