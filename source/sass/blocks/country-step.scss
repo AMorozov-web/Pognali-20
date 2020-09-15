@@ -1,7 +1,7 @@
 .country-step__list {
   @include list-style;
 
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 9px;
@@ -16,7 +16,7 @@
   align-items: center;
 
   &:not(:last-child) {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
 
     &::before {
       position: absolute;

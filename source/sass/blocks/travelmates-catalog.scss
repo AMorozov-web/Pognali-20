@@ -78,15 +78,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 51px;
-    margin-bottom: 52px;
-    padding-left: 50px;
+    margin-top: 49px;
+    margin-bottom: 54px;
+    padding-left: 45px;
 
     @include font-size(bold, 20px, 20px);
 
     &::before,
     &::after {
       top: calc(100% / 2 - 1px);
+      left: -6px;
       width: 26px;
     }
   }

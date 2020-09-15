@@ -487,6 +487,10 @@
     @include font-size(normal, 15px, 18px);
   }
 
+  .travelmate--demin & {
+    margin-top: 13px;
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 223px;
     margin-top: 23px;
