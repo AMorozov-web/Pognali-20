@@ -5,7 +5,7 @@ window.onload = function() {
   ymaps.ready({
       successCallback: function () {
         pognalyMap = new ymaps.Map("map", {
-              center: [59.938272, 30.323074],
+          center: [59.938441, 30.323098],
               zoom: 16,
               controls: [],
           },
