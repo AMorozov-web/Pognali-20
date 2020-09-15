@@ -67,7 +67,7 @@ exports.images = images;
 const makewebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 };
 
 exports.makewebp = makewebp;
@@ -151,6 +151,7 @@ const build = (done) => gulp.series(
   "styles",
   "sprite",
   "js",
+  "makewebp",
   "copy",
   "html"
 )

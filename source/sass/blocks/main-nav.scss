@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   min-height: 470px;
-  padding-top: 52px;
-  padding-bottom: 41px;
+  padding-top: 68px;
+  padding-bottom: 28px;
   background-color: #ffffff;
 
   .page-header--opened-menu & {
@@ -17,8 +17,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 67px;
-    padding-bottom: 92px;
+    padding-top: 64px;
+    padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,8 +34,8 @@
   @include wrapper;
 
   @media (min-width: $tablet-width) {
-    padding-left: 97px;
-    padding-right: 97px;
+    padding-left: 57px;
+    padding-right: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,10 +63,11 @@
 }
 
 .main-nav__social {
-  margin-top: 40px;
+  margin-top: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 129px;
+    margin-top: 113px;
+    margin-left: 13px;
   }
 
   @media (min-width: $desktop-width) {

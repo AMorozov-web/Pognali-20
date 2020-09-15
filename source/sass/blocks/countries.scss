@@ -226,6 +226,10 @@
     border-radius: 20px;
 
     @include font-size(bold, 24px, 34px);
+
+    &::after {
+      right: 35px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -238,9 +242,5 @@
     margin-left: 2px;
     padding-top: 22px;
     padding-bottom: 22px;
-
-    &::after {
-      right: 35px;
-    }
   }
 }

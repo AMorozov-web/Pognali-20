@@ -20,9 +20,9 @@
   }
 
   @include font-size(bold, 20px, 20px);
-
+  
   .main-nav__user-nav-list & {
-    @include font-size(bold, 20px, 30px);
+    @include font-size(bold, 17px, 30px);
   }
 
   @media (min-width: $tablet-width) {

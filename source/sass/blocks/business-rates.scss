@@ -4,13 +4,13 @@
   .rates--modal-open & {
     display: block;
     min-height: 443px;
-    padding-top: 34px;
+    padding-top: 32px;
     background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
     border-radius: 20px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 54px;
+      padding-top: 47px;
     }
 
     @media (min-width: $desktop-width) {
@@ -27,7 +27,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 90px;
-    padding-right: 90px;
+    padding-right: 97px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,7 +46,8 @@
   color: #ff8d30;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 50px;
+    margin-left: 4px;
 
     @include font-size(bold, 45px, 45px);
   }
@@ -67,7 +68,7 @@
 .business-rates__item {
   min-height: 66px;
   padding-top: 11px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
 
   &:not(:last-of-type) {
     border-bottom: 1px solid rgba(#000000, 0.05);
@@ -91,14 +92,6 @@
     @include font-size(300, 22px, 28px);
 
     color: #444444;
-  }
-}
-
-.business-rates__text {
-  margin-bottom: 3px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
   }
 }
 
@@ -133,6 +126,8 @@
     min-height: 108px;
 
     @include font-size(bold, 24px, 24px);
+
+    text-transform: unset;
   }
 
   @media (min-width: $desktop-width) {
