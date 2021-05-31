@@ -5,7 +5,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
-    "browser-sync": "2.26.12",
+    "browser-sync": "2.26.14",
     "del": "5.1.0",
     "gulp": "4.0.2",
     "gulp-csso": "4.0.1",
@@ -21,9 +21,9 @@
     "gulp-uglify-es": "2.0.0",
     "gulp-webp": "4.0.1",
     "posthtml-include": "1.4.3",
-    "stylelint": "13.6.1",
+    "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.4",
-    "xmlhttprequest-ssl": ">=1.6.2"
+    "xmlhttprequest-ssl": "1.6.2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
