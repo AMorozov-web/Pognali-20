@@ -7,7 +7,7 @@
 
 ## Использовал
 
-_`HTML`, `CSS`, `BEM`, `Sass`, `Gulp`_
+_`HTML`, `CSS`, `BEM`, `Sass`, `JS`, `Gulp`_
 
 ---
 
