@@ -9,6 +9,7 @@ window.addEventListener(`DOMContentLoaded`, () => {
   const foodSelect = document.querySelector(`.food-select`);
   const transportSelect = document.querySelector(`.transport-select`);
   const levelSelect = document.querySelector(`.level-select`);
+  const stepTwo = document.querySelector(`.step--2`);
   const headerOffset = header.offsetTop;
 
   const validateEmail = (email) => {
@@ -118,6 +119,15 @@ window.addEventListener(`DOMContentLoaded`, () => {
     levelSelect.classList.remove(`level-select--opened-list`);
     button.addEventListener(`click`, () => {
       levelSelect.classList.toggle(`level-select--opened-list`);
+    });
+  }
+
+  if (stepTwo) {
+    const openButton = document.querySelectorAll(`.country-step__select`)[2];
+
+    stepTwo.classList.remove(`step--opened-menu`);
+    openButton.addEventListener(`click`, () => {
+      stepTwo.classList.toggle(`step--opened-menu`);
     });
   }
 });
