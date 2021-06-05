@@ -9,6 +9,7 @@ window.addEventListener(`DOMContentLoaded`, () => {
   const foodSelect = document.querySelector(`.food-select`);
   const transportSelect = document.querySelector(`.transport-select`);
   const levelSelect = document.querySelector(`.level-select`);
+  const stepsList = document.querySelector(`.steps-list`);
   const stepTwo = document.querySelector(`.step--2`);
   const headerOffset = header.offsetTop;
 
@@ -119,6 +120,58 @@ window.addEventListener(`DOMContentLoaded`, () => {
     levelSelect.classList.remove(`level-select--opened-list`);
     button.addEventListener(`click`, () => {
       levelSelect.classList.toggle(`level-select--opened-list`);
+    });
+  }
+
+  if (stepsList) {
+    const steps = document.querySelectorAll(`.steps-list__item`);
+    const stepBtnsNext = document.querySelectorAll(`.step__btn--next`);
+    const stepBtnsPrev = document.querySelectorAll(`.step__btn--prev`);
+
+    let currentStep = 0;
+
+    const setActiveStep = () => {
+      steps.forEach((el) => {
+        el.classList.add(`visually-hidden`);
+      });
+
+      for(let i = 0; i < steps.length; i++) {
+        if (i === currentStep) {
+          steps[i].classList.remove(`visually-hidden`);
+        }
+      }
+    }
+
+    const increaseStep = () => {
+      if (currentStep + 1 === steps.length) {
+        currentStep = 0;
+      } else {
+        currentStep += 1;
+      }
+      setActiveStep();
+    }
+
+    const decreaseStep = () => {
+      if (currentStep - 1 < 0) {
+        currentStep = steps.length - 1;
+      } else {
+        currentStep -= 1;
+      }
+      setActiveStep();
+    }
+
+    steps.forEach((el) => {
+      el.classList.add(`visually-hidden`);
+    });
+
+    setActiveStep();
+
+    stepBtnsNext.forEach((el) => {
+      el.addEventListener(`click`, () => increaseStep());
+    });
+
+    stepBtnsPrev.forEach((el) => {
+      el.addEventListener(`click`, () => decreaseStep());
     });
   }
 
