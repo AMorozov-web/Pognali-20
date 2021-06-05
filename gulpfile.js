@@ -26,11 +26,11 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("public/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("public/css"))
     .pipe(sync.stream());
 };
 
@@ -44,7 +44,7 @@ const html = () => {
       include()
     ]))
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("public"));
 };
 
 exports.html = html;
@@ -67,7 +67,7 @@ exports.images = images;
 const makewebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("public/img"));
 };
 
 exports.makewebp = makewebp;
@@ -78,7 +78,7 @@ const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("public/img"))
 };
 
 exports.sprite = sprite;
@@ -91,7 +91,7 @@ const js = () => {
     .pipe(rename (function (path) {
       path.basename += ".min"
     }))
-    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("public/js"))
 };
 
 exports.js = js;
@@ -106,7 +106,7 @@ const copy = () => {
     ], {
       base: "source"
   })
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("public"));
 };
 
 exports.copy = copy;
@@ -114,7 +114,7 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
-  return del("build");
+  return del("public");
 };
 
 exports.clean = clean;
@@ -124,7 +124,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "build"
+      baseDir: "public"
     },
     cors: true,
     notify: false,
