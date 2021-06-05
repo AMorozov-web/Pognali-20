@@ -7,6 +7,7 @@ window.addEventListener(`DOMContentLoaded`, () => {
   const ratesCloseButton = document.querySelector(`.business-rates__close`);
   const regFormInput = document.querySelector(`.reg-form__input`);
   const regFormBtn = document.querySelector(`.reg-form__btn`);
+  const headerOffset = header.offsetTop;
 
   const validateEmail = (email) => {
     const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -20,6 +21,14 @@ window.addEventListener(`DOMContentLoaded`, () => {
   if (header && navToggleButton) {
     navToggleButton.addEventListener(`click`, () => {
       header.classList.toggle(`page-header--opened-menu`);
+    });
+
+    window.addEventListener(`scroll`, () => {
+      if (window.pageYOffset >= headerOffset + 20) {
+        header.classList.add(`page-header--scroll`);
+      } else {
+        header.classList.remove(`page-header--scroll`);
+      }
     });
   }
 
