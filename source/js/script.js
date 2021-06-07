@@ -160,10 +160,6 @@ window.addEventListener(`DOMContentLoaded`, () => {
       setActiveStep();
     }
 
-    steps.forEach((el) => {
-      el.classList.add(`visually-hidden`);
-    });
-
     setActiveStep();
 
     stepBtnsNext.forEach((el) => {
